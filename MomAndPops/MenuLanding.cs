@@ -26,5 +26,10 @@ namespace MomAndPops.Resources
         {
             
         }
+
+        private void DietSmallMedium_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
