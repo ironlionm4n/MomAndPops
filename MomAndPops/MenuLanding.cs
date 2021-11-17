@@ -16,5 +16,15 @@ namespace MomAndPops.Resources
         {
             InitializeComponent();
         }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BreadstickPrice_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

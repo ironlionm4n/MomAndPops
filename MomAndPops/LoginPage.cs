@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MomAndPops.Resources;
 
 namespace MomAndPops
 {
@@ -20,6 +21,17 @@ namespace MomAndPops
         private void button2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form menu = new MenuLanding();
+            menu.ShowDialog();
         }
     }
 }
