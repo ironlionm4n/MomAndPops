@@ -56,6 +56,18 @@ namespace MomAndPops.Resources
             this.PepsiSmall = new System.Windows.Forms.RadioButton();
             this.PepsiMedium = new System.Windows.Forms.RadioButton();
             this.PepsiLarge = new System.Windows.Forms.RadioButton();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.DietPepsiLarge = new System.Windows.Forms.RadioButton();
+            this.DietPepsiMedium = new System.Windows.Forms.RadioButton();
+            this.DietPepsiSmall = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.DietPepsiQuantity = new System.Windows.Forms.NumericUpDown();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.label11 = new System.Windows.Forms.Label();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -67,6 +79,10 @@ namespace MomAndPops.Resources
             ((System.ComponentModel.ISupportInitialize)(this.CookieQuantity)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PepsiQuantity)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DietPepsiQuantity)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -107,6 +123,8 @@ namespace MomAndPops.Resources
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.groupBox3.Controls.Add(this.panel6);
+            this.groupBox3.Controls.Add(this.panel5);
             this.groupBox3.Controls.Add(this.panel4);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
@@ -352,6 +370,140 @@ namespace MomAndPops.Resources
             this.PepsiLarge.Text = "L";
             this.PepsiLarge.UseVisualStyleBackColor = true;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.panel5.Controls.Add(this.DietPepsiLarge);
+            this.panel5.Controls.Add(this.DietPepsiMedium);
+            this.panel5.Controls.Add(this.DietPepsiSmall);
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.DietPepsiQuantity);
+            this.panel5.Location = new System.Drawing.Point(52, 143);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(243, 28);
+            this.panel5.TabIndex = 5;
+            // 
+            // DietPepsiLarge
+            // 
+            this.DietPepsiLarge.AutoSize = true;
+            this.DietPepsiLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.DietPepsiLarge.Location = new System.Drawing.Point(206, 5);
+            this.DietPepsiLarge.Name = "DietPepsiLarge";
+            this.DietPepsiLarge.Size = new System.Drawing.Size(34, 21);
+            this.DietPepsiLarge.TabIndex = 4;
+            this.DietPepsiLarge.TabStop = true;
+            this.DietPepsiLarge.Text = "L";
+            this.DietPepsiLarge.UseVisualStyleBackColor = true;
+            // 
+            // DietPepsiMedium
+            // 
+            this.DietPepsiMedium.AutoSize = true;
+            this.DietPepsiMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.DietPepsiMedium.Location = new System.Drawing.Point(164, 5);
+            this.DietPepsiMedium.Name = "DietPepsiMedium";
+            this.DietPepsiMedium.Size = new System.Drawing.Size(37, 21);
+            this.DietPepsiMedium.TabIndex = 3;
+            this.DietPepsiMedium.TabStop = true;
+            this.DietPepsiMedium.Text = "M";
+            this.DietPepsiMedium.UseVisualStyleBackColor = true;
+            // 
+            // DietPepsiSmall
+            // 
+            this.DietPepsiSmall.AutoSize = true;
+            this.DietPepsiSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.DietPepsiSmall.Location = new System.Drawing.Point(123, 5);
+            this.DietPepsiSmall.Name = "DietPepsiSmall";
+            this.DietPepsiSmall.Size = new System.Drawing.Size(35, 21);
+            this.DietPepsiSmall.TabIndex = 2;
+            this.DietPepsiSmall.TabStop = true;
+            this.DietPepsiSmall.Text = "S";
+            this.DietPepsiSmall.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label7.Location = new System.Drawing.Point(36, 3);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(81, 20);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Diet Pepsi";
+            // 
+            // DietPepsiQuantity
+            // 
+            this.DietPepsiQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.DietPepsiQuantity.Location = new System.Drawing.Point(3, 2);
+            this.DietPepsiQuantity.Name = "DietPepsiQuantity";
+            this.DietPepsiQuantity.Size = new System.Drawing.Size(35, 23);
+            this.DietPepsiQuantity.TabIndex = 0;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.panel6.Controls.Add(this.radioButton1);
+            this.panel6.Controls.Add(this.radioButton2);
+            this.panel6.Controls.Add(this.radioButton3);
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.numericUpDown1);
+            this.panel6.Location = new System.Drawing.Point(52, 188);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(243, 28);
+            this.panel6.TabIndex = 6;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.radioButton1.Location = new System.Drawing.Point(206, 5);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(34, 21);
+            this.radioButton1.TabIndex = 4;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "L";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.radioButton2.Location = new System.Drawing.Point(164, 5);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(37, 21);
+            this.radioButton2.TabIndex = 3;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "M";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.radioButton3.Location = new System.Drawing.Point(123, 5);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(35, 21);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "S";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label11.Location = new System.Drawing.Point(36, 3);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(81, 20);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "Diet Pepsi";
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.numericUpDown1.Location = new System.Drawing.Point(3, 2);
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(35, 23);
+            this.numericUpDown1.TabIndex = 0;
+            // 
             // MenuLanding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -382,6 +534,12 @@ namespace MomAndPops.Resources
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PepsiQuantity)).EndInit();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DietPepsiQuantity)).EndInit();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -415,5 +573,17 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.RadioButton PepsiSmall;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.NumericUpDown PepsiQuantity;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.RadioButton DietPepsiLarge;
+        private System.Windows.Forms.RadioButton DietPepsiMedium;
+        private System.Windows.Forms.RadioButton DietPepsiSmall;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.NumericUpDown DietPepsiQuantity;
     }
 }
