@@ -40,11 +40,11 @@ namespace MomAndPops
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -70,7 +70,7 @@ namespace MomAndPops
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.radioButton1.Location = new System.Drawing.Point(6, 4);
+            this.radioButton1.Location = new System.Drawing.Point(13, 7);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(58, 21);
             this.radioButton1.TabIndex = 2;
@@ -82,7 +82,7 @@ namespace MomAndPops
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.radioButton2.Location = new System.Drawing.Point(130, 4);
+            this.radioButton2.Location = new System.Drawing.Point(109, 7);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(65, 21);
             this.radioButton2.TabIndex = 3;
@@ -94,7 +94,7 @@ namespace MomAndPops
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.radioButton3.Location = new System.Drawing.Point(262, 4);
+            this.radioButton3.Location = new System.Drawing.Point(211, 7);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(56, 21);
             this.radioButton3.TabIndex = 4;
@@ -106,7 +106,7 @@ namespace MomAndPops
             // 
             this.radioButton4.AutoSize = true;
             this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.radioButton4.Location = new System.Drawing.Point(6, 8);
+            this.radioButton4.Location = new System.Drawing.Point(11, 6);
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(68, 21);
             this.radioButton4.TabIndex = 5;
@@ -118,7 +118,7 @@ namespace MomAndPops
             // 
             this.radioButton5.AutoSize = true;
             this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.radioButton5.Location = new System.Drawing.Point(117, 8);
+            this.radioButton5.Location = new System.Drawing.Point(118, 6);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(77, 21);
             this.radioButton5.TabIndex = 6;
@@ -169,31 +169,26 @@ namespace MomAndPops
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // panel1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
-            this.groupBox1.Location = new System.Drawing.Point(489, 241);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(0);
-            this.groupBox1.Size = new System.Drawing.Size(322, 34);
-            this.groupBox1.TabIndex = 11;
-            this.groupBox1.TabStop = false;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.panel1.Controls.Add(this.radioButton3);
+            this.panel1.Controls.Add(this.radioButton2);
+            this.panel1.Controls.Add(this.radioButton1);
+            this.panel1.Location = new System.Drawing.Point(507, 243);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(277, 37);
+            this.panel1.TabIndex = 13;
             // 
-            // groupBox2
+            // panel2
             // 
-            this.groupBox2.Controls.Add(this.radioButton5);
-            this.groupBox2.Controls.Add(this.radioButton4);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
-            this.groupBox2.Location = new System.Drawing.Point(555, 342);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(199, 35);
-            this.groupBox2.TabIndex = 12;
-            this.groupBox2.TabStop = false;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.panel2.Controls.Add(this.radioButton5);
+            this.panel2.Controls.Add(this.radioButton4);
+            this.panel2.Location = new System.Drawing.Point(554, 350);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(204, 38);
+            this.panel2.TabIndex = 14;
             // 
             // Payment
             // 
@@ -201,8 +196,8 @@ namespace MomAndPops
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -212,10 +207,10 @@ namespace MomAndPops
             this.Name = "Payment";
             this.Text = "Payment";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,7 +229,7 @@ namespace MomAndPops
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
     }
 }
