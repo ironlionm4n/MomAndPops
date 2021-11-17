@@ -295,7 +295,7 @@ namespace MomAndPops.Resources
             this.panel4.Controls.Add(this.PepsiQuantity);
             this.panel4.Location = new System.Drawing.Point(52, 99);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(275, 28);
+            this.panel4.Size = new System.Drawing.Size(243, 28);
             this.panel4.TabIndex = 3;
             // 
             // label10
@@ -320,7 +320,7 @@ namespace MomAndPops.Resources
             // 
             this.PepsiSmall.AutoSize = true;
             this.PepsiSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.PepsiSmall.Location = new System.Drawing.Point(98, 5);
+            this.PepsiSmall.Location = new System.Drawing.Point(123, 5);
             this.PepsiSmall.Name = "PepsiSmall";
             this.PepsiSmall.Size = new System.Drawing.Size(35, 21);
             this.PepsiSmall.TabIndex = 2;
@@ -332,7 +332,7 @@ namespace MomAndPops.Resources
             // 
             this.PepsiMedium.AutoSize = true;
             this.PepsiMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.PepsiMedium.Location = new System.Drawing.Point(139, 5);
+            this.PepsiMedium.Location = new System.Drawing.Point(164, 5);
             this.PepsiMedium.Name = "PepsiMedium";
             this.PepsiMedium.Size = new System.Drawing.Size(37, 21);
             this.PepsiMedium.TabIndex = 3;
@@ -344,7 +344,7 @@ namespace MomAndPops.Resources
             // 
             this.PepsiLarge.AutoSize = true;
             this.PepsiLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.PepsiLarge.Location = new System.Drawing.Point(182, 4);
+            this.PepsiLarge.Location = new System.Drawing.Point(207, 4);
             this.PepsiLarge.Name = "PepsiLarge";
             this.PepsiLarge.Size = new System.Drawing.Size(34, 21);
             this.PepsiLarge.TabIndex = 4;
