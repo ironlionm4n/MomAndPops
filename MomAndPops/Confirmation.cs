@@ -10,20 +10,17 @@ using System.Windows.Forms;
 
 namespace MomAndPops
 {
-    public partial class Payment : Form
+    public partial class Confirmation : Form
     {
-        public Payment()
+        public Confirmation()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if((radioButton1.Checked || radioButton2.Checked || radioButton3.Checked) && (radioButton4.Checked || radioButton5.Checked))
-            {
-                Form confirmation = new Confirmation();
-                confirmation.ShowDialog();
-            }
+            Form login = new LoginPage();
+            login.ShowDialog();
         }
     }
 }
