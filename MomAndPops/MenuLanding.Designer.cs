@@ -33,21 +33,27 @@ namespace MomAndPops.Resources
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.CookiePrice = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.ChocChipCookie = new System.Windows.Forms.Label();
             this.CookieQuantity = new System.Windows.Forms.NumericUpDown();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BreadstickBitesPrice = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.BreadstickBites = new System.Windows.Forms.Label();
             this.BreadstickBitesQuantity = new System.Windows.Forms.NumericUpDown();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.BreadsticksPanel = new System.Windows.Forms.Panel();
             this.BreadstickPrice = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.Breadsticks = new System.Windows.Forms.Label();
             this.BreadsticksQuantity = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.radioButton5 = new System.Windows.Forms.RadioButton();
+            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.panel6 = new System.Windows.Forms.Panel();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -68,29 +74,25 @@ namespace MomAndPops.Resources
             this.PepsiQuantity = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.label12 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.AddToOrder = new System.Windows.Forms.Button();
+            this.Checkout = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CookieQuantity)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BreadstickBitesQuantity)).BeginInit();
-            this.panel1.SuspendLayout();
+            this.BreadsticksPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BreadsticksQuantity)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DietPepsiQuantity)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PepsiQuantity)).BeginInit();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -107,7 +109,7 @@ namespace MomAndPops.Resources
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.panel2);
-            this.groupBox1.Controls.Add(this.panel1);
+            this.groupBox1.Controls.Add(this.BreadsticksPanel);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
@@ -121,7 +123,7 @@ namespace MomAndPops.Resources
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.panel3.Controls.Add(this.CookiePrice);
-            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.ChocChipCookie);
             this.panel3.Controls.Add(this.CookieQuantity);
             this.panel3.Location = new System.Drawing.Point(68, 264);
             this.panel3.Name = "panel3";
@@ -138,15 +140,15 @@ namespace MomAndPops.Resources
             this.CookiePrice.TabIndex = 2;
             this.CookiePrice.Text = "$4";
             // 
-            // label9
+            // ChocChipCookie
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label9.Location = new System.Drawing.Point(44, 5);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(161, 20);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Choclate Chip Cookie";
+            this.ChocChipCookie.AutoSize = true;
+            this.ChocChipCookie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.ChocChipCookie.Location = new System.Drawing.Point(44, 5);
+            this.ChocChipCookie.Name = "ChocChipCookie";
+            this.ChocChipCookie.Size = new System.Drawing.Size(161, 20);
+            this.ChocChipCookie.TabIndex = 1;
+            this.ChocChipCookie.Text = "Choclate Chip Cookie";
             // 
             // CookieQuantity
             // 
@@ -160,7 +162,7 @@ namespace MomAndPops.Resources
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.panel2.Controls.Add(this.BreadstickBitesPrice);
-            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.BreadstickBites);
             this.panel2.Controls.Add(this.BreadstickBitesQuantity);
             this.panel2.Location = new System.Drawing.Point(68, 146);
             this.panel2.Name = "panel2";
@@ -177,15 +179,15 @@ namespace MomAndPops.Resources
             this.BreadstickBitesPrice.TabIndex = 2;
             this.BreadstickBitesPrice.Text = "$2";
             // 
-            // label8
+            // BreadstickBites
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label8.Location = new System.Drawing.Point(44, 5);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(124, 20);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Breadstick Bites";
+            this.BreadstickBites.AutoSize = true;
+            this.BreadstickBites.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.BreadstickBites.Location = new System.Drawing.Point(44, 5);
+            this.BreadstickBites.Name = "BreadstickBites";
+            this.BreadstickBites.Size = new System.Drawing.Size(124, 20);
+            this.BreadstickBites.TabIndex = 1;
+            this.BreadstickBites.Text = "Breadstick Bites";
             // 
             // BreadstickBitesQuantity
             // 
@@ -195,16 +197,16 @@ namespace MomAndPops.Resources
             this.BreadstickBitesQuantity.Size = new System.Drawing.Size(35, 23);
             this.BreadstickBitesQuantity.TabIndex = 0;
             // 
-            // panel1
+            // BreadsticksPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.panel1.Controls.Add(this.BreadstickPrice);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.BreadsticksQuantity);
-            this.panel1.Location = new System.Drawing.Point(68, 102);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(212, 28);
-            this.panel1.TabIndex = 2;
+            this.BreadsticksPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.BreadsticksPanel.Controls.Add(this.BreadstickPrice);
+            this.BreadsticksPanel.Controls.Add(this.Breadsticks);
+            this.BreadsticksPanel.Controls.Add(this.BreadsticksQuantity);
+            this.BreadsticksPanel.Location = new System.Drawing.Point(68, 102);
+            this.BreadsticksPanel.Name = "BreadsticksPanel";
+            this.BreadsticksPanel.Size = new System.Drawing.Size(212, 28);
+            this.BreadsticksPanel.TabIndex = 2;
             // 
             // BreadstickPrice
             // 
@@ -217,15 +219,15 @@ namespace MomAndPops.Resources
             this.BreadstickPrice.Text = "$4";
             this.BreadstickPrice.Click += new System.EventHandler(this.BreadstickPrice_Click);
             // 
-            // label6
+            // Breadsticks
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(44, 5);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(92, 20);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Breadsticks";
+            this.Breadsticks.AutoSize = true;
+            this.Breadsticks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Breadsticks.Location = new System.Drawing.Point(44, 5);
+            this.Breadsticks.Name = "Breadsticks";
+            this.Breadsticks.Size = new System.Drawing.Size(92, 20);
+            this.Breadsticks.TabIndex = 1;
+            this.Breadsticks.Text = "Breadsticks";
             // 
             // BreadsticksQuantity
             // 
@@ -291,6 +293,73 @@ namespace MomAndPops.Resources
             this.groupBox3.Size = new System.Drawing.Size(364, 435);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.panel7.Controls.Add(this.radioButton4);
+            this.panel7.Controls.Add(this.radioButton5);
+            this.panel7.Controls.Add(this.radioButton6);
+            this.panel7.Controls.Add(this.label12);
+            this.panel7.Controls.Add(this.numericUpDown2);
+            this.panel7.Location = new System.Drawing.Point(52, 232);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(243, 28);
+            this.panel7.TabIndex = 7;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.radioButton4.Location = new System.Drawing.Point(206, 5);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(34, 21);
+            this.radioButton4.TabIndex = 4;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "L";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // radioButton5
+            // 
+            this.radioButton5.AutoSize = true;
+            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.radioButton5.Location = new System.Drawing.Point(164, 5);
+            this.radioButton5.Name = "radioButton5";
+            this.radioButton5.Size = new System.Drawing.Size(37, 21);
+            this.radioButton5.TabIndex = 3;
+            this.radioButton5.TabStop = true;
+            this.radioButton5.Text = "M";
+            this.radioButton5.UseVisualStyleBackColor = true;
+            // 
+            // radioButton6
+            // 
+            this.radioButton6.AutoSize = true;
+            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.radioButton6.Location = new System.Drawing.Point(123, 5);
+            this.radioButton6.Name = "radioButton6";
+            this.radioButton6.Size = new System.Drawing.Size(35, 21);
+            this.radioButton6.TabIndex = 2;
+            this.radioButton6.TabStop = true;
+            this.radioButton6.Text = "S";
+            this.radioButton6.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.label12.Location = new System.Drawing.Point(36, 3);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(81, 20);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "Diet Pepsi";
+            // 
+            // numericUpDown2
+            // 
+            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.numericUpDown2.Location = new System.Drawing.Point(3, 2);
+            this.numericUpDown2.Name = "numericUpDown2";
+            this.numericUpDown2.Size = new System.Drawing.Size(35, 23);
+            this.numericUpDown2.TabIndex = 0;
             // 
             // panel6
             // 
@@ -513,72 +582,27 @@ namespace MomAndPops.Resources
             this.label1.TabIndex = 2;
             this.label1.Text = "Mom && Pop\'s Pizzeria";
             // 
-            // panel7
+            // AddToOrder
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.panel7.Controls.Add(this.radioButton4);
-            this.panel7.Controls.Add(this.radioButton5);
-            this.panel7.Controls.Add(this.radioButton6);
-            this.panel7.Controls.Add(this.label12);
-            this.panel7.Controls.Add(this.numericUpDown2);
-            this.panel7.Location = new System.Drawing.Point(52, 232);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(243, 28);
-            this.panel7.TabIndex = 7;
+            this.AddToOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddToOrder.Location = new System.Drawing.Point(580, 565);
+            this.AddToOrder.Name = "AddToOrder";
+            this.AddToOrder.Size = new System.Drawing.Size(132, 44);
+            this.AddToOrder.TabIndex = 3;
+            this.AddToOrder.Text = "Add To Cart";
+            this.AddToOrder.UseVisualStyleBackColor = true;
+            this.AddToOrder.Click += new System.EventHandler(this.AddToOrder_Click);
             // 
-            // radioButton4
+            // Checkout
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.radioButton4.Location = new System.Drawing.Point(206, 5);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(34, 21);
-            this.radioButton4.TabIndex = 4;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "L";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.radioButton5.Location = new System.Drawing.Point(164, 5);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(37, 21);
-            this.radioButton5.TabIndex = 3;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "M";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton6
-            // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.radioButton6.Location = new System.Drawing.Point(123, 5);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(35, 21);
-            this.radioButton6.TabIndex = 2;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "S";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label12.Location = new System.Drawing.Point(36, 3);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(81, 20);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Diet Pepsi";
-            // 
-            // numericUpDown2
-            // 
-            this.numericUpDown2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.numericUpDown2.Location = new System.Drawing.Point(3, 2);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(35, 23);
-            this.numericUpDown2.TabIndex = 0;
+            this.Checkout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Checkout.Location = new System.Drawing.Point(818, 565);
+            this.Checkout.Name = "Checkout";
+            this.Checkout.Size = new System.Drawing.Size(132, 44);
+            this.Checkout.TabIndex = 4;
+            this.Checkout.Text = "Checkout";
+            this.Checkout.UseVisualStyleBackColor = true;
+            this.Checkout.Click += new System.EventHandler(this.Checkout_Click);
             // 
             // MenuLanding
             // 
@@ -586,6 +610,8 @@ namespace MomAndPops.Resources
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.Checkout);
+            this.Controls.Add(this.AddToOrder);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -600,13 +626,16 @@ namespace MomAndPops.Resources
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BreadstickBitesQuantity)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.BreadsticksPanel.ResumeLayout(false);
+            this.BreadsticksPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BreadsticksQuantity)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -616,9 +645,6 @@ namespace MomAndPops.Resources
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PepsiQuantity)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -627,7 +653,7 @@ namespace MomAndPops.Resources
         #endregion
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel BreadsticksPanel;
         private System.Windows.Forms.NumericUpDown BreadsticksQuantity;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -637,14 +663,14 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label BreadstickPrice;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label Breadsticks;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label BreadstickBitesPrice;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label BreadstickBites;
         private System.Windows.Forms.NumericUpDown BreadstickBitesQuantity;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label CookiePrice;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label ChocChipCookie;
         private System.Windows.Forms.NumericUpDown CookieQuantity;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.RadioButton PepsiLarge;
@@ -670,5 +696,7 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.Button AddToOrder;
+        private System.Windows.Forms.Button Checkout;
     }
 }

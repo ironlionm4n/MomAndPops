@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MomAndPops.Resources;
 
 namespace MomAndPops
 {
@@ -16,7 +17,9 @@ namespace MomAndPops
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Payment());
+            // Application.Run(new Payment());
+            // Application.Run(new LoginPage());
+            Application.Run(new MenuLanding());
         }
     }
 }

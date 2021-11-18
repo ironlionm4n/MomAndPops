@@ -46,11 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MenuItem.cs" />
+    <Compile Include="Order.cs" />
     <Compile Include="Confirmation.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Confirmation.Designer.cs">
       <DependentUpon>Confirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cart.Designer.cs">
+      <DependentUpon>Cart.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
@@ -74,6 +82,9 @@
     </Compile>
     <EmbeddedResource Include="Confirmation.resx">
       <DependentUpon>Confirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cart.resx">
+      <DependentUpon>Cart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
@@ -109,6 +120,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\cheezePizza.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\momAndPopsSlip.jpg" />
+    <Content Include="Resources\testSlip.jpg" />
+    <None Include="Resources\testSlip1.jpg" />
+    <None Include="Resources\momAndPopsSlip1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
