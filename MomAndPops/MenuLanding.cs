@@ -31,5 +31,16 @@ namespace MomAndPops.Resources
         {
 
         }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            Form login = new LoginPage();
+            login.ShowDialog();
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
