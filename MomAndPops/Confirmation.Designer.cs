@@ -43,9 +43,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.label1.Location = new System.Drawing.Point(332, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(606, 63);
+            this.label1.Size = new System.Drawing.Size(552, 63);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Mom and Pop\'s Pizzeria";
+            this.label1.Text = "Mom && Pop\'s Pizzeria";
             // 
             // pictureBox1
             // 
@@ -91,10 +91,10 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.button1.Location = new System.Drawing.Point(568, 518);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(72, 36);
+            this.button1.Size = new System.Drawing.Size(121, 55);
             this.button1.TabIndex = 5;
             this.button1.Text = "Logout";
             this.button1.UseVisualStyleBackColor = true;

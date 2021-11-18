@@ -59,9 +59,9 @@ namespace MomAndPops
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.label1.Location = new System.Drawing.Point(336, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(606, 63);
+            this.label1.Size = new System.Drawing.Size(552, 63);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Mom and Pop\'s Pizzeria";
+            this.label1.Text = "Mom && Pop\'s Pizzeria";
             // 
             // radioButton1
             // 
