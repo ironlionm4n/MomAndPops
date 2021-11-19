@@ -12,7 +12,7 @@ namespace MomAndPops
 {
     public partial class Payment : Form
     {
-        Order customerOrder;
+        Order newOrder;
         public Payment()
         {
             InitializeComponent();
@@ -20,9 +20,9 @@ namespace MomAndPops
 
         public void SetOrder(Order customerOrder)
         {
-            customerOrder = customerOrder;
+            newOrder = customerOrder;
             float subtotal = 0;
-            foreach(MenuItem m in customerOrder.currentOrder)
+            foreach(MenuItem m in newOrder.currentOrder)
             {
                 subtotal += m.ItemPrice;
             }

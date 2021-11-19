@@ -92,7 +92,6 @@ namespace MomAndPops.Resources
             this.SmallPanCrust = new System.Windows.Forms.RadioButton();
             this.SmallRegularCrust = new System.Windows.Forms.RadioButton();
             this.SmallThinCrust = new System.Windows.Forms.RadioButton();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.LargeCustomization = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.LargePineapple = new System.Windows.Forms.CheckBox();
@@ -182,29 +181,21 @@ namespace MomAndPops.Resources
             this.CartXButton = new System.Windows.Forms.Label();
             this.CartHeader = new System.Windows.Forms.Label();
             this.CartPanel = new System.Windows.Forms.Panel();
+            this.CartTextBox = new System.Windows.Forms.TextBox();
             this.TotalLabel = new System.Windows.Forms.Label();
             this.CheckoutButton = new System.Windows.Forms.Button();
-            this.CurrentOrderLabel = new System.Windows.Forms.Label();
-            this.vScrollBar3 = new System.Windows.Forms.VScrollBar();
             this.label23 = new System.Windows.Forms.Label();
             this.PreviousOrders = new System.Windows.Forms.Panel();
             this.PreviousOrderOneAddToCart = new System.Windows.Forms.Button();
             this.PreviousOrderTwoAddToCart = new System.Windows.Forms.Button();
-            this.PreviousOrderOneLabel = new System.Windows.Forms.Label();
-            this.PreviousOrderThreeLabel = new System.Windows.Forms.Label();
             this.PreviousOrdersThreeAddToCart = new System.Windows.Forms.Button();
-            this.PreviousOrderTwoLabel = new System.Windows.Forms.Label();
-            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.label28 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PreviousOrderXButton = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.CartTextBox = new System.Windows.Forms.TextBox();
-            this.TotalLabel = new System.Windows.Forms.Label();
-            this.CheckoutButton = new System.Windows.Forms.Button();
-            this.CurrentOrderLabel = new System.Windows.Forms.Label();
-            this.vScrollBar3 = new System.Windows.Forms.VScrollBar();
-            this.label23 = new System.Windows.Forms.Label();
+            this.PreviousOrder1Label = new System.Windows.Forms.TextBox();
+            this.PreviousOrder2Label = new System.Windows.Forms.TextBox();
+            this.PreviousOrder3Label = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CookieQuantity)).BeginInit();
@@ -430,10 +421,10 @@ namespace MomAndPops.Resources
             // 
             // PizzaPanel
             // 
+            this.PizzaPanel.AutoScroll = true;
             this.PizzaPanel.Controls.Add(this.ExtraLargeCustomization);
             this.PizzaPanel.Controls.Add(this.MediumCustimization);
             this.PizzaPanel.Controls.Add(this.SmallCustimization);
-            this.PizzaPanel.Controls.Add(this.vScrollBar1);
             this.PizzaPanel.Controls.Add(this.LargeCustomization);
             this.PizzaPanel.Controls.Add(this.label18);
             this.PizzaPanel.Controls.Add(this.LargePizzaPrice);
@@ -447,9 +438,9 @@ namespace MomAndPops.Resources
             this.PizzaPanel.Controls.Add(this.label19);
             this.PizzaPanel.Controls.Add(this.SmallPizzaQuantity);
             this.PizzaPanel.Controls.Add(this.LargePizzaQuantity);
-            this.PizzaPanel.Location = new System.Drawing.Point(10, 65);
+            this.PizzaPanel.Location = new System.Drawing.Point(0, 68);
             this.PizzaPanel.Name = "PizzaPanel";
-            this.PizzaPanel.Size = new System.Drawing.Size(352, 363);
+            this.PizzaPanel.Size = new System.Drawing.Size(362, 363);
             this.PizzaPanel.TabIndex = 3;
             // 
             // ExtraLargeCustomization
@@ -642,7 +633,7 @@ namespace MomAndPops.Resources
             this.panel16.Controls.Add(this.MediumSuasage);
             this.panel16.Controls.Add(this.MediumPepperoni);
             this.panel16.Controls.Add(this.MediumCheese);
-            this.panel16.Location = new System.Drawing.Point(16, 51);
+            this.panel16.Location = new System.Drawing.Point(16, 45);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(300, 103);
             this.panel16.TabIndex = 15;
@@ -963,16 +954,6 @@ namespace MomAndPops.Resources
             this.SmallThinCrust.Text = "Thin Crust";
             this.SmallThinCrust.UseVisualStyleBackColor = true;
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
-            this.vScrollBar1.Location = new System.Drawing.Point(334, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(22, 364);
-            this.vScrollBar1.TabIndex = 17;
-            this.vScrollBar1.Value = 1;
-            this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
-            // 
             // LargeCustomization
             // 
             this.LargeCustomization.Controls.Add(this.panel15);
@@ -1158,7 +1139,7 @@ namespace MomAndPops.Resources
             // 
             this.LargePizzaPrice.AutoSize = true;
             this.LargePizzaPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LargePizzaPrice.Location = new System.Drawing.Point(233, 378);
+            this.LargePizzaPrice.Location = new System.Drawing.Point(233, 384);
             this.LargePizzaPrice.Name = "LargePizzaPrice";
             this.LargePizzaPrice.Size = new System.Drawing.Size(27, 20);
             this.LargePizzaPrice.TabIndex = 10;
@@ -1177,7 +1158,7 @@ namespace MomAndPops.Resources
             // XLargePizzaQuantity
             // 
             this.XLargePizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.XLargePizzaQuantity.Location = new System.Drawing.Point(10, 557);
+            this.XLargePizzaQuantity.Location = new System.Drawing.Point(10, 562);
             this.XLargePizzaQuantity.Name = "XLargePizzaQuantity";
             this.XLargePizzaQuantity.Size = new System.Drawing.Size(35, 23);
             this.XLargePizzaQuantity.TabIndex = 11;
@@ -1214,7 +1195,7 @@ namespace MomAndPops.Resources
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label20.Location = new System.Drawing.Point(51, 559);
+            this.label20.Location = new System.Drawing.Point(51, 564);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(119, 17);
             this.label20.TabIndex = 12;
@@ -1234,7 +1215,7 @@ namespace MomAndPops.Resources
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label19.Location = new System.Drawing.Point(44, 378);
+            this.label19.Location = new System.Drawing.Point(44, 384);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(83, 17);
             this.label19.TabIndex = 9;
@@ -1251,7 +1232,7 @@ namespace MomAndPops.Resources
             // LargePizzaQuantity
             // 
             this.LargePizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargePizzaQuantity.Location = new System.Drawing.Point(3, 376);
+            this.LargePizzaQuantity.Location = new System.Drawing.Point(3, 382);
             this.LargePizzaQuantity.Name = "LargePizzaQuantity";
             this.LargePizzaQuantity.Size = new System.Drawing.Size(35, 23);
             this.LargePizzaQuantity.TabIndex = 8;
@@ -1900,18 +1881,18 @@ namespace MomAndPops.Resources
             // CartHeaderBackground
             // 
             this.CartHeaderBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.CartHeaderBackground.Location = new System.Drawing.Point(0, 0);
+            this.CartHeaderBackground.Location = new System.Drawing.Point(-1, -1);
             this.CartHeaderBackground.Name = "CartHeaderBackground";
-            this.CartHeaderBackground.Size = new System.Drawing.Size(242, 64);
+            this.CartHeaderBackground.Size = new System.Drawing.Size(334, 64);
             this.CartHeaderBackground.TabIndex = 8;
             this.CartHeaderBackground.TabStop = false;
             // 
             // CartXBackground
             // 
             this.CartXBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
-            this.CartXBackground.Location = new System.Drawing.Point(229, 0);
+            this.CartXBackground.Location = new System.Drawing.Point(330, -1);
             this.CartXBackground.Name = "CartXBackground";
-            this.CartXBackground.Size = new System.Drawing.Size(78, 64);
+            this.CartXBackground.Size = new System.Drawing.Size(67, 64);
             this.CartXBackground.TabIndex = 9;
             this.CartXBackground.TabStop = false;
             this.CartXBackground.Click += new System.EventHandler(this.CartXBackground_Click);
@@ -1921,7 +1902,7 @@ namespace MomAndPops.Resources
             this.CartXButton.AutoSize = true;
             this.CartXButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
             this.CartXButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.CartXButton.Location = new System.Drawing.Point(241, 1);
+            this.CartXButton.Location = new System.Drawing.Point(334, -1);
             this.CartXButton.Name = "CartXButton";
             this.CartXButton.Size = new System.Drawing.Size(63, 63);
             this.CartXButton.TabIndex = 10;
@@ -1933,7 +1914,7 @@ namespace MomAndPops.Resources
             this.CartHeader.AutoSize = true;
             this.CartHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.CartHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.CartHeader.Location = new System.Drawing.Point(64, 8);
+            this.CartHeader.Location = new System.Drawing.Point(126, 7);
             this.CartHeader.Name = "CartHeader";
             this.CartHeader.Size = new System.Drawing.Size(106, 46);
             this.CartHeader.TabIndex = 10;
@@ -1945,217 +1926,36 @@ namespace MomAndPops.Resources
             this.CartPanel.Controls.Add(this.CartTextBox);
             this.CartPanel.Controls.Add(this.TotalLabel);
             this.CartPanel.Controls.Add(this.CheckoutButton);
-            this.CartPanel.Controls.Add(this.CurrentOrderLabel);
-            this.CartPanel.Controls.Add(this.vScrollBar3);
             this.CartPanel.Controls.Add(this.label23);
             this.CartPanel.Controls.Add(this.CartHeader);
             this.CartPanel.Controls.Add(this.CartHeaderBackground);
             this.CartPanel.Controls.Add(this.CartXButton);
             this.CartPanel.Controls.Add(this.CartXBackground);
             this.CartPanel.Enabled = false;
-            this.CartPanel.Location = new System.Drawing.Point(955, 24);
+            this.CartPanel.Location = new System.Drawing.Point(864, 24);
             this.CartPanel.Name = "CartPanel";
-            this.CartPanel.Size = new System.Drawing.Size(307, 530);
+            this.CartPanel.Size = new System.Drawing.Size(398, 530);
             this.CartPanel.TabIndex = 12;
             this.CartPanel.Visible = false;
-            // 
-            // TotalLabel
-            // 
-            this.TotalLabel.AutoSize = true;
-            this.TotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.TotalLabel.Location = new System.Drawing.Point(147, 419);
-            this.TotalLabel.Name = "TotalLabel";
-            this.TotalLabel.Size = new System.Drawing.Size(134, 40);
-            this.TotalLabel.TabIndex = 14;
-            this.TotalLabel.Text = "Order total will be \r\ndisplayed here";
-            // 
-            // CheckoutButton
-            // 
-            this.CheckoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.CheckoutButton.Location = new System.Drawing.Point(82, 464);
-            this.CheckoutButton.Name = "CheckoutButton";
-            this.CheckoutButton.Size = new System.Drawing.Size(142, 52);
-            this.CheckoutButton.TabIndex = 13;
-            this.CheckoutButton.Text = "Checkout";
-            this.CheckoutButton.UseVisualStyleBackColor = true;
-            this.CheckoutButton.Click += new System.EventHandler(this.CheckoutButton_Click);
-            // 
-            // CurrentOrderLabel
-            // 
-            this.CurrentOrderLabel.AutoSize = true;
-            this.CurrentOrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CurrentOrderLabel.Location = new System.Drawing.Point(47, 137);
-            this.CurrentOrderLabel.Name = "CurrentOrderLabel";
-            this.CurrentOrderLabel.Size = new System.Drawing.Size(189, 48);
-            this.CurrentOrderLabel.TabIndex = 11;
-            this.CurrentOrderLabel.Text = "Current Order will be \r\ndisplayed here";
-            this.CurrentOrderLabel.Click += new System.EventHandler(this.label22_Click);
-            // 
-            // vScrollBar3
-            // 
-            this.vScrollBar3.Location = new System.Drawing.Point(282, 64);
-            this.vScrollBar3.Name = "vScrollBar3";
-            this.vScrollBar3.Size = new System.Drawing.Size(22, 355);
-            this.vScrollBar3.TabIndex = 15;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(11, 428);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(87, 29);
-            this.label23.TabIndex = 12;
-            this.label23.Text = "Total: ";
-            // 
-            // PreviousOrders
-            // 
-            this.PreviousOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.PreviousOrders.Controls.Add(this.PreviousOrderOneAddToCart);
-            this.PreviousOrders.Controls.Add(this.PreviousOrderTwoAddToCart);
-            this.PreviousOrders.Controls.Add(this.PreviousOrderOneLabel);
-            this.PreviousOrders.Controls.Add(this.PreviousOrderThreeLabel);
-            this.PreviousOrders.Controls.Add(this.PreviousOrdersThreeAddToCart);
-            this.PreviousOrders.Controls.Add(this.PreviousOrderTwoLabel);
-            this.PreviousOrders.Controls.Add(this.vScrollBar2);
-            this.PreviousOrders.Controls.Add(this.label28);
-            this.PreviousOrders.Controls.Add(this.pictureBox1);
-            this.PreviousOrders.Controls.Add(this.PreviousOrderXButton);
-            this.PreviousOrders.Controls.Add(this.pictureBox2);
-            this.PreviousOrders.Enabled = false;
-            this.PreviousOrders.Location = new System.Drawing.Point(954, 24);
-            this.PreviousOrders.Name = "PreviousOrders";
-            this.PreviousOrders.Size = new System.Drawing.Size(307, 529);
-            this.PreviousOrders.TabIndex = 15;
-            this.PreviousOrders.Visible = false;
-            // 
-            // PreviousOrderOneAddToCart
-            // 
-            this.PreviousOrderOneAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PreviousOrderOneAddToCart.Location = new System.Drawing.Point(82, 131);
-            this.PreviousOrderOneAddToCart.Name = "PreviousOrderOneAddToCart";
-            this.PreviousOrderOneAddToCart.Size = new System.Drawing.Size(125, 37);
-            this.PreviousOrderOneAddToCart.TabIndex = 17;
-            this.PreviousOrderOneAddToCart.Text = "Add to Cart";
-            this.PreviousOrderOneAddToCart.UseVisualStyleBackColor = true;
-            // 
-            // PreviousOrderTwoAddToCart
-            // 
-            this.PreviousOrderTwoAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PreviousOrderTwoAddToCart.Location = new System.Drawing.Point(82, 254);
-            this.PreviousOrderTwoAddToCart.Name = "PreviousOrderTwoAddToCart";
-            this.PreviousOrderTwoAddToCart.Size = new System.Drawing.Size(125, 37);
-            this.PreviousOrderTwoAddToCart.TabIndex = 16;
-            this.PreviousOrderTwoAddToCart.Text = "Add to Cart";
-            this.PreviousOrderTwoAddToCart.UseVisualStyleBackColor = true;
-            // 
-            // PreviousOrderOneLabel
-            // 
-            this.PreviousOrderOneLabel.AutoSize = true;
-            this.PreviousOrderOneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PreviousOrderOneLabel.Location = new System.Drawing.Point(48, 76);
-            this.PreviousOrderOneLabel.Name = "PreviousOrderOneLabel";
-            this.PreviousOrderOneLabel.Size = new System.Drawing.Size(209, 48);
-            this.PreviousOrderOneLabel.TabIndex = 15;
-            this.PreviousOrderOneLabel.Text = "Previous Orders will be \r\ndisplayed here";
-            // 
-            // PreviousOrderThreeLabel
-            // 
-            this.PreviousOrderThreeLabel.AutoSize = true;
-            this.PreviousOrderThreeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PreviousOrderThreeLabel.Location = new System.Drawing.Point(48, 312);
-            this.PreviousOrderThreeLabel.Name = "PreviousOrderThreeLabel";
-            this.PreviousOrderThreeLabel.Size = new System.Drawing.Size(209, 48);
-            this.PreviousOrderThreeLabel.TabIndex = 14;
-            this.PreviousOrderThreeLabel.Text = "Previous Orders will be \r\ndisplayed here";
-            // 
-            // PreviousOrdersThreeAddToCart
-            // 
-            this.PreviousOrdersThreeAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PreviousOrdersThreeAddToCart.Location = new System.Drawing.Point(82, 378);
-            this.PreviousOrdersThreeAddToCart.Name = "PreviousOrdersThreeAddToCart";
-            this.PreviousOrdersThreeAddToCart.Size = new System.Drawing.Size(125, 37);
-            this.PreviousOrdersThreeAddToCart.TabIndex = 13;
-            this.PreviousOrdersThreeAddToCart.Text = "Add to Cart";
-            this.PreviousOrdersThreeAddToCart.UseVisualStyleBackColor = true;
-            // 
-            // PreviousOrderTwoLabel
-            // 
-            this.PreviousOrderTwoLabel.AutoSize = true;
-            this.PreviousOrderTwoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PreviousOrderTwoLabel.Location = new System.Drawing.Point(48, 191);
-            this.PreviousOrderTwoLabel.Name = "PreviousOrderTwoLabel";
-            this.PreviousOrderTwoLabel.Size = new System.Drawing.Size(209, 48);
-            this.PreviousOrderTwoLabel.TabIndex = 11;
-            this.PreviousOrderTwoLabel.Text = "Previous Orders will be \r\ndisplayed here";
-            // 
-            // vScrollBar2
-            // 
-            this.vScrollBar2.Location = new System.Drawing.Point(287, 64);
-            this.vScrollBar2.Name = "vScrollBar2";
-            this.vScrollBar2.Size = new System.Drawing.Size(17, 465);
-            this.vScrollBar2.TabIndex = 14;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F);
-            this.label28.Location = new System.Drawing.Point(6, 10);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(230, 36);
-            this.label28.TabIndex = 10;
-            this.label28.Text = "Previous Orders";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(242, 64);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
-            // 
-            // PreviousOrderXButton
-            // 
-            this.PreviousOrderXButton.AutoSize = true;
-            this.PreviousOrderXButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
-            this.PreviousOrderXButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.PreviousOrderXButton.Location = new System.Drawing.Point(241, 1);
-            this.PreviousOrderXButton.Name = "PreviousOrderXButton";
-            this.PreviousOrderXButton.Size = new System.Drawing.Size(63, 63);
-            this.PreviousOrderXButton.TabIndex = 10;
-            this.PreviousOrderXButton.Text = "X";
-            this.PreviousOrderXButton.Click += new System.EventHandler(this.PreviousOrderXButton_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
-            this.pictureBox2.Location = new System.Drawing.Point(229, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 64);
-            this.pictureBox2.TabIndex = 9;
-            this.pictureBox2.TabStop = false;
             // 
             // CartTextBox
             // 
             this.CartTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.CartTextBox.Cursor = System.Windows.Forms.Cursors.Default;
-            this.CartTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CartTextBox.Location = new System.Drawing.Point(21, 137);
+            this.CartTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.CartTextBox.Location = new System.Drawing.Point(-1, 59);
             this.CartTextBox.Multiline = true;
             this.CartTextBox.Name = "CartTextBox";
             this.CartTextBox.ReadOnly = true;
             this.CartTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.CartTextBox.Size = new System.Drawing.Size(250, 250);
+            this.CartTextBox.Size = new System.Drawing.Size(398, 364);
             this.CartTextBox.TabIndex = 16;
-            this.CartTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TotalLabel
             // 
             this.TotalLabel.AutoSize = true;
             this.TotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.TotalLabel.Location = new System.Drawing.Point(114, 412);
+            this.TotalLabel.Location = new System.Drawing.Point(100, 426);
             this.TotalLabel.Name = "TotalLabel";
             this.TotalLabel.Size = new System.Drawing.Size(104, 31);
             this.TotalLabel.TabIndex = 14;
@@ -2170,34 +1970,143 @@ namespace MomAndPops.Resources
             this.CheckoutButton.TabIndex = 13;
             this.CheckoutButton.Text = "Checkout";
             this.CheckoutButton.UseVisualStyleBackColor = true;
-            // 
-            // CurrentOrderLabel
-            // 
-            this.CurrentOrderLabel.AutoSize = true;
-            this.CurrentOrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CurrentOrderLabel.Location = new System.Drawing.Point(53, 67);
-            this.CurrentOrderLabel.Name = "CurrentOrderLabel";
-            this.CurrentOrderLabel.Size = new System.Drawing.Size(189, 48);
-            this.CurrentOrderLabel.TabIndex = 11;
-            this.CurrentOrderLabel.Text = "Current Order will be \r\ndisplayed here";
-            this.CurrentOrderLabel.Click += new System.EventHandler(this.label22_Click);
-            // 
-            // vScrollBar3
-            // 
-            this.vScrollBar3.Location = new System.Drawing.Point(282, 64);
-            this.vScrollBar3.Name = "vScrollBar3";
-            this.vScrollBar3.Size = new System.Drawing.Size(22, 355);
-            this.vScrollBar3.TabIndex = 15;
+            this.CheckoutButton.Click += new System.EventHandler(this.CheckoutButton_Click);
             // 
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(30, 413);
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.Location = new System.Drawing.Point(11, 428);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(97, 31);
+            this.label23.Size = new System.Drawing.Size(87, 29);
             this.label23.TabIndex = 12;
             this.label23.Text = "Total: ";
+            // 
+            // PreviousOrders
+            // 
+            this.PreviousOrders.AutoScroll = true;
+            this.PreviousOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.PreviousOrders.Controls.Add(this.PreviousOrder3Label);
+            this.PreviousOrders.Controls.Add(this.PreviousOrder2Label);
+            this.PreviousOrders.Controls.Add(this.PreviousOrder1Label);
+            this.PreviousOrders.Controls.Add(this.PreviousOrdersThreeAddToCart);
+            this.PreviousOrders.Controls.Add(this.PreviousOrderOneAddToCart);
+            this.PreviousOrders.Controls.Add(this.PreviousOrderTwoAddToCart);
+            this.PreviousOrders.Controls.Add(this.label28);
+            this.PreviousOrders.Controls.Add(this.pictureBox1);
+            this.PreviousOrders.Controls.Add(this.PreviousOrderXButton);
+            this.PreviousOrders.Controls.Add(this.pictureBox2);
+            this.PreviousOrders.Enabled = false;
+            this.PreviousOrders.Location = new System.Drawing.Point(863, 24);
+            this.PreviousOrders.Margin = new System.Windows.Forms.Padding(10);
+            this.PreviousOrders.Name = "PreviousOrders";
+            this.PreviousOrders.Size = new System.Drawing.Size(399, 529);
+            this.PreviousOrders.TabIndex = 15;
+            this.PreviousOrders.Visible = false;
+            // 
+            // PreviousOrderOneAddToCart
+            // 
+            this.PreviousOrderOneAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.PreviousOrderOneAddToCart.Location = new System.Drawing.Point(125, 470);
+            this.PreviousOrderOneAddToCart.Name = "PreviousOrderOneAddToCart";
+            this.PreviousOrderOneAddToCart.Size = new System.Drawing.Size(125, 37);
+            this.PreviousOrderOneAddToCart.TabIndex = 17;
+            this.PreviousOrderOneAddToCart.Text = "Add to Cart";
+            this.PreviousOrderOneAddToCart.UseVisualStyleBackColor = true;
+            // 
+            // PreviousOrderTwoAddToCart
+            // 
+            this.PreviousOrderTwoAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.PreviousOrderTwoAddToCart.Location = new System.Drawing.Point(125, 247);
+            this.PreviousOrderTwoAddToCart.Name = "PreviousOrderTwoAddToCart";
+            this.PreviousOrderTwoAddToCart.Size = new System.Drawing.Size(125, 37);
+            this.PreviousOrderTwoAddToCart.TabIndex = 16;
+            this.PreviousOrderTwoAddToCart.Text = "Add to Cart";
+            this.PreviousOrderTwoAddToCart.UseVisualStyleBackColor = true;
+            // 
+            // PreviousOrdersThreeAddToCart
+            // 
+            this.PreviousOrdersThreeAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.PreviousOrdersThreeAddToCart.Location = new System.Drawing.Point(125, 694);
+            this.PreviousOrdersThreeAddToCart.Name = "PreviousOrdersThreeAddToCart";
+            this.PreviousOrdersThreeAddToCart.Size = new System.Drawing.Size(125, 37);
+            this.PreviousOrdersThreeAddToCart.TabIndex = 13;
+            this.PreviousOrdersThreeAddToCart.Text = "Add to Cart";
+            this.PreviousOrdersThreeAddToCart.UseVisualStyleBackColor = true;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
+            this.label28.Location = new System.Drawing.Point(45, 17);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(245, 36);
+            this.label28.TabIndex = 10;
+            this.label28.Text = "Previous Orders";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(319, 64);
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // PreviousOrderXButton
+            // 
+            this.PreviousOrderXButton.AutoSize = true;
+            this.PreviousOrderXButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
+            this.PreviousOrderXButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.PreviousOrderXButton.Location = new System.Drawing.Point(320, 1);
+            this.PreviousOrderXButton.Name = "PreviousOrderXButton";
+            this.PreviousOrderXButton.Size = new System.Drawing.Size(63, 63);
+            this.PreviousOrderXButton.TabIndex = 10;
+            this.PreviousOrderXButton.Text = "X";
+            this.PreviousOrderXButton.Click += new System.EventHandler(this.PreviousOrderXButton_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
+            this.pictureBox2.Location = new System.Drawing.Point(320, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(78, 64);
+            this.pictureBox2.TabIndex = 9;
+            this.pictureBox2.TabStop = false;
+            // 
+            // PreviousOrder1Label
+            // 
+            this.PreviousOrder1Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
+            this.PreviousOrder1Label.Location = new System.Drawing.Point(16, 81);
+            this.PreviousOrder1Label.Multiline = true;
+            this.PreviousOrder1Label.Name = "PreviousOrder1Label";
+            this.PreviousOrder1Label.ReadOnly = true;
+            this.PreviousOrder1Label.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.PreviousOrder1Label.Size = new System.Drawing.Size(342, 163);
+            this.PreviousOrder1Label.TabIndex = 16;
+            // 
+            // PreviousOrder2Label
+            // 
+            this.PreviousOrder2Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
+            this.PreviousOrder2Label.Location = new System.Drawing.Point(16, 307);
+            this.PreviousOrder2Label.Multiline = true;
+            this.PreviousOrder2Label.Name = "PreviousOrder2Label";
+            this.PreviousOrder2Label.ReadOnly = true;
+            this.PreviousOrder2Label.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.PreviousOrder2Label.Size = new System.Drawing.Size(342, 163);
+            this.PreviousOrder2Label.TabIndex = 18;
+            // 
+            // PreviousOrder3Label
+            // 
+            this.PreviousOrder3Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
+            this.PreviousOrder3Label.Location = new System.Drawing.Point(16, 530);
+            this.PreviousOrder3Label.Multiline = true;
+            this.PreviousOrder3Label.Name = "PreviousOrder3Label";
+            this.PreviousOrder3Label.ReadOnly = true;
+            this.PreviousOrder3Label.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.PreviousOrder3Label.Size = new System.Drawing.Size(342, 163);
+            this.PreviousOrder3Label.TabIndex = 19;
             // 
             // MenuLanding
             // 
@@ -2401,12 +2310,10 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.PictureBox CartXBackground;
         private System.Windows.Forms.Label CartHeader;
         private System.Windows.Forms.Panel CartPanel;
-        private System.Windows.Forms.Label CurrentOrderLabel;
         private System.Windows.Forms.Label TotalLabel;
         private System.Windows.Forms.Button CheckoutButton;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel SmallCustimization;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.Panel MediumCustimization;
         private System.Windows.Forms.Panel panel16;
         private System.Windows.Forms.CheckBox MediumPineapple;
@@ -2454,18 +2361,16 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.RadioButton ExtaLargeThinCrust;
         private System.Windows.Forms.Panel PreviousOrders;
         private System.Windows.Forms.Button PreviousOrdersThreeAddToCart;
-        private System.Windows.Forms.Label PreviousOrderTwoLabel;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label PreviousOrderXButton;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button PreviousOrderOneAddToCart;
         private System.Windows.Forms.Button PreviousOrderTwoAddToCart;
-        private System.Windows.Forms.Label PreviousOrderOneLabel;
-        private System.Windows.Forms.Label PreviousOrderThreeLabel;
-        private System.Windows.Forms.VScrollBar vScrollBar2;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox CartTextBox;
-        private System.Windows.Forms.VScrollBar vScrollBar3;
+        private System.Windows.Forms.TextBox PreviousOrder1Label;
+        private System.Windows.Forms.TextBox PreviousOrder3Label;
+        private System.Windows.Forms.TextBox PreviousOrder2Label;
     }
 }

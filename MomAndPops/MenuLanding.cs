@@ -174,5 +174,7 @@ namespace MomAndPops.Resources
             payment.SetOrder(GetOrder());
             payment.Show();
         }
+
+      
     }
 }
