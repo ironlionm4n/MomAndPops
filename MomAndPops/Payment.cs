@@ -25,5 +25,10 @@ namespace MomAndPops
                 confirmation.ShowDialog();
             }
         }
+
+        private void Total_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

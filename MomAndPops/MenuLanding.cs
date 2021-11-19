@@ -78,5 +78,65 @@ namespace MomAndPops.Resources
             cartForm.Show();
             this.Visible = false;
         }
+
+        private void DietSmallMedium_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Logout_Click(object sender, EventArgs e)
+        {
+            Form login = new LoginPage();
+            login.ShowDialog();
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CartXBackground_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label22_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        {
+            PizzaPanel.AutoScroll = true;
+        }
+
+        private void CartButton_Click(object sender, EventArgs e)
+        {
+            Cart.Visible = true;
+            Cart.Enabled = true;
+        }
+
+        private void CartXButton_Click(object sender, EventArgs e)
+        {
+            Cart.Visible = false;
+            Cart.Enabled = false;
+        }
+
+        private void PreviousOrdersButton_Click(object sender, EventArgs e)
+        {
+            PreviousOrders.Visible = true;
+            PreviousOrders.Enabled = true;
+        }
+
+        private void PreviousOrderXButton_Click(object sender, EventArgs e)
+        {
+            PreviousOrders.Visible = false;
+            PreviousOrders.Enabled = false;
+        }
     }
 }
