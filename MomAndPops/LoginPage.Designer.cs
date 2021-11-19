@@ -33,8 +33,8 @@ namespace MomAndPops
             this.MomPops = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.PhoneNumberBox = new System.Windows.Forms.TextBox();
+            this.PasswordBox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.LoginButton = new System.Windows.Forms.Button();
@@ -54,7 +54,6 @@ namespace MomAndPops
             this.pictureBox1.Size = new System.Drawing.Size(230, 212);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // MomPops
             // 
@@ -68,12 +67,12 @@ namespace MomAndPops
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(61, 30);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.label1.Location = new System.Drawing.Point(3, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 39);
+            this.label1.Size = new System.Drawing.Size(236, 39);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Username";
+            this.label1.Text = "Phone Number";
             // 
             // label2
             // 
@@ -84,22 +83,22 @@ namespace MomAndPops
             this.label2.TabIndex = 3;
             this.label2.Text = "Password";
             // 
-            // textBox1
+            // PhoneNumberBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(245, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 41);
-            this.textBox1.TabIndex = 4;
+            this.PhoneNumberBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.PhoneNumberBox.Location = new System.Drawing.Point(245, 30);
+            this.PhoneNumberBox.Name = "PhoneNumberBox";
+            this.PhoneNumberBox.Size = new System.Drawing.Size(200, 35);
+            this.PhoneNumberBox.TabIndex = 4;
             // 
-            // textBox2
+            // PasswordBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(245, 87);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(200, 41);
-            this.textBox2.TabIndex = 5;
+            this.PasswordBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.PasswordBox.Location = new System.Drawing.Point(245, 87);
+            this.PasswordBox.Name = "PasswordBox";
+            this.PasswordBox.PasswordChar = '*';
+            this.PasswordBox.Size = new System.Drawing.Size(200, 35);
+            this.PasswordBox.TabIndex = 5;
             // 
             // button1
             // 
@@ -147,8 +146,8 @@ namespace MomAndPops
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.PasswordBox);
+            this.panel1.Controls.Add(this.PhoneNumberBox);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.LoginButton);
@@ -200,8 +199,8 @@ namespace MomAndPops
         private System.Windows.Forms.Label MomPops;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox PhoneNumberBox;
+        private System.Windows.Forms.TextBox PasswordBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button LoginButton;

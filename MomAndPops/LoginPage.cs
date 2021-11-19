@@ -23,15 +23,16 @@ namespace MomAndPops
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            Form menu = new MenuLanding();
-            menu.ShowDialog();
+            if (PhoneNumberBox.Text == "TestUsername" && PasswordBox.Text == "TestPassword")
+            {
+                this.Hide();
+                Form menu = new MenuLanding();
+                menu.ShowDialog();
+                
+            }
         }
+
     }
 }

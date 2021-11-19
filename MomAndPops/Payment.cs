@@ -12,11 +12,22 @@ namespace MomAndPops
 {
     public partial class Payment : Form
     {
+        Order customerOrder;
         public Payment()
         {
             InitializeComponent();
         }
 
+        public void SetOrder(Order customerOrder)
+        {
+            customerOrder = customerOrder;
+            float subtotal = 0;
+            foreach(MenuItem m in customerOrder.currentOrder)
+            {
+                subtotal += m.ItemPrice;
+            }
+            Subtotal.Text = "$" + subtotal.ToString();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             if((radioButton1.Checked || radioButton2.Checked || radioButton3.Checked) && (radioButton4.Checked || radioButton5.Checked))
