@@ -77,9 +77,7 @@ namespace MomAndPops.Resources
 
         private void Checkout_Click(object sender, EventArgs e)
         {
-            var cartForm = new Cart();
-            cartForm.Show();
-            this.Visible = false;
+            
         }
 
         private void DietSmallMedium_CheckedChanged(object sender, EventArgs e)
@@ -147,5 +145,17 @@ namespace MomAndPops.Resources
             
         }
 
+        public Order GetOrder()
+        {
+            return currentOrder;
+        }
+
+        private void CheckoutButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Payment payment = new Payment();
+            payment.SetOrder(GetOrder());
+            payment.Show();
+        }
     }
 }

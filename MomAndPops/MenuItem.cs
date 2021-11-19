@@ -13,11 +13,11 @@ namespace MomAndPops
         Thin
     }
 
-    class MenuItem
+    public class MenuItem
     {
-        private int itemQuantity;
+        private float itemQuantity;
 
-        public int ItemQuantity
+        public float ItemQuantity
         {
             get { return itemQuantity; }
             private set { itemQuantity = value; }
@@ -54,7 +54,7 @@ namespace MomAndPops
             set { crustOption = value; }
         }
 
-        public MenuItem(string itemName = "DefaultName", int itemQuantity = 0, float itemPrice = 999f,
+        public MenuItem(string itemName = "DefaultName", float itemPrice = 999f, int itemQuantity = 0, 
             int numberOfToppings = 0, string entreeSize = "Medium", CrustOptions crustOption = CrustOptions.Hand)
         {
             ItemName = itemName;

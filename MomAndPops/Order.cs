@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MomAndPops
 {
-    class Order : IEnumerator, IEnumerable
+    public class Order : IEnumerator, IEnumerable
     {
         private string menuItemName;
         public string MenuItemName
