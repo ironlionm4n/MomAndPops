@@ -23,72 +23,85 @@ namespace MomAndPops.Resources
         {
             if(BreadsticksQuantity.Value > 0)
             {
+                bool hasBreadsticks = false;
+                float price = float.Parse(BreadstickPrice.Text[1].ToString());
                 MenuItem breadsticks = new MenuItem(Breadsticks.Text, price, int.Parse(BreadsticksQuantity.Value.ToString()));
-                foreach(MenuItem m in currentOrder.currentOrder)
+
+                foreach (MenuItem m in currentOrder.currentOrder)
                 {
-                    if(m.ItemName != Breadsticks.Text)
-                    {
-                        currentOrder.AddToOrder(breadsticks);
-                    }
-                    else
+                    if(m.ItemName.Equals(Breadsticks.Text))
                     {
                         m.ItemQuantity += breadsticks.ItemQuantity;
+                        hasBreadsticks = true;
                     }
+                }
+                if(hasBreadsticks == false)
+                {
+                    currentOrder.AddToOrder(breadsticks);
                 }
                 BreadsticksQuantity.Value = 0;
             }
             if(BreadstickBitesQuantity.Value > 0)
             {
-                for(int i = 0; i < BreadstickBitesQuantity.Value; i++)
+                bool hasBreadstickBites = false;
+                float price = float.Parse(BreadstickBitesPrice.Text[1].ToString());
+                MenuItem breadstickBites = new MenuItem(BreadstickBites.Text, price, int.Parse(BreadstickBitesQuantity.Value.ToString()));
+
+                foreach (MenuItem m in currentOrder.currentOrder)
                 {
-                    float price = float.Parse(BreadstickBitesPrice.Text[1].ToString());
-                    MenuItem breadStickBites = new MenuItem(BreadstickBites.Text, price, int.Parse(BreadstickBitesQuantity.Value.ToString()));
-                    currentOrder.AddToOrder(breadStickBites);
-                  //  CurrentOrderLabel.Text = PrintOrder();
+                    if (m.ItemName.Equals(BreadstickBites.Text))
+                    {
+                        m.ItemQuantity += breadstickBites.ItemQuantity;
+                        hasBreadstickBites = true;
+                    }
                 }
+                if (hasBreadstickBites == false)
+                {
+                    currentOrder.AddToOrder(breadstickBites);
+                }
+                BreadstickBitesQuantity.Value = 0;
             }
             if(CookieQuantity.Value > 0)
             {
-                for(int i = 0; i < CookieQuantity.Value; i++)
+                bool hasCookie = false;
+                float price = float.Parse(CookiePrice.Text[1].ToString());
+                MenuItem cookie = new MenuItem(ChocChipCookie.Text, price, int.Parse(CookieQuantity.Value.ToString()));
+                foreach (MenuItem m in currentOrder.currentOrder)
                 {
-                    float price = float.Parse(CookiePrice.Text[1].ToString());
-                    MenuItem cookie = new MenuItem(ChocChipCookie.Text, price, int.Parse(CookieQuantity.Value.ToString()));
-                    currentOrder.AddToOrder(cookie);
-                  //  CurrentOrderLabel.Text = PrintOrder();
+                    if (m.ItemName.Equals(ChocChipCookie.Text))
+                    {
+                        m.ItemQuantity += cookie.ItemQuantity;
+                        hasCookie = true;
+                    }
                 }
+                if (hasCookie == false)
+                {
+                    currentOrder.AddToOrder(cookie);
+                }
+                CookieQuantity.Value = 0;
             }
-            Cart.AddToCart(currentOrder);
-            //PrintOrder();
+            //Cart.AddToCart(currentOrder);
+            PrintOrder();
           
         }
 
         /*string*/ void PrintOrder()
         {
             float totalPrice = 0f;
-            //Location = new Point(45, 135);
-            //string order = String.Empty;
-            foreach(MenuItem item in currentOrder)
+            TotalLabel.Text = string.Empty;
+            CartTextBox.Text = string.Empty;
+            foreach(MenuItem item in currentOrder.currentOrder)
             {
                 totalPrice += (item.ItemQuantity * item.ItemPrice);
+                CartTextBox.Text += item.ItemQuantity + " " + item.ItemName + " $" 
+                    + item.ItemPrice + Environment.NewLine;
+            }
 
-/*                Label cartLabel = new Label
-                {
-                    Location = Location,
-                    Size = new Size(189, 48)
-                };
-                CartPanel.
-                Location = new Point(45, 135 + cartLabel.Location.Y);
-                cartLabel.Text = item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice;
-            //    order += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice + "\n";*/
-            }
-            for(int i = 0; i < currentOrder.currentOrder.Count; i++)
-            {
-                CartTextBox.Text += currentOrder.currentOrder[i].ItemQuantity + " " + currentOrder.currentOrder[i].ItemName + " $" + currentOrder.currentOrder[i].ItemPrice + Environment.NewLine;
-            }
-           
             TotalLabel.Text = "$ " + totalPrice.ToString();
             //return order;
         }
+
+
 
         private void Checkout_Click(object sender, EventArgs e)
         {
@@ -136,7 +149,7 @@ namespace MomAndPops.Resources
            
             CartPanel.Visible = true;
             CartPanel.Enabled = true;
-            PrintOrder();
+            //PrintOrder();
         }
 
         private void CartXButton_Click(object sender, EventArgs e)
@@ -175,6 +188,10 @@ namespace MomAndPops.Resources
             payment.Show();
         }
 
-      
+        private void ClearCartButton_Click(object sender, EventArgs e)
+        {
+            currentOrder.currentOrder.Clear();
+            PrintOrder();
+        }
     }
 }

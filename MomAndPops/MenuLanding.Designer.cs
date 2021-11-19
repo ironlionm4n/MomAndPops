@@ -186,16 +186,17 @@ namespace MomAndPops.Resources
             this.CheckoutButton = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
             this.PreviousOrders = new System.Windows.Forms.Panel();
+            this.PreviousOrder3Label = new System.Windows.Forms.TextBox();
+            this.PreviousOrder2Label = new System.Windows.Forms.TextBox();
+            this.PreviousOrder1Label = new System.Windows.Forms.TextBox();
+            this.PreviousOrdersThreeAddToCart = new System.Windows.Forms.Button();
             this.PreviousOrderOneAddToCart = new System.Windows.Forms.Button();
             this.PreviousOrderTwoAddToCart = new System.Windows.Forms.Button();
-            this.PreviousOrdersThreeAddToCart = new System.Windows.Forms.Button();
             this.label28 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PreviousOrderXButton = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.PreviousOrder1Label = new System.Windows.Forms.TextBox();
-            this.PreviousOrder2Label = new System.Windows.Forms.TextBox();
-            this.PreviousOrder3Label = new System.Windows.Forms.TextBox();
+            this.ClearCartButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CookieQuantity)).BeginInit();
@@ -1923,6 +1924,7 @@ namespace MomAndPops.Resources
             // CartPanel
             // 
             this.CartPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CartPanel.Controls.Add(this.ClearCartButton);
             this.CartPanel.Controls.Add(this.CartTextBox);
             this.CartPanel.Controls.Add(this.TotalLabel);
             this.CartPanel.Controls.Add(this.CheckoutButton);
@@ -1964,7 +1966,7 @@ namespace MomAndPops.Resources
             // CheckoutButton
             // 
             this.CheckoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.CheckoutButton.Location = new System.Drawing.Point(82, 464);
+            this.CheckoutButton.Location = new System.Drawing.Point(33, 464);
             this.CheckoutButton.Name = "CheckoutButton";
             this.CheckoutButton.Size = new System.Drawing.Size(142, 52);
             this.CheckoutButton.TabIndex = 13;
@@ -1997,12 +1999,55 @@ namespace MomAndPops.Resources
             this.PreviousOrders.Controls.Add(this.PreviousOrderXButton);
             this.PreviousOrders.Controls.Add(this.pictureBox2);
             this.PreviousOrders.Enabled = false;
-            this.PreviousOrders.Location = new System.Drawing.Point(863, 24);
+            this.PreviousOrders.Location = new System.Drawing.Point(262, 20);
             this.PreviousOrders.Margin = new System.Windows.Forms.Padding(10);
             this.PreviousOrders.Name = "PreviousOrders";
             this.PreviousOrders.Size = new System.Drawing.Size(399, 529);
             this.PreviousOrders.TabIndex = 15;
             this.PreviousOrders.Visible = false;
+            // 
+            // PreviousOrder3Label
+            // 
+            this.PreviousOrder3Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
+            this.PreviousOrder3Label.Location = new System.Drawing.Point(16, 530);
+            this.PreviousOrder3Label.Multiline = true;
+            this.PreviousOrder3Label.Name = "PreviousOrder3Label";
+            this.PreviousOrder3Label.ReadOnly = true;
+            this.PreviousOrder3Label.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.PreviousOrder3Label.Size = new System.Drawing.Size(342, 163);
+            this.PreviousOrder3Label.TabIndex = 19;
+            // 
+            // PreviousOrder2Label
+            // 
+            this.PreviousOrder2Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
+            this.PreviousOrder2Label.Location = new System.Drawing.Point(16, 307);
+            this.PreviousOrder2Label.Multiline = true;
+            this.PreviousOrder2Label.Name = "PreviousOrder2Label";
+            this.PreviousOrder2Label.ReadOnly = true;
+            this.PreviousOrder2Label.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.PreviousOrder2Label.Size = new System.Drawing.Size(342, 163);
+            this.PreviousOrder2Label.TabIndex = 18;
+            // 
+            // PreviousOrder1Label
+            // 
+            this.PreviousOrder1Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
+            this.PreviousOrder1Label.Location = new System.Drawing.Point(16, 81);
+            this.PreviousOrder1Label.Multiline = true;
+            this.PreviousOrder1Label.Name = "PreviousOrder1Label";
+            this.PreviousOrder1Label.ReadOnly = true;
+            this.PreviousOrder1Label.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.PreviousOrder1Label.Size = new System.Drawing.Size(342, 163);
+            this.PreviousOrder1Label.TabIndex = 16;
+            // 
+            // PreviousOrdersThreeAddToCart
+            // 
+            this.PreviousOrdersThreeAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.PreviousOrdersThreeAddToCart.Location = new System.Drawing.Point(125, 694);
+            this.PreviousOrdersThreeAddToCart.Name = "PreviousOrdersThreeAddToCart";
+            this.PreviousOrdersThreeAddToCart.Size = new System.Drawing.Size(125, 37);
+            this.PreviousOrdersThreeAddToCart.TabIndex = 13;
+            this.PreviousOrdersThreeAddToCart.Text = "Add to Cart";
+            this.PreviousOrdersThreeAddToCart.UseVisualStyleBackColor = true;
             // 
             // PreviousOrderOneAddToCart
             // 
@@ -2023,16 +2068,6 @@ namespace MomAndPops.Resources
             this.PreviousOrderTwoAddToCart.TabIndex = 16;
             this.PreviousOrderTwoAddToCart.Text = "Add to Cart";
             this.PreviousOrderTwoAddToCart.UseVisualStyleBackColor = true;
-            // 
-            // PreviousOrdersThreeAddToCart
-            // 
-            this.PreviousOrdersThreeAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PreviousOrdersThreeAddToCart.Location = new System.Drawing.Point(125, 694);
-            this.PreviousOrdersThreeAddToCart.Name = "PreviousOrdersThreeAddToCart";
-            this.PreviousOrdersThreeAddToCart.Size = new System.Drawing.Size(125, 37);
-            this.PreviousOrdersThreeAddToCart.TabIndex = 13;
-            this.PreviousOrdersThreeAddToCart.Text = "Add to Cart";
-            this.PreviousOrdersThreeAddToCart.UseVisualStyleBackColor = true;
             // 
             // label28
             // 
@@ -2075,38 +2110,16 @@ namespace MomAndPops.Resources
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
-            // PreviousOrder1Label
+            // ClearCartButton
             // 
-            this.PreviousOrder1Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
-            this.PreviousOrder1Label.Location = new System.Drawing.Point(16, 81);
-            this.PreviousOrder1Label.Multiline = true;
-            this.PreviousOrder1Label.Name = "PreviousOrder1Label";
-            this.PreviousOrder1Label.ReadOnly = true;
-            this.PreviousOrder1Label.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.PreviousOrder1Label.Size = new System.Drawing.Size(342, 163);
-            this.PreviousOrder1Label.TabIndex = 16;
-            // 
-            // PreviousOrder2Label
-            // 
-            this.PreviousOrder2Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
-            this.PreviousOrder2Label.Location = new System.Drawing.Point(16, 307);
-            this.PreviousOrder2Label.Multiline = true;
-            this.PreviousOrder2Label.Name = "PreviousOrder2Label";
-            this.PreviousOrder2Label.ReadOnly = true;
-            this.PreviousOrder2Label.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.PreviousOrder2Label.Size = new System.Drawing.Size(342, 163);
-            this.PreviousOrder2Label.TabIndex = 18;
-            // 
-            // PreviousOrder3Label
-            // 
-            this.PreviousOrder3Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
-            this.PreviousOrder3Label.Location = new System.Drawing.Point(16, 530);
-            this.PreviousOrder3Label.Multiline = true;
-            this.PreviousOrder3Label.Name = "PreviousOrder3Label";
-            this.PreviousOrder3Label.ReadOnly = true;
-            this.PreviousOrder3Label.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.PreviousOrder3Label.Size = new System.Drawing.Size(342, 163);
-            this.PreviousOrder3Label.TabIndex = 19;
+            this.ClearCartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.ClearCartButton.Location = new System.Drawing.Point(220, 464);
+            this.ClearCartButton.Name = "ClearCartButton";
+            this.ClearCartButton.Size = new System.Drawing.Size(142, 52);
+            this.ClearCartButton.TabIndex = 17;
+            this.ClearCartButton.Text = "Clear Cart";
+            this.ClearCartButton.UseVisualStyleBackColor = true;
+            this.ClearCartButton.Click += new System.EventHandler(this.ClearCartButton_Click);
             // 
             // MenuLanding
             // 
@@ -2372,5 +2385,6 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.TextBox PreviousOrder1Label;
         private System.Windows.Forms.TextBox PreviousOrder3Label;
         private System.Windows.Forms.TextBox PreviousOrder2Label;
+        private System.Windows.Forms.Button ClearCartButton;
     }
 }

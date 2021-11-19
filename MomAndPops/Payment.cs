@@ -24,9 +24,12 @@ namespace MomAndPops
             float subtotal = 0;
             foreach(MenuItem m in newOrder.currentOrder)
             {
-                subtotal += m.ItemPrice;
+                subtotal += m.ItemPrice * m.ItemQuantity;
             }
             Subtotal.Text = "$" + subtotal.ToString();
+            float tax = subtotal * .06f;
+            Tax.Text = "$" + tax.ToString();
+            Total.Text = "$" + (subtotal + tax).ToString();
         }
         private void button1_Click(object sender, EventArgs e)
         {
