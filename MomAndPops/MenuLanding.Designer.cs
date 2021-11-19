@@ -2070,10 +2070,7 @@ namespace MomAndPops.Resources
             // 
             this.CartPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CartPanel.Controls.Add(this.vScrollBar3);
-            this.CartPanel.Controls.Add(this.label24);
-            this.CartPanel.Controls.Add(this.Checkout);
             this.CartPanel.Controls.Add(this.label23);
-            this.CartPanel.Controls.Add(this.label22);
             this.CartPanel.Controls.Add(this.CartHeader);
             this.CartPanel.Controls.Add(this.CartHeaderBackground);
             this.CartPanel.Controls.Add(this.CartXButton);
@@ -2104,13 +2101,6 @@ namespace MomAndPops.Resources
             this.CheckoutButton.TabIndex = 13;
             this.CheckoutButton.Text = "Checkout";
             this.CheckoutButton.UseVisualStyleBackColor = true;
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label24.Location = new System.Drawing.Point(152, 421);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(134, 40);
-            this.label24.TabIndex = 14;
-            this.label24.Text = "Order total will be \r\ndisplayed here";
             // 
             // label23
             // 
@@ -2121,16 +2111,6 @@ namespace MomAndPops.Resources
             this.label23.Size = new System.Drawing.Size(87, 29);
             this.label23.TabIndex = 12;
             this.label23.Text = "Total: ";
-            // 
-            // CurrentOrderLabel
-            // 
-            this.Checkout.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.Checkout.Location = new System.Drawing.Point(90, 460);
-            this.Checkout.Name = "Checkout";
-            this.Checkout.Size = new System.Drawing.Size(142, 52);
-            this.Checkout.TabIndex = 13;
-            this.Checkout.Text = "Checkout";
-            this.Checkout.UseVisualStyleBackColor = true;
             // 
             // label23
             // 
@@ -2152,14 +2132,6 @@ namespace MomAndPops.Resources
             // 
             // label22
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(47, 137);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(189, 48);
-            this.label22.TabIndex = 11;
-            this.label22.Text = "Current Order will be \r\ndisplayed here";
-            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // PreviousOrders
             // 
@@ -2171,8 +2143,6 @@ namespace MomAndPops.Resources
             this.PreviousOrders.Controls.Add(this.PreviousOrdersThreeAddToCart);
             this.PreviousOrders.Controls.Add(this.PreviousOrderTwoLabel);
             this.PreviousOrders.Controls.Add(this.vScrollBar2);
-            this.PreviousOrders.Controls.Add(this.PreviousOrdersAddToCart);
-            this.PreviousOrders.Controls.Add(this.label27);
             this.PreviousOrders.Controls.Add(this.label28);
             this.PreviousOrders.Controls.Add(this.pictureBox1);
             this.PreviousOrders.Controls.Add(this.PreviousOrderXButton);
