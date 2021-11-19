@@ -26,7 +26,7 @@ namespace MomAndPops.Resources
                 for(int i = 0; i < BreadsticksQuantity.Value; i++)
                 {
                     float price = float.Parse(BreadstickPrice.Text[1].ToString());
-                    MenuItem breadsticks = new MenuItem(Breadsticks.Text, int.Parse(BreadsticksQuantity.Value.ToString()), price);
+                    MenuItem breadsticks = new MenuItem(Breadsticks.Text, price, int.Parse(BreadsticksQuantity.Value.ToString()));
                     currentOrder.AddToOrder(breadsticks);
                   //  CurrentOrderLabel.Text = PrintOrder();
                 }
@@ -36,7 +36,7 @@ namespace MomAndPops.Resources
                 for(int i = 0; i < BreadstickBitesQuantity.Value; i++)
                 {
                     float price = float.Parse(BreadstickBitesPrice.Text[1].ToString());
-                    MenuItem breadStickBites = new MenuItem(BreadstickBites.Text, int.Parse(BreadstickBitesQuantity.Value.ToString()), price);
+                    MenuItem breadStickBites = new MenuItem(BreadstickBites.Text, price, int.Parse(BreadstickBitesQuantity.Value.ToString()));
                     currentOrder.AddToOrder(breadStickBites);
                   //  CurrentOrderLabel.Text = PrintOrder();
                 }
@@ -46,7 +46,7 @@ namespace MomAndPops.Resources
                 for(int i = 0; i < CookieQuantity.Value; i++)
                 {
                     float price = float.Parse(CookiePrice.Text[1].ToString());
-                    MenuItem cookie = new MenuItem(ChocChipCookie.Text, int.Parse(CookieQuantity.Value.ToString()), price);
+                    MenuItem cookie = new MenuItem(ChocChipCookie.Text, price, int.Parse(CookieQuantity.Value.ToString()));
                     currentOrder.AddToOrder(cookie);
                   //  CurrentOrderLabel.Text = PrintOrder();
                 }
@@ -163,5 +163,7 @@ namespace MomAndPops.Resources
             payment.SetOrder(GetOrder());
             payment.Show();
         }
+
+      
     }
 }
