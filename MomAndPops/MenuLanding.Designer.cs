@@ -377,7 +377,6 @@ namespace MomAndPops.Resources
             this.BreadstickPrice.Size = new System.Drawing.Size(27, 20);
             this.BreadstickPrice.TabIndex = 2;
             this.BreadstickPrice.Text = "$4";
-            this.BreadstickPrice.Click += new System.EventHandler(this.BreadstickPrice_Click);
             // 
             // Breadsticks
             // 
@@ -396,7 +395,6 @@ namespace MomAndPops.Resources
             this.BreadsticksQuantity.Name = "BreadsticksQuantity";
             this.BreadsticksQuantity.Size = new System.Drawing.Size(35, 23);
             this.BreadsticksQuantity.TabIndex = 0;
-            this.BreadsticksQuantity.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // label3
             // 

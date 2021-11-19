@@ -20,7 +20,7 @@ namespace MomAndPops
         public float ItemQuantity
         {
             get { return itemQuantity; }
-            private set { itemQuantity = value; }
+            set { itemQuantity = value; }
         }
        
         private string itemName;

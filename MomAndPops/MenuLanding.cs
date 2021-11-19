@@ -23,20 +23,26 @@ namespace MomAndPops.Resources
         {
             if(BreadsticksQuantity.Value > 0)
             {
-                for(int i = 0; i < BreadsticksQuantity.Value; i++)
+                MenuItem breadsticks = new MenuItem(Breadsticks.Text, price, int.Parse(BreadsticksQuantity.Value.ToString()));
+                foreach(MenuItem m in currentOrder.currentOrder)
                 {
-                    float price = float.Parse(BreadstickPrice.Text[1].ToString());
-                    MenuItem breadsticks = new MenuItem(Breadsticks.Text, int.Parse(BreadsticksQuantity.Value.ToString()), price);
-                    currentOrder.AddToOrder(breadsticks);
-                  //  CurrentOrderLabel.Text = PrintOrder();
+                    if(m.ItemName != Breadsticks.Text)
+                    {
+                        currentOrder.AddToOrder(breadsticks);
+                    }
+                    else
+                    {
+                        m.ItemQuantity += breadsticks.ItemQuantity;
+                    }
                 }
+                BreadsticksQuantity.Value = 0;
             }
             if(BreadstickBitesQuantity.Value > 0)
             {
                 for(int i = 0; i < BreadstickBitesQuantity.Value; i++)
                 {
                     float price = float.Parse(BreadstickBitesPrice.Text[1].ToString());
-                    MenuItem breadStickBites = new MenuItem(BreadstickBites.Text, int.Parse(BreadstickBitesQuantity.Value.ToString()), price);
+                    MenuItem breadStickBites = new MenuItem(BreadstickBites.Text, price, int.Parse(BreadstickBitesQuantity.Value.ToString()));
                     currentOrder.AddToOrder(breadStickBites);
                   //  CurrentOrderLabel.Text = PrintOrder();
                 }
@@ -46,7 +52,7 @@ namespace MomAndPops.Resources
                 for(int i = 0; i < CookieQuantity.Value; i++)
                 {
                     float price = float.Parse(CookiePrice.Text[1].ToString());
-                    MenuItem cookie = new MenuItem(ChocChipCookie.Text, int.Parse(CookieQuantity.Value.ToString()), price);
+                    MenuItem cookie = new MenuItem(ChocChipCookie.Text, price, int.Parse(CookieQuantity.Value.ToString()));
                     currentOrder.AddToOrder(cookie);
                   //  CurrentOrderLabel.Text = PrintOrder();
                 }
@@ -64,7 +70,7 @@ namespace MomAndPops.Resources
             foreach(MenuItem item in currentOrder)
             {
                 totalPrice += (item.ItemQuantity * item.ItemPrice);
-                CartTextBox.Text += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice + Environment.NewLine;
+
 /*                Label cartLabel = new Label
                 {
                     Location = Location,
@@ -75,6 +81,11 @@ namespace MomAndPops.Resources
                 cartLabel.Text = item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice;
             //    order += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice + "\n";*/
             }
+            for(int i = 0; i < currentOrder.currentOrder.Count; i++)
+            {
+                CartTextBox.Text += currentOrder.currentOrder[i].ItemQuantity + " " + currentOrder.currentOrder[i].ItemName + " $" + currentOrder.currentOrder[i].ItemPrice + Environment.NewLine;
+            }
+           
             TotalLabel.Text = "$ " + totalPrice.ToString();
             //return order;
         }
