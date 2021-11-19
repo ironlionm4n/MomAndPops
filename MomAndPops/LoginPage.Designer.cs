@@ -115,7 +115,7 @@ namespace MomAndPops
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(68, 149);
+            this.button2.Location = new System.Drawing.Point(52, 163);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(187, 36);
             this.button2.TabIndex = 7;
@@ -126,13 +126,13 @@ namespace MomAndPops
             // LoginButton
             // 
             this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LoginButton.Location = new System.Drawing.Point(660, 406);
+            this.LoginButton.Location = new System.Drawing.Point(285, 163);
             this.LoginButton.Name = "LoginButton";
-            this.LoginButton.Size = new System.Drawing.Size(147, 36);
+            this.LoginButton.Size = new System.Drawing.Size(160, 37);
             this.LoginButton.TabIndex = 8;
             this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = true;
-            this.LoginButton.Click += new System.EventHandler(this.button3_Click);
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // pictureBox2
             // 
@@ -147,13 +147,13 @@ namespace MomAndPops
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.textBox2);
             this.panel1.Controls.Add(this.textBox1);
             this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.LoginButton);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(362, 262);
+            this.panel1.Location = new System.Drawing.Point(376, 262);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(528, 228);
             this.panel1.TabIndex = 10;
@@ -179,8 +179,6 @@ namespace MomAndPops
             this.Controls.Add(this.label3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.LoginButton);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.MomPops);
             this.Controls.Add(this.pictureBox1);
