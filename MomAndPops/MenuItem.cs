@@ -15,6 +15,14 @@ namespace MomAndPops
 
     class MenuItem
     {
+        private string itenQuantity;
+
+        public string ItenQuantity
+        {
+            get { return itenQuantity; }
+            private set { itenQuantity = value; }
+        }
+       
         private string itemName;
         public string ItemName
         {

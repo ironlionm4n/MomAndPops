@@ -13,7 +13,7 @@ namespace MomAndPops.Resources
     public partial class MenuLanding : Form
     {
         readonly Order currentOrder = new Order();
-
+        
         public MenuLanding()
         {
             InitializeComponent();
@@ -29,7 +29,7 @@ namespace MomAndPops.Resources
             
         }
         #endregion
-        private void AddToOrder_Click(object sender, EventArgs e)
+        private void AddToCart_Click(object sender, EventArgs e)
         {
             if(BreadsticksQuantity.Value > 0)
             {
@@ -43,11 +43,12 @@ namespace MomAndPops.Resources
             }
             if(BreadstickBitesQuantity.Value > 0)
             {
-                for(int i = 0; i < BreadsticksQuantity.Value; i++)
+                for(int i = 0; i < BreadstickBitesQuantity.Value; i++)
                 {
                     float price = float.Parse(BreadstickBitesPrice.Text[1].ToString());
                     MenuItem breadStickBites = new MenuItem(BreadstickBites.Text, price);
                     currentOrder.AddToOrder(breadStickBites);
+                    CurrentOrderLabel.Text = PrintOrder();
                 }
      
             }
@@ -64,12 +65,14 @@ namespace MomAndPops.Resources
             Cart.AddToCart(currentOrder);
         }
 
-        void PrintOrder()
+        string PrintOrder()
         {
+            string order ="";
             foreach(MenuItem item in currentOrder)
             {
-                Console.WriteLine($"Item Name: {item.ItemName}\tItem Price: ${item.ItemPrice}");
+                order += item.ItemName;
             }
+            return order;
         }
 
         private void Checkout_Click(object sender, EventArgs e)
@@ -138,5 +141,11 @@ namespace MomAndPops.Resources
             PreviousOrders.Visible = false;
             PreviousOrders.Enabled = false;
         }
+
+        private void SmallMushroom_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+
     }
 }
