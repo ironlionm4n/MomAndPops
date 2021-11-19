@@ -12,7 +12,7 @@ namespace MomAndPops.Resources
 {
     public partial class MenuLanding : Form
     {
-        readonly Order currentOrder = new Order();
+        Order currentOrder = new Order();
         
         public MenuLanding()
         {
@@ -23,6 +23,7 @@ namespace MomAndPops.Resources
         {
             if(BreadsticksQuantity.Value > 0)
             {
+                float price = float.Parse(BreadstickPrice.Text[1].ToString());
                 MenuItem breadsticks = new MenuItem(Breadsticks.Text, price, int.Parse(BreadsticksQuantity.Value.ToString()));
                 foreach(MenuItem m in currentOrder.currentOrder)
                 {
@@ -165,6 +166,12 @@ namespace MomAndPops.Resources
         public Order GetOrder()
         {
             return currentOrder;
+        }
+
+        public void SetOrder(Order newOrder)
+        {
+            currentOrder = newOrder;
+            PrintOrder();
         }
 
         private void CheckoutButton_Click(object sender, EventArgs e)

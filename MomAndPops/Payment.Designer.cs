@@ -42,12 +42,12 @@ namespace MomAndPops
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.SubtotalLabel = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Subtotal = new System.Windows.Forms.Label();
-            this.Tax = new System.Windows.Forms.Label();
             this.Total = new System.Windows.Forms.Label();
+            this.Tax = new System.Windows.Forms.Label();
+            this.Subtotal = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.SubtotalLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -165,6 +165,7 @@ namespace MomAndPops
             this.button2.TabIndex = 10;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // panel1
             // 
@@ -208,45 +209,16 @@ namespace MomAndPops
             this.panel3.Size = new System.Drawing.Size(710, 454);
             this.panel3.TabIndex = 15;
             // 
-            // SubtotalLabel
+            // Total
             // 
-            this.SubtotalLabel.AutoSize = true;
-            this.SubtotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.SubtotalLabel.Location = new System.Drawing.Point(167, 38);
-            this.SubtotalLabel.Name = "SubtotalLabel";
-            this.SubtotalLabel.Size = new System.Drawing.Size(129, 31);
-            this.SubtotalLabel.TabIndex = 16;
-            this.SubtotalLabel.Text = "Subtotal: ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.label4.Location = new System.Drawing.Point(167, 69);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 31);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "Tax:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(166, 109);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 37);
-            this.label5.TabIndex = 18;
-            this.label5.Text = "Total:";
-            // 
-            // Subtotal
-            // 
-            this.Subtotal.AutoSize = true;
-            this.Subtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.Subtotal.Location = new System.Drawing.Point(387, 38);
-            this.Subtotal.Name = "Subtotal";
-            this.Subtotal.Size = new System.Drawing.Size(97, 31);
-            this.Subtotal.TabIndex = 19;
-            this.Subtotal.Text = "$00.00";
+            this.Total.AutoSize = true;
+            this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Total.Location = new System.Drawing.Point(382, 109);
+            this.Total.Name = "Total";
+            this.Total.Size = new System.Drawing.Size(122, 37);
+            this.Total.TabIndex = 21;
+            this.Total.Text = "$00.00";
+            this.Total.Click += new System.EventHandler(this.Total_Click);
             // 
             // Tax
             // 
@@ -258,16 +230,45 @@ namespace MomAndPops
             this.Tax.TabIndex = 20;
             this.Tax.Text = "$00.00";
             // 
-            // Total
+            // Subtotal
             // 
-            this.Total.AutoSize = true;
-            this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total.Location = new System.Drawing.Point(382, 109);
-            this.Total.Name = "Total";
-            this.Total.Size = new System.Drawing.Size(122, 37);
-            this.Total.TabIndex = 21;
-            this.Total.Text = "$00.00";
-            this.Total.Click += new System.EventHandler(this.Total_Click);
+            this.Subtotal.AutoSize = true;
+            this.Subtotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.Subtotal.Location = new System.Drawing.Point(387, 38);
+            this.Subtotal.Name = "Subtotal";
+            this.Subtotal.Size = new System.Drawing.Size(97, 31);
+            this.Subtotal.TabIndex = 19;
+            this.Subtotal.Text = "$00.00";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(166, 109);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(104, 37);
+            this.label5.TabIndex = 18;
+            this.label5.Text = "Total:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label4.Location = new System.Drawing.Point(167, 69);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 31);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Tax:";
+            // 
+            // SubtotalLabel
+            // 
+            this.SubtotalLabel.AutoSize = true;
+            this.SubtotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.SubtotalLabel.Location = new System.Drawing.Point(167, 38);
+            this.SubtotalLabel.Name = "SubtotalLabel";
+            this.SubtotalLabel.Size = new System.Drawing.Size(129, 31);
+            this.SubtotalLabel.TabIndex = 16;
+            this.SubtotalLabel.Text = "Subtotal: ";
             // 
             // Payment
             // 

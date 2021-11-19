@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MomAndPops.Resources;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -28,6 +29,12 @@ namespace MomAndPops
             }
             Subtotal.Text = "$" + subtotal.ToString();
         }
+        
+        public Order GetOrder()
+        {
+            return newOrder;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             if((radioButton1.Checked || radioButton2.Checked || radioButton3.Checked) && (radioButton4.Checked || radioButton5.Checked))
@@ -40,6 +47,14 @@ namespace MomAndPops
         private void Total_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MenuLanding menu = new MenuLanding();
+            menu.SetOrder(GetOrder());
+            this.Hide();
+            menu.Show();
         }
     }
 }
