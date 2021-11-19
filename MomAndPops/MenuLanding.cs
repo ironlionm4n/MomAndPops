@@ -65,14 +65,14 @@ namespace MomAndPops.Resources
 
         private void CartButton_Click(object sender, EventArgs e)
         {
-            Cart.Visible = true;
-            Cart.Enabled = true;
+            CartPanel.Visible = true;
+            CartPanel.Enabled = true;
         }
 
         private void CartXButton_Click(object sender, EventArgs e)
         {
-            Cart.Visible = false;
-            Cart.Enabled = false;
+            CartPanel.Visible = false;
+            CartPanel.Enabled = false;
         }
 
         private void PreviousOrdersButton_Click(object sender, EventArgs e)
