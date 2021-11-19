@@ -12,7 +12,12 @@ namespace MomAndPops
 {
     partial class Cart : Form
     {
-        private static List<Order> cartCollect = new List<Order>();
+        private static List<Order> cartCollection = new List<Order>();
+
+        public List<Order> CartCollection
+        {
+            get { return cartCollection; }
+        }
 
         public Cart()
         {
@@ -25,15 +30,22 @@ namespace MomAndPops
             listViewCart.GridLines = true;
             listViewCart.FullRowSelect = true;
             listViewCart.Columns.Add("Item Name: ", 120);
-            ListViewItem item = new ListViewItem(cartCollect[0].MenuItemName);
+            ListViewItem item = new ListViewItem(cartCollection[0].MenuItemName);
             listViewCart.Items.Add(item);
             Console.WriteLine(listViewCart.Items[0].ToString());
         }
 
         public static void AddToCart(Order order)
         {
-            cartCollect.Add(order);
+            cartCollection.Add(order);
         }
 
+        public static void UpdateCartDisplay(List<Order> cartCollection)
+        {
+            foreach(Order order in cartCollection)
+            {
+
+            }
+        }
     }
 }

@@ -18,17 +18,7 @@ namespace MomAndPops.Resources
         {
             InitializeComponent();
         }
-        #region
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BreadstickPrice_Click(object sender, EventArgs e)
-        {
-            
-        }
-        #endregion
+ 
         private void AddToCart_Click(object sender, EventArgs e)
         {
             if(BreadsticksQuantity.Value > 0)
@@ -36,43 +26,57 @@ namespace MomAndPops.Resources
                 for(int i = 0; i < BreadsticksQuantity.Value; i++)
                 {
                     float price = float.Parse(BreadstickPrice.Text[1].ToString());
-                    MenuItem breadsticks = new MenuItem(Breadsticks.Text, price);
+                    MenuItem breadsticks = new MenuItem(Breadsticks.Text, int.Parse(BreadsticksQuantity.Value.ToString()), price);
                     currentOrder.AddToOrder(breadsticks);
+                  //  CurrentOrderLabel.Text = PrintOrder();
                 }
-       
             }
             if(BreadstickBitesQuantity.Value > 0)
             {
                 for(int i = 0; i < BreadstickBitesQuantity.Value; i++)
                 {
                     float price = float.Parse(BreadstickBitesPrice.Text[1].ToString());
-                    MenuItem breadStickBites = new MenuItem(BreadstickBites.Text, price);
+                    MenuItem breadStickBites = new MenuItem(BreadstickBites.Text, int.Parse(BreadstickBitesQuantity.Value.ToString()), price);
                     currentOrder.AddToOrder(breadStickBites);
-                    CurrentOrderLabel.Text = PrintOrder();
+                  //  CurrentOrderLabel.Text = PrintOrder();
                 }
-     
             }
             if(CookieQuantity.Value > 0)
             {
                 for(int i = 0; i < CookieQuantity.Value; i++)
                 {
                     float price = float.Parse(CookiePrice.Text[1].ToString());
-                    MenuItem cookie = new MenuItem(ChocChipCookie.Text, price);
+                    MenuItem cookie = new MenuItem(ChocChipCookie.Text, int.Parse(CookieQuantity.Value.ToString()), price);
                     currentOrder.AddToOrder(cookie);
+                  //  CurrentOrderLabel.Text = PrintOrder();
                 }
             }
-            PrintOrder();
             Cart.AddToCart(currentOrder);
+            //PrintOrder();
+          
         }
 
-        string PrintOrder()
+        /*string*/ void PrintOrder()
         {
-            string order ="";
+            float totalPrice = 0f;
+            //Location = new Point(45, 135);
+            //string order = String.Empty;
             foreach(MenuItem item in currentOrder)
             {
-                order += item.ItemName;
+                totalPrice += (item.ItemQuantity * item.ItemPrice);
+                CartTextBox.Text += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice + Environment.NewLine;
+/*                Label cartLabel = new Label
+                {
+                    Location = Location,
+                    Size = new Size(189, 48)
+                };
+                CartPanel.
+                Location = new Point(45, 135 + cartLabel.Location.Y);
+                cartLabel.Text = item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice;
+            //    order += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice + "\n";*/
             }
-            return order;
+            TotalLabel.Text = "$ " + totalPrice.ToString();
+            //return order;
         }
 
         private void Checkout_Click(object sender, EventArgs e)
@@ -120,8 +124,10 @@ namespace MomAndPops.Resources
 
         private void CartButton_Click(object sender, EventArgs e)
         {
+           
             CartPanel.Visible = true;
             CartPanel.Enabled = true;
+            PrintOrder();
         }
 
         private void CartXButton_Click(object sender, EventArgs e)
