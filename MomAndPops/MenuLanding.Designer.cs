@@ -87,7 +87,6 @@ namespace MomAndPops.Resources
             this.SmallHam = new System.Windows.Forms.CheckBox();
             this.SmallSausage = new System.Windows.Forms.CheckBox();
             this.SmallPepperoni = new System.Windows.Forms.CheckBox();
-            this.SmallCheese = new System.Windows.Forms.CheckBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.SmallPanCrust = new System.Windows.Forms.RadioButton();
             this.SmallRegularCrust = new System.Windows.Forms.RadioButton();
@@ -181,6 +180,7 @@ namespace MomAndPops.Resources
             this.CartXButton = new System.Windows.Forms.Label();
             this.CartHeader = new System.Windows.Forms.Label();
             this.CartPanel = new System.Windows.Forms.Panel();
+            this.ClearCartButton = new System.Windows.Forms.Button();
             this.CartTextBox = new System.Windows.Forms.TextBox();
             this.TotalLabel = new System.Windows.Forms.Label();
             this.CheckoutButton = new System.Windows.Forms.Button();
@@ -196,7 +196,8 @@ namespace MomAndPops.Resources
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PreviousOrderXButton = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ClearCartButton = new System.Windows.Forms.Button();
+            this.SmallCheese = new System.Windows.Forms.ComboBox();
+            this.SmallCheeseLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CookieQuantity)).BeginInit();
@@ -416,7 +417,7 @@ namespace MomAndPops.Resources
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.groupBox2.Location = new System.Drawing.Point(452, 97);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(364, 435);
+            this.groupBox2.Size = new System.Drawing.Size(398, 435);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
@@ -636,7 +637,7 @@ namespace MomAndPops.Resources
             this.panel16.Controls.Add(this.MediumCheese);
             this.panel16.Location = new System.Drawing.Point(16, 45);
             this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(300, 103);
+            this.panel16.Size = new System.Drawing.Size(300, 98);
             this.panel16.TabIndex = 15;
             // 
             // MediumPineapple
@@ -795,6 +796,8 @@ namespace MomAndPops.Resources
             // 
             // panel14
             // 
+            this.panel14.Controls.Add(this.SmallCheeseLabel);
+            this.panel14.Controls.Add(this.SmallCheese);
             this.panel14.Controls.Add(this.SmallPineapple);
             this.panel14.Controls.Add(this.SmallMushroom);
             this.panel14.Controls.Add(this.SmallTomato);
@@ -803,10 +806,9 @@ namespace MomAndPops.Resources
             this.panel14.Controls.Add(this.SmallHam);
             this.panel14.Controls.Add(this.SmallSausage);
             this.panel14.Controls.Add(this.SmallPepperoni);
-            this.panel14.Controls.Add(this.SmallCheese);
-            this.panel14.Location = new System.Drawing.Point(16, 51);
+            this.panel14.Location = new System.Drawing.Point(3, 51);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(313, 98);
+            this.panel14.Size = new System.Drawing.Size(326, 98);
             this.panel14.TabIndex = 15;
             // 
             // SmallPineapple
@@ -847,7 +849,7 @@ namespace MomAndPops.Resources
             // 
             this.SmallGreenPepper.AutoSize = true;
             this.SmallGreenPepper.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallGreenPepper.Location = new System.Drawing.Point(179, 46);
+            this.SmallGreenPepper.Location = new System.Drawing.Point(180, 46);
             this.SmallGreenPepper.Name = "SmallGreenPepper";
             this.SmallGreenPepper.Size = new System.Drawing.Size(117, 21);
             this.SmallGreenPepper.TabIndex = 5;
@@ -858,12 +860,13 @@ namespace MomAndPops.Resources
             // 
             this.SmallOnion.AutoSize = true;
             this.SmallOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallOnion.Location = new System.Drawing.Point(84, 44);
+            this.SmallOnion.Location = new System.Drawing.Point(79, 45);
             this.SmallOnion.Name = "SmallOnion";
             this.SmallOnion.Size = new System.Drawing.Size(65, 21);
             this.SmallOnion.TabIndex = 4;
             this.SmallOnion.Text = "Onion";
             this.SmallOnion.UseVisualStyleBackColor = true;
+            this.SmallOnion.CheckedChanged += new System.EventHandler(this.SmallOnion_CheckedChanged);
             // 
             // SmallHam
             // 
@@ -880,7 +883,7 @@ namespace MomAndPops.Resources
             // 
             this.SmallSausage.AutoSize = true;
             this.SmallSausage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallSausage.Location = new System.Drawing.Point(182, 12);
+            this.SmallSausage.Location = new System.Drawing.Point(240, 13);
             this.SmallSausage.Name = "SmallSausage";
             this.SmallSausage.Size = new System.Drawing.Size(83, 21);
             this.SmallSausage.TabIndex = 2;
@@ -891,23 +894,12 @@ namespace MomAndPops.Resources
             // 
             this.SmallPepperoni.AutoSize = true;
             this.SmallPepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallPepperoni.Location = new System.Drawing.Point(80, 12);
+            this.SmallPepperoni.Location = new System.Drawing.Point(130, 11);
             this.SmallPepperoni.Name = "SmallPepperoni";
             this.SmallPepperoni.Size = new System.Drawing.Size(92, 21);
             this.SmallPepperoni.TabIndex = 1;
             this.SmallPepperoni.Text = "Pepperoni";
             this.SmallPepperoni.UseVisualStyleBackColor = true;
-            // 
-            // SmallCheese
-            // 
-            this.SmallCheese.AutoSize = true;
-            this.SmallCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallCheese.Location = new System.Drawing.Point(3, 3);
-            this.SmallCheese.Name = "SmallCheese";
-            this.SmallCheese.Size = new System.Drawing.Size(75, 38);
-            this.SmallCheese.TabIndex = 0;
-            this.SmallCheese.Text = "Extra \r\nCheese";
-            this.SmallCheese.UseVisualStyleBackColor = true;
             // 
             // panel13
             // 
@@ -1940,6 +1932,17 @@ namespace MomAndPops.Resources
             this.CartPanel.TabIndex = 12;
             this.CartPanel.Visible = false;
             // 
+            // ClearCartButton
+            // 
+            this.ClearCartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.ClearCartButton.Location = new System.Drawing.Point(220, 464);
+            this.ClearCartButton.Name = "ClearCartButton";
+            this.ClearCartButton.Size = new System.Drawing.Size(142, 52);
+            this.ClearCartButton.TabIndex = 17;
+            this.ClearCartButton.Text = "Clear Cart";
+            this.ClearCartButton.UseVisualStyleBackColor = true;
+            this.ClearCartButton.Click += new System.EventHandler(this.ClearCartButton_Click);
+            // 
             // CartTextBox
             // 
             this.CartTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
@@ -1999,7 +2002,7 @@ namespace MomAndPops.Resources
             this.PreviousOrders.Controls.Add(this.PreviousOrderXButton);
             this.PreviousOrders.Controls.Add(this.pictureBox2);
             this.PreviousOrders.Enabled = false;
-            this.PreviousOrders.Location = new System.Drawing.Point(262, 20);
+            this.PreviousOrders.Location = new System.Drawing.Point(863, 24);
             this.PreviousOrders.Margin = new System.Windows.Forms.Padding(10);
             this.PreviousOrders.Name = "PreviousOrders";
             this.PreviousOrders.Size = new System.Drawing.Size(399, 529);
@@ -2110,16 +2113,31 @@ namespace MomAndPops.Resources
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
-            // ClearCartButton
+            // SmallCheese
             // 
-            this.ClearCartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.ClearCartButton.Location = new System.Drawing.Point(220, 464);
-            this.ClearCartButton.Name = "ClearCartButton";
-            this.ClearCartButton.Size = new System.Drawing.Size(142, 52);
-            this.ClearCartButton.TabIndex = 17;
-            this.ClearCartButton.Text = "Clear Cart";
-            this.ClearCartButton.UseVisualStyleBackColor = true;
-            this.ClearCartButton.Click += new System.EventHandler(this.ClearCartButton_Click);
+            this.SmallCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallCheese.FormattingEnabled = true;
+            this.SmallCheese.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.SmallCheese.Location = new System.Drawing.Point(0, 12);
+            this.SmallCheese.Name = "SmallCheese";
+            this.SmallCheese.Size = new System.Drawing.Size(48, 21);
+            this.SmallCheese.TabIndex = 17;
+            this.SmallCheese.Text = "None";
+            this.SmallCheese.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // SmallCheeseLabel
+            // 
+            this.SmallCheeseLabel.AutoSize = true;
+            this.SmallCheeseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.SmallCheeseLabel.Location = new System.Drawing.Point(51, 14);
+            this.SmallCheeseLabel.Name = "SmallCheeseLabel";
+            this.SmallCheeseLabel.Size = new System.Drawing.Size(56, 17);
+            this.SmallCheeseLabel.TabIndex = 18;
+            this.SmallCheeseLabel.Text = "Cheese";
             // 
             // MenuLanding
             // 
@@ -2307,7 +2325,6 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.CheckBox SmallHam;
         private System.Windows.Forms.CheckBox SmallSausage;
         private System.Windows.Forms.CheckBox SmallPepperoni;
-        private System.Windows.Forms.CheckBox SmallCheese;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.RadioButton SmallPanCrust;
         private System.Windows.Forms.RadioButton SmallRegularCrust;
@@ -2386,5 +2403,7 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.TextBox PreviousOrder3Label;
         private System.Windows.Forms.TextBox PreviousOrder2Label;
         private System.Windows.Forms.Button ClearCartButton;
+        private System.Windows.Forms.ComboBox SmallCheese;
+        private System.Windows.Forms.Label SmallCheeseLabel;
     }
 }

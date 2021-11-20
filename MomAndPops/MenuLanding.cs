@@ -199,5 +199,30 @@ namespace MomAndPops.Resources
             currentOrder.currentOrder.Clear();
             PrintOrder();
         }
+
+        private void SmallOnion_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(SmallCheese.FindString("Extra") == SmallCheese.SelectedIndex)
+            {
+                float total = float.Parse(SmallPizzaPrice.Text[1].ToString()) + .25f;
+                SmallPizzaPrice.Text = "$"+total;
+            }
+            else if(!SmallPizzaPrice.Text.Equals("$4"))
+            {
+                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.25f;
+                SmallPizzaPrice.Text = "$" + total;
+            }
+            
+        }
+
+        private void SmallCheese_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
