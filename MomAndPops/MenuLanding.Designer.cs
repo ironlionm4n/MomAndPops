@@ -48,74 +48,111 @@ namespace MomAndPops.Resources
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.PizzaPanel = new System.Windows.Forms.Panel();
             this.ExtraLargeCustomization = new System.Windows.Forms.Panel();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.ExtraLargePineapple = new System.Windows.Forms.CheckBox();
-            this.ExtraLargeMushroom = new System.Windows.Forms.CheckBox();
-            this.ExtraLargeTomato = new System.Windows.Forms.CheckBox();
-            this.ExtraLargeGreenPepper = new System.Windows.Forms.CheckBox();
-            this.ExtraLargeOnion = new System.Windows.Forms.CheckBox();
-            this.ExtraLargeHam = new System.Windows.Forms.CheckBox();
-            this.ExtraLargeSausage = new System.Windows.Forms.CheckBox();
-            this.ExtraLargePepperoni = new System.Windows.Forms.CheckBox();
-            this.ExtraLargeCheese = new System.Windows.Forms.CheckBox();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.ExtraLargePineappleLabel = new System.Windows.Forms.Label();
+            this.ExtraLargePineapple = new System.Windows.Forms.ComboBox();
+            this.ExtraLargeMushroomLabel = new System.Windows.Forms.Label();
+            this.ExtraLargeMushroom = new System.Windows.Forms.ComboBox();
+            this.ExtraLargeTomatoLabel = new System.Windows.Forms.Label();
+            this.ExtraLargeTomato = new System.Windows.Forms.ComboBox();
+            this.ExtraLargeGreenPepperLabel = new System.Windows.Forms.Label();
+            this.ExtraLargeGreenPepper = new System.Windows.Forms.ComboBox();
+            this.ExtraLargeOnionLabel = new System.Windows.Forms.Label();
+            this.ExtraLargeOnion = new System.Windows.Forms.ComboBox();
+            this.ExtraLargeHamLabel = new System.Windows.Forms.Label();
+            this.ExtraLargeHam = new System.Windows.Forms.ComboBox();
+            this.ExtraLargeSausageLabel = new System.Windows.Forms.Label();
+            this.ExtraLargeSausage = new System.Windows.Forms.ComboBox();
+            this.ExtraLargePepperoniLabel = new System.Windows.Forms.Label();
+            this.ExtraLargePepperoni = new System.Windows.Forms.ComboBox();
+            this.ExtraLargeCheeseLabel = new System.Windows.Forms.Label();
+            this.ExtraLargeCheese = new System.Windows.Forms.ComboBox();
             this.panel20 = new System.Windows.Forms.Panel();
             this.ExtraLargePanCrust = new System.Windows.Forms.RadioButton();
             this.ExtraLargeRegularCrust = new System.Windows.Forms.RadioButton();
-            this.ExtaLargeThinCrust = new System.Windows.Forms.RadioButton();
+            this.ExtraLargeThinCrust = new System.Windows.Forms.RadioButton();
             this.MediumCustimization = new System.Windows.Forms.Panel();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.MediumPineapple = new System.Windows.Forms.CheckBox();
-            this.MediumMushroom = new System.Windows.Forms.CheckBox();
-            this.MediumTomato = new System.Windows.Forms.CheckBox();
-            this.MediumGreenPepper = new System.Windows.Forms.CheckBox();
-            this.MediumOnion = new System.Windows.Forms.CheckBox();
-            this.MediumHam = new System.Windows.Forms.CheckBox();
-            this.MediumSuasage = new System.Windows.Forms.CheckBox();
-            this.MediumPepperoni = new System.Windows.Forms.CheckBox();
-            this.MediumCheese = new System.Windows.Forms.CheckBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.MediumPineappleLabel = new System.Windows.Forms.Label();
+            this.MediumPineapple = new System.Windows.Forms.ComboBox();
+            this.MediumMushroomLabel = new System.Windows.Forms.Label();
+            this.MediumMushroom = new System.Windows.Forms.ComboBox();
+            this.MediumTomatoLabel = new System.Windows.Forms.Label();
+            this.MediumTomato = new System.Windows.Forms.ComboBox();
+            this.MediumGreenPepperLabel = new System.Windows.Forms.Label();
+            this.MediumGreenPepper = new System.Windows.Forms.ComboBox();
+            this.MediumOnionLabel = new System.Windows.Forms.Label();
+            this.MediumOnion = new System.Windows.Forms.ComboBox();
+            this.MediumHamLabel = new System.Windows.Forms.Label();
+            this.MediumHam = new System.Windows.Forms.ComboBox();
+            this.MediumSausageLabel = new System.Windows.Forms.Label();
+            this.MediumSausage = new System.Windows.Forms.ComboBox();
+            this.MediumPepperoniLabel = new System.Windows.Forms.Label();
+            this.MediumPepperoni = new System.Windows.Forms.ComboBox();
+            this.MediumCheeseLabel = new System.Windows.Forms.Label();
+            this.MediumCheese = new System.Windows.Forms.ComboBox();
             this.panel17 = new System.Windows.Forms.Panel();
             this.MediumPanCrust = new System.Windows.Forms.RadioButton();
             this.MediumRegularCrust = new System.Windows.Forms.RadioButton();
             this.MediumThinCrust = new System.Windows.Forms.RadioButton();
             this.SmallCustimization = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.SmallPineapple = new System.Windows.Forms.CheckBox();
-            this.SmallMushroom = new System.Windows.Forms.CheckBox();
-            this.SmallTomato = new System.Windows.Forms.CheckBox();
-            this.SmallGreenPepper = new System.Windows.Forms.CheckBox();
-            this.SmallOnion = new System.Windows.Forms.CheckBox();
-            this.SmallHam = new System.Windows.Forms.CheckBox();
-            this.SmallSausage = new System.Windows.Forms.CheckBox();
-            this.SmallPepperoni = new System.Windows.Forms.CheckBox();
+            this.SmallPineappleLabel = new System.Windows.Forms.Label();
+            this.SmallPineapple = new System.Windows.Forms.ComboBox();
+            this.SmallMushroomLabel = new System.Windows.Forms.Label();
+            this.SmallMushroom = new System.Windows.Forms.ComboBox();
+            this.SmallTomatoLabel = new System.Windows.Forms.Label();
+            this.SmallTomato = new System.Windows.Forms.ComboBox();
+            this.SmallGreenPepperLabel = new System.Windows.Forms.Label();
+            this.SmallGreenPepper = new System.Windows.Forms.ComboBox();
+            this.SmallOnionLabel = new System.Windows.Forms.Label();
+            this.SmallOnion = new System.Windows.Forms.ComboBox();
+            this.SmallHamLabel = new System.Windows.Forms.Label();
+            this.SmallHam = new System.Windows.Forms.ComboBox();
+            this.SmallSausageLabel = new System.Windows.Forms.Label();
+            this.SmallSausage = new System.Windows.Forms.ComboBox();
+            this.SmallPepperoniLabel = new System.Windows.Forms.Label();
+            this.SmallPepperoni = new System.Windows.Forms.ComboBox();
+            this.SmallCheeseLabel = new System.Windows.Forms.Label();
+            this.SmallCheese = new System.Windows.Forms.ComboBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.SmallPanCrust = new System.Windows.Forms.RadioButton();
             this.SmallRegularCrust = new System.Windows.Forms.RadioButton();
             this.SmallThinCrust = new System.Windows.Forms.RadioButton();
             this.LargeCustomization = new System.Windows.Forms.Panel();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.LargePineapple = new System.Windows.Forms.CheckBox();
-            this.LargeMushroom = new System.Windows.Forms.CheckBox();
-            this.LargeTomato = new System.Windows.Forms.CheckBox();
-            this.LargeGreenPepper = new System.Windows.Forms.CheckBox();
-            this.LargeOnion = new System.Windows.Forms.CheckBox();
-            this.LargeHam = new System.Windows.Forms.CheckBox();
-            this.LargeSuasage = new System.Windows.Forms.CheckBox();
-            this.LargePepperoni = new System.Windows.Forms.CheckBox();
-            this.LargeCheese = new System.Windows.Forms.CheckBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.LargePineappleLabel = new System.Windows.Forms.Label();
+            this.LargePineapple = new System.Windows.Forms.ComboBox();
+            this.LargeMushroomLabel = new System.Windows.Forms.Label();
+            this.LargeMushroom = new System.Windows.Forms.ComboBox();
+            this.LargeTomatoLabel = new System.Windows.Forms.Label();
+            this.LargeTomato = new System.Windows.Forms.ComboBox();
+            this.LargeGreenPepperLabel = new System.Windows.Forms.Label();
+            this.LargeGreenPepper = new System.Windows.Forms.ComboBox();
+            this.LargeOnionLabel = new System.Windows.Forms.Label();
+            this.LargeOnion = new System.Windows.Forms.ComboBox();
+            this.LargeHamLabel = new System.Windows.Forms.Label();
+            this.LargeHam = new System.Windows.Forms.ComboBox();
+            this.LargeSausageLabel = new System.Windows.Forms.Label();
+            this.LargeSausage = new System.Windows.Forms.ComboBox();
+            this.LargePepperoniLabel = new System.Windows.Forms.Label();
+            this.LargePepperoni = new System.Windows.Forms.ComboBox();
+            this.LargeCheeseLabel = new System.Windows.Forms.Label();
+            this.LargeCheese = new System.Windows.Forms.ComboBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.LargePanCrust = new System.Windows.Forms.RadioButton();
             this.LargeRegularCrust = new System.Windows.Forms.RadioButton();
             this.LargeThinCrust = new System.Windows.Forms.RadioButton();
-            this.label18 = new System.Windows.Forms.Label();
+            this.MediumPizzaText = new System.Windows.Forms.Label();
             this.LargePizzaPrice = new System.Windows.Forms.Label();
             this.MediumPizzaPrice = new System.Windows.Forms.Label();
-            this.XLargePizzaQuantity = new System.Windows.Forms.NumericUpDown();
+            this.ExtraLargePizzaQuantity = new System.Windows.Forms.NumericUpDown();
             this.MediumPizzaQuantity = new System.Windows.Forms.NumericUpDown();
-            this.label21 = new System.Windows.Forms.Label();
+            this.ExtraLargePizzaPrice = new System.Windows.Forms.Label();
             this.SmallPizzaPrice = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
+            this.ExtraLargePizzaText = new System.Windows.Forms.Label();
+            this.SmallPizzaText = new System.Windows.Forms.Label();
+            this.LargePizzaText = new System.Windows.Forms.Label();
             this.SmallPizzaQuantity = new System.Windows.Forms.NumericUpDown();
             this.LargePizzaQuantity = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
@@ -196,8 +233,6 @@ namespace MomAndPops.Resources
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PreviousOrderXButton = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.SmallCheese = new System.Windows.Forms.ComboBox();
-            this.SmallCheeseLabel = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CookieQuantity)).BeginInit();
@@ -208,18 +243,18 @@ namespace MomAndPops.Resources
             this.groupBox2.SuspendLayout();
             this.PizzaPanel.SuspendLayout();
             this.ExtraLargeCustomization.SuspendLayout();
-            this.panel19.SuspendLayout();
+            this.panel15.SuspendLayout();
             this.panel20.SuspendLayout();
             this.MediumCustimization.SuspendLayout();
-            this.panel16.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel17.SuspendLayout();
             this.SmallCustimization.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel13.SuspendLayout();
             this.LargeCustomization.SuspendLayout();
-            this.panel15.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.XLargePizzaQuantity)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExtraLargePizzaQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MediumPizzaQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SmallPizzaQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LargePizzaQuantity)).BeginInit();
@@ -428,152 +463,296 @@ namespace MomAndPops.Resources
             this.PizzaPanel.Controls.Add(this.MediumCustimization);
             this.PizzaPanel.Controls.Add(this.SmallCustimization);
             this.PizzaPanel.Controls.Add(this.LargeCustomization);
-            this.PizzaPanel.Controls.Add(this.label18);
+            this.PizzaPanel.Controls.Add(this.MediumPizzaText);
             this.PizzaPanel.Controls.Add(this.LargePizzaPrice);
             this.PizzaPanel.Controls.Add(this.MediumPizzaPrice);
-            this.PizzaPanel.Controls.Add(this.XLargePizzaQuantity);
+            this.PizzaPanel.Controls.Add(this.ExtraLargePizzaQuantity);
             this.PizzaPanel.Controls.Add(this.MediumPizzaQuantity);
-            this.PizzaPanel.Controls.Add(this.label21);
+            this.PizzaPanel.Controls.Add(this.ExtraLargePizzaPrice);
             this.PizzaPanel.Controls.Add(this.SmallPizzaPrice);
-            this.PizzaPanel.Controls.Add(this.label20);
-            this.PizzaPanel.Controls.Add(this.label17);
-            this.PizzaPanel.Controls.Add(this.label19);
+            this.PizzaPanel.Controls.Add(this.ExtraLargePizzaText);
+            this.PizzaPanel.Controls.Add(this.SmallPizzaText);
+            this.PizzaPanel.Controls.Add(this.LargePizzaText);
             this.PizzaPanel.Controls.Add(this.SmallPizzaQuantity);
             this.PizzaPanel.Controls.Add(this.LargePizzaQuantity);
             this.PizzaPanel.Location = new System.Drawing.Point(0, 68);
             this.PizzaPanel.Name = "PizzaPanel";
-            this.PizzaPanel.Size = new System.Drawing.Size(362, 363);
+            this.PizzaPanel.Size = new System.Drawing.Size(392, 363);
             this.PizzaPanel.TabIndex = 3;
             // 
             // ExtraLargeCustomization
             // 
-            this.ExtraLargeCustomization.Controls.Add(this.panel19);
+            this.ExtraLargeCustomization.Controls.Add(this.panel15);
             this.ExtraLargeCustomization.Controls.Add(this.panel20);
             this.ExtraLargeCustomization.Location = new System.Drawing.Point(6, 586);
             this.ExtraLargeCustomization.Name = "ExtraLargeCustomization";
-            this.ExtraLargeCustomization.Size = new System.Drawing.Size(332, 146);
+            this.ExtraLargeCustomization.Size = new System.Drawing.Size(363, 146);
             this.ExtraLargeCustomization.TabIndex = 18;
             // 
-            // panel19
+            // panel15
             // 
-            this.panel19.Controls.Add(this.ExtraLargePineapple);
-            this.panel19.Controls.Add(this.ExtraLargeMushroom);
-            this.panel19.Controls.Add(this.ExtraLargeTomato);
-            this.panel19.Controls.Add(this.ExtraLargeGreenPepper);
-            this.panel19.Controls.Add(this.ExtraLargeOnion);
-            this.panel19.Controls.Add(this.ExtraLargeHam);
-            this.panel19.Controls.Add(this.ExtraLargeSausage);
-            this.panel19.Controls.Add(this.ExtraLargePepperoni);
-            this.panel19.Controls.Add(this.ExtraLargeCheese);
-            this.panel19.Location = new System.Drawing.Point(16, 51);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(300, 86);
-            this.panel19.TabIndex = 15;
+            this.panel15.Controls.Add(this.ExtraLargePineappleLabel);
+            this.panel15.Controls.Add(this.ExtraLargePineapple);
+            this.panel15.Controls.Add(this.ExtraLargeMushroomLabel);
+            this.panel15.Controls.Add(this.ExtraLargeMushroom);
+            this.panel15.Controls.Add(this.ExtraLargeTomatoLabel);
+            this.panel15.Controls.Add(this.ExtraLargeTomato);
+            this.panel15.Controls.Add(this.ExtraLargeGreenPepperLabel);
+            this.panel15.Controls.Add(this.ExtraLargeGreenPepper);
+            this.panel15.Controls.Add(this.ExtraLargeOnionLabel);
+            this.panel15.Controls.Add(this.ExtraLargeOnion);
+            this.panel15.Controls.Add(this.ExtraLargeHamLabel);
+            this.panel15.Controls.Add(this.ExtraLargeHam);
+            this.panel15.Controls.Add(this.ExtraLargeSausageLabel);
+            this.panel15.Controls.Add(this.ExtraLargeSausage);
+            this.panel15.Controls.Add(this.ExtraLargePepperoniLabel);
+            this.panel15.Controls.Add(this.ExtraLargePepperoni);
+            this.panel15.Controls.Add(this.ExtraLargeCheeseLabel);
+            this.panel15.Controls.Add(this.ExtraLargeCheese);
+            this.panel15.Location = new System.Drawing.Point(3, 46);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(366, 98);
+            this.panel15.TabIndex = 16;
+            // 
+            // ExtraLargePineappleLabel
+            // 
+            this.ExtraLargePineappleLabel.AutoSize = true;
+            this.ExtraLargePineappleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ExtraLargePineappleLabel.Location = new System.Drawing.Point(284, 73);
+            this.ExtraLargePineappleLabel.Name = "ExtraLargePineappleLabel";
+            this.ExtraLargePineappleLabel.Size = new System.Drawing.Size(71, 17);
+            this.ExtraLargePineappleLabel.TabIndex = 34;
+            this.ExtraLargePineappleLabel.Text = "Pineapple";
             // 
             // ExtraLargePineapple
             // 
-            this.ExtraLargePineapple.AutoSize = true;
-            this.ExtraLargePineapple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargePineapple.Location = new System.Drawing.Point(182, 56);
+            this.ExtraLargePineapple.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.ExtraLargePineapple.FormattingEnabled = true;
+            this.ExtraLargePineapple.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.ExtraLargePineapple.Location = new System.Drawing.Point(233, 71);
             this.ExtraLargePineapple.Name = "ExtraLargePineapple";
-            this.ExtraLargePineapple.Size = new System.Drawing.Size(90, 21);
-            this.ExtraLargePineapple.TabIndex = 8;
-            this.ExtraLargePineapple.Text = "Pineapple";
-            this.ExtraLargePineapple.UseVisualStyleBackColor = true;
+            this.ExtraLargePineapple.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargePineapple.TabIndex = 33;
+            this.ExtraLargePineapple.Text = "None";
+            this.ExtraLargePineapple.SelectedIndexChanged += new System.EventHandler(this.ExtraLargePineapple_SelectedIndexChanged);
+            // 
+            // ExtraLargeMushroomLabel
+            // 
+            this.ExtraLargeMushroomLabel.AutoSize = true;
+            this.ExtraLargeMushroomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ExtraLargeMushroomLabel.Location = new System.Drawing.Point(160, 74);
+            this.ExtraLargeMushroomLabel.Name = "ExtraLargeMushroomLabel";
+            this.ExtraLargeMushroomLabel.Size = new System.Drawing.Size(74, 17);
+            this.ExtraLargeMushroomLabel.TabIndex = 32;
+            this.ExtraLargeMushroomLabel.Text = "Mushroom";
             // 
             // ExtraLargeMushroom
             // 
-            this.ExtraLargeMushroom.AutoSize = true;
-            this.ExtraLargeMushroom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeMushroom.Location = new System.Drawing.Point(83, 56);
+            this.ExtraLargeMushroom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.ExtraLargeMushroom.FormattingEnabled = true;
+            this.ExtraLargeMushroom.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.ExtraLargeMushroom.Location = new System.Drawing.Point(109, 72);
             this.ExtraLargeMushroom.Name = "ExtraLargeMushroom";
-            this.ExtraLargeMushroom.Size = new System.Drawing.Size(93, 21);
-            this.ExtraLargeMushroom.TabIndex = 7;
-            this.ExtraLargeMushroom.Text = "Mushroom";
-            this.ExtraLargeMushroom.UseVisualStyleBackColor = true;
+            this.ExtraLargeMushroom.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeMushroom.TabIndex = 31;
+            this.ExtraLargeMushroom.Text = "None";
+            this.ExtraLargeMushroom.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeMushroom_SelectedIndexChanged);
+            // 
+            // ExtraLargeTomatoLabel
+            // 
+            this.ExtraLargeTomatoLabel.AutoSize = true;
+            this.ExtraLargeTomatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ExtraLargeTomatoLabel.Location = new System.Drawing.Point(51, 74);
+            this.ExtraLargeTomatoLabel.Name = "ExtraLargeTomatoLabel";
+            this.ExtraLargeTomatoLabel.Size = new System.Drawing.Size(56, 17);
+            this.ExtraLargeTomatoLabel.TabIndex = 30;
+            this.ExtraLargeTomatoLabel.Text = "Tomato";
             // 
             // ExtraLargeTomato
             // 
-            this.ExtraLargeTomato.AutoSize = true;
-            this.ExtraLargeTomato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeTomato.Location = new System.Drawing.Point(3, 56);
+            this.ExtraLargeTomato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.ExtraLargeTomato.FormattingEnabled = true;
+            this.ExtraLargeTomato.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.ExtraLargeTomato.Location = new System.Drawing.Point(0, 72);
             this.ExtraLargeTomato.Name = "ExtraLargeTomato";
-            this.ExtraLargeTomato.Size = new System.Drawing.Size(75, 21);
-            this.ExtraLargeTomato.TabIndex = 6;
-            this.ExtraLargeTomato.Text = "Tomato";
-            this.ExtraLargeTomato.UseVisualStyleBackColor = true;
+            this.ExtraLargeTomato.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeTomato.TabIndex = 29;
+            this.ExtraLargeTomato.Text = "None";
+            this.ExtraLargeTomato.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeTomato_SelectedIndexChanged);
+            // 
+            // ExtraLargeGreenPepperLabel
+            // 
+            this.ExtraLargeGreenPepperLabel.AutoSize = true;
+            this.ExtraLargeGreenPepperLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ExtraLargeGreenPepperLabel.Location = new System.Drawing.Point(265, 44);
+            this.ExtraLargeGreenPepperLabel.Name = "ExtraLargeGreenPepperLabel";
+            this.ExtraLargeGreenPepperLabel.Size = new System.Drawing.Size(98, 17);
+            this.ExtraLargeGreenPepperLabel.TabIndex = 28;
+            this.ExtraLargeGreenPepperLabel.Text = "Green Pepper";
             // 
             // ExtraLargeGreenPepper
             // 
-            this.ExtraLargeGreenPepper.AutoSize = true;
-            this.ExtraLargeGreenPepper.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeGreenPepper.Location = new System.Drawing.Point(182, 29);
+            this.ExtraLargeGreenPepper.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.ExtraLargeGreenPepper.FormattingEnabled = true;
+            this.ExtraLargeGreenPepper.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.ExtraLargeGreenPepper.Location = new System.Drawing.Point(214, 42);
             this.ExtraLargeGreenPepper.Name = "ExtraLargeGreenPepper";
-            this.ExtraLargeGreenPepper.Size = new System.Drawing.Size(117, 21);
-            this.ExtraLargeGreenPepper.TabIndex = 5;
-            this.ExtraLargeGreenPepper.Text = "Green Pepper";
-            this.ExtraLargeGreenPepper.UseVisualStyleBackColor = true;
+            this.ExtraLargeGreenPepper.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeGreenPepper.TabIndex = 27;
+            this.ExtraLargeGreenPepper.Text = "None";
+            this.ExtraLargeGreenPepper.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeGreenPepper_SelectedIndexChanged);
+            // 
+            // ExtraLargeOnionLabel
+            // 
+            this.ExtraLargeOnionLabel.AutoSize = true;
+            this.ExtraLargeOnionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ExtraLargeOnionLabel.Location = new System.Drawing.Point(160, 44);
+            this.ExtraLargeOnionLabel.Name = "ExtraLargeOnionLabel";
+            this.ExtraLargeOnionLabel.Size = new System.Drawing.Size(46, 17);
+            this.ExtraLargeOnionLabel.TabIndex = 26;
+            this.ExtraLargeOnionLabel.Text = "Onion";
             // 
             // ExtraLargeOnion
             // 
-            this.ExtraLargeOnion.AutoSize = true;
-            this.ExtraLargeOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeOnion.Location = new System.Drawing.Point(84, 29);
+            this.ExtraLargeOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.ExtraLargeOnion.FormattingEnabled = true;
+            this.ExtraLargeOnion.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.ExtraLargeOnion.Location = new System.Drawing.Point(109, 42);
             this.ExtraLargeOnion.Name = "ExtraLargeOnion";
-            this.ExtraLargeOnion.Size = new System.Drawing.Size(65, 21);
-            this.ExtraLargeOnion.TabIndex = 4;
-            this.ExtraLargeOnion.Text = "Onion";
-            this.ExtraLargeOnion.UseVisualStyleBackColor = true;
+            this.ExtraLargeOnion.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeOnion.TabIndex = 25;
+            this.ExtraLargeOnion.Text = "None";
+            this.ExtraLargeOnion.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeOnion_SelectedIndexChanged);
+            // 
+            // ExtraLargeHamLabel
+            // 
+            this.ExtraLargeHamLabel.AutoSize = true;
+            this.ExtraLargeHamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ExtraLargeHamLabel.Location = new System.Drawing.Point(51, 45);
+            this.ExtraLargeHamLabel.Name = "ExtraLargeHamLabel";
+            this.ExtraLargeHamLabel.Size = new System.Drawing.Size(37, 17);
+            this.ExtraLargeHamLabel.TabIndex = 24;
+            this.ExtraLargeHamLabel.Text = "Ham";
             // 
             // ExtraLargeHam
             // 
-            this.ExtraLargeHam.AutoSize = true;
-            this.ExtraLargeHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeHam.Location = new System.Drawing.Point(3, 30);
+            this.ExtraLargeHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.ExtraLargeHam.FormattingEnabled = true;
+            this.ExtraLargeHam.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.ExtraLargeHam.Location = new System.Drawing.Point(0, 43);
             this.ExtraLargeHam.Name = "ExtraLargeHam";
-            this.ExtraLargeHam.Size = new System.Drawing.Size(56, 21);
-            this.ExtraLargeHam.TabIndex = 3;
-            this.ExtraLargeHam.Text = "Ham";
-            this.ExtraLargeHam.UseVisualStyleBackColor = true;
+            this.ExtraLargeHam.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeHam.TabIndex = 23;
+            this.ExtraLargeHam.Text = "None";
+            this.ExtraLargeHam.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeHam_SelectedIndexChanged);
+            // 
+            // ExtraLargeSausageLabel
+            // 
+            this.ExtraLargeSausageLabel.AutoSize = true;
+            this.ExtraLargeSausageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ExtraLargeSausageLabel.Location = new System.Drawing.Point(291, 13);
+            this.ExtraLargeSausageLabel.Name = "ExtraLargeSausageLabel";
+            this.ExtraLargeSausageLabel.Size = new System.Drawing.Size(64, 17);
+            this.ExtraLargeSausageLabel.TabIndex = 22;
+            this.ExtraLargeSausageLabel.Text = "Sausage";
             // 
             // ExtraLargeSausage
             // 
-            this.ExtraLargeSausage.AutoSize = true;
-            this.ExtraLargeSausage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeSausage.Location = new System.Drawing.Point(182, 3);
+            this.ExtraLargeSausage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.ExtraLargeSausage.FormattingEnabled = true;
+            this.ExtraLargeSausage.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.ExtraLargeSausage.Location = new System.Drawing.Point(240, 11);
             this.ExtraLargeSausage.Name = "ExtraLargeSausage";
-            this.ExtraLargeSausage.Size = new System.Drawing.Size(83, 21);
-            this.ExtraLargeSausage.TabIndex = 2;
-            this.ExtraLargeSausage.Text = "Sausage";
-            this.ExtraLargeSausage.UseVisualStyleBackColor = true;
+            this.ExtraLargeSausage.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeSausage.TabIndex = 21;
+            this.ExtraLargeSausage.Text = "None";
+            this.ExtraLargeSausage.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeSausage_SelectedIndexChanged);
+            // 
+            // ExtraLargePepperoniLabel
+            // 
+            this.ExtraLargePepperoniLabel.AutoSize = true;
+            this.ExtraLargePepperoniLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ExtraLargePepperoniLabel.Location = new System.Drawing.Point(160, 14);
+            this.ExtraLargePepperoniLabel.Name = "ExtraLargePepperoniLabel";
+            this.ExtraLargePepperoniLabel.Size = new System.Drawing.Size(73, 17);
+            this.ExtraLargePepperoniLabel.TabIndex = 20;
+            this.ExtraLargePepperoniLabel.Text = "Pepperoni";
             // 
             // ExtraLargePepperoni
             // 
-            this.ExtraLargePepperoni.AutoSize = true;
-            this.ExtraLargePepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargePepperoni.Location = new System.Drawing.Point(84, 3);
+            this.ExtraLargePepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.ExtraLargePepperoni.FormattingEnabled = true;
+            this.ExtraLargePepperoni.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.ExtraLargePepperoni.Location = new System.Drawing.Point(109, 12);
             this.ExtraLargePepperoni.Name = "ExtraLargePepperoni";
-            this.ExtraLargePepperoni.Size = new System.Drawing.Size(92, 21);
-            this.ExtraLargePepperoni.TabIndex = 1;
-            this.ExtraLargePepperoni.Text = "Pepperoni";
-            this.ExtraLargePepperoni.UseVisualStyleBackColor = true;
+            this.ExtraLargePepperoni.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargePepperoni.TabIndex = 19;
+            this.ExtraLargePepperoni.Text = "None";
+            this.ExtraLargePepperoni.SelectedIndexChanged += new System.EventHandler(this.ExtraLargePepperoni_SelectedIndexChanged);
+            // 
+            // ExtraLargeCheeseLabel
+            // 
+            this.ExtraLargeCheeseLabel.AutoSize = true;
+            this.ExtraLargeCheeseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ExtraLargeCheeseLabel.Location = new System.Drawing.Point(51, 14);
+            this.ExtraLargeCheeseLabel.Name = "ExtraLargeCheeseLabel";
+            this.ExtraLargeCheeseLabel.Size = new System.Drawing.Size(56, 17);
+            this.ExtraLargeCheeseLabel.TabIndex = 18;
+            this.ExtraLargeCheeseLabel.Text = "Cheese";
             // 
             // ExtraLargeCheese
             // 
-            this.ExtraLargeCheese.AutoSize = true;
-            this.ExtraLargeCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeCheese.Location = new System.Drawing.Point(3, 3);
+            this.ExtraLargeCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.ExtraLargeCheese.FormattingEnabled = true;
+            this.ExtraLargeCheese.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.ExtraLargeCheese.Location = new System.Drawing.Point(0, 12);
             this.ExtraLargeCheese.Name = "ExtraLargeCheese";
-            this.ExtraLargeCheese.Size = new System.Drawing.Size(75, 21);
-            this.ExtraLargeCheese.TabIndex = 0;
-            this.ExtraLargeCheese.Text = "Cheese";
-            this.ExtraLargeCheese.UseVisualStyleBackColor = true;
+            this.ExtraLargeCheese.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeCheese.TabIndex = 17;
+            this.ExtraLargeCheese.Text = "None";
+            this.ExtraLargeCheese.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeCheese_SelectedIndexChanged);
             // 
             // panel20
             // 
             this.panel20.Controls.Add(this.ExtraLargePanCrust);
             this.panel20.Controls.Add(this.ExtraLargeRegularCrust);
-            this.panel20.Controls.Add(this.ExtaLargeThinCrust);
+            this.panel20.Controls.Add(this.ExtraLargeThinCrust);
             this.panel20.Location = new System.Drawing.Point(3, 12);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(326, 33);
@@ -603,141 +782,285 @@ namespace MomAndPops.Resources
             this.ExtraLargeRegularCrust.Text = "Regular Crust";
             this.ExtraLargeRegularCrust.UseVisualStyleBackColor = true;
             // 
-            // ExtaLargeThinCrust
+            // ExtraLargeThinCrust
             // 
-            this.ExtaLargeThinCrust.AutoSize = true;
-            this.ExtaLargeThinCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtaLargeThinCrust.Location = new System.Drawing.Point(13, 6);
-            this.ExtaLargeThinCrust.Name = "ExtaLargeThinCrust";
-            this.ExtaLargeThinCrust.Size = new System.Drawing.Size(91, 21);
-            this.ExtaLargeThinCrust.TabIndex = 0;
-            this.ExtaLargeThinCrust.TabStop = true;
-            this.ExtaLargeThinCrust.Text = "Thin Crust";
-            this.ExtaLargeThinCrust.UseVisualStyleBackColor = true;
+            this.ExtraLargeThinCrust.AutoSize = true;
+            this.ExtraLargeThinCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ExtraLargeThinCrust.Location = new System.Drawing.Point(13, 6);
+            this.ExtraLargeThinCrust.Name = "ExtraLargeThinCrust";
+            this.ExtraLargeThinCrust.Size = new System.Drawing.Size(91, 21);
+            this.ExtraLargeThinCrust.TabIndex = 0;
+            this.ExtraLargeThinCrust.TabStop = true;
+            this.ExtraLargeThinCrust.Text = "Thin Crust";
+            this.ExtraLargeThinCrust.UseVisualStyleBackColor = true;
             // 
             // MediumCustimization
             // 
-            this.MediumCustimization.Controls.Add(this.panel16);
+            this.MediumCustimization.Controls.Add(this.panel1);
             this.MediumCustimization.Controls.Add(this.panel17);
             this.MediumCustimization.Location = new System.Drawing.Point(0, 221);
             this.MediumCustimization.Name = "MediumCustimization";
-            this.MediumCustimization.Size = new System.Drawing.Size(332, 146);
+            this.MediumCustimization.Size = new System.Drawing.Size(372, 146);
             this.MediumCustimization.TabIndex = 16;
             // 
-            // panel16
+            // panel1
             // 
-            this.panel16.Controls.Add(this.MediumPineapple);
-            this.panel16.Controls.Add(this.MediumMushroom);
-            this.panel16.Controls.Add(this.MediumTomato);
-            this.panel16.Controls.Add(this.MediumGreenPepper);
-            this.panel16.Controls.Add(this.MediumOnion);
-            this.panel16.Controls.Add(this.MediumHam);
-            this.panel16.Controls.Add(this.MediumSuasage);
-            this.panel16.Controls.Add(this.MediumPepperoni);
-            this.panel16.Controls.Add(this.MediumCheese);
-            this.panel16.Location = new System.Drawing.Point(16, 45);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(300, 98);
-            this.panel16.TabIndex = 15;
+            this.panel1.Controls.Add(this.MediumPineappleLabel);
+            this.panel1.Controls.Add(this.MediumPineapple);
+            this.panel1.Controls.Add(this.MediumMushroomLabel);
+            this.panel1.Controls.Add(this.MediumMushroom);
+            this.panel1.Controls.Add(this.MediumTomatoLabel);
+            this.panel1.Controls.Add(this.MediumTomato);
+            this.panel1.Controls.Add(this.MediumGreenPepperLabel);
+            this.panel1.Controls.Add(this.MediumGreenPepper);
+            this.panel1.Controls.Add(this.MediumOnionLabel);
+            this.panel1.Controls.Add(this.MediumOnion);
+            this.panel1.Controls.Add(this.MediumHamLabel);
+            this.panel1.Controls.Add(this.MediumHam);
+            this.panel1.Controls.Add(this.MediumSausageLabel);
+            this.panel1.Controls.Add(this.MediumSausage);
+            this.panel1.Controls.Add(this.MediumPepperoniLabel);
+            this.panel1.Controls.Add(this.MediumPepperoni);
+            this.panel1.Controls.Add(this.MediumCheeseLabel);
+            this.panel1.Controls.Add(this.MediumCheese);
+            this.panel1.Location = new System.Drawing.Point(3, 46);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(366, 98);
+            this.panel1.TabIndex = 16;
+            // 
+            // MediumPineappleLabel
+            // 
+            this.MediumPineappleLabel.AutoSize = true;
+            this.MediumPineappleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MediumPineappleLabel.Location = new System.Drawing.Point(284, 73);
+            this.MediumPineappleLabel.Name = "MediumPineappleLabel";
+            this.MediumPineappleLabel.Size = new System.Drawing.Size(71, 17);
+            this.MediumPineappleLabel.TabIndex = 34;
+            this.MediumPineappleLabel.Text = "Pineapple";
             // 
             // MediumPineapple
             // 
-            this.MediumPineapple.AutoSize = true;
-            this.MediumPineapple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumPineapple.Location = new System.Drawing.Point(181, 76);
+            this.MediumPineapple.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.MediumPineapple.FormattingEnabled = true;
+            this.MediumPineapple.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.MediumPineapple.Location = new System.Drawing.Point(233, 71);
             this.MediumPineapple.Name = "MediumPineapple";
-            this.MediumPineapple.Size = new System.Drawing.Size(90, 21);
-            this.MediumPineapple.TabIndex = 8;
-            this.MediumPineapple.Text = "Pineapple";
-            this.MediumPineapple.UseVisualStyleBackColor = true;
+            this.MediumPineapple.Size = new System.Drawing.Size(48, 21);
+            this.MediumPineapple.TabIndex = 33;
+            this.MediumPineapple.Text = "None";
+            this.MediumPineapple.SelectedIndexChanged += new System.EventHandler(this.MediumPineapple_SelectedIndexChanged);
+            // 
+            // MediumMushroomLabel
+            // 
+            this.MediumMushroomLabel.AutoSize = true;
+            this.MediumMushroomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MediumMushroomLabel.Location = new System.Drawing.Point(160, 74);
+            this.MediumMushroomLabel.Name = "MediumMushroomLabel";
+            this.MediumMushroomLabel.Size = new System.Drawing.Size(74, 17);
+            this.MediumMushroomLabel.TabIndex = 32;
+            this.MediumMushroomLabel.Text = "Mushroom";
             // 
             // MediumMushroom
             // 
-            this.MediumMushroom.AutoSize = true;
-            this.MediumMushroom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumMushroom.Location = new System.Drawing.Point(82, 76);
+            this.MediumMushroom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.MediumMushroom.FormattingEnabled = true;
+            this.MediumMushroom.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.MediumMushroom.Location = new System.Drawing.Point(109, 72);
             this.MediumMushroom.Name = "MediumMushroom";
-            this.MediumMushroom.Size = new System.Drawing.Size(93, 21);
-            this.MediumMushroom.TabIndex = 7;
-            this.MediumMushroom.Text = "Mushroom";
-            this.MediumMushroom.UseVisualStyleBackColor = true;
+            this.MediumMushroom.Size = new System.Drawing.Size(48, 21);
+            this.MediumMushroom.TabIndex = 31;
+            this.MediumMushroom.Text = "None";
+            this.MediumMushroom.SelectedIndexChanged += new System.EventHandler(this.MediumMushroom_SelectedIndexChanged);
+            // 
+            // MediumTomatoLabel
+            // 
+            this.MediumTomatoLabel.AutoSize = true;
+            this.MediumTomatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MediumTomatoLabel.Location = new System.Drawing.Point(51, 74);
+            this.MediumTomatoLabel.Name = "MediumTomatoLabel";
+            this.MediumTomatoLabel.Size = new System.Drawing.Size(56, 17);
+            this.MediumTomatoLabel.TabIndex = 30;
+            this.MediumTomatoLabel.Text = "Tomato";
             // 
             // MediumTomato
             // 
-            this.MediumTomato.AutoSize = true;
-            this.MediumTomato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumTomato.Location = new System.Drawing.Point(3, 76);
+            this.MediumTomato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.MediumTomato.FormattingEnabled = true;
+            this.MediumTomato.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.MediumTomato.Location = new System.Drawing.Point(0, 72);
             this.MediumTomato.Name = "MediumTomato";
-            this.MediumTomato.Size = new System.Drawing.Size(75, 21);
-            this.MediumTomato.TabIndex = 6;
-            this.MediumTomato.Text = "Tomato";
-            this.MediumTomato.UseVisualStyleBackColor = true;
+            this.MediumTomato.Size = new System.Drawing.Size(48, 21);
+            this.MediumTomato.TabIndex = 29;
+            this.MediumTomato.Text = "None";
+            this.MediumTomato.SelectedIndexChanged += new System.EventHandler(this.MediumTomato_SelectedIndexChanged);
+            // 
+            // MediumGreenPepperLabel
+            // 
+            this.MediumGreenPepperLabel.AutoSize = true;
+            this.MediumGreenPepperLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MediumGreenPepperLabel.Location = new System.Drawing.Point(265, 44);
+            this.MediumGreenPepperLabel.Name = "MediumGreenPepperLabel";
+            this.MediumGreenPepperLabel.Size = new System.Drawing.Size(98, 17);
+            this.MediumGreenPepperLabel.TabIndex = 28;
+            this.MediumGreenPepperLabel.Text = "Green Pepper";
             // 
             // MediumGreenPepper
             // 
-            this.MediumGreenPepper.AutoSize = true;
-            this.MediumGreenPepper.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumGreenPepper.Location = new System.Drawing.Point(181, 47);
+            this.MediumGreenPepper.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.MediumGreenPepper.FormattingEnabled = true;
+            this.MediumGreenPepper.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.MediumGreenPepper.Location = new System.Drawing.Point(214, 42);
             this.MediumGreenPepper.Name = "MediumGreenPepper";
-            this.MediumGreenPepper.Size = new System.Drawing.Size(117, 21);
-            this.MediumGreenPepper.TabIndex = 5;
-            this.MediumGreenPepper.Text = "Green Pepper";
-            this.MediumGreenPepper.UseVisualStyleBackColor = true;
+            this.MediumGreenPepper.Size = new System.Drawing.Size(48, 21);
+            this.MediumGreenPepper.TabIndex = 27;
+            this.MediumGreenPepper.Text = "None";
+            this.MediumGreenPepper.SelectedIndexChanged += new System.EventHandler(this.MediumGreenPepper_SelectedIndexChanged);
+            // 
+            // MediumOnionLabel
+            // 
+            this.MediumOnionLabel.AutoSize = true;
+            this.MediumOnionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MediumOnionLabel.Location = new System.Drawing.Point(160, 44);
+            this.MediumOnionLabel.Name = "MediumOnionLabel";
+            this.MediumOnionLabel.Size = new System.Drawing.Size(46, 17);
+            this.MediumOnionLabel.TabIndex = 26;
+            this.MediumOnionLabel.Text = "Onion";
             // 
             // MediumOnion
             // 
-            this.MediumOnion.AutoSize = true;
-            this.MediumOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumOnion.Location = new System.Drawing.Point(82, 47);
+            this.MediumOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.MediumOnion.FormattingEnabled = true;
+            this.MediumOnion.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.MediumOnion.Location = new System.Drawing.Point(109, 42);
             this.MediumOnion.Name = "MediumOnion";
-            this.MediumOnion.Size = new System.Drawing.Size(65, 21);
-            this.MediumOnion.TabIndex = 4;
-            this.MediumOnion.Text = "Onion";
-            this.MediumOnion.UseVisualStyleBackColor = true;
+            this.MediumOnion.Size = new System.Drawing.Size(48, 21);
+            this.MediumOnion.TabIndex = 25;
+            this.MediumOnion.Text = "None";
+            this.MediumOnion.SelectedIndexChanged += new System.EventHandler(this.MediumOnion_SelectedIndexChanged);
+            // 
+            // MediumHamLabel
+            // 
+            this.MediumHamLabel.AutoSize = true;
+            this.MediumHamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MediumHamLabel.Location = new System.Drawing.Point(51, 45);
+            this.MediumHamLabel.Name = "MediumHamLabel";
+            this.MediumHamLabel.Size = new System.Drawing.Size(37, 17);
+            this.MediumHamLabel.TabIndex = 24;
+            this.MediumHamLabel.Text = "Ham";
             // 
             // MediumHam
             // 
-            this.MediumHam.AutoSize = true;
-            this.MediumHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumHam.Location = new System.Drawing.Point(3, 47);
+            this.MediumHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.MediumHam.FormattingEnabled = true;
+            this.MediumHam.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.MediumHam.Location = new System.Drawing.Point(0, 43);
             this.MediumHam.Name = "MediumHam";
-            this.MediumHam.Size = new System.Drawing.Size(56, 21);
-            this.MediumHam.TabIndex = 3;
-            this.MediumHam.Text = "Ham";
-            this.MediumHam.UseVisualStyleBackColor = true;
+            this.MediumHam.Size = new System.Drawing.Size(48, 21);
+            this.MediumHam.TabIndex = 23;
+            this.MediumHam.Text = "None";
+            this.MediumHam.SelectedIndexChanged += new System.EventHandler(this.MediumHam_SelectedIndexChanged);
             // 
-            // MediumSuasage
+            // MediumSausageLabel
             // 
-            this.MediumSuasage.AutoSize = true;
-            this.MediumSuasage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumSuasage.Location = new System.Drawing.Point(183, 12);
-            this.MediumSuasage.Name = "MediumSuasage";
-            this.MediumSuasage.Size = new System.Drawing.Size(83, 21);
-            this.MediumSuasage.TabIndex = 2;
-            this.MediumSuasage.Text = "Sausage";
-            this.MediumSuasage.UseVisualStyleBackColor = true;
+            this.MediumSausageLabel.AutoSize = true;
+            this.MediumSausageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MediumSausageLabel.Location = new System.Drawing.Point(291, 13);
+            this.MediumSausageLabel.Name = "MediumSausageLabel";
+            this.MediumSausageLabel.Size = new System.Drawing.Size(64, 17);
+            this.MediumSausageLabel.TabIndex = 22;
+            this.MediumSausageLabel.Text = "Sausage";
+            // 
+            // MediumSausage
+            // 
+            this.MediumSausage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.MediumSausage.FormattingEnabled = true;
+            this.MediumSausage.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.MediumSausage.Location = new System.Drawing.Point(240, 11);
+            this.MediumSausage.Name = "MediumSausage";
+            this.MediumSausage.Size = new System.Drawing.Size(48, 21);
+            this.MediumSausage.TabIndex = 21;
+            this.MediumSausage.Text = "None";
+            this.MediumSausage.SelectedIndexChanged += new System.EventHandler(this.MediumSausage_SelectedIndexChanged);
+            // 
+            // MediumPepperoniLabel
+            // 
+            this.MediumPepperoniLabel.AutoSize = true;
+            this.MediumPepperoniLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MediumPepperoniLabel.Location = new System.Drawing.Point(160, 14);
+            this.MediumPepperoniLabel.Name = "MediumPepperoniLabel";
+            this.MediumPepperoniLabel.Size = new System.Drawing.Size(73, 17);
+            this.MediumPepperoniLabel.TabIndex = 20;
+            this.MediumPepperoniLabel.Text = "Pepperoni";
             // 
             // MediumPepperoni
             // 
-            this.MediumPepperoni.AutoSize = true;
-            this.MediumPepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumPepperoni.Location = new System.Drawing.Point(85, 12);
+            this.MediumPepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.MediumPepperoni.FormattingEnabled = true;
+            this.MediumPepperoni.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.MediumPepperoni.Location = new System.Drawing.Point(109, 12);
             this.MediumPepperoni.Name = "MediumPepperoni";
-            this.MediumPepperoni.Size = new System.Drawing.Size(92, 21);
-            this.MediumPepperoni.TabIndex = 1;
-            this.MediumPepperoni.Text = "Pepperoni";
-            this.MediumPepperoni.UseVisualStyleBackColor = true;
+            this.MediumPepperoni.Size = new System.Drawing.Size(48, 21);
+            this.MediumPepperoni.TabIndex = 19;
+            this.MediumPepperoni.Text = "None";
+            this.MediumPepperoni.SelectedIndexChanged += new System.EventHandler(this.MediumPepperoni_SelectedIndexChanged);
+            // 
+            // MediumCheeseLabel
+            // 
+            this.MediumCheeseLabel.AutoSize = true;
+            this.MediumCheeseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MediumCheeseLabel.Location = new System.Drawing.Point(51, 14);
+            this.MediumCheeseLabel.Name = "MediumCheeseLabel";
+            this.MediumCheeseLabel.Size = new System.Drawing.Size(56, 17);
+            this.MediumCheeseLabel.TabIndex = 18;
+            this.MediumCheeseLabel.Text = "Cheese";
             // 
             // MediumCheese
             // 
-            this.MediumCheese.AutoSize = true;
-            this.MediumCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumCheese.Location = new System.Drawing.Point(3, 3);
+            this.MediumCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.MediumCheese.FormattingEnabled = true;
+            this.MediumCheese.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.MediumCheese.Location = new System.Drawing.Point(0, 12);
             this.MediumCheese.Name = "MediumCheese";
-            this.MediumCheese.Size = new System.Drawing.Size(75, 38);
-            this.MediumCheese.TabIndex = 0;
-            this.MediumCheese.Text = "Extra \r\nCheese";
-            this.MediumCheese.UseVisualStyleBackColor = true;
+            this.MediumCheese.Size = new System.Drawing.Size(48, 21);
+            this.MediumCheese.TabIndex = 17;
+            this.MediumCheese.Text = "None";
+            this.MediumCheese.SelectedIndexChanged += new System.EventHandler(this.MediumCheese_SelectedIndexChanged);
             // 
             // panel17
             // 
@@ -791,115 +1114,267 @@ namespace MomAndPops.Resources
             this.SmallCustimization.Controls.Add(this.panel13);
             this.SmallCustimization.Location = new System.Drawing.Point(3, 36);
             this.SmallCustimization.Name = "SmallCustimization";
-            this.SmallCustimization.Size = new System.Drawing.Size(332, 155);
+            this.SmallCustimization.Size = new System.Drawing.Size(369, 155);
             this.SmallCustimization.TabIndex = 14;
             // 
             // panel14
             // 
+            this.panel14.Controls.Add(this.SmallPineappleLabel);
+            this.panel14.Controls.Add(this.SmallPineapple);
+            this.panel14.Controls.Add(this.SmallMushroomLabel);
+            this.panel14.Controls.Add(this.SmallMushroom);
+            this.panel14.Controls.Add(this.SmallTomatoLabel);
+            this.panel14.Controls.Add(this.SmallTomato);
+            this.panel14.Controls.Add(this.SmallGreenPepperLabel);
+            this.panel14.Controls.Add(this.SmallGreenPepper);
+            this.panel14.Controls.Add(this.SmallOnionLabel);
+            this.panel14.Controls.Add(this.SmallOnion);
+            this.panel14.Controls.Add(this.SmallHamLabel);
+            this.panel14.Controls.Add(this.SmallHam);
+            this.panel14.Controls.Add(this.SmallSausageLabel);
+            this.panel14.Controls.Add(this.SmallSausage);
+            this.panel14.Controls.Add(this.SmallPepperoniLabel);
+            this.panel14.Controls.Add(this.SmallPepperoni);
             this.panel14.Controls.Add(this.SmallCheeseLabel);
             this.panel14.Controls.Add(this.SmallCheese);
-            this.panel14.Controls.Add(this.SmallPineapple);
-            this.panel14.Controls.Add(this.SmallMushroom);
-            this.panel14.Controls.Add(this.SmallTomato);
-            this.panel14.Controls.Add(this.SmallGreenPepper);
-            this.panel14.Controls.Add(this.SmallOnion);
-            this.panel14.Controls.Add(this.SmallHam);
-            this.panel14.Controls.Add(this.SmallSausage);
-            this.panel14.Controls.Add(this.SmallPepperoni);
             this.panel14.Location = new System.Drawing.Point(3, 51);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(326, 98);
+            this.panel14.Size = new System.Drawing.Size(366, 98);
             this.panel14.TabIndex = 15;
+            // 
+            // SmallPineappleLabel
+            // 
+            this.SmallPineappleLabel.AutoSize = true;
+            this.SmallPineappleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.SmallPineappleLabel.Location = new System.Drawing.Point(284, 73);
+            this.SmallPineappleLabel.Name = "SmallPineappleLabel";
+            this.SmallPineappleLabel.Size = new System.Drawing.Size(71, 17);
+            this.SmallPineappleLabel.TabIndex = 34;
+            this.SmallPineappleLabel.Text = "Pineapple";
             // 
             // SmallPineapple
             // 
-            this.SmallPineapple.AutoSize = true;
-            this.SmallPineapple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallPineapple.Location = new System.Drawing.Point(182, 73);
+            this.SmallPineapple.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallPineapple.FormattingEnabled = true;
+            this.SmallPineapple.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.SmallPineapple.Location = new System.Drawing.Point(233, 71);
             this.SmallPineapple.Name = "SmallPineapple";
-            this.SmallPineapple.Size = new System.Drawing.Size(90, 21);
-            this.SmallPineapple.TabIndex = 8;
-            this.SmallPineapple.Text = "Pineapple";
-            this.SmallPineapple.UseVisualStyleBackColor = true;
+            this.SmallPineapple.Size = new System.Drawing.Size(48, 21);
+            this.SmallPineapple.TabIndex = 33;
+            this.SmallPineapple.Text = "None";
+            this.SmallPineapple.SelectedIndexChanged += new System.EventHandler(this.SmallPineapple_SelectedIndexChanged);
+            // 
+            // SmallMushroomLabel
+            // 
+            this.SmallMushroomLabel.AutoSize = true;
+            this.SmallMushroomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.SmallMushroomLabel.Location = new System.Drawing.Point(160, 74);
+            this.SmallMushroomLabel.Name = "SmallMushroomLabel";
+            this.SmallMushroomLabel.Size = new System.Drawing.Size(74, 17);
+            this.SmallMushroomLabel.TabIndex = 32;
+            this.SmallMushroomLabel.Text = "Mushroom";
             // 
             // SmallMushroom
             // 
-            this.SmallMushroom.AutoSize = true;
-            this.SmallMushroom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallMushroom.Location = new System.Drawing.Point(81, 73);
+            this.SmallMushroom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallMushroom.FormattingEnabled = true;
+            this.SmallMushroom.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.SmallMushroom.Location = new System.Drawing.Point(109, 72);
             this.SmallMushroom.Name = "SmallMushroom";
-            this.SmallMushroom.Size = new System.Drawing.Size(93, 21);
-            this.SmallMushroom.TabIndex = 7;
-            this.SmallMushroom.Text = "Mushroom";
-            this.SmallMushroom.UseVisualStyleBackColor = true;
-            this.SmallMushroom.CheckedChanged += new System.EventHandler(this.SmallMushroom_CheckedChanged);
+            this.SmallMushroom.Size = new System.Drawing.Size(48, 21);
+            this.SmallMushroom.TabIndex = 31;
+            this.SmallMushroom.Text = "None";
+            this.SmallMushroom.SelectedIndexChanged += new System.EventHandler(this.SmallMushroom_SelectedIndexChanged);
+            // 
+            // SmallTomatoLabel
+            // 
+            this.SmallTomatoLabel.AutoSize = true;
+            this.SmallTomatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.SmallTomatoLabel.Location = new System.Drawing.Point(51, 74);
+            this.SmallTomatoLabel.Name = "SmallTomatoLabel";
+            this.SmallTomatoLabel.Size = new System.Drawing.Size(56, 17);
+            this.SmallTomatoLabel.TabIndex = 30;
+            this.SmallTomatoLabel.Text = "Tomato";
             // 
             // SmallTomato
             // 
-            this.SmallTomato.AutoSize = true;
-            this.SmallTomato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallTomato.Location = new System.Drawing.Point(3, 73);
+            this.SmallTomato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallTomato.FormattingEnabled = true;
+            this.SmallTomato.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.SmallTomato.Location = new System.Drawing.Point(0, 72);
             this.SmallTomato.Name = "SmallTomato";
-            this.SmallTomato.Size = new System.Drawing.Size(75, 21);
-            this.SmallTomato.TabIndex = 6;
-            this.SmallTomato.Text = "Tomato";
-            this.SmallTomato.UseVisualStyleBackColor = true;
+            this.SmallTomato.Size = new System.Drawing.Size(48, 21);
+            this.SmallTomato.TabIndex = 29;
+            this.SmallTomato.Text = "None";
+            this.SmallTomato.SelectedIndexChanged += new System.EventHandler(this.SmallTomato_SelectedIndexChanged);
+            // 
+            // SmallGreenPepperLabel
+            // 
+            this.SmallGreenPepperLabel.AutoSize = true;
+            this.SmallGreenPepperLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.SmallGreenPepperLabel.Location = new System.Drawing.Point(265, 44);
+            this.SmallGreenPepperLabel.Name = "SmallGreenPepperLabel";
+            this.SmallGreenPepperLabel.Size = new System.Drawing.Size(98, 17);
+            this.SmallGreenPepperLabel.TabIndex = 28;
+            this.SmallGreenPepperLabel.Text = "Green Pepper";
             // 
             // SmallGreenPepper
             // 
-            this.SmallGreenPepper.AutoSize = true;
-            this.SmallGreenPepper.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallGreenPepper.Location = new System.Drawing.Point(180, 46);
+            this.SmallGreenPepper.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallGreenPepper.FormattingEnabled = true;
+            this.SmallGreenPepper.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.SmallGreenPepper.Location = new System.Drawing.Point(214, 42);
             this.SmallGreenPepper.Name = "SmallGreenPepper";
-            this.SmallGreenPepper.Size = new System.Drawing.Size(117, 21);
-            this.SmallGreenPepper.TabIndex = 5;
-            this.SmallGreenPepper.Text = "Green Pepper";
-            this.SmallGreenPepper.UseVisualStyleBackColor = true;
+            this.SmallGreenPepper.Size = new System.Drawing.Size(48, 21);
+            this.SmallGreenPepper.TabIndex = 27;
+            this.SmallGreenPepper.Text = "None";
+            this.SmallGreenPepper.SelectedIndexChanged += new System.EventHandler(this.SmallGreenPepper_SelectedIndexChanged);
+            // 
+            // SmallOnionLabel
+            // 
+            this.SmallOnionLabel.AutoSize = true;
+            this.SmallOnionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.SmallOnionLabel.Location = new System.Drawing.Point(160, 44);
+            this.SmallOnionLabel.Name = "SmallOnionLabel";
+            this.SmallOnionLabel.Size = new System.Drawing.Size(46, 17);
+            this.SmallOnionLabel.TabIndex = 26;
+            this.SmallOnionLabel.Text = "Onion";
             // 
             // SmallOnion
             // 
-            this.SmallOnion.AutoSize = true;
-            this.SmallOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallOnion.Location = new System.Drawing.Point(79, 45);
+            this.SmallOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallOnion.FormattingEnabled = true;
+            this.SmallOnion.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.SmallOnion.Location = new System.Drawing.Point(109, 42);
             this.SmallOnion.Name = "SmallOnion";
-            this.SmallOnion.Size = new System.Drawing.Size(65, 21);
-            this.SmallOnion.TabIndex = 4;
-            this.SmallOnion.Text = "Onion";
-            this.SmallOnion.UseVisualStyleBackColor = true;
-            this.SmallOnion.CheckedChanged += new System.EventHandler(this.SmallOnion_CheckedChanged);
+            this.SmallOnion.Size = new System.Drawing.Size(48, 21);
+            this.SmallOnion.TabIndex = 25;
+            this.SmallOnion.Text = "None";
+            this.SmallOnion.SelectedIndexChanged += new System.EventHandler(this.SmallOnion_SelectedIndexChanged);
+            // 
+            // SmallHamLabel
+            // 
+            this.SmallHamLabel.AutoSize = true;
+            this.SmallHamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.SmallHamLabel.Location = new System.Drawing.Point(51, 45);
+            this.SmallHamLabel.Name = "SmallHamLabel";
+            this.SmallHamLabel.Size = new System.Drawing.Size(37, 17);
+            this.SmallHamLabel.TabIndex = 24;
+            this.SmallHamLabel.Text = "Ham";
             // 
             // SmallHam
             // 
-            this.SmallHam.AutoSize = true;
-            this.SmallHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallHam.Location = new System.Drawing.Point(3, 44);
+            this.SmallHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallHam.FormattingEnabled = true;
+            this.SmallHam.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.SmallHam.Location = new System.Drawing.Point(0, 43);
             this.SmallHam.Name = "SmallHam";
-            this.SmallHam.Size = new System.Drawing.Size(56, 21);
-            this.SmallHam.TabIndex = 3;
-            this.SmallHam.Text = "Ham";
-            this.SmallHam.UseVisualStyleBackColor = true;
+            this.SmallHam.Size = new System.Drawing.Size(48, 21);
+            this.SmallHam.TabIndex = 23;
+            this.SmallHam.Text = "None";
+            this.SmallHam.SelectedIndexChanged += new System.EventHandler(this.SmallHam_SelectedIndexChanged);
+            // 
+            // SmallSausageLabel
+            // 
+            this.SmallSausageLabel.AutoSize = true;
+            this.SmallSausageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.SmallSausageLabel.Location = new System.Drawing.Point(291, 13);
+            this.SmallSausageLabel.Name = "SmallSausageLabel";
+            this.SmallSausageLabel.Size = new System.Drawing.Size(64, 17);
+            this.SmallSausageLabel.TabIndex = 22;
+            this.SmallSausageLabel.Text = "Sausage";
             // 
             // SmallSausage
             // 
-            this.SmallSausage.AutoSize = true;
-            this.SmallSausage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallSausage.Location = new System.Drawing.Point(240, 13);
+            this.SmallSausage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallSausage.FormattingEnabled = true;
+            this.SmallSausage.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.SmallSausage.Location = new System.Drawing.Point(240, 11);
             this.SmallSausage.Name = "SmallSausage";
-            this.SmallSausage.Size = new System.Drawing.Size(83, 21);
-            this.SmallSausage.TabIndex = 2;
-            this.SmallSausage.Text = "Sausage";
-            this.SmallSausage.UseVisualStyleBackColor = true;
+            this.SmallSausage.Size = new System.Drawing.Size(48, 21);
+            this.SmallSausage.TabIndex = 21;
+            this.SmallSausage.Text = "None";
+            this.SmallSausage.SelectedIndexChanged += new System.EventHandler(this.SmallSausage_SelectedIndexChanged);
+            // 
+            // SmallPepperoniLabel
+            // 
+            this.SmallPepperoniLabel.AutoSize = true;
+            this.SmallPepperoniLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.SmallPepperoniLabel.Location = new System.Drawing.Point(160, 14);
+            this.SmallPepperoniLabel.Name = "SmallPepperoniLabel";
+            this.SmallPepperoniLabel.Size = new System.Drawing.Size(73, 17);
+            this.SmallPepperoniLabel.TabIndex = 20;
+            this.SmallPepperoniLabel.Text = "Pepperoni";
             // 
             // SmallPepperoni
             // 
-            this.SmallPepperoni.AutoSize = true;
-            this.SmallPepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallPepperoni.Location = new System.Drawing.Point(130, 11);
+            this.SmallPepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallPepperoni.FormattingEnabled = true;
+            this.SmallPepperoni.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.SmallPepperoni.Location = new System.Drawing.Point(109, 12);
             this.SmallPepperoni.Name = "SmallPepperoni";
-            this.SmallPepperoni.Size = new System.Drawing.Size(92, 21);
-            this.SmallPepperoni.TabIndex = 1;
-            this.SmallPepperoni.Text = "Pepperoni";
-            this.SmallPepperoni.UseVisualStyleBackColor = true;
+            this.SmallPepperoni.Size = new System.Drawing.Size(48, 21);
+            this.SmallPepperoni.TabIndex = 19;
+            this.SmallPepperoni.Text = "None";
+            this.SmallPepperoni.SelectedIndexChanged += new System.EventHandler(this.SmallPepperoni_SelectedIndexChanged);
+            // 
+            // SmallCheeseLabel
+            // 
+            this.SmallCheeseLabel.AutoSize = true;
+            this.SmallCheeseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.SmallCheeseLabel.Location = new System.Drawing.Point(51, 14);
+            this.SmallCheeseLabel.Name = "SmallCheeseLabel";
+            this.SmallCheeseLabel.Size = new System.Drawing.Size(56, 17);
+            this.SmallCheeseLabel.TabIndex = 18;
+            this.SmallCheeseLabel.Text = "Cheese";
+            // 
+            // SmallCheese
+            // 
+            this.SmallCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallCheese.FormattingEnabled = true;
+            this.SmallCheese.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.SmallCheese.Location = new System.Drawing.Point(0, 12);
+            this.SmallCheese.Name = "SmallCheese";
+            this.SmallCheese.Size = new System.Drawing.Size(48, 21);
+            this.SmallCheese.TabIndex = 17;
+            this.SmallCheese.Text = "None";
+            this.SmallCheese.SelectedIndexChanged += new System.EventHandler(this.SmallCheese_SelectedIndexChanged);
             // 
             // panel13
             // 
@@ -949,127 +1424,271 @@ namespace MomAndPops.Resources
             // 
             // LargeCustomization
             // 
-            this.LargeCustomization.Controls.Add(this.panel15);
+            this.LargeCustomization.Controls.Add(this.panel12);
             this.LargeCustomization.Controls.Add(this.panel18);
             this.LargeCustomization.Location = new System.Drawing.Point(0, 405);
             this.LargeCustomization.Name = "LargeCustomization";
-            this.LargeCustomization.Size = new System.Drawing.Size(332, 146);
+            this.LargeCustomization.Size = new System.Drawing.Size(372, 146);
             this.LargeCustomization.TabIndex = 17;
             // 
-            // panel15
+            // panel12
             // 
-            this.panel15.Controls.Add(this.LargePineapple);
-            this.panel15.Controls.Add(this.LargeMushroom);
-            this.panel15.Controls.Add(this.LargeTomato);
-            this.panel15.Controls.Add(this.LargeGreenPepper);
-            this.panel15.Controls.Add(this.LargeOnion);
-            this.panel15.Controls.Add(this.LargeHam);
-            this.panel15.Controls.Add(this.LargeSuasage);
-            this.panel15.Controls.Add(this.LargePepperoni);
-            this.panel15.Controls.Add(this.LargeCheese);
-            this.panel15.Location = new System.Drawing.Point(16, 51);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(300, 86);
-            this.panel15.TabIndex = 15;
+            this.panel12.Controls.Add(this.LargePineappleLabel);
+            this.panel12.Controls.Add(this.LargePineapple);
+            this.panel12.Controls.Add(this.LargeMushroomLabel);
+            this.panel12.Controls.Add(this.LargeMushroom);
+            this.panel12.Controls.Add(this.LargeTomatoLabel);
+            this.panel12.Controls.Add(this.LargeTomato);
+            this.panel12.Controls.Add(this.LargeGreenPepperLabel);
+            this.panel12.Controls.Add(this.LargeGreenPepper);
+            this.panel12.Controls.Add(this.LargeOnionLabel);
+            this.panel12.Controls.Add(this.LargeOnion);
+            this.panel12.Controls.Add(this.LargeHamLabel);
+            this.panel12.Controls.Add(this.LargeHam);
+            this.panel12.Controls.Add(this.LargeSausageLabel);
+            this.panel12.Controls.Add(this.LargeSausage);
+            this.panel12.Controls.Add(this.LargePepperoniLabel);
+            this.panel12.Controls.Add(this.LargePepperoni);
+            this.panel12.Controls.Add(this.LargeCheeseLabel);
+            this.panel12.Controls.Add(this.LargeCheese);
+            this.panel12.Location = new System.Drawing.Point(3, 46);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(366, 98);
+            this.panel12.TabIndex = 16;
+            // 
+            // LargePineappleLabel
+            // 
+            this.LargePineappleLabel.AutoSize = true;
+            this.LargePineappleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LargePineappleLabel.Location = new System.Drawing.Point(284, 73);
+            this.LargePineappleLabel.Name = "LargePineappleLabel";
+            this.LargePineappleLabel.Size = new System.Drawing.Size(71, 17);
+            this.LargePineappleLabel.TabIndex = 34;
+            this.LargePineappleLabel.Text = "Pineapple";
             // 
             // LargePineapple
             // 
-            this.LargePineapple.AutoSize = true;
-            this.LargePineapple.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargePineapple.Location = new System.Drawing.Point(182, 56);
+            this.LargePineapple.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.LargePineapple.FormattingEnabled = true;
+            this.LargePineapple.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.LargePineapple.Location = new System.Drawing.Point(233, 71);
             this.LargePineapple.Name = "LargePineapple";
-            this.LargePineapple.Size = new System.Drawing.Size(90, 21);
-            this.LargePineapple.TabIndex = 8;
-            this.LargePineapple.Text = "Pineapple";
-            this.LargePineapple.UseVisualStyleBackColor = true;
+            this.LargePineapple.Size = new System.Drawing.Size(48, 21);
+            this.LargePineapple.TabIndex = 33;
+            this.LargePineapple.Text = "None";
+            this.LargePineapple.SelectedIndexChanged += new System.EventHandler(this.LargePineapple_SelectedIndexChanged);
+            // 
+            // LargeMushroomLabel
+            // 
+            this.LargeMushroomLabel.AutoSize = true;
+            this.LargeMushroomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LargeMushroomLabel.Location = new System.Drawing.Point(160, 74);
+            this.LargeMushroomLabel.Name = "LargeMushroomLabel";
+            this.LargeMushroomLabel.Size = new System.Drawing.Size(74, 17);
+            this.LargeMushroomLabel.TabIndex = 32;
+            this.LargeMushroomLabel.Text = "Mushroom";
             // 
             // LargeMushroom
             // 
-            this.LargeMushroom.AutoSize = true;
-            this.LargeMushroom.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeMushroom.Location = new System.Drawing.Point(83, 56);
+            this.LargeMushroom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.LargeMushroom.FormattingEnabled = true;
+            this.LargeMushroom.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.LargeMushroom.Location = new System.Drawing.Point(109, 72);
             this.LargeMushroom.Name = "LargeMushroom";
-            this.LargeMushroom.Size = new System.Drawing.Size(93, 21);
-            this.LargeMushroom.TabIndex = 7;
-            this.LargeMushroom.Text = "Mushroom";
-            this.LargeMushroom.UseVisualStyleBackColor = true;
+            this.LargeMushroom.Size = new System.Drawing.Size(48, 21);
+            this.LargeMushroom.TabIndex = 31;
+            this.LargeMushroom.Text = "None";
+            this.LargeMushroom.SelectedIndexChanged += new System.EventHandler(this.LargeMushroom_SelectedIndexChanged);
+            // 
+            // LargeTomatoLabel
+            // 
+            this.LargeTomatoLabel.AutoSize = true;
+            this.LargeTomatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LargeTomatoLabel.Location = new System.Drawing.Point(51, 74);
+            this.LargeTomatoLabel.Name = "LargeTomatoLabel";
+            this.LargeTomatoLabel.Size = new System.Drawing.Size(56, 17);
+            this.LargeTomatoLabel.TabIndex = 30;
+            this.LargeTomatoLabel.Text = "Tomato";
             // 
             // LargeTomato
             // 
-            this.LargeTomato.AutoSize = true;
-            this.LargeTomato.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeTomato.Location = new System.Drawing.Point(3, 56);
+            this.LargeTomato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.LargeTomato.FormattingEnabled = true;
+            this.LargeTomato.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.LargeTomato.Location = new System.Drawing.Point(0, 72);
             this.LargeTomato.Name = "LargeTomato";
-            this.LargeTomato.Size = new System.Drawing.Size(75, 21);
-            this.LargeTomato.TabIndex = 6;
-            this.LargeTomato.Text = "Tomato";
-            this.LargeTomato.UseVisualStyleBackColor = true;
+            this.LargeTomato.Size = new System.Drawing.Size(48, 21);
+            this.LargeTomato.TabIndex = 29;
+            this.LargeTomato.Text = "None";
+            this.LargeTomato.SelectedIndexChanged += new System.EventHandler(this.LargeTomato_SelectedIndexChanged);
+            // 
+            // LargeGreenPepperLabel
+            // 
+            this.LargeGreenPepperLabel.AutoSize = true;
+            this.LargeGreenPepperLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LargeGreenPepperLabel.Location = new System.Drawing.Point(265, 44);
+            this.LargeGreenPepperLabel.Name = "LargeGreenPepperLabel";
+            this.LargeGreenPepperLabel.Size = new System.Drawing.Size(98, 17);
+            this.LargeGreenPepperLabel.TabIndex = 28;
+            this.LargeGreenPepperLabel.Text = "Green Pepper";
             // 
             // LargeGreenPepper
             // 
-            this.LargeGreenPepper.AutoSize = true;
-            this.LargeGreenPepper.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeGreenPepper.Location = new System.Drawing.Point(182, 29);
+            this.LargeGreenPepper.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.LargeGreenPepper.FormattingEnabled = true;
+            this.LargeGreenPepper.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.LargeGreenPepper.Location = new System.Drawing.Point(214, 42);
             this.LargeGreenPepper.Name = "LargeGreenPepper";
-            this.LargeGreenPepper.Size = new System.Drawing.Size(117, 21);
-            this.LargeGreenPepper.TabIndex = 5;
-            this.LargeGreenPepper.Text = "Green Pepper";
-            this.LargeGreenPepper.UseVisualStyleBackColor = true;
+            this.LargeGreenPepper.Size = new System.Drawing.Size(48, 21);
+            this.LargeGreenPepper.TabIndex = 27;
+            this.LargeGreenPepper.Text = "None";
+            this.LargeGreenPepper.SelectedIndexChanged += new System.EventHandler(this.LargeGreenPepper_SelectedIndexChanged);
+            // 
+            // LargeOnionLabel
+            // 
+            this.LargeOnionLabel.AutoSize = true;
+            this.LargeOnionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LargeOnionLabel.Location = new System.Drawing.Point(160, 44);
+            this.LargeOnionLabel.Name = "LargeOnionLabel";
+            this.LargeOnionLabel.Size = new System.Drawing.Size(46, 17);
+            this.LargeOnionLabel.TabIndex = 26;
+            this.LargeOnionLabel.Text = "Onion";
             // 
             // LargeOnion
             // 
-            this.LargeOnion.AutoSize = true;
-            this.LargeOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeOnion.Location = new System.Drawing.Point(84, 29);
+            this.LargeOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.LargeOnion.FormattingEnabled = true;
+            this.LargeOnion.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.LargeOnion.Location = new System.Drawing.Point(109, 42);
             this.LargeOnion.Name = "LargeOnion";
-            this.LargeOnion.Size = new System.Drawing.Size(65, 21);
-            this.LargeOnion.TabIndex = 4;
-            this.LargeOnion.Text = "Onion";
-            this.LargeOnion.UseVisualStyleBackColor = true;
+            this.LargeOnion.Size = new System.Drawing.Size(48, 21);
+            this.LargeOnion.TabIndex = 25;
+            this.LargeOnion.Text = "None";
+            this.LargeOnion.SelectedIndexChanged += new System.EventHandler(this.LargeOnion_SelectedIndexChanged);
+            // 
+            // LargeHamLabel
+            // 
+            this.LargeHamLabel.AutoSize = true;
+            this.LargeHamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LargeHamLabel.Location = new System.Drawing.Point(51, 45);
+            this.LargeHamLabel.Name = "LargeHamLabel";
+            this.LargeHamLabel.Size = new System.Drawing.Size(37, 17);
+            this.LargeHamLabel.TabIndex = 24;
+            this.LargeHamLabel.Text = "Ham";
             // 
             // LargeHam
             // 
-            this.LargeHam.AutoSize = true;
-            this.LargeHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeHam.Location = new System.Drawing.Point(3, 30);
+            this.LargeHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.LargeHam.FormattingEnabled = true;
+            this.LargeHam.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.LargeHam.Location = new System.Drawing.Point(0, 43);
             this.LargeHam.Name = "LargeHam";
-            this.LargeHam.Size = new System.Drawing.Size(56, 21);
-            this.LargeHam.TabIndex = 3;
-            this.LargeHam.Text = "Ham";
-            this.LargeHam.UseVisualStyleBackColor = true;
+            this.LargeHam.Size = new System.Drawing.Size(48, 21);
+            this.LargeHam.TabIndex = 23;
+            this.LargeHam.Text = "None";
+            this.LargeHam.SelectedIndexChanged += new System.EventHandler(this.LargeHam_SelectedIndexChanged);
             // 
-            // LargeSuasage
+            // LargeSausageLabel
             // 
-            this.LargeSuasage.AutoSize = true;
-            this.LargeSuasage.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeSuasage.Location = new System.Drawing.Point(182, 3);
-            this.LargeSuasage.Name = "LargeSuasage";
-            this.LargeSuasage.Size = new System.Drawing.Size(83, 21);
-            this.LargeSuasage.TabIndex = 2;
-            this.LargeSuasage.Text = "Sausage";
-            this.LargeSuasage.UseVisualStyleBackColor = true;
+            this.LargeSausageLabel.AutoSize = true;
+            this.LargeSausageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LargeSausageLabel.Location = new System.Drawing.Point(291, 13);
+            this.LargeSausageLabel.Name = "LargeSausageLabel";
+            this.LargeSausageLabel.Size = new System.Drawing.Size(64, 17);
+            this.LargeSausageLabel.TabIndex = 22;
+            this.LargeSausageLabel.Text = "Sausage";
+            // 
+            // LargeSausage
+            // 
+            this.LargeSausage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.LargeSausage.FormattingEnabled = true;
+            this.LargeSausage.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.LargeSausage.Location = new System.Drawing.Point(240, 11);
+            this.LargeSausage.Name = "LargeSausage";
+            this.LargeSausage.Size = new System.Drawing.Size(48, 21);
+            this.LargeSausage.TabIndex = 21;
+            this.LargeSausage.Text = "None";
+            this.LargeSausage.SelectedIndexChanged += new System.EventHandler(this.LargeSausage_SelectedIndexChanged);
+            // 
+            // LargePepperoniLabel
+            // 
+            this.LargePepperoniLabel.AutoSize = true;
+            this.LargePepperoniLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LargePepperoniLabel.Location = new System.Drawing.Point(160, 14);
+            this.LargePepperoniLabel.Name = "LargePepperoniLabel";
+            this.LargePepperoniLabel.Size = new System.Drawing.Size(73, 17);
+            this.LargePepperoniLabel.TabIndex = 20;
+            this.LargePepperoniLabel.Text = "Pepperoni";
             // 
             // LargePepperoni
             // 
-            this.LargePepperoni.AutoSize = true;
-            this.LargePepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargePepperoni.Location = new System.Drawing.Point(84, 3);
+            this.LargePepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.LargePepperoni.FormattingEnabled = true;
+            this.LargePepperoni.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.LargePepperoni.Location = new System.Drawing.Point(109, 12);
             this.LargePepperoni.Name = "LargePepperoni";
-            this.LargePepperoni.Size = new System.Drawing.Size(92, 21);
-            this.LargePepperoni.TabIndex = 1;
-            this.LargePepperoni.Text = "Pepperoni";
-            this.LargePepperoni.UseVisualStyleBackColor = true;
+            this.LargePepperoni.Size = new System.Drawing.Size(48, 21);
+            this.LargePepperoni.TabIndex = 19;
+            this.LargePepperoni.Text = "None";
+            this.LargePepperoni.SelectedIndexChanged += new System.EventHandler(this.LargePepperoni_SelectedIndexChanged);
+            // 
+            // LargeCheeseLabel
+            // 
+            this.LargeCheeseLabel.AutoSize = true;
+            this.LargeCheeseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LargeCheeseLabel.Location = new System.Drawing.Point(51, 14);
+            this.LargeCheeseLabel.Name = "LargeCheeseLabel";
+            this.LargeCheeseLabel.Size = new System.Drawing.Size(56, 17);
+            this.LargeCheeseLabel.TabIndex = 18;
+            this.LargeCheeseLabel.Text = "Cheese";
             // 
             // LargeCheese
             // 
-            this.LargeCheese.AutoSize = true;
-            this.LargeCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeCheese.Location = new System.Drawing.Point(3, 3);
+            this.LargeCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.LargeCheese.FormattingEnabled = true;
+            this.LargeCheese.Items.AddRange(new object[] {
+            "None",
+            "Light",
+            "Normal",
+            "Extra"});
+            this.LargeCheese.Location = new System.Drawing.Point(0, 12);
             this.LargeCheese.Name = "LargeCheese";
-            this.LargeCheese.Size = new System.Drawing.Size(75, 21);
-            this.LargeCheese.TabIndex = 0;
-            this.LargeCheese.Text = "Cheese";
-            this.LargeCheese.UseVisualStyleBackColor = true;
+            this.LargeCheese.Size = new System.Drawing.Size(48, 21);
+            this.LargeCheese.TabIndex = 17;
+            this.LargeCheese.Text = "None";
+            this.LargeCheese.SelectedIndexChanged += new System.EventHandler(this.LargeCheese_SelectedIndexChanged);
             // 
             // panel18
             // 
@@ -1117,16 +1736,15 @@ namespace MomAndPops.Resources
             this.LargeThinCrust.Text = "Thin Crust";
             this.LargeThinCrust.UseVisualStyleBackColor = true;
             // 
-            // label18
+            // MediumPizzaText
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label18.Location = new System.Drawing.Point(44, 203);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(95, 17);
-            this.label18.TabIndex = 7;
-            this.label18.Text = "Medium Pizza";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
+            this.MediumPizzaText.AutoSize = true;
+            this.MediumPizzaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MediumPizzaText.Location = new System.Drawing.Point(44, 203);
+            this.MediumPizzaText.Name = "MediumPizzaText";
+            this.MediumPizzaText.Size = new System.Drawing.Size(95, 17);
+            this.MediumPizzaText.TabIndex = 7;
+            this.MediumPizzaText.Text = "Medium Pizza";
             // 
             // LargePizzaPrice
             // 
@@ -1148,13 +1766,13 @@ namespace MomAndPops.Resources
             this.MediumPizzaPrice.TabIndex = 6;
             this.MediumPizzaPrice.Text = "$6";
             // 
-            // XLargePizzaQuantity
+            // ExtraLargePizzaQuantity
             // 
-            this.XLargePizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.XLargePizzaQuantity.Location = new System.Drawing.Point(10, 562);
-            this.XLargePizzaQuantity.Name = "XLargePizzaQuantity";
-            this.XLargePizzaQuantity.Size = new System.Drawing.Size(35, 23);
-            this.XLargePizzaQuantity.TabIndex = 11;
+            this.ExtraLargePizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ExtraLargePizzaQuantity.Location = new System.Drawing.Point(3, 562);
+            this.ExtraLargePizzaQuantity.Name = "ExtraLargePizzaQuantity";
+            this.ExtraLargePizzaQuantity.Size = new System.Drawing.Size(35, 23);
+            this.ExtraLargePizzaQuantity.TabIndex = 11;
             // 
             // MediumPizzaQuantity
             // 
@@ -1164,15 +1782,15 @@ namespace MomAndPops.Resources
             this.MediumPizzaQuantity.Size = new System.Drawing.Size(35, 23);
             this.MediumPizzaQuantity.TabIndex = 5;
             // 
-            // label21
+            // ExtraLargePizzaPrice
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label21.Location = new System.Drawing.Point(240, 561);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(36, 20);
-            this.label21.TabIndex = 13;
-            this.label21.Text = "$10";
+            this.ExtraLargePizzaPrice.AutoSize = true;
+            this.ExtraLargePizzaPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.ExtraLargePizzaPrice.Location = new System.Drawing.Point(240, 561);
+            this.ExtraLargePizzaPrice.Name = "ExtraLargePizzaPrice";
+            this.ExtraLargePizzaPrice.Size = new System.Drawing.Size(36, 20);
+            this.ExtraLargePizzaPrice.TabIndex = 13;
+            this.ExtraLargePizzaPrice.Text = "$10";
             // 
             // SmallPizzaPrice
             // 
@@ -1184,35 +1802,35 @@ namespace MomAndPops.Resources
             this.SmallPizzaPrice.TabIndex = 3;
             this.SmallPizzaPrice.Text = "$4";
             // 
-            // label20
+            // ExtraLargePizzaText
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label20.Location = new System.Drawing.Point(51, 564);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(119, 17);
-            this.label20.TabIndex = 12;
-            this.label20.Text = "Extra Large Pizza";
+            this.ExtraLargePizzaText.AutoSize = true;
+            this.ExtraLargePizzaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.ExtraLargePizzaText.Location = new System.Drawing.Point(41, 565);
+            this.ExtraLargePizzaText.Name = "ExtraLargePizzaText";
+            this.ExtraLargePizzaText.Size = new System.Drawing.Size(119, 17);
+            this.ExtraLargePizzaText.TabIndex = 12;
+            this.ExtraLargePizzaText.Text = "Extra Large Pizza";
             // 
-            // label17
+            // SmallPizzaText
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label17.Location = new System.Drawing.Point(44, 10);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(80, 17);
-            this.label17.TabIndex = 4;
-            this.label17.Text = "Small Pizza";
+            this.SmallPizzaText.AutoSize = true;
+            this.SmallPizzaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.SmallPizzaText.Location = new System.Drawing.Point(44, 10);
+            this.SmallPizzaText.Name = "SmallPizzaText";
+            this.SmallPizzaText.Size = new System.Drawing.Size(80, 17);
+            this.SmallPizzaText.TabIndex = 4;
+            this.SmallPizzaText.Text = "Small Pizza";
             // 
-            // label19
+            // LargePizzaText
             // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label19.Location = new System.Drawing.Point(44, 384);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(83, 17);
-            this.label19.TabIndex = 9;
-            this.label19.Text = "Large Pizza";
+            this.LargePizzaText.AutoSize = true;
+            this.LargePizzaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LargePizzaText.Location = new System.Drawing.Point(44, 384);
+            this.LargePizzaText.Name = "LargePizzaText";
+            this.LargePizzaText.Size = new System.Drawing.Size(83, 17);
+            this.LargePizzaText.TabIndex = 9;
+            this.LargePizzaText.Text = "Large Pizza";
             // 
             // SmallPizzaQuantity
             // 
@@ -1888,7 +2506,6 @@ namespace MomAndPops.Resources
             this.CartXBackground.Size = new System.Drawing.Size(67, 64);
             this.CartXBackground.TabIndex = 9;
             this.CartXBackground.TabStop = false;
-            this.CartXBackground.Click += new System.EventHandler(this.CartXBackground_Click);
             // 
             // CartXButton
             // 
@@ -2113,32 +2730,6 @@ namespace MomAndPops.Resources
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
-            // SmallCheese
-            // 
-            this.SmallCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
-            this.SmallCheese.FormattingEnabled = true;
-            this.SmallCheese.Items.AddRange(new object[] {
-            "None",
-            "Light",
-            "Normal",
-            "Extra"});
-            this.SmallCheese.Location = new System.Drawing.Point(0, 12);
-            this.SmallCheese.Name = "SmallCheese";
-            this.SmallCheese.Size = new System.Drawing.Size(48, 21);
-            this.SmallCheese.TabIndex = 17;
-            this.SmallCheese.Text = "None";
-            this.SmallCheese.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // SmallCheeseLabel
-            // 
-            this.SmallCheeseLabel.AutoSize = true;
-            this.SmallCheeseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallCheeseLabel.Location = new System.Drawing.Point(51, 14);
-            this.SmallCheeseLabel.Name = "SmallCheeseLabel";
-            this.SmallCheeseLabel.Size = new System.Drawing.Size(56, 17);
-            this.SmallCheeseLabel.TabIndex = 18;
-            this.SmallCheeseLabel.Text = "Cheese";
-            // 
             // MenuLanding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2173,13 +2764,13 @@ namespace MomAndPops.Resources
             this.PizzaPanel.ResumeLayout(false);
             this.PizzaPanel.PerformLayout();
             this.ExtraLargeCustomization.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.panel19.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
             this.panel20.ResumeLayout(false);
             this.panel20.PerformLayout();
             this.MediumCustimization.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            this.panel16.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             this.SmallCustimization.ResumeLayout(false);
@@ -2188,11 +2779,11 @@ namespace MomAndPops.Resources
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
             this.LargeCustomization.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.XLargePizzaQuantity)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExtraLargePizzaQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MediumPizzaQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SmallPizzaQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LargePizzaQuantity)).EndInit();
@@ -2289,7 +2880,7 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.NumericUpDown RootbeerQuantity;
         private System.Windows.Forms.Panel PizzaPanel;
         private System.Windows.Forms.Label SmallPizzaPrice;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label SmallPizzaText;
         private System.Windows.Forms.NumericUpDown SmallPizzaQuantity;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.RadioButton LemonadeLarge;
@@ -2315,25 +2906,17 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.Button PreviousOrdersButton;
         private System.Windows.Forms.Label MediumPizzaPrice;
         private System.Windows.Forms.NumericUpDown MediumPizzaQuantity;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label MediumPizzaText;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.CheckBox SmallPineapple;
-        private System.Windows.Forms.CheckBox SmallMushroom;
-        private System.Windows.Forms.CheckBox SmallTomato;
-        private System.Windows.Forms.CheckBox SmallGreenPepper;
-        private System.Windows.Forms.CheckBox SmallOnion;
-        private System.Windows.Forms.CheckBox SmallHam;
-        private System.Windows.Forms.CheckBox SmallSausage;
-        private System.Windows.Forms.CheckBox SmallPepperoni;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.RadioButton SmallPanCrust;
         private System.Windows.Forms.RadioButton SmallRegularCrust;
         private System.Windows.Forms.RadioButton SmallThinCrust;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.NumericUpDown XLargePizzaQuantity;
+        private System.Windows.Forms.Label ExtraLargePizzaPrice;
+        private System.Windows.Forms.Label ExtraLargePizzaText;
+        private System.Windows.Forms.NumericUpDown ExtraLargePizzaQuantity;
         private System.Windows.Forms.Label LargePizzaPrice;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label LargePizzaText;
         private System.Windows.Forms.NumericUpDown LargePizzaQuantity;
         private System.Windows.Forms.Label CartXButton;
         private System.Windows.Forms.PictureBox CartHeaderBackground;
@@ -2345,50 +2928,20 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Panel SmallCustimization;
         private System.Windows.Forms.Panel MediumCustimization;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.CheckBox MediumPineapple;
-        private System.Windows.Forms.CheckBox MediumMushroom;
-        private System.Windows.Forms.CheckBox MediumTomato;
-        private System.Windows.Forms.CheckBox MediumGreenPepper;
-        private System.Windows.Forms.CheckBox MediumOnion;
-        private System.Windows.Forms.CheckBox MediumHam;
-        private System.Windows.Forms.CheckBox MediumSuasage;
-        private System.Windows.Forms.CheckBox MediumPepperoni;
-        private System.Windows.Forms.CheckBox MediumCheese;
         private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.RadioButton MediumPanCrust;
         private System.Windows.Forms.RadioButton MediumRegularCrust;
         private System.Windows.Forms.RadioButton MediumThinCrust;
         private System.Windows.Forms.Panel LargeCustomization;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.CheckBox LargePineapple;
-        private System.Windows.Forms.CheckBox LargeMushroom;
-        private System.Windows.Forms.CheckBox LargeTomato;
-        private System.Windows.Forms.CheckBox LargeGreenPepper;
-        private System.Windows.Forms.CheckBox LargeOnion;
-        private System.Windows.Forms.CheckBox LargeHam;
-        private System.Windows.Forms.CheckBox LargeSuasage;
-        private System.Windows.Forms.CheckBox LargePepperoni;
-        private System.Windows.Forms.CheckBox LargeCheese;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.RadioButton LargePanCrust;
         private System.Windows.Forms.RadioButton LargeRegularCrust;
         private System.Windows.Forms.RadioButton LargeThinCrust;
         private System.Windows.Forms.Panel ExtraLargeCustomization;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.CheckBox ExtraLargePineapple;
-        private System.Windows.Forms.CheckBox ExtraLargeMushroom;
-        private System.Windows.Forms.CheckBox ExtraLargeTomato;
-        private System.Windows.Forms.CheckBox ExtraLargeGreenPepper;
-        private System.Windows.Forms.CheckBox ExtraLargeOnion;
-        private System.Windows.Forms.CheckBox ExtraLargeHam;
-        private System.Windows.Forms.CheckBox ExtraLargeSausage;
-        private System.Windows.Forms.CheckBox ExtraLargePepperoni;
-        private System.Windows.Forms.CheckBox ExtraLargeCheese;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.RadioButton ExtraLargePanCrust;
         private System.Windows.Forms.RadioButton ExtraLargeRegularCrust;
-        private System.Windows.Forms.RadioButton ExtaLargeThinCrust;
+        private System.Windows.Forms.RadioButton ExtraLargeThinCrust;
         private System.Windows.Forms.Panel PreviousOrders;
         private System.Windows.Forms.Button PreviousOrdersThreeAddToCart;
         private System.Windows.Forms.Label label28;
@@ -2405,5 +2958,78 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.Button ClearCartButton;
         private System.Windows.Forms.ComboBox SmallCheese;
         private System.Windows.Forms.Label SmallCheeseLabel;
+        private System.Windows.Forms.Label SmallOnionLabel;
+        private System.Windows.Forms.ComboBox SmallOnion;
+        private System.Windows.Forms.Label SmallHamLabel;
+        private System.Windows.Forms.ComboBox SmallHam;
+        private System.Windows.Forms.Label SmallSausageLabel;
+        private System.Windows.Forms.ComboBox SmallSausage;
+        private System.Windows.Forms.Label SmallPepperoniLabel;
+        private System.Windows.Forms.ComboBox SmallPepperoni;
+        private System.Windows.Forms.Label SmallPineappleLabel;
+        private System.Windows.Forms.ComboBox SmallPineapple;
+        private System.Windows.Forms.Label SmallMushroomLabel;
+        private System.Windows.Forms.ComboBox SmallMushroom;
+        private System.Windows.Forms.Label SmallTomatoLabel;
+        private System.Windows.Forms.ComboBox SmallTomato;
+        private System.Windows.Forms.Label SmallGreenPepperLabel;
+        private System.Windows.Forms.ComboBox SmallGreenPepper;
+        private System.Windows.Forms.Panel panel15;
+        private System.Windows.Forms.Label ExtraLargePineappleLabel;
+        private System.Windows.Forms.ComboBox ExtraLargePineapple;
+        private System.Windows.Forms.Label ExtraLargeMushroomLabel;
+        private System.Windows.Forms.ComboBox ExtraLargeMushroom;
+        private System.Windows.Forms.Label ExtraLargeTomatoLabel;
+        private System.Windows.Forms.ComboBox ExtraLargeTomato;
+        private System.Windows.Forms.Label ExtraLargeGreenPepperLabel;
+        private System.Windows.Forms.ComboBox ExtraLargeGreenPepper;
+        private System.Windows.Forms.Label ExtraLargeOnionLabel;
+        private System.Windows.Forms.ComboBox ExtraLargeOnion;
+        private System.Windows.Forms.Label ExtraLargeHamLabel;
+        private System.Windows.Forms.ComboBox ExtraLargeHam;
+        private System.Windows.Forms.Label ExtraLargeSausageLabel;
+        private System.Windows.Forms.ComboBox ExtraLargeSausage;
+        private System.Windows.Forms.Label ExtraLargePepperoniLabel;
+        private System.Windows.Forms.ComboBox ExtraLargePepperoni;
+        private System.Windows.Forms.Label ExtraLargeCheeseLabel;
+        private System.Windows.Forms.ComboBox ExtraLargeCheese;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label MediumPineappleLabel;
+        private System.Windows.Forms.ComboBox MediumPineapple;
+        private System.Windows.Forms.Label MediumMushroomLabel;
+        private System.Windows.Forms.ComboBox MediumMushroom;
+        private System.Windows.Forms.Label MediumTomatoLabel;
+        private System.Windows.Forms.ComboBox MediumTomato;
+        private System.Windows.Forms.Label MediumGreenPepperLabel;
+        private System.Windows.Forms.ComboBox MediumGreenPepper;
+        private System.Windows.Forms.Label MediumOnionLabel;
+        private System.Windows.Forms.ComboBox MediumOnion;
+        private System.Windows.Forms.Label MediumHamLabel;
+        private System.Windows.Forms.ComboBox MediumHam;
+        private System.Windows.Forms.Label MediumSausageLabel;
+        private System.Windows.Forms.ComboBox MediumSausage;
+        private System.Windows.Forms.Label MediumPepperoniLabel;
+        private System.Windows.Forms.ComboBox MediumPepperoni;
+        private System.Windows.Forms.Label MediumCheeseLabel;
+        private System.Windows.Forms.ComboBox MediumCheese;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Label LargePineappleLabel;
+        private System.Windows.Forms.ComboBox LargePineapple;
+        private System.Windows.Forms.Label LargeMushroomLabel;
+        private System.Windows.Forms.ComboBox LargeMushroom;
+        private System.Windows.Forms.Label LargeTomatoLabel;
+        private System.Windows.Forms.ComboBox LargeTomato;
+        private System.Windows.Forms.Label LargeGreenPepperLabel;
+        private System.Windows.Forms.ComboBox LargeGreenPepper;
+        private System.Windows.Forms.Label LargeOnionLabel;
+        private System.Windows.Forms.ComboBox LargeOnion;
+        private System.Windows.Forms.Label LargeHamLabel;
+        private System.Windows.Forms.ComboBox LargeHam;
+        private System.Windows.Forms.Label LargeSausageLabel;
+        private System.Windows.Forms.ComboBox LargeSausage;
+        private System.Windows.Forms.Label LargePepperoniLabel;
+        private System.Windows.Forms.ComboBox LargePepperoni;
+        private System.Windows.Forms.Label LargeCheeseLabel;
+        private System.Windows.Forms.ComboBox LargeCheese;
     }
 }
