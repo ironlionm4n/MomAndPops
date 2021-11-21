@@ -2543,7 +2543,7 @@ namespace MomAndPops.Resources
             this.CartPanel.Controls.Add(this.CartXButton);
             this.CartPanel.Controls.Add(this.CartXBackground);
             this.CartPanel.Enabled = false;
-            this.CartPanel.Location = new System.Drawing.Point(262, 19);
+            this.CartPanel.Location = new System.Drawing.Point(0, 0);
             this.CartPanel.Name = "CartPanel";
             this.CartPanel.Size = new System.Drawing.Size(398, 530);
             this.CartPanel.TabIndex = 12;
@@ -2609,6 +2609,7 @@ namespace MomAndPops.Resources
             this.PreviousOrders.AutoScroll = true;
             this.PreviousOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PreviousOrders.Controls.Add(this.PreviousOrder3Label);
+            this.PreviousOrders.Controls.Add(this.CartPanel);
             this.PreviousOrders.Controls.Add(this.PreviousOrder2Label);
             this.PreviousOrders.Controls.Add(this.PreviousOrder1Label);
             this.PreviousOrders.Controls.Add(this.PreviousOrdersThreeAddToCart);
@@ -2619,7 +2620,7 @@ namespace MomAndPops.Resources
             this.PreviousOrders.Controls.Add(this.PreviousOrderXButton);
             this.PreviousOrders.Controls.Add(this.pictureBox2);
             this.PreviousOrders.Enabled = false;
-            this.PreviousOrders.Location = new System.Drawing.Point(863, 24);
+            this.PreviousOrders.Location = new System.Drawing.Point(863, 27);
             this.PreviousOrders.Margin = new System.Windows.Forms.Padding(10);
             this.PreviousOrders.Name = "PreviousOrders";
             this.PreviousOrders.Size = new System.Drawing.Size(399, 529);
@@ -2737,7 +2738,6 @@ namespace MomAndPops.Resources
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.PreviousOrders);
-            this.Controls.Add(this.CartPanel);
             this.Controls.Add(this.PreviousOrdersButton);
             this.Controls.Add(this.CartButton);
             this.Controls.Add(this.Logout);
