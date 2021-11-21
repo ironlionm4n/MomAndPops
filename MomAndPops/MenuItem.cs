@@ -37,11 +37,11 @@ namespace MomAndPops
             get { return itemPrice; }
             set { itemPrice = value; }
         }
-        private int numberOfToppings;
-        public int NumberOfToppings
+        private List<string> toppings;
+        public List<string> Toppings
         {
-            get { return numberOfToppings; }
-            set { numberOfToppings = value; }
+            get { return toppings; }
+            set { toppings = value; }
         }
         private string itemSize;
         public string ItemSize
@@ -49,21 +49,21 @@ namespace MomAndPops
             get { return itemSize; }
             set { itemSize = value; }
         }
-        private CrustOptions crustOption;
-        public CrustOptions CrustOption
+        private string crustOption;
+        public string CrustOption
         {
             get { return crustOption; }
             set { crustOption = value; }
         }
 
         public MenuItem(string itemName = "DefaultName", float itemPrice = 999f, int itemQuantity = 0,
-            string size = "Medium", int numberOfToppings = 0, CrustOptions crustOption = CrustOptions.Hand)
+            string size = "Medium", List<string> numberOfToppings = null, string crustOption = "regular")
         {
             ItemName = itemName;
             ItemQuantity = itemQuantity;
             ItemPrice = itemPrice;
             ItemSize = size;
-            NumberOfToppings = numberOfToppings;
+            Toppings = numberOfToppings;
             CrustOption = crustOption;
         }
     }
