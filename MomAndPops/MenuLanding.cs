@@ -80,11 +80,313 @@ namespace MomAndPops.Resources
                 }
                 CookieQuantity.Value = 0;
             }
+            ///
+            /// Pepsi Drink Check
+            ///
+            if (PepsiQuantity.Value > 0)
+            {
+                bool hasDrink = false;
+                string drinkName;
+                if(PepsiSmall.Checked)
+                {
+                    drinkName = "Small " + PepsiLabel.Text;
+                    UncheckDrinkSelections(PepsiSmall);
+                }
+                else if(PepsiMedium.Checked)
+                {
+                    drinkName = "Medium " + PepsiLabel.Text;
+                    UncheckDrinkSelections(PepsiMedium);
+                }
+                else
+                {
+                    drinkName = "Large " + PepsiLabel.Text;
+                    UncheckDrinkSelections(PepsiLarge);
+                }
+                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(PepsiQuantity.Value.ToString()));
+                foreach(MenuItem m in currentOrder.currentOrder)
+                {
+                    if(m.ItemName.Contains(PepsiLabel.Text))
+                    {
+                        m.ItemQuantity += drink.ItemQuantity;
+                        hasDrink = true;
+                    }
+                }
+                if(hasDrink == false)
+                {
+                    currentOrder.AddToOrder(drink);
+                }
+                PepsiQuantity.Value = 0;
+                
+            }
+            ///
+            /// Diet Pepsi Drink Check
+            ///
+            if (DietPepsiQuantity.Value > 0)
+            {
+                string drinkName;
+                bool hasDrink = false;
+                if(DietPepsiSmall.Checked)
+                {
+                    drinkName = "Small " + DietPepsiLabel.Text;
+                    UncheckDrinkSelections(DietPepsiSmall);
+                }
+                else if(DietPepsiMedium.Checked)
+                {
+                    drinkName = "Medium " + DietPepsiLabel.Text;
+                    UncheckDrinkSelections(DietPepsiMedium);
+                }
+                else
+                {
+                    drinkName = "Large " + DietPepsiLabel.Text;
+                    UncheckDrinkSelections(DietPepsiLarge);
+                }
+                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(DietPepsiQuantity.Value.ToString()));
+                foreach (MenuItem m in currentOrder.currentOrder)
+                {
+                    if (m.ItemName.Contains(DietPepsiLabel.Text))
+                    {
+                        m.ItemQuantity += drink.ItemQuantity;
+                        hasDrink = true;
+                    }
+                }
+                if (hasDrink == false)
+                {
+                    currentOrder.AddToOrder(drink);
+                }
+                DietPepsiQuantity.Value = 0;
+            }
+            ///
+            /// Orange Drink Check
+            ///
+            if (OrangeQuantity.Value > 0)
+            {
+                bool hasDrink = false;
+                string drinkName;
+                if (OrangeSmall.Checked)
+                {
+                    drinkName = "Small " + OrangeLabel.Text;
+                    UncheckDrinkSelections(OrangeSmall);
+                }
+                else if (OrangeMedium.Checked)
+                {
+                    drinkName = "Medium " + OrangeLabel.Text;
+                    UncheckDrinkSelections(OrangeMedium);
+                }
+                else
+                {
+                    drinkName = "Large " + OrangeLabel.Text;
+                    UncheckDrinkSelections(OrangeLarge);
+                }
+                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(OrangeQuantity.Value.ToString()));
+                foreach (MenuItem m in currentOrder.currentOrder)
+                {
+                    if (m.ItemName.Contains(OrangeLabel.Text))
+                    {
+                        m.ItemQuantity += drink.ItemQuantity;
+                        hasDrink = true;
+                    }
+                }
+                if (hasDrink == false)
+                {
+                    currentOrder.AddToOrder(drink);
+                }
+                OrangeQuantity.Value = 0;
+            }
+            ///
+            /// Diet Orange Drink Check
+            ///
+            if (DietOrangeQuantity.Value > 0)
+            {
+                bool hasDrink = false;
+                string drinkName;
+                if (DietOrangeSmall.Checked)
+                {
+                    drinkName = "Small " + DietOrangeLabel.Text;
+                    UncheckDrinkSelections(DietOrangeSmall);
+                }
+                else if (DietOrangeMedium.Checked)
+                {
+                    drinkName = "Medium " + DietOrangeLabel.Text;
+                    UncheckDrinkSelections(DietOrangeMedium);
+                }
+                else
+                {
+                    drinkName = "Large " + DietOrangeLabel.Text;
+                    UncheckDrinkSelections(DietOrangeLarge);
+                }
+                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(DietOrangeQuantity.Value.ToString()));
+                foreach (MenuItem m in currentOrder.currentOrder)
+                {
+                    if (m.ItemName.Contains(DietOrangeLabel.Text))
+                    {
+                        m.ItemQuantity += drink.ItemQuantity;
+                        hasDrink = true;
+                    }
+                }
+                if (hasDrink == false)
+                {
+                    currentOrder.AddToOrder(drink);
+                }
+                DietOrangeQuantity.Value = 0;
+            }
+            ///
+            /// Root Beer Drink Check
+            ///
+            if (RootBeerQuantity.Value > 0)
+            {
+                bool hasDrink = false;
+                string drinkName;
+                if (RootBeerSmall.Checked)
+                {
+                    drinkName = "Small " + RootBeerLabel.Text;
+                    UncheckDrinkSelections(RootBeerSmall);
+                }
+                else if (RootBeerMedium.Checked)
+                {
+                    drinkName = "Medium " + RootBeerLabel.Text;
+                    UncheckDrinkSelections(RootBeerMedium);
+                }
+                else
+                {
+                    drinkName = "Large " + RootBeerLabel.Text;
+                    UncheckDrinkSelections(RootbeerLarge);
+                }
+                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(RootBeerQuantity.Value.ToString()));
+                foreach (MenuItem m in currentOrder.currentOrder)
+                {
+                    if (m.ItemName.Contains(RootBeerLabel.Text))
+                    {
+                        m.ItemQuantity += drink.ItemQuantity;
+                        hasDrink = true;
+                    }
+                }
+                if (hasDrink == false)
+                {
+                    currentOrder.AddToOrder(drink);
+                }
+                RootBeerQuantity.Value = 0;
+            }
+            ///
+            /// Diet Root Beer Drink Check
+            ///
+            if (DietRootBeerQuantity.Value > 0)
+            {
+                bool hasDrink = false;
+                string drinkName;
+                if (DietRootBeerSmall.Checked)
+                {
+                    drinkName = "Small " + DietRootBeerLabel.Text;
+                    UncheckDrinkSelections(DietRootBeerSmall);
+                }
+                else if (DietRootBeerMedium.Checked)
+                {
+                    drinkName = "Medium " + DietRootBeerLabel.Text;
+                    UncheckDrinkSelections(DietRootBeerMedium);
+                }
+                else
+                {
+                    drinkName = "Large " + DietRootBeerLabel.Text;
+                    UncheckDrinkSelections(DietRootBeerLarge);
+                }
+                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(DietRootBeerQuantity.Value.ToString()));
+                foreach (MenuItem m in currentOrder.currentOrder)
+                {
+                    if (m.ItemName.Contains(DietRootBeerLabel.Text))
+                    {
+                        m.ItemQuantity += drink.ItemQuantity;
+                        hasDrink = true;
+                    }
+                }
+                if (hasDrink == false)
+                {
+                    currentOrder.AddToOrder(drink);
+                }
+                DietRootBeerQuantity.Value = 0;
+            }
+            ///
+            /// Sierra Mist Drink Check
+            ///
+            if (SierraMistQuantity.Value > 0)
+            {
+                bool hasDrink = false;
+                string drinkName;
+                if (SierraMistSmall.Checked)
+                {
+                    drinkName = "Small " + SierraMistLabel.Text;
+                    UncheckDrinkSelections(SierraMistSmall);
+                }
+                else if (SierraMistMedium.Checked)
+                {
+                    drinkName = "Medium " + SierraMistLabel.Text;
+                    UncheckDrinkSelections(SierraMistMedium);
+                }
+                else
+                {
+                    drinkName = "Large " + SierraMistLabel.Text;
+                    UncheckDrinkSelections(SierraMistLarge);
+                }
+                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(SierraMistQuantity.Value.ToString()));
+                foreach (MenuItem m in currentOrder.currentOrder)
+                {
+                    if (m.ItemName.Contains(SierraMistLabel.Text))
+                    {
+                        m.ItemQuantity += drink.ItemQuantity;
+                        hasDrink = true;
+                    }
+                }
+                if (hasDrink == false)
+                {
+                    currentOrder.AddToOrder(drink);
+                }
+                SierraMistQuantity.Value = 0;
+            }
+            ///
+            /// Lemonade Drink Check
+            ///
+            if (LemonadeQuantity.Value > 0)
+            {
+                bool hasDrink = false;
+                string drinkName;
+                if (LemonadeSmall.Checked)
+                {
+                    drinkName = "Small " + LemonadeLabel.Text;
+                    UncheckDrinkSelections(LemonadeSmall);
+
+                }
+                else if (SierraMistMedium.Checked)
+                {
+                    drinkName = "Medium " + LemonadeLabel.Text;
+                    UncheckDrinkSelections(LemonadeMedium);
+                }
+                else
+                {
+                    drinkName = "Large " + LemonadeLabel.Text;
+                    UncheckDrinkSelections(LemonadeLarge);
+                }
+                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(LemonadeQuantity.Value.ToString()));
+                foreach (MenuItem m in currentOrder.currentOrder)
+                {
+                    if (m.ItemName.Contains(LemonadeLabel.Text))
+                    {
+                        m.ItemQuantity += drink.ItemQuantity;
+                        hasDrink = true;
+                    }
+                }
+                if (hasDrink == false)
+                {
+                    currentOrder.AddToOrder(drink);
+                }
+                LemonadeQuantity.Value = 0;
+            }
             //Cart.AddToCart(currentOrder);
+       
             PrintOrder();
-          
         }
 
+        void UncheckDrinkSelections(RadioButton radioButton)
+        {
+            radioButton.Checked = false;
+        }
         /*string*/ void PrintOrder()
         {
             float totalPrice = 0f;

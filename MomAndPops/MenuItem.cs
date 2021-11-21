@@ -15,6 +15,8 @@ namespace MomAndPops
 
     public class MenuItem
     {
+        public const float drinkPrice = 1f;
+
         private float itemQuantity;
 
         public float ItemQuantity

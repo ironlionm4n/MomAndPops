@@ -120,57 +120,57 @@ namespace MomAndPops.Resources
             this.SmallPizzaQuantity = new System.Windows.Forms.NumericUpDown();
             this.LargePizzaQuantity = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
+            this.DrinksGroupBox = new System.Windows.Forms.GroupBox();
+            this.DrinksAreOneDollarLabel = new System.Windows.Forms.Label();
+            this.LemonadePanel = new System.Windows.Forms.Panel();
             this.LemonadeLarge = new System.Windows.Forms.RadioButton();
             this.LemonadeMedium = new System.Windows.Forms.RadioButton();
             this.LemonadeSmall = new System.Windows.Forms.RadioButton();
-            this.label16 = new System.Windows.Forms.Label();
+            this.LemonadeLabel = new System.Windows.Forms.Label();
             this.LemonadeQuantity = new System.Windows.Forms.NumericUpDown();
-            this.panel10 = new System.Windows.Forms.Panel();
+            this.SierraMistPanel = new System.Windows.Forms.Panel();
             this.SierraMistLarge = new System.Windows.Forms.RadioButton();
             this.SierraMistMedium = new System.Windows.Forms.RadioButton();
             this.SierraMistSmall = new System.Windows.Forms.RadioButton();
-            this.label15 = new System.Windows.Forms.Label();
+            this.SierraMistLabel = new System.Windows.Forms.Label();
             this.SierraMistQuantity = new System.Windows.Forms.NumericUpDown();
-            this.panel9 = new System.Windows.Forms.Panel();
+            this.DietRootBeerPanel = new System.Windows.Forms.Panel();
             this.DietRootBeerLarge = new System.Windows.Forms.RadioButton();
             this.DietRootBeerMedium = new System.Windows.Forms.RadioButton();
             this.DietRootBeerSmall = new System.Windows.Forms.RadioButton();
-            this.label14 = new System.Windows.Forms.Label();
+            this.DietRootBeerLabel = new System.Windows.Forms.Label();
             this.DietRootBeerQuantity = new System.Windows.Forms.NumericUpDown();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.RootBeerPanel = new System.Windows.Forms.Panel();
             this.RootbeerLarge = new System.Windows.Forms.RadioButton();
-            this.RootbeerMedium = new System.Windows.Forms.RadioButton();
-            this.RootbeerSmall = new System.Windows.Forms.RadioButton();
-            this.label13 = new System.Windows.Forms.Label();
-            this.RootbeerQuantity = new System.Windows.Forms.NumericUpDown();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.RootBeerMedium = new System.Windows.Forms.RadioButton();
+            this.RootBeerSmall = new System.Windows.Forms.RadioButton();
+            this.RootBeerLabel = new System.Windows.Forms.Label();
+            this.RootBeerQuantity = new System.Windows.Forms.NumericUpDown();
+            this.DietOrangePanel = new System.Windows.Forms.Panel();
             this.DietOrangeLarge = new System.Windows.Forms.RadioButton();
-            this.DietSmallMedium = new System.Windows.Forms.RadioButton();
+            this.DietOrangeMedium = new System.Windows.Forms.RadioButton();
             this.DietOrangeSmall = new System.Windows.Forms.RadioButton();
-            this.label12 = new System.Windows.Forms.Label();
+            this.DietOrangeLabel = new System.Windows.Forms.Label();
             this.DietOrangeQuantity = new System.Windows.Forms.NumericUpDown();
-            this.panel6 = new System.Windows.Forms.Panel();
+            this.OrangePanel = new System.Windows.Forms.Panel();
             this.OrangeLarge = new System.Windows.Forms.RadioButton();
             this.OrangeMedium = new System.Windows.Forms.RadioButton();
             this.OrangeSmall = new System.Windows.Forms.RadioButton();
-            this.label11 = new System.Windows.Forms.Label();
+            this.OrangeLabel = new System.Windows.Forms.Label();
             this.OrangeQuantity = new System.Windows.Forms.NumericUpDown();
-            this.panel5 = new System.Windows.Forms.Panel();
+            this.DietPepsiPanel = new System.Windows.Forms.Panel();
             this.DietPepsiLarge = new System.Windows.Forms.RadioButton();
             this.DietPepsiMedium = new System.Windows.Forms.RadioButton();
             this.DietPepsiSmall = new System.Windows.Forms.RadioButton();
-            this.label7 = new System.Windows.Forms.Label();
+            this.DietPepsiLabel = new System.Windows.Forms.Label();
             this.DietPepsiQuantity = new System.Windows.Forms.NumericUpDown();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.PepsiPanel = new System.Windows.Forms.Panel();
             this.PepsiLarge = new System.Windows.Forms.RadioButton();
             this.PepsiMedium = new System.Windows.Forms.RadioButton();
             this.PepsiSmall = new System.Windows.Forms.RadioButton();
-            this.label10 = new System.Windows.Forms.Label();
+            this.PepsiLabel = new System.Windows.Forms.Label();
             this.PepsiQuantity = new System.Windows.Forms.NumericUpDown();
-            this.label5 = new System.Windows.Forms.Label();
+            this.DrinksSectionLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.AddToCart = new System.Windows.Forms.Button();
             this.Logout = new System.Windows.Forms.Button();
@@ -181,6 +181,7 @@ namespace MomAndPops.Resources
             this.CartXButton = new System.Windows.Forms.Label();
             this.CartHeader = new System.Windows.Forms.Label();
             this.CartPanel = new System.Windows.Forms.Panel();
+            this.ClearCartButton = new System.Windows.Forms.Button();
             this.CartTextBox = new System.Windows.Forms.TextBox();
             this.TotalLabel = new System.Windows.Forms.Label();
             this.CheckoutButton = new System.Windows.Forms.Button();
@@ -196,7 +197,6 @@ namespace MomAndPops.Resources
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PreviousOrderXButton = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ClearCartButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CookieQuantity)).BeginInit();
@@ -222,22 +222,22 @@ namespace MomAndPops.Resources
             ((System.ComponentModel.ISupportInitialize)(this.MediumPizzaQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SmallPizzaQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.LargePizzaQuantity)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            this.panel11.SuspendLayout();
+            this.DrinksGroupBox.SuspendLayout();
+            this.LemonadePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LemonadeQuantity)).BeginInit();
-            this.panel10.SuspendLayout();
+            this.SierraMistPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SierraMistQuantity)).BeginInit();
-            this.panel9.SuspendLayout();
+            this.DietRootBeerPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DietRootBeerQuantity)).BeginInit();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RootbeerQuantity)).BeginInit();
-            this.panel7.SuspendLayout();
+            this.RootBeerPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RootBeerQuantity)).BeginInit();
+            this.DietOrangePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DietOrangeQuantity)).BeginInit();
-            this.panel6.SuspendLayout();
+            this.OrangePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrangeQuantity)).BeginInit();
-            this.panel5.SuspendLayout();
+            this.DietPepsiPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DietPepsiQuantity)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.PepsiPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PepsiQuantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CartHeaderBackground)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CartXBackground)).BeginInit();
@@ -1248,48 +1248,48 @@ namespace MomAndPops.Resources
             this.label4.TabIndex = 2;
             this.label4.Text = "Entrees";
             // 
-            // groupBox3
+            // DrinksGroupBox
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.groupBox3.Controls.Add(this.label25);
-            this.groupBox3.Controls.Add(this.panel11);
-            this.groupBox3.Controls.Add(this.panel10);
-            this.groupBox3.Controls.Add(this.panel9);
-            this.groupBox3.Controls.Add(this.panel8);
-            this.groupBox3.Controls.Add(this.panel7);
-            this.groupBox3.Controls.Add(this.panel6);
-            this.groupBox3.Controls.Add(this.panel5);
-            this.groupBox3.Controls.Add(this.panel4);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
-            this.groupBox3.Location = new System.Drawing.Point(863, 97);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(364, 435);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
+            this.DrinksGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.DrinksGroupBox.Controls.Add(this.DrinksAreOneDollarLabel);
+            this.DrinksGroupBox.Controls.Add(this.LemonadePanel);
+            this.DrinksGroupBox.Controls.Add(this.SierraMistPanel);
+            this.DrinksGroupBox.Controls.Add(this.DietRootBeerPanel);
+            this.DrinksGroupBox.Controls.Add(this.RootBeerPanel);
+            this.DrinksGroupBox.Controls.Add(this.DietOrangePanel);
+            this.DrinksGroupBox.Controls.Add(this.OrangePanel);
+            this.DrinksGroupBox.Controls.Add(this.DietPepsiPanel);
+            this.DrinksGroupBox.Controls.Add(this.PepsiPanel);
+            this.DrinksGroupBox.Controls.Add(this.DrinksSectionLabel);
+            this.DrinksGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
+            this.DrinksGroupBox.Location = new System.Drawing.Point(863, 97);
+            this.DrinksGroupBox.Name = "DrinksGroupBox";
+            this.DrinksGroupBox.Size = new System.Drawing.Size(364, 435);
+            this.DrinksGroupBox.TabIndex = 1;
+            this.DrinksGroupBox.TabStop = false;
             // 
-            // label25
+            // DrinksAreOneDollarLabel
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.label25.Location = new System.Drawing.Point(91, 86);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(143, 24);
-            this.label25.TabIndex = 12;
-            this.label25.Text = "All drinks are $1";
+            this.DrinksAreOneDollarLabel.AutoSize = true;
+            this.DrinksAreOneDollarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.DrinksAreOneDollarLabel.Location = new System.Drawing.Point(91, 86);
+            this.DrinksAreOneDollarLabel.Name = "DrinksAreOneDollarLabel";
+            this.DrinksAreOneDollarLabel.Size = new System.Drawing.Size(143, 24);
+            this.DrinksAreOneDollarLabel.TabIndex = 12;
+            this.DrinksAreOneDollarLabel.Text = "All drinks are $1";
             // 
-            // panel11
+            // LemonadePanel
             // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.panel11.Controls.Add(this.LemonadeLarge);
-            this.panel11.Controls.Add(this.LemonadeMedium);
-            this.panel11.Controls.Add(this.LemonadeSmall);
-            this.panel11.Controls.Add(this.label16);
-            this.panel11.Controls.Add(this.LemonadeQuantity);
-            this.panel11.Location = new System.Drawing.Point(52, 358);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(268, 28);
-            this.panel11.TabIndex = 11;
+            this.LemonadePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.LemonadePanel.Controls.Add(this.LemonadeLarge);
+            this.LemonadePanel.Controls.Add(this.LemonadeMedium);
+            this.LemonadePanel.Controls.Add(this.LemonadeSmall);
+            this.LemonadePanel.Controls.Add(this.LemonadeLabel);
+            this.LemonadePanel.Controls.Add(this.LemonadeQuantity);
+            this.LemonadePanel.Location = new System.Drawing.Point(52, 358);
+            this.LemonadePanel.Name = "LemonadePanel";
+            this.LemonadePanel.Size = new System.Drawing.Size(268, 28);
+            this.LemonadePanel.TabIndex = 11;
             // 
             // LemonadeLarge
             // 
@@ -1327,15 +1327,15 @@ namespace MomAndPops.Resources
             this.LemonadeSmall.Text = "S";
             this.LemonadeSmall.UseVisualStyleBackColor = true;
             // 
-            // label16
+            // LemonadeLabel
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label16.Location = new System.Drawing.Point(36, 3);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 20);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "Lemonade";
+            this.LemonadeLabel.AutoSize = true;
+            this.LemonadeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.LemonadeLabel.Location = new System.Drawing.Point(36, 3);
+            this.LemonadeLabel.Name = "LemonadeLabel";
+            this.LemonadeLabel.Size = new System.Drawing.Size(85, 20);
+            this.LemonadeLabel.TabIndex = 1;
+            this.LemonadeLabel.Text = "Lemonade";
             // 
             // LemonadeQuantity
             // 
@@ -1345,18 +1345,18 @@ namespace MomAndPops.Resources
             this.LemonadeQuantity.Size = new System.Drawing.Size(35, 23);
             this.LemonadeQuantity.TabIndex = 0;
             // 
-            // panel10
+            // SierraMistPanel
             // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.panel10.Controls.Add(this.SierraMistLarge);
-            this.panel10.Controls.Add(this.SierraMistMedium);
-            this.panel10.Controls.Add(this.SierraMistSmall);
-            this.panel10.Controls.Add(this.label15);
-            this.panel10.Controls.Add(this.SierraMistQuantity);
-            this.panel10.Location = new System.Drawing.Point(52, 326);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(268, 28);
-            this.panel10.TabIndex = 10;
+            this.SierraMistPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.SierraMistPanel.Controls.Add(this.SierraMistLarge);
+            this.SierraMistPanel.Controls.Add(this.SierraMistMedium);
+            this.SierraMistPanel.Controls.Add(this.SierraMistSmall);
+            this.SierraMistPanel.Controls.Add(this.SierraMistLabel);
+            this.SierraMistPanel.Controls.Add(this.SierraMistQuantity);
+            this.SierraMistPanel.Location = new System.Drawing.Point(52, 326);
+            this.SierraMistPanel.Name = "SierraMistPanel";
+            this.SierraMistPanel.Size = new System.Drawing.Size(268, 28);
+            this.SierraMistPanel.TabIndex = 10;
             // 
             // SierraMistLarge
             // 
@@ -1394,15 +1394,15 @@ namespace MomAndPops.Resources
             this.SierraMistSmall.Text = "S";
             this.SierraMistSmall.UseVisualStyleBackColor = true;
             // 
-            // label15
+            // SierraMistLabel
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label15.Location = new System.Drawing.Point(36, 3);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(84, 20);
-            this.label15.TabIndex = 1;
-            this.label15.Text = "Sierra Mist";
+            this.SierraMistLabel.AutoSize = true;
+            this.SierraMistLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.SierraMistLabel.Location = new System.Drawing.Point(36, 3);
+            this.SierraMistLabel.Name = "SierraMistLabel";
+            this.SierraMistLabel.Size = new System.Drawing.Size(84, 20);
+            this.SierraMistLabel.TabIndex = 1;
+            this.SierraMistLabel.Text = "Sierra Mist";
             // 
             // SierraMistQuantity
             // 
@@ -1412,18 +1412,18 @@ namespace MomAndPops.Resources
             this.SierraMistQuantity.Size = new System.Drawing.Size(35, 23);
             this.SierraMistQuantity.TabIndex = 0;
             // 
-            // panel9
+            // DietRootBeerPanel
             // 
-            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.panel9.Controls.Add(this.DietRootBeerLarge);
-            this.panel9.Controls.Add(this.DietRootBeerMedium);
-            this.panel9.Controls.Add(this.DietRootBeerSmall);
-            this.panel9.Controls.Add(this.label14);
-            this.panel9.Controls.Add(this.DietRootBeerQuantity);
-            this.panel9.Location = new System.Drawing.Point(52, 295);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(268, 28);
-            this.panel9.TabIndex = 9;
+            this.DietRootBeerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.DietRootBeerPanel.Controls.Add(this.DietRootBeerLarge);
+            this.DietRootBeerPanel.Controls.Add(this.DietRootBeerMedium);
+            this.DietRootBeerPanel.Controls.Add(this.DietRootBeerSmall);
+            this.DietRootBeerPanel.Controls.Add(this.DietRootBeerLabel);
+            this.DietRootBeerPanel.Controls.Add(this.DietRootBeerQuantity);
+            this.DietRootBeerPanel.Location = new System.Drawing.Point(52, 295);
+            this.DietRootBeerPanel.Name = "DietRootBeerPanel";
+            this.DietRootBeerPanel.Size = new System.Drawing.Size(268, 28);
+            this.DietRootBeerPanel.TabIndex = 9;
             // 
             // DietRootBeerLarge
             // 
@@ -1461,15 +1461,15 @@ namespace MomAndPops.Resources
             this.DietRootBeerSmall.Text = "S";
             this.DietRootBeerSmall.UseVisualStyleBackColor = true;
             // 
-            // label14
+            // DietRootBeerLabel
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label14.Location = new System.Drawing.Point(36, 3);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(115, 20);
-            this.label14.TabIndex = 1;
-            this.label14.Text = "Diet Root Beer";
+            this.DietRootBeerLabel.AutoSize = true;
+            this.DietRootBeerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.DietRootBeerLabel.Location = new System.Drawing.Point(36, 3);
+            this.DietRootBeerLabel.Name = "DietRootBeerLabel";
+            this.DietRootBeerLabel.Size = new System.Drawing.Size(115, 20);
+            this.DietRootBeerLabel.TabIndex = 1;
+            this.DietRootBeerLabel.Text = "Diet Root Beer";
             // 
             // DietRootBeerQuantity
             // 
@@ -1479,18 +1479,18 @@ namespace MomAndPops.Resources
             this.DietRootBeerQuantity.Size = new System.Drawing.Size(35, 23);
             this.DietRootBeerQuantity.TabIndex = 0;
             // 
-            // panel8
+            // RootBeerPanel
             // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.panel8.Controls.Add(this.RootbeerLarge);
-            this.panel8.Controls.Add(this.RootbeerMedium);
-            this.panel8.Controls.Add(this.RootbeerSmall);
-            this.panel8.Controls.Add(this.label13);
-            this.panel8.Controls.Add(this.RootbeerQuantity);
-            this.panel8.Location = new System.Drawing.Point(52, 264);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(268, 28);
-            this.panel8.TabIndex = 8;
+            this.RootBeerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.RootBeerPanel.Controls.Add(this.RootbeerLarge);
+            this.RootBeerPanel.Controls.Add(this.RootBeerMedium);
+            this.RootBeerPanel.Controls.Add(this.RootBeerSmall);
+            this.RootBeerPanel.Controls.Add(this.RootBeerLabel);
+            this.RootBeerPanel.Controls.Add(this.RootBeerQuantity);
+            this.RootBeerPanel.Location = new System.Drawing.Point(52, 264);
+            this.RootBeerPanel.Name = "RootBeerPanel";
+            this.RootBeerPanel.Size = new System.Drawing.Size(268, 28);
+            this.RootBeerPanel.TabIndex = 8;
             // 
             // RootbeerLarge
             // 
@@ -1504,60 +1504,60 @@ namespace MomAndPops.Resources
             this.RootbeerLarge.Text = "L";
             this.RootbeerLarge.UseVisualStyleBackColor = true;
             // 
-            // RootbeerMedium
+            // RootBeerMedium
             // 
-            this.RootbeerMedium.AutoSize = true;
-            this.RootbeerMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.RootbeerMedium.Location = new System.Drawing.Point(188, 5);
-            this.RootbeerMedium.Name = "RootbeerMedium";
-            this.RootbeerMedium.Size = new System.Drawing.Size(37, 21);
-            this.RootbeerMedium.TabIndex = 3;
-            this.RootbeerMedium.TabStop = true;
-            this.RootbeerMedium.Text = "M";
-            this.RootbeerMedium.UseVisualStyleBackColor = true;
+            this.RootBeerMedium.AutoSize = true;
+            this.RootBeerMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.RootBeerMedium.Location = new System.Drawing.Point(188, 5);
+            this.RootBeerMedium.Name = "RootBeerMedium";
+            this.RootBeerMedium.Size = new System.Drawing.Size(37, 21);
+            this.RootBeerMedium.TabIndex = 3;
+            this.RootBeerMedium.TabStop = true;
+            this.RootBeerMedium.Text = "M";
+            this.RootBeerMedium.UseVisualStyleBackColor = true;
             // 
-            // RootbeerSmall
+            // RootBeerSmall
             // 
-            this.RootbeerSmall.AutoSize = true;
-            this.RootbeerSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.RootbeerSmall.Location = new System.Drawing.Point(147, 4);
-            this.RootbeerSmall.Name = "RootbeerSmall";
-            this.RootbeerSmall.Size = new System.Drawing.Size(35, 21);
-            this.RootbeerSmall.TabIndex = 2;
-            this.RootbeerSmall.TabStop = true;
-            this.RootbeerSmall.Text = "S";
-            this.RootbeerSmall.UseVisualStyleBackColor = true;
+            this.RootBeerSmall.AutoSize = true;
+            this.RootBeerSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.RootBeerSmall.Location = new System.Drawing.Point(147, 4);
+            this.RootBeerSmall.Name = "RootBeerSmall";
+            this.RootBeerSmall.Size = new System.Drawing.Size(35, 21);
+            this.RootBeerSmall.TabIndex = 2;
+            this.RootBeerSmall.TabStop = true;
+            this.RootBeerSmall.Text = "S";
+            this.RootBeerSmall.UseVisualStyleBackColor = true;
             // 
-            // label13
+            // RootBeerLabel
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label13.Location = new System.Drawing.Point(36, 3);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(82, 20);
-            this.label13.TabIndex = 1;
-            this.label13.Text = "Root Beer";
+            this.RootBeerLabel.AutoSize = true;
+            this.RootBeerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.RootBeerLabel.Location = new System.Drawing.Point(36, 3);
+            this.RootBeerLabel.Name = "RootBeerLabel";
+            this.RootBeerLabel.Size = new System.Drawing.Size(82, 20);
+            this.RootBeerLabel.TabIndex = 1;
+            this.RootBeerLabel.Text = "Root Beer";
             // 
-            // RootbeerQuantity
+            // RootBeerQuantity
             // 
-            this.RootbeerQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.RootbeerQuantity.Location = new System.Drawing.Point(3, 2);
-            this.RootbeerQuantity.Name = "RootbeerQuantity";
-            this.RootbeerQuantity.Size = new System.Drawing.Size(35, 23);
-            this.RootbeerQuantity.TabIndex = 0;
+            this.RootBeerQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.RootBeerQuantity.Location = new System.Drawing.Point(3, 2);
+            this.RootBeerQuantity.Name = "RootBeerQuantity";
+            this.RootBeerQuantity.Size = new System.Drawing.Size(35, 23);
+            this.RootBeerQuantity.TabIndex = 0;
             // 
-            // panel7
+            // DietOrangePanel
             // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.panel7.Controls.Add(this.DietOrangeLarge);
-            this.panel7.Controls.Add(this.DietSmallMedium);
-            this.panel7.Controls.Add(this.DietOrangeSmall);
-            this.panel7.Controls.Add(this.label12);
-            this.panel7.Controls.Add(this.DietOrangeQuantity);
-            this.panel7.Location = new System.Drawing.Point(52, 230);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(268, 28);
-            this.panel7.TabIndex = 7;
+            this.DietOrangePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.DietOrangePanel.Controls.Add(this.DietOrangeLarge);
+            this.DietOrangePanel.Controls.Add(this.DietOrangeMedium);
+            this.DietOrangePanel.Controls.Add(this.DietOrangeSmall);
+            this.DietOrangePanel.Controls.Add(this.DietOrangeLabel);
+            this.DietOrangePanel.Controls.Add(this.DietOrangeQuantity);
+            this.DietOrangePanel.Location = new System.Drawing.Point(52, 230);
+            this.DietOrangePanel.Name = "DietOrangePanel";
+            this.DietOrangePanel.Size = new System.Drawing.Size(268, 28);
+            this.DietOrangePanel.TabIndex = 7;
             // 
             // DietOrangeLarge
             // 
@@ -1571,18 +1571,18 @@ namespace MomAndPops.Resources
             this.DietOrangeLarge.Text = "L";
             this.DietOrangeLarge.UseVisualStyleBackColor = true;
             // 
-            // DietSmallMedium
+            // DietOrangeMedium
             // 
-            this.DietSmallMedium.AutoSize = true;
-            this.DietSmallMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DietSmallMedium.Location = new System.Drawing.Point(188, 5);
-            this.DietSmallMedium.Name = "DietSmallMedium";
-            this.DietSmallMedium.Size = new System.Drawing.Size(37, 21);
-            this.DietSmallMedium.TabIndex = 3;
-            this.DietSmallMedium.TabStop = true;
-            this.DietSmallMedium.Text = "M";
-            this.DietSmallMedium.UseVisualStyleBackColor = true;
-            this.DietSmallMedium.CheckedChanged += new System.EventHandler(this.DietSmallMedium_CheckedChanged);
+            this.DietOrangeMedium.AutoSize = true;
+            this.DietOrangeMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.DietOrangeMedium.Location = new System.Drawing.Point(188, 5);
+            this.DietOrangeMedium.Name = "DietOrangeMedium";
+            this.DietOrangeMedium.Size = new System.Drawing.Size(37, 21);
+            this.DietOrangeMedium.TabIndex = 3;
+            this.DietOrangeMedium.TabStop = true;
+            this.DietOrangeMedium.Text = "M";
+            this.DietOrangeMedium.UseVisualStyleBackColor = true;
+            this.DietOrangeMedium.CheckedChanged += new System.EventHandler(this.DietSmallMedium_CheckedChanged);
             // 
             // DietOrangeSmall
             // 
@@ -1596,15 +1596,15 @@ namespace MomAndPops.Resources
             this.DietOrangeSmall.Text = "S";
             this.DietOrangeSmall.UseVisualStyleBackColor = true;
             // 
-            // label12
+            // DietOrangeLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label12.Location = new System.Drawing.Point(36, 3);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(95, 20);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "Diet Orange";
+            this.DietOrangeLabel.AutoSize = true;
+            this.DietOrangeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.DietOrangeLabel.Location = new System.Drawing.Point(36, 3);
+            this.DietOrangeLabel.Name = "DietOrangeLabel";
+            this.DietOrangeLabel.Size = new System.Drawing.Size(95, 20);
+            this.DietOrangeLabel.TabIndex = 1;
+            this.DietOrangeLabel.Text = "Diet Orange";
             // 
             // DietOrangeQuantity
             // 
@@ -1614,18 +1614,18 @@ namespace MomAndPops.Resources
             this.DietOrangeQuantity.Size = new System.Drawing.Size(35, 23);
             this.DietOrangeQuantity.TabIndex = 0;
             // 
-            // panel6
+            // OrangePanel
             // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.panel6.Controls.Add(this.OrangeLarge);
-            this.panel6.Controls.Add(this.OrangeMedium);
-            this.panel6.Controls.Add(this.OrangeSmall);
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.OrangeQuantity);
-            this.panel6.Location = new System.Drawing.Point(52, 196);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(268, 28);
-            this.panel6.TabIndex = 6;
+            this.OrangePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.OrangePanel.Controls.Add(this.OrangeLarge);
+            this.OrangePanel.Controls.Add(this.OrangeMedium);
+            this.OrangePanel.Controls.Add(this.OrangeSmall);
+            this.OrangePanel.Controls.Add(this.OrangeLabel);
+            this.OrangePanel.Controls.Add(this.OrangeQuantity);
+            this.OrangePanel.Location = new System.Drawing.Point(52, 196);
+            this.OrangePanel.Name = "OrangePanel";
+            this.OrangePanel.Size = new System.Drawing.Size(268, 28);
+            this.OrangePanel.TabIndex = 6;
             // 
             // OrangeLarge
             // 
@@ -1663,15 +1663,15 @@ namespace MomAndPops.Resources
             this.OrangeSmall.Text = "S";
             this.OrangeSmall.UseVisualStyleBackColor = true;
             // 
-            // label11
+            // OrangeLabel
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label11.Location = new System.Drawing.Point(36, 3);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(62, 20);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "Orange";
+            this.OrangeLabel.AutoSize = true;
+            this.OrangeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.OrangeLabel.Location = new System.Drawing.Point(36, 3);
+            this.OrangeLabel.Name = "OrangeLabel";
+            this.OrangeLabel.Size = new System.Drawing.Size(62, 20);
+            this.OrangeLabel.TabIndex = 1;
+            this.OrangeLabel.Text = "Orange";
             // 
             // OrangeQuantity
             // 
@@ -1681,18 +1681,18 @@ namespace MomAndPops.Resources
             this.OrangeQuantity.Size = new System.Drawing.Size(35, 23);
             this.OrangeQuantity.TabIndex = 0;
             // 
-            // panel5
+            // DietPepsiPanel
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.panel5.Controls.Add(this.DietPepsiLarge);
-            this.panel5.Controls.Add(this.DietPepsiMedium);
-            this.panel5.Controls.Add(this.DietPepsiSmall);
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.DietPepsiQuantity);
-            this.panel5.Location = new System.Drawing.Point(52, 161);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(265, 28);
-            this.panel5.TabIndex = 5;
+            this.DietPepsiPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.DietPepsiPanel.Controls.Add(this.DietPepsiLarge);
+            this.DietPepsiPanel.Controls.Add(this.DietPepsiMedium);
+            this.DietPepsiPanel.Controls.Add(this.DietPepsiSmall);
+            this.DietPepsiPanel.Controls.Add(this.DietPepsiLabel);
+            this.DietPepsiPanel.Controls.Add(this.DietPepsiQuantity);
+            this.DietPepsiPanel.Location = new System.Drawing.Point(52, 161);
+            this.DietPepsiPanel.Name = "DietPepsiPanel";
+            this.DietPepsiPanel.Size = new System.Drawing.Size(265, 28);
+            this.DietPepsiPanel.TabIndex = 5;
             // 
             // DietPepsiLarge
             // 
@@ -1730,15 +1730,15 @@ namespace MomAndPops.Resources
             this.DietPepsiSmall.Text = "S";
             this.DietPepsiSmall.UseVisualStyleBackColor = true;
             // 
-            // label7
+            // DietPepsiLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label7.Location = new System.Drawing.Point(36, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 20);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Diet Pepsi";
+            this.DietPepsiLabel.AutoSize = true;
+            this.DietPepsiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.DietPepsiLabel.Location = new System.Drawing.Point(36, 3);
+            this.DietPepsiLabel.Name = "DietPepsiLabel";
+            this.DietPepsiLabel.Size = new System.Drawing.Size(81, 20);
+            this.DietPepsiLabel.TabIndex = 1;
+            this.DietPepsiLabel.Text = "Diet Pepsi";
             // 
             // DietPepsiQuantity
             // 
@@ -1748,18 +1748,18 @@ namespace MomAndPops.Resources
             this.DietPepsiQuantity.Size = new System.Drawing.Size(35, 23);
             this.DietPepsiQuantity.TabIndex = 0;
             // 
-            // panel4
+            // PepsiPanel
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.panel4.Controls.Add(this.PepsiLarge);
-            this.panel4.Controls.Add(this.PepsiMedium);
-            this.panel4.Controls.Add(this.PepsiSmall);
-            this.panel4.Controls.Add(this.label10);
-            this.panel4.Controls.Add(this.PepsiQuantity);
-            this.panel4.Location = new System.Drawing.Point(52, 127);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(262, 28);
-            this.panel4.TabIndex = 3;
+            this.PepsiPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.PepsiPanel.Controls.Add(this.PepsiLarge);
+            this.PepsiPanel.Controls.Add(this.PepsiMedium);
+            this.PepsiPanel.Controls.Add(this.PepsiSmall);
+            this.PepsiPanel.Controls.Add(this.PepsiLabel);
+            this.PepsiPanel.Controls.Add(this.PepsiQuantity);
+            this.PepsiPanel.Location = new System.Drawing.Point(52, 127);
+            this.PepsiPanel.Name = "PepsiPanel";
+            this.PepsiPanel.Size = new System.Drawing.Size(262, 28);
+            this.PepsiPanel.TabIndex = 3;
             // 
             // PepsiLarge
             // 
@@ -1797,15 +1797,15 @@ namespace MomAndPops.Resources
             this.PepsiSmall.Text = "S";
             this.PepsiSmall.UseVisualStyleBackColor = true;
             // 
-            // label10
+            // PepsiLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label10.Location = new System.Drawing.Point(44, 5);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(48, 20);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Pepsi";
+            this.PepsiLabel.AutoSize = true;
+            this.PepsiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.PepsiLabel.Location = new System.Drawing.Point(44, 5);
+            this.PepsiLabel.Name = "PepsiLabel";
+            this.PepsiLabel.Size = new System.Drawing.Size(48, 20);
+            this.PepsiLabel.TabIndex = 1;
+            this.PepsiLabel.Text = "Pepsi";
             // 
             // PepsiQuantity
             // 
@@ -1815,15 +1815,15 @@ namespace MomAndPops.Resources
             this.PepsiQuantity.Size = new System.Drawing.Size(35, 23);
             this.PepsiQuantity.TabIndex = 0;
             // 
-            // label5
+            // DrinksSectionLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(116, 48);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 31);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Drinks";
+            this.DrinksSectionLabel.AutoSize = true;
+            this.DrinksSectionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DrinksSectionLabel.Location = new System.Drawing.Point(116, 48);
+            this.DrinksSectionLabel.Name = "DrinksSectionLabel";
+            this.DrinksSectionLabel.Size = new System.Drawing.Size(98, 31);
+            this.DrinksSectionLabel.TabIndex = 3;
+            this.DrinksSectionLabel.Text = "Drinks";
             // 
             // label1
             // 
@@ -1934,11 +1934,22 @@ namespace MomAndPops.Resources
             this.CartPanel.Controls.Add(this.CartXButton);
             this.CartPanel.Controls.Add(this.CartXBackground);
             this.CartPanel.Enabled = false;
-            this.CartPanel.Location = new System.Drawing.Point(864, 24);
+            this.CartPanel.Location = new System.Drawing.Point(262, 19);
             this.CartPanel.Name = "CartPanel";
             this.CartPanel.Size = new System.Drawing.Size(398, 530);
             this.CartPanel.TabIndex = 12;
             this.CartPanel.Visible = false;
+            // 
+            // ClearCartButton
+            // 
+            this.ClearCartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.ClearCartButton.Location = new System.Drawing.Point(220, 464);
+            this.ClearCartButton.Name = "ClearCartButton";
+            this.ClearCartButton.Size = new System.Drawing.Size(142, 52);
+            this.ClearCartButton.TabIndex = 17;
+            this.ClearCartButton.Text = "Clear Cart";
+            this.ClearCartButton.UseVisualStyleBackColor = true;
+            this.ClearCartButton.Click += new System.EventHandler(this.ClearCartButton_Click);
             // 
             // CartTextBox
             // 
@@ -2110,17 +2121,6 @@ namespace MomAndPops.Resources
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
-            // ClearCartButton
-            // 
-            this.ClearCartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.ClearCartButton.Location = new System.Drawing.Point(220, 464);
-            this.ClearCartButton.Name = "ClearCartButton";
-            this.ClearCartButton.Size = new System.Drawing.Size(142, 52);
-            this.ClearCartButton.TabIndex = 17;
-            this.ClearCartButton.Text = "Clear Cart";
-            this.ClearCartButton.UseVisualStyleBackColor = true;
-            this.ClearCartButton.Click += new System.EventHandler(this.ClearCartButton_Click);
-            // 
             // MenuLanding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2134,7 +2134,7 @@ namespace MomAndPops.Resources
             this.Controls.Add(this.Logout);
             this.Controls.Add(this.AddToCart);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.DrinksGroupBox);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Name = "MenuLanding";
@@ -2178,31 +2178,31 @@ namespace MomAndPops.Resources
             ((System.ComponentModel.ISupportInitialize)(this.MediumPizzaQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SmallPizzaQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.LargePizzaQuantity)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
+            this.DrinksGroupBox.ResumeLayout(false);
+            this.DrinksGroupBox.PerformLayout();
+            this.LemonadePanel.ResumeLayout(false);
+            this.LemonadePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LemonadeQuantity)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
+            this.SierraMistPanel.ResumeLayout(false);
+            this.SierraMistPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SierraMistQuantity)).EndInit();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
+            this.DietRootBeerPanel.ResumeLayout(false);
+            this.DietRootBeerPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DietRootBeerQuantity)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.RootbeerQuantity)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
+            this.RootBeerPanel.ResumeLayout(false);
+            this.RootBeerPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.RootBeerQuantity)).EndInit();
+            this.DietOrangePanel.ResumeLayout(false);
+            this.DietOrangePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DietOrangeQuantity)).EndInit();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
+            this.OrangePanel.ResumeLayout(false);
+            this.OrangePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OrangeQuantity)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
+            this.DietPepsiPanel.ResumeLayout(false);
+            this.DietPepsiPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DietPepsiQuantity)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.PepsiPanel.ResumeLayout(false);
+            this.PepsiPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PepsiQuantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CartHeaderBackground)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CartXBackground)).EndInit();
@@ -2226,8 +2226,8 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.GroupBox DrinksGroupBox;
+        private System.Windows.Forms.Label DrinksSectionLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label BreadstickPrice;
         private System.Windows.Forms.Label Breadsticks;
@@ -2239,57 +2239,57 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.Label CookiePrice;
         private System.Windows.Forms.Label ChocChipCookie;
         private System.Windows.Forms.NumericUpDown CookieQuantity;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel PepsiPanel;
         private System.Windows.Forms.RadioButton PepsiLarge;
         private System.Windows.Forms.RadioButton PepsiMedium;
         private System.Windows.Forms.RadioButton PepsiSmall;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label PepsiLabel;
         private System.Windows.Forms.NumericUpDown PepsiQuantity;
-        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel OrangePanel;
         private System.Windows.Forms.RadioButton OrangeLarge;
         private System.Windows.Forms.RadioButton OrangeMedium;
         private System.Windows.Forms.RadioButton OrangeSmall;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label OrangeLabel;
         private System.Windows.Forms.NumericUpDown OrangeQuantity;
-        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel DietPepsiPanel;
         private System.Windows.Forms.RadioButton DietPepsiLarge;
         private System.Windows.Forms.RadioButton DietPepsiMedium;
         private System.Windows.Forms.RadioButton DietPepsiSmall;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label DietPepsiLabel;
         private System.Windows.Forms.NumericUpDown DietPepsiQuantity;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel DietOrangePanel;
         private System.Windows.Forms.RadioButton DietOrangeLarge;
-        private System.Windows.Forms.RadioButton DietSmallMedium;
+        private System.Windows.Forms.RadioButton DietOrangeMedium;
         private System.Windows.Forms.RadioButton DietOrangeSmall;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label DietOrangeLabel;
         private System.Windows.Forms.NumericUpDown DietOrangeQuantity;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel RootBeerPanel;
         private System.Windows.Forms.RadioButton RootbeerLarge;
-        private System.Windows.Forms.RadioButton RootbeerMedium;
-        private System.Windows.Forms.RadioButton RootbeerSmall;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.NumericUpDown RootbeerQuantity;
+        private System.Windows.Forms.RadioButton RootBeerMedium;
+        private System.Windows.Forms.RadioButton RootBeerSmall;
+        private System.Windows.Forms.Label RootBeerLabel;
+        private System.Windows.Forms.NumericUpDown RootBeerQuantity;
         private System.Windows.Forms.Panel PizzaPanel;
         private System.Windows.Forms.Label SmallPizzaPrice;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.NumericUpDown SmallPizzaQuantity;
-        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Panel LemonadePanel;
         private System.Windows.Forms.RadioButton LemonadeLarge;
         private System.Windows.Forms.RadioButton LemonadeMedium;
         private System.Windows.Forms.RadioButton LemonadeSmall;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label LemonadeLabel;
         private System.Windows.Forms.NumericUpDown LemonadeQuantity;
-        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel SierraMistPanel;
         private System.Windows.Forms.RadioButton SierraMistLarge;
         private System.Windows.Forms.RadioButton SierraMistMedium;
         private System.Windows.Forms.RadioButton SierraMistSmall;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label SierraMistLabel;
         private System.Windows.Forms.NumericUpDown SierraMistQuantity;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel DietRootBeerPanel;
         private System.Windows.Forms.RadioButton DietRootBeerLarge;
         private System.Windows.Forms.RadioButton DietRootBeerMedium;
         private System.Windows.Forms.RadioButton DietRootBeerSmall;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label DietRootBeerLabel;
         private System.Windows.Forms.NumericUpDown DietRootBeerQuantity;
         private System.Windows.Forms.Button AddToCart;
         private System.Windows.Forms.Button Logout;
@@ -2380,7 +2380,7 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button PreviousOrderOneAddToCart;
         private System.Windows.Forms.Button PreviousOrderTwoAddToCart;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label DrinksAreOneDollarLabel;
         private System.Windows.Forms.TextBox CartTextBox;
         private System.Windows.Forms.TextBox PreviousOrder1Label;
         private System.Windows.Forms.TextBox PreviousOrder3Label;

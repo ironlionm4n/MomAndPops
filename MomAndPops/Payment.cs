@@ -14,6 +14,7 @@ namespace MomAndPops
     public partial class Payment : Form
     {
         Order newOrder;
+
         public Payment()
         {
             InitializeComponent();
