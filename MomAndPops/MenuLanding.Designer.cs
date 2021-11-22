@@ -177,7 +177,7 @@ namespace MomAndPops.Resources
             this.DietRootBeerLabel = new System.Windows.Forms.Label();
             this.DietRootBeerQuantity = new System.Windows.Forms.NumericUpDown();
             this.RootBeerPanel = new System.Windows.Forms.Panel();
-            this.RootbeerLarge = new System.Windows.Forms.RadioButton();
+            this.RootBeerLarge = new System.Windows.Forms.RadioButton();
             this.RootBeerMedium = new System.Windows.Forms.RadioButton();
             this.RootBeerSmall = new System.Windows.Forms.RadioButton();
             this.RootBeerLabel = new System.Windows.Forms.Label();
@@ -1154,7 +1154,7 @@ namespace MomAndPops.Resources
             // 
             // SmallPineapple
             // 
-            this.SmallPineapple.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallPineapple.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.SmallPineapple.FormattingEnabled = true;
             this.SmallPineapple.Items.AddRange(new object[] {
             "None",
@@ -1163,7 +1163,7 @@ namespace MomAndPops.Resources
             "Extra"});
             this.SmallPineapple.Location = new System.Drawing.Point(233, 71);
             this.SmallPineapple.Name = "SmallPineapple";
-            this.SmallPineapple.Size = new System.Drawing.Size(48, 21);
+            this.SmallPineapple.Size = new System.Drawing.Size(51, 21);
             this.SmallPineapple.TabIndex = 33;
             this.SmallPineapple.Text = "None";
             this.SmallPineapple.SelectedIndexChanged += new System.EventHandler(this.SmallPineapple_SelectedIndexChanged);
@@ -1180,7 +1180,7 @@ namespace MomAndPops.Resources
             // 
             // SmallMushroom
             // 
-            this.SmallMushroom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallMushroom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.SmallMushroom.FormattingEnabled = true;
             this.SmallMushroom.Items.AddRange(new object[] {
             "None",
@@ -1189,7 +1189,7 @@ namespace MomAndPops.Resources
             "Extra"});
             this.SmallMushroom.Location = new System.Drawing.Point(109, 72);
             this.SmallMushroom.Name = "SmallMushroom";
-            this.SmallMushroom.Size = new System.Drawing.Size(48, 21);
+            this.SmallMushroom.Size = new System.Drawing.Size(51, 21);
             this.SmallMushroom.TabIndex = 31;
             this.SmallMushroom.Text = "None";
             this.SmallMushroom.SelectedIndexChanged += new System.EventHandler(this.SmallMushroom_SelectedIndexChanged);
@@ -1206,7 +1206,7 @@ namespace MomAndPops.Resources
             // 
             // SmallTomato
             // 
-            this.SmallTomato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallTomato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.SmallTomato.FormattingEnabled = true;
             this.SmallTomato.Items.AddRange(new object[] {
             "None",
@@ -1215,7 +1215,7 @@ namespace MomAndPops.Resources
             "Extra"});
             this.SmallTomato.Location = new System.Drawing.Point(0, 72);
             this.SmallTomato.Name = "SmallTomato";
-            this.SmallTomato.Size = new System.Drawing.Size(48, 21);
+            this.SmallTomato.Size = new System.Drawing.Size(51, 21);
             this.SmallTomato.TabIndex = 29;
             this.SmallTomato.Text = "None";
             this.SmallTomato.SelectedIndexChanged += new System.EventHandler(this.SmallTomato_SelectedIndexChanged);
@@ -1232,7 +1232,7 @@ namespace MomAndPops.Resources
             // 
             // SmallGreenPepper
             // 
-            this.SmallGreenPepper.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallGreenPepper.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.SmallGreenPepper.FormattingEnabled = true;
             this.SmallGreenPepper.Items.AddRange(new object[] {
             "None",
@@ -1241,7 +1241,7 @@ namespace MomAndPops.Resources
             "Extra"});
             this.SmallGreenPepper.Location = new System.Drawing.Point(214, 42);
             this.SmallGreenPepper.Name = "SmallGreenPepper";
-            this.SmallGreenPepper.Size = new System.Drawing.Size(48, 21);
+            this.SmallGreenPepper.Size = new System.Drawing.Size(49, 21);
             this.SmallGreenPepper.TabIndex = 27;
             this.SmallGreenPepper.Text = "None";
             this.SmallGreenPepper.SelectedIndexChanged += new System.EventHandler(this.SmallGreenPepper_SelectedIndexChanged);
@@ -1258,7 +1258,7 @@ namespace MomAndPops.Resources
             // 
             // SmallOnion
             // 
-            this.SmallOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.SmallOnion.FormattingEnabled = true;
             this.SmallOnion.Items.AddRange(new object[] {
             "None",
@@ -1267,7 +1267,7 @@ namespace MomAndPops.Resources
             "Extra"});
             this.SmallOnion.Location = new System.Drawing.Point(109, 42);
             this.SmallOnion.Name = "SmallOnion";
-            this.SmallOnion.Size = new System.Drawing.Size(48, 21);
+            this.SmallOnion.Size = new System.Drawing.Size(51, 21);
             this.SmallOnion.TabIndex = 25;
             this.SmallOnion.Text = "None";
             this.SmallOnion.SelectedIndexChanged += new System.EventHandler(this.SmallOnion_SelectedIndexChanged);
@@ -1284,7 +1284,7 @@ namespace MomAndPops.Resources
             // 
             // SmallHam
             // 
-            this.SmallHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.SmallHam.FormattingEnabled = true;
             this.SmallHam.Items.AddRange(new object[] {
             "None",
@@ -1293,7 +1293,7 @@ namespace MomAndPops.Resources
             "Extra"});
             this.SmallHam.Location = new System.Drawing.Point(0, 43);
             this.SmallHam.Name = "SmallHam";
-            this.SmallHam.Size = new System.Drawing.Size(48, 21);
+            this.SmallHam.Size = new System.Drawing.Size(51, 21);
             this.SmallHam.TabIndex = 23;
             this.SmallHam.Text = "None";
             this.SmallHam.SelectedIndexChanged += new System.EventHandler(this.SmallHam_SelectedIndexChanged);
@@ -1310,7 +1310,7 @@ namespace MomAndPops.Resources
             // 
             // SmallSausage
             // 
-            this.SmallSausage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallSausage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.SmallSausage.FormattingEnabled = true;
             this.SmallSausage.Items.AddRange(new object[] {
             "None",
@@ -1319,7 +1319,7 @@ namespace MomAndPops.Resources
             "Extra"});
             this.SmallSausage.Location = new System.Drawing.Point(240, 11);
             this.SmallSausage.Name = "SmallSausage";
-            this.SmallSausage.Size = new System.Drawing.Size(48, 21);
+            this.SmallSausage.Size = new System.Drawing.Size(51, 21);
             this.SmallSausage.TabIndex = 21;
             this.SmallSausage.Text = "None";
             this.SmallSausage.SelectedIndexChanged += new System.EventHandler(this.SmallSausage_SelectedIndexChanged);
@@ -1336,7 +1336,7 @@ namespace MomAndPops.Resources
             // 
             // SmallPepperoni
             // 
-            this.SmallPepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallPepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.SmallPepperoni.FormattingEnabled = true;
             this.SmallPepperoni.Items.AddRange(new object[] {
             "None",
@@ -1345,7 +1345,7 @@ namespace MomAndPops.Resources
             "Extra"});
             this.SmallPepperoni.Location = new System.Drawing.Point(109, 12);
             this.SmallPepperoni.Name = "SmallPepperoni";
-            this.SmallPepperoni.Size = new System.Drawing.Size(48, 21);
+            this.SmallPepperoni.Size = new System.Drawing.Size(51, 21);
             this.SmallPepperoni.TabIndex = 19;
             this.SmallPepperoni.Text = "None";
             this.SmallPepperoni.SelectedIndexChanged += new System.EventHandler(this.SmallPepperoni_SelectedIndexChanged);
@@ -1362,7 +1362,7 @@ namespace MomAndPops.Resources
             // 
             // SmallCheese
             // 
-            this.SmallCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.SmallCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
             this.SmallCheese.FormattingEnabled = true;
             this.SmallCheese.Items.AddRange(new object[] {
             "None",
@@ -1371,9 +1371,9 @@ namespace MomAndPops.Resources
             "Extra"});
             this.SmallCheese.Location = new System.Drawing.Point(0, 12);
             this.SmallCheese.Name = "SmallCheese";
-            this.SmallCheese.Size = new System.Drawing.Size(48, 21);
+            this.SmallCheese.Size = new System.Drawing.Size(51, 21);
             this.SmallCheese.TabIndex = 17;
-            this.SmallCheese.Text = "None";
+            this.SmallCheese.Text = "Normal";
             this.SmallCheese.SelectedIndexChanged += new System.EventHandler(this.SmallCheese_SelectedIndexChanged);
             // 
             // panel13
@@ -2092,7 +2092,7 @@ namespace MomAndPops.Resources
             // RootBeerPanel
             // 
             this.RootBeerPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.RootBeerPanel.Controls.Add(this.RootbeerLarge);
+            this.RootBeerPanel.Controls.Add(this.RootBeerLarge);
             this.RootBeerPanel.Controls.Add(this.RootBeerMedium);
             this.RootBeerPanel.Controls.Add(this.RootBeerSmall);
             this.RootBeerPanel.Controls.Add(this.RootBeerLabel);
@@ -2102,17 +2102,17 @@ namespace MomAndPops.Resources
             this.RootBeerPanel.Size = new System.Drawing.Size(268, 28);
             this.RootBeerPanel.TabIndex = 8;
             // 
-            // RootbeerLarge
+            // RootBeerLarge
             // 
-            this.RootbeerLarge.AutoSize = true;
-            this.RootbeerLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.RootbeerLarge.Location = new System.Drawing.Point(231, 5);
-            this.RootbeerLarge.Name = "RootbeerLarge";
-            this.RootbeerLarge.Size = new System.Drawing.Size(34, 21);
-            this.RootbeerLarge.TabIndex = 4;
-            this.RootbeerLarge.TabStop = true;
-            this.RootbeerLarge.Text = "L";
-            this.RootbeerLarge.UseVisualStyleBackColor = true;
+            this.RootBeerLarge.AutoSize = true;
+            this.RootBeerLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.RootBeerLarge.Location = new System.Drawing.Point(231, 5);
+            this.RootBeerLarge.Name = "RootBeerLarge";
+            this.RootBeerLarge.Size = new System.Drawing.Size(34, 21);
+            this.RootBeerLarge.TabIndex = 4;
+            this.RootBeerLarge.TabStop = true;
+            this.RootBeerLarge.Text = "L";
+            this.RootBeerLarge.UseVisualStyleBackColor = true;
             // 
             // RootBeerMedium
             // 
@@ -2543,7 +2543,7 @@ namespace MomAndPops.Resources
             this.CartPanel.Controls.Add(this.CartXButton);
             this.CartPanel.Controls.Add(this.CartXBackground);
             this.CartPanel.Enabled = false;
-            this.CartPanel.Location = new System.Drawing.Point(0, 0);
+            this.CartPanel.Location = new System.Drawing.Point(849, 22);
             this.CartPanel.Name = "CartPanel";
             this.CartPanel.Size = new System.Drawing.Size(398, 530);
             this.CartPanel.TabIndex = 12;
@@ -2581,7 +2581,7 @@ namespace MomAndPops.Resources
             this.TotalLabel.Name = "TotalLabel";
             this.TotalLabel.Size = new System.Drawing.Size(104, 31);
             this.TotalLabel.TabIndex = 14;
-            this.TotalLabel.Text = "$ 99.99";
+            this.TotalLabel.Text = "$ 0.00";
             // 
             // CheckoutButton
             // 
@@ -2609,7 +2609,6 @@ namespace MomAndPops.Resources
             this.PreviousOrders.AutoScroll = true;
             this.PreviousOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PreviousOrders.Controls.Add(this.PreviousOrder3Label);
-            this.PreviousOrders.Controls.Add(this.CartPanel);
             this.PreviousOrders.Controls.Add(this.PreviousOrder2Label);
             this.PreviousOrders.Controls.Add(this.PreviousOrder1Label);
             this.PreviousOrders.Controls.Add(this.PreviousOrdersThreeAddToCart);
@@ -2738,6 +2737,7 @@ namespace MomAndPops.Resources
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.PreviousOrders);
+            this.Controls.Add(this.CartPanel);
             this.Controls.Add(this.PreviousOrdersButton);
             this.Controls.Add(this.CartButton);
             this.Controls.Add(this.Logout);
@@ -2873,7 +2873,7 @@ namespace MomAndPops.Resources
         private System.Windows.Forms.Label DietOrangeLabel;
         private System.Windows.Forms.NumericUpDown DietOrangeQuantity;
         private System.Windows.Forms.Panel RootBeerPanel;
-        private System.Windows.Forms.RadioButton RootbeerLarge;
+        private System.Windows.Forms.RadioButton RootBeerLarge;
         private System.Windows.Forms.RadioButton RootBeerMedium;
         private System.Windows.Forms.RadioButton RootBeerSmall;
         private System.Windows.Forms.Label RootBeerLabel;

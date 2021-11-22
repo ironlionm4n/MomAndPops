@@ -38,24 +38,29 @@ namespace MomAndPops
             }
         }
 
-        private void SubmitButton_Click(object sender, EventArgs e)
+        private void CreateSubmitButton_Click(object sender, EventArgs e)
         {
-            // WriteToCreateTextBox();
-            Customer customer = new Customer(CreateFirstTextBox.Text + " " + CreateLastTextBox.Text, CreatePhoneTextBox.Text, CreateAddressTextBox.Text, CreateAddressTextBox.Text);
-            customer.WriteToFile(customer);
-            CreatePanel.Hide();
+            bool passwordsMatch = CreatePasswordTextBox.Text == CreateConfirmTextBox.Text;
+            if(passwordsMatch == false)
+            {
+                Color mismatchColor = Color.FromArgb(255, 113, 113);
+                CreatePasswordTextBox.BackColor = mismatchColor;
+                CreateConfirmTextBox.BackColor = mismatchColor;
+            }
+            if (!CreateFirstTextBox.Text.Equals("") && !CreateLastTextBox.Text.Equals("") && !CreatePhoneTextBox.Text.Equals("")
+                && !CreateAddressTextBox.Text.Equals("") && !CreateAptTextBox.Text.Equals("") && !CreateCityTextBox.Text.Equals("")
+                && !CreateZipTextBox.Text.Equals("") && !CreatePasswordTextBox.Text.Equals("") && passwordsMatch )
+            {
+                Customer customer = new Customer(CreateFirstTextBox.Text, CreateLastTextBox.Text, CreatePhoneTextBox.Text, CreateAddressTextBox.Text,
+                    CreateAptTextBox.Text, CreateZipTextBox.Text, CreateCityTextBox.Text, CreatePasswordTextBox.Text);
+                customer.WriteToFile(customer);
+                CreatePanel.Hide();
+            }
         }
 
-        private void WriteToCreateTextBox()
+        private void CreateBackButton_Click(object sender, EventArgs e)
         {
-            CreateAccountTextBox.Text += CreateFirstTextBox.Text + " " + CreateLastTextBox.Text + Environment.NewLine;
-            CreateAccountTextBox.Text += CreatePhoneTextBox.Text + Environment.NewLine;
-            CreateAccountTextBox.Text += CreateAddressTextBox.Text + Environment.NewLine;
-            if (CreateAptTextBox.Text.Length > 0)
-            {
-                CreateAccountTextBox.Text += CreateAptTextBox.Text + Environment.NewLine;
-            }
-            CreateAccountTextBox.Text += CreateCityTextBox.Text + Environment.NewLine;
+            CreatePanel.Hide();
         }
     }
 }

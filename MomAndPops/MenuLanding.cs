@@ -126,7 +126,7 @@ namespace MomAndPops.Resources
             ///
             /// Pepsi Drink Check
             ///
-            if (PepsiQuantity.Value > 0)
+            if (PepsiQuantity.Value > 0 && (PepsiSmall.Checked || PepsiMedium.Checked || PepsiLarge.Checked))
             {
                 bool hasDrink = false;
                 string drinkName;
@@ -164,7 +164,7 @@ namespace MomAndPops.Resources
             ///
             /// Diet Pepsi Drink Check
             ///
-            if (DietPepsiQuantity.Value > 0)
+            if (DietPepsiQuantity.Value > 0 && (DietPepsiSmall.Checked || DietPepsiMedium.Checked || DietPepsiLarge.Checked))
             {
                 string drinkName;
                 bool hasDrink = false;
@@ -201,7 +201,7 @@ namespace MomAndPops.Resources
             ///
             /// Orange Drink Check
             ///
-            if (OrangeQuantity.Value > 0)
+            if (OrangeQuantity.Value > 0 && (OrangeSmall.Checked || OrangeMedium.Checked || OrangeLarge.Checked))
             {
                 bool hasDrink = false;
                 string drinkName;
@@ -238,7 +238,7 @@ namespace MomAndPops.Resources
             ///
             /// Diet Orange Drink Check
             ///
-            if (DietOrangeQuantity.Value > 0)
+            if (DietOrangeQuantity.Value > 0 && (DietOrangeSmall.Checked || DietOrangeMedium.Checked || DietOrangeLarge.Checked))
             {
                 bool hasDrink = false;
                 string drinkName;
@@ -275,7 +275,7 @@ namespace MomAndPops.Resources
             ///
             /// Root Beer Drink Check
             ///
-            if (RootBeerQuantity.Value > 0)
+            if (RootBeerQuantity.Value > 0 && (RootBeerSmall.Checked || RootBeerMedium.Checked || RootBeerLarge.Checked))
             {
                 bool hasDrink = false;
                 string drinkName;
@@ -292,7 +292,7 @@ namespace MomAndPops.Resources
                 else
                 {
                     drinkName = "Large " + RootBeerLabel.Text;
-                    UncheckDrinkSelections(RootbeerLarge);
+                    UncheckDrinkSelections(RootBeerLarge);
                 }
                 MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(RootBeerQuantity.Value.ToString()));
                 foreach (MenuItem m in currentOrder.currentOrder)
@@ -312,7 +312,7 @@ namespace MomAndPops.Resources
             ///
             /// Diet Root Beer Drink Check
             ///
-            if (DietRootBeerQuantity.Value > 0)
+            if (DietRootBeerQuantity.Value > 0 && (DietRootBeerSmall.Checked || DietRootBeerMedium.Checked || DietRootBeerLarge.Checked)) 
             {
                 bool hasDrink = false;
                 string drinkName;
@@ -349,7 +349,7 @@ namespace MomAndPops.Resources
             ///
             /// Sierra Mist Drink Check
             ///
-            if (SierraMistQuantity.Value > 0)
+            if (SierraMistQuantity.Value > 0 && (SierraMistSmall.Checked || SierraMistMedium.Checked || SierraMistLarge.Checked))
             {
                 bool hasDrink = false;
                 string drinkName;
@@ -386,7 +386,7 @@ namespace MomAndPops.Resources
             ///
             /// Lemonade Drink Check
             ///
-            if (LemonadeQuantity.Value > 0)
+            if (LemonadeQuantity.Value > 0 && (LemonadeSmall.Checked || LemonadeMedium.Checked || LemonadeLarge.Checked))
             {
                 bool hasDrink = false;
                 string drinkName;
@@ -896,7 +896,7 @@ namespace MomAndPops.Resources
                 }
             }
 
-            TotalLabel.Text = "$ " + totalPrice.ToString();
+            TotalLabel.Text = "$ " + totalPrice.ToString("0.00");
             //return order;
         }
 
