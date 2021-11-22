@@ -402,9 +402,9 @@ namespace MomAndPops.Resources
             this.BreadstickPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.BreadstickPrice.Location = new System.Drawing.Point(182, 5);
             this.BreadstickPrice.Name = "BreadstickPrice";
-            this.BreadstickPrice.Size = new System.Drawing.Size(27, 20);
+            this.BreadstickPrice.Size = new System.Drawing.Size(31, 20);
             this.BreadstickPrice.TabIndex = 2;
-            this.BreadstickPrice.Text = "$4";
+            this.BreadstickPrice.Text = "$4.";
             // 
             // Breadsticks
             // 
@@ -2494,14 +2494,14 @@ namespace MomAndPops.Resources
             this.CartHeaderBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.CartHeaderBackground.Location = new System.Drawing.Point(-1, -1);
             this.CartHeaderBackground.Name = "CartHeaderBackground";
-            this.CartHeaderBackground.Size = new System.Drawing.Size(334, 64);
+            this.CartHeaderBackground.Size = new System.Drawing.Size(358, 64);
             this.CartHeaderBackground.TabIndex = 8;
             this.CartHeaderBackground.TabStop = false;
             // 
             // CartXBackground
             // 
             this.CartXBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
-            this.CartXBackground.Location = new System.Drawing.Point(330, -1);
+            this.CartXBackground.Location = new System.Drawing.Point(354, -1);
             this.CartXBackground.Name = "CartXBackground";
             this.CartXBackground.Size = new System.Drawing.Size(67, 64);
             this.CartXBackground.TabIndex = 9;
@@ -2512,7 +2512,7 @@ namespace MomAndPops.Resources
             this.CartXButton.AutoSize = true;
             this.CartXButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
             this.CartXButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.CartXButton.Location = new System.Drawing.Point(334, -1);
+            this.CartXButton.Location = new System.Drawing.Point(356, 0);
             this.CartXButton.Name = "CartXButton";
             this.CartXButton.Size = new System.Drawing.Size(63, 63);
             this.CartXButton.TabIndex = 10;
@@ -2543,9 +2543,9 @@ namespace MomAndPops.Resources
             this.CartPanel.Controls.Add(this.CartXButton);
             this.CartPanel.Controls.Add(this.CartXBackground);
             this.CartPanel.Enabled = false;
-            this.CartPanel.Location = new System.Drawing.Point(0, 0);
+            this.CartPanel.Location = new System.Drawing.Point(824, 20);
             this.CartPanel.Name = "CartPanel";
-            this.CartPanel.Size = new System.Drawing.Size(398, 530);
+            this.CartPanel.Size = new System.Drawing.Size(422, 538);
             this.CartPanel.TabIndex = 12;
             this.CartPanel.Visible = false;
             // 
@@ -2570,7 +2570,7 @@ namespace MomAndPops.Resources
             this.CartTextBox.Name = "CartTextBox";
             this.CartTextBox.ReadOnly = true;
             this.CartTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.CartTextBox.Size = new System.Drawing.Size(398, 364);
+            this.CartTextBox.Size = new System.Drawing.Size(420, 364);
             this.CartTextBox.TabIndex = 16;
             // 
             // TotalLabel
@@ -2609,7 +2609,6 @@ namespace MomAndPops.Resources
             this.PreviousOrders.AutoScroll = true;
             this.PreviousOrders.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PreviousOrders.Controls.Add(this.PreviousOrder3Label);
-            this.PreviousOrders.Controls.Add(this.CartPanel);
             this.PreviousOrders.Controls.Add(this.PreviousOrder2Label);
             this.PreviousOrders.Controls.Add(this.PreviousOrder1Label);
             this.PreviousOrders.Controls.Add(this.PreviousOrdersThreeAddToCart);
@@ -2620,10 +2619,10 @@ namespace MomAndPops.Resources
             this.PreviousOrders.Controls.Add(this.PreviousOrderXButton);
             this.PreviousOrders.Controls.Add(this.pictureBox2);
             this.PreviousOrders.Enabled = false;
-            this.PreviousOrders.Location = new System.Drawing.Point(863, 27);
+            this.PreviousOrders.Location = new System.Drawing.Point(823, 28);
             this.PreviousOrders.Margin = new System.Windows.Forms.Padding(10);
             this.PreviousOrders.Name = "PreviousOrders";
-            this.PreviousOrders.Size = new System.Drawing.Size(399, 529);
+            this.PreviousOrders.Size = new System.Drawing.Size(439, 528);
             this.PreviousOrders.TabIndex = 15;
             this.PreviousOrders.Visible = false;
             // 
@@ -2704,9 +2703,9 @@ namespace MomAndPops.Resources
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(319, 64);
+            this.pictureBox1.Size = new System.Drawing.Size(357, 64);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -2715,7 +2714,7 @@ namespace MomAndPops.Resources
             this.PreviousOrderXButton.AutoSize = true;
             this.PreviousOrderXButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
             this.PreviousOrderXButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.PreviousOrderXButton.Location = new System.Drawing.Point(320, 1);
+            this.PreviousOrderXButton.Location = new System.Drawing.Point(354, 1);
             this.PreviousOrderXButton.Name = "PreviousOrderXButton";
             this.PreviousOrderXButton.Size = new System.Drawing.Size(63, 63);
             this.PreviousOrderXButton.TabIndex = 10;
@@ -2725,7 +2724,7 @@ namespace MomAndPops.Resources
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
-            this.pictureBox2.Location = new System.Drawing.Point(320, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(354, 0);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(78, 64);
             this.pictureBox2.TabIndex = 9;
@@ -2738,6 +2737,7 @@ namespace MomAndPops.Resources
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.PreviousOrders);
+            this.Controls.Add(this.CartPanel);
             this.Controls.Add(this.PreviousOrdersButton);
             this.Controls.Add(this.CartButton);
             this.Controls.Add(this.Logout);
