@@ -28,10 +28,10 @@ namespace MomAndPops
             {
                 subtotal += m.ItemPrice * m.ItemQuantity;
             }
-            Subtotal.Text = "$" + subtotal.ToString();
+            Subtotal.Text = "$" + subtotal.ToString("0.00");
             float tax = subtotal * .06f;
-            Tax.Text = "$" + tax.ToString();
-            Total.Text = "$" + (subtotal + tax).ToString();
+            Tax.Text = "$" + tax.ToString("0.00");
+            Total.Text = "$" + (subtotal + tax).ToString("0.00");
         }
         
         public Order GetOrder()

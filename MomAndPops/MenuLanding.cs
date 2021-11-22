@@ -428,6 +428,9 @@ namespace MomAndPops.Resources
                 CartTextBox.Text += item.ItemQuantity + " " + item.ItemName + " $"
                     + item.ItemPrice + Environment.NewLine;
             }
+            ///
+            ///Small Pizza Check
+            ///
             if (SmallPizzaQuantity.Value > 0 && (SmallThinCrust.Checked || SmallRegularCrust.Checked || SmallPanCrust.Checked))
             {
                 bool hasThisPizza = false;
@@ -536,6 +539,9 @@ namespace MomAndPops.Resources
                 }
                 SmallPizzaQuantity.Value = 0;
             }
+            ///
+            ///Medium Pizza Check
+            ///
             if (MediumPizzaQuantity.Value > 0 && (MediumThinCrust.Checked || MediumRegularCrust.Checked || MediumPanCrust.Checked))
             {
                 bool hasThisPizza = false;
@@ -644,6 +650,9 @@ namespace MomAndPops.Resources
                 }
                 MediumPizzaQuantity.Value = 0;
             }
+            ///
+            ///Large Pizza Check
+            ///
             if (LargePizzaQuantity.Value > 0 && (LargeThinCrust.Checked || LargeRegularCrust.Checked || LargePanCrust.Checked))
             {
                 bool hasThisPizza = false;
@@ -752,7 +761,9 @@ namespace MomAndPops.Resources
                 }
                 LargePizzaQuantity.Value = 0;
             }
-
+            ///
+            ///Extra Large Pizza Check
+            ///
             if (ExtraLargePizzaQuantity.Value > 0 && (ExtraLargeThinCrust.Checked || ExtraLargeRegularCrust.Checked || ExtraLargePanCrust.Checked))
             {
                 bool hasThisPizza = false;
@@ -915,6 +926,7 @@ namespace MomAndPops.Resources
         private void Logout_Click(object sender, EventArgs e)
         {
             Form login = new LoginPage();
+            this.Hide();
             login.ShowDialog();
         }
 
@@ -980,7 +992,7 @@ namespace MomAndPops.Resources
             if(SmallCheese.FindString("Extra") == SmallCheese.SelectedIndex)
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$"+total;
+                SmallPizzaPrice.Text = "$"+ total;
             }
             else if(!SmallPizzaPrice.Text.Equals("$4")&&lastSmallCheeseSelection == SmallCheese.FindString("Extra"))
             {
