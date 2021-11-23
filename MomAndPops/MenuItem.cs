@@ -57,7 +57,7 @@ namespace MomAndPops
         }
 
         public MenuItem(string itemName = "DefaultName", float itemPrice = 999f, int itemQuantity = 0,
-            string size = "Medium", List<string> numberOfToppings = null, string crustOption = "regular")
+            string size = "none", List<string> numberOfToppings = null, string crustOption = "regular")
         {
             ItemName = itemName;
             ItemQuantity = itemQuantity;

@@ -13,6 +13,7 @@ namespace MomAndPops.Resources
     public partial class MenuLanding : Form
     {
         Order currentOrder = new Order();
+        Customer customer;
 
         int lastSmallCheeseSelection = 0;
         int lastSmallPepSelection = 0;
@@ -882,7 +883,7 @@ namespace MomAndPops.Resources
         }
 
 
-        /*string*/ void PrintOrder()
+        void PrintOrder()
         {
             float totalPrice = 0f;
             TotalLabel.Text = string.Empty;
@@ -906,9 +907,7 @@ namespace MomAndPops.Resources
                     }
                 }
             }
-
             TotalLabel.Text = "$ " + totalPrice.ToString("0.00");
-            //return order;
         }
 
 
@@ -977,6 +976,7 @@ namespace MomAndPops.Resources
             this.Hide();
             Payment payment = new Payment();
             payment.SetOrder(GetOrder());
+            payment.SetCustomer(GetCustomer());
             payment.Show();
         }
 
@@ -1525,6 +1525,16 @@ namespace MomAndPops.Resources
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             lastXLPineappleSelection = ExtraLargePineapple.SelectedIndex;
+        }
+
+        public Customer GetCustomer()
+        {
+            return customer;
+        }
+
+        public void SetCustomer(Customer cust)
+        {
+            customer = cust;
         }
     }
 }

@@ -40,6 +40,7 @@ namespace MomAndPops
                     {
                         sw.WriteLine(data);
                     }
+                    WriteOrder();
                 }
             }
             else // If file already exists
@@ -51,7 +52,9 @@ namespace MomAndPops
                     {
                         sw.WriteLine(data);
                     }
+                    sw.Close();
                 }
+                WriteOrder();
             }
 
             /*            //TextWriter textWriter = new StreamWriter(path, true);
@@ -77,6 +80,61 @@ namespace MomAndPops
         public void RemoveOldestPreviousOrder()
         {
             previousOrders.Dequeue();
+        }
+
+        public void WriteOrder()
+        {
+            Order testOrder = new Order();
+            MenuItem testMenuitem = new MenuItem("Breadsticks", 4f, 3);
+            testOrder.currentOrder.Add(testMenuitem);
+            testMenuitem = new MenuItem("Breadstick Bites", 2f, 2);
+            testOrder.currentOrder.Add(testMenuitem);
+            List<string> top = new List<string>();
+            top.Add("Extra Cheese");
+            top.Add("Light Ham");
+            testMenuitem = new MenuItem("Small Pizza", 5f, 1, "small", top, "thin");
+            testOrder.currentOrder.Add(testMenuitem);
+            testMenuitem = new MenuItem("Pepsi", 1f, 3, "Large");
+            testOrder.currentOrder.Add(testMenuitem);
+
+            previousOrders.Enqueue(testOrder);
+            if(previousOrders.Count > 0)
+            {
+                Queue<Order> tempQueue = previousOrders;
+                while (tempQueue.Count > 0)
+                {
+                    Order order = tempQueue.Peek();
+                    using (StreamWriter sw = File.AppendText("CustomerData.txt"))
+                    {
+                        for(int i = 0; i < order.currentOrder.Count; i++)
+                        {
+                            if(order.currentOrder[i].ItemName == "Small Pizza" || order.currentOrder[i].ItemName == "Medium Pizza" ||
+                                order.currentOrder[i].ItemName == "Large Pizza" || order.currentOrder[i].ItemName == "Extra Large Pizza")
+                            {
+                                sw.Write(order.currentOrder[i].ItemName + "," + order.currentOrder[i].ItemQuantity + ",");
+                                foreach(string t in order.currentOrder[i].Toppings)
+                                {
+                                    sw.Write(t + ",");
+                                }
+                                sw.WriteLine(order.currentOrder[i].ItemPrice);
+                            }
+                            else if(!order.currentOrder[i].ItemSize.Equals("none"))
+                            {
+                                sw.WriteLine(order.currentOrder[i].ItemName + "," + order.currentOrder[i].ItemQuantity + "," + 
+                                    order.currentOrder[i].ItemSize + "," + order.currentOrder[i].ItemPrice);
+                            }
+                            else
+                            {
+                                sw.WriteLine(order.currentOrder[i].ItemName + "," + order.currentOrder[i].ItemQuantity + "," 
+                                    + order.currentOrder[i].ItemPrice);
+                            }
+                        }
+                        sw.Close();
+                    }
+                    tempQueue.Dequeue();
+                }
+               
+            }
         }
     }
 }

@@ -14,6 +14,7 @@ namespace MomAndPops
 {
     public partial class LoginPage : Form
     {
+        Customer currentCustomer = new Customer("testFirst", "testLast", "0000000000", "testAddress", "73");
         public LoginPage()
         {
             InitializeComponent();
@@ -32,7 +33,8 @@ namespace MomAndPops
             if (/*LoginPhoneNumberBox.Text == "TestUsername" && LoginPasswordBox.Text == "TestPassword"*/true)
             {
                 this.Hide();
-                Form menu = new MenuLanding();
+                MenuLanding menu = new MenuLanding();
+                menu.SetCustomer(GetCustomer());
                 menu.ShowDialog();
                 
             }
@@ -54,6 +56,7 @@ namespace MomAndPops
                 Customer customer = new Customer(CreateFirstTextBox.Text, CreateLastTextBox.Text, CreatePhoneTextBox.Text, CreateAddressTextBox.Text,
                     CreateAptTextBox.Text, CreateZipTextBox.Text, CreateCityTextBox.Text, CreatePasswordTextBox.Text);
                 customer.WriteToFile(customer);
+                currentCustomer = customer;
                 CreatePanel.Hide();
             }
         }
@@ -61,6 +64,16 @@ namespace MomAndPops
         private void CreateBackButton_Click(object sender, EventArgs e)
         {
             CreatePanel.Hide();
+        }
+
+        public Customer GetCustomer()
+        {
+            return currentCustomer;
+        }
+
+        public void SetCustomer(Customer customer)
+        {
+            currentCustomer = customer;
         }
     }
 }

@@ -14,6 +14,7 @@ namespace MomAndPops
     public partial class Payment : Form
     {
         Order newOrder;
+        Customer customer;
 
         public Payment()
         {
@@ -43,7 +44,9 @@ namespace MomAndPops
         {
             if((radioButton1.Checked || radioButton2.Checked || radioButton3.Checked) && (radioButton4.Checked || radioButton5.Checked))
             {
-                Form confirmation = new Confirmation();
+                Confirmation confirmation = new Confirmation();
+                confirmation.SetCustomer(GetCustomer());
+                this.Hide();
                 confirmation.ShowDialog();
             }
         }
@@ -57,8 +60,19 @@ namespace MomAndPops
         {
             MenuLanding menu = new MenuLanding();
             menu.SetOrder(GetOrder());
+            menu.SetCustomer(GetCustomer());
             this.Hide();
             menu.Show();
+        }
+
+        public Customer GetCustomer()
+        {
+            return customer;
+        }
+
+        public void SetCustomer(Customer cust)
+        {
+            customer = cust;
         }
     }
 }

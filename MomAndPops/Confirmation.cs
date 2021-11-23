@@ -12,6 +12,7 @@ namespace MomAndPops
 {
     public partial class Confirmation : Form
     {
+        Customer customer;
         public Confirmation()
         {
             InitializeComponent();
@@ -19,8 +20,20 @@ namespace MomAndPops
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form login = new LoginPage();
+            LoginPage login = new LoginPage();
+            login.SetCustomer(GetCustomer());
+            this.Hide();
             login.ShowDialog();
+        }
+
+        public Customer GetCustomer()
+        {
+            return customer;
+        }
+
+        public void SetCustomer(Customer cust)
+        {
+            customer = cust;
         }
     }
 }
