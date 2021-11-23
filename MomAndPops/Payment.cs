@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace MomAndPops
 {
@@ -44,6 +45,9 @@ namespace MomAndPops
         {
             if((radioButton1.Checked || radioButton2.Checked || radioButton3.Checked) && (radioButton4.Checked || radioButton5.Checked))
             {
+                customer.AddToPreviousOrders(GetOrder());
+                customer.WriteToFile(customer);
+
                 Confirmation confirmation = new Confirmation();
                 confirmation.SetCustomer(GetCustomer());
                 this.Hide();
@@ -74,5 +78,7 @@ namespace MomAndPops
         {
             customer = cust;
         }
+        
+        
     }
 }
