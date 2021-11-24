@@ -39,8 +39,8 @@ namespace MomAndPops
                         sw.WriteLine(data);
                     }
                     sw.Close();
-                    WriteOrder();
                 }
+                WriteOrder();
             }
             else // If file already exists
             {
@@ -78,6 +78,7 @@ namespace MomAndPops
         {
             if (previousOrders.Count > 0)
             {
+                int counter = 1;
                 Queue<Order> tempQueue = previousOrders;
                 Queue<Order> passingQueue = new Queue<Order>();
                 while (tempQueue.Count > 0)
@@ -85,6 +86,7 @@ namespace MomAndPops
                     Order order = tempQueue.Peek();
                     using (StreamWriter sw = File.AppendText(GetName() + " Database Info.txt"))
                     {
+                        sw.WriteLine("Order " + counter);
                         for (int i = 0; i < order.currentOrder.Count; i++)
                         {
                             if (order.currentOrder[i].ItemName == "Small Pizza" || order.currentOrder[i].ItemName == "Medium Pizza" ||
@@ -108,6 +110,7 @@ namespace MomAndPops
                                     + order.currentOrder[i].ItemPrice);
                             }
                         }
+                        counter++;
                         sw.Close();
                     }
                     passingQueue.Enqueue(tempQueue.Peek());
