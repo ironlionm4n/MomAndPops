@@ -9,6 +9,8 @@ namespace MomAndPops.Resources
         Order currentOrder = new Order();
         Customer customer;
 
+        List<ComboBox> smallComboBoxes = new List<ComboBox>();
+
         int lastSmallCheeseSelection = 0;
         int lastSmallPepSelection = 0;
         int lastSmallSausageSelection = 0;
@@ -1149,7 +1151,6 @@ namespace MomAndPops.Resources
 
         private void SmallCheese_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             if (SmallCheese.FindString("Extra") == SmallCheese.SelectedIndex)
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
@@ -1160,6 +1161,7 @@ namespace MomAndPops.Resources
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
                 SmallPizzaPrice.Text = "$" + total;
             }
+
             lastSmallCheeseSelection = SmallCheese.SelectedIndex;
         }
 

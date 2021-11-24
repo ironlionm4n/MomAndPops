@@ -302,9 +302,9 @@ namespace MomAndPops.Resources
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.groupBox1.Location = new System.Drawing.Point(76, 119);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(485, 535);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
@@ -316,7 +316,7 @@ namespace MomAndPops.Resources
             this.panel3.Controls.Add(this.ChocChipCookie);
             this.panel3.Controls.Add(this.CookieQuantity);
             this.panel3.Location = new System.Drawing.Point(91, 325);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(337, 34);
             this.panel3.TabIndex = 4;
@@ -347,7 +347,7 @@ namespace MomAndPops.Resources
             // 
             this.CookieQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.CookieQuantity.Location = new System.Drawing.Point(4, 2);
-            this.CookieQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CookieQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.CookieQuantity.Name = "CookieQuantity";
             this.CookieQuantity.Size = new System.Drawing.Size(47, 26);
             this.CookieQuantity.TabIndex = 0;
@@ -359,7 +359,7 @@ namespace MomAndPops.Resources
             this.panel2.Controls.Add(this.BreadstickBites);
             this.panel2.Controls.Add(this.BreadstickBitesQuantity);
             this.panel2.Location = new System.Drawing.Point(91, 180);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(283, 34);
             this.panel2.TabIndex = 3;
@@ -390,7 +390,7 @@ namespace MomAndPops.Resources
             // 
             this.BreadstickBitesQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.BreadstickBitesQuantity.Location = new System.Drawing.Point(4, 2);
-            this.BreadstickBitesQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreadstickBitesQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.BreadstickBitesQuantity.Name = "BreadstickBitesQuantity";
             this.BreadstickBitesQuantity.Size = new System.Drawing.Size(47, 26);
             this.BreadstickBitesQuantity.TabIndex = 0;
@@ -402,7 +402,7 @@ namespace MomAndPops.Resources
             this.BreadsticksPanel.Controls.Add(this.Breadsticks);
             this.BreadsticksPanel.Controls.Add(this.BreadsticksQuantity);
             this.BreadsticksPanel.Location = new System.Drawing.Point(91, 126);
-            this.BreadsticksPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreadsticksPanel.Margin = new System.Windows.Forms.Padding(4);
             this.BreadsticksPanel.Name = "BreadsticksPanel";
             this.BreadsticksPanel.Size = new System.Drawing.Size(283, 34);
             this.BreadsticksPanel.TabIndex = 2;
@@ -433,7 +433,7 @@ namespace MomAndPops.Resources
             // 
             this.BreadsticksQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.BreadsticksQuantity.Location = new System.Drawing.Point(4, 2);
-            this.BreadsticksQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BreadsticksQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.BreadsticksQuantity.Name = "BreadsticksQuantity";
             this.BreadsticksQuantity.Size = new System.Drawing.Size(47, 26);
             this.BreadsticksQuantity.TabIndex = 0;
@@ -467,9 +467,9 @@ namespace MomAndPops.Resources
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.groupBox2.Location = new System.Drawing.Point(603, 119);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(531, 535);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
@@ -494,7 +494,7 @@ namespace MomAndPops.Resources
             this.PizzaPanel.Controls.Add(this.SmallPizzaQuantity);
             this.PizzaPanel.Controls.Add(this.LargePizzaQuantity);
             this.PizzaPanel.Location = new System.Drawing.Point(0, 84);
-            this.PizzaPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PizzaPanel.Margin = new System.Windows.Forms.Padding(4);
             this.PizzaPanel.Name = "PizzaPanel";
             this.PizzaPanel.Size = new System.Drawing.Size(523, 447);
             this.PizzaPanel.TabIndex = 3;
@@ -504,7 +504,7 @@ namespace MomAndPops.Resources
             this.ExtraLargeCustomization.Controls.Add(this.panel15);
             this.ExtraLargeCustomization.Controls.Add(this.panel20);
             this.ExtraLargeCustomization.Location = new System.Drawing.Point(8, 721);
-            this.ExtraLargeCustomization.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargeCustomization.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargeCustomization.Name = "ExtraLargeCustomization";
             this.ExtraLargeCustomization.Size = new System.Drawing.Size(484, 180);
             this.ExtraLargeCustomization.TabIndex = 18;
@@ -530,7 +530,7 @@ namespace MomAndPops.Resources
             this.panel15.Controls.Add(this.ExtraLargeCheeseLabel);
             this.panel15.Controls.Add(this.ExtraLargeCheese);
             this.panel15.Location = new System.Drawing.Point(4, 57);
-            this.panel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel15.Margin = new System.Windows.Forms.Padding(4);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(488, 121);
             this.panel15.TabIndex = 16;
@@ -556,7 +556,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.ExtraLargePineapple.Location = new System.Drawing.Point(311, 87);
-            this.ExtraLargePineapple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargePineapple.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargePineapple.Name = "ExtraLargePineapple";
             this.ExtraLargePineapple.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargePineapple.TabIndex = 33;
@@ -584,7 +584,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.ExtraLargeMushroom.Location = new System.Drawing.Point(145, 89);
-            this.ExtraLargeMushroom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargeMushroom.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargeMushroom.Name = "ExtraLargeMushroom";
             this.ExtraLargeMushroom.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeMushroom.TabIndex = 31;
@@ -612,7 +612,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.ExtraLargeTomato.Location = new System.Drawing.Point(0, 89);
-            this.ExtraLargeTomato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargeTomato.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargeTomato.Name = "ExtraLargeTomato";
             this.ExtraLargeTomato.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeTomato.TabIndex = 29;
@@ -640,7 +640,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.ExtraLargeGreenPepper.Location = new System.Drawing.Point(285, 52);
-            this.ExtraLargeGreenPepper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargeGreenPepper.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargeGreenPepper.Name = "ExtraLargeGreenPepper";
             this.ExtraLargeGreenPepper.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeGreenPepper.TabIndex = 27;
@@ -668,7 +668,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.ExtraLargeOnion.Location = new System.Drawing.Point(145, 52);
-            this.ExtraLargeOnion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargeOnion.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargeOnion.Name = "ExtraLargeOnion";
             this.ExtraLargeOnion.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeOnion.TabIndex = 25;
@@ -696,7 +696,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.ExtraLargeHam.Location = new System.Drawing.Point(0, 53);
-            this.ExtraLargeHam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargeHam.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargeHam.Name = "ExtraLargeHam";
             this.ExtraLargeHam.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeHam.TabIndex = 23;
@@ -724,7 +724,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.ExtraLargeSausage.Location = new System.Drawing.Point(320, 14);
-            this.ExtraLargeSausage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargeSausage.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargeSausage.Name = "ExtraLargeSausage";
             this.ExtraLargeSausage.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeSausage.TabIndex = 21;
@@ -752,7 +752,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.ExtraLargePepperoni.Location = new System.Drawing.Point(145, 15);
-            this.ExtraLargePepperoni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargePepperoni.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargePepperoni.Name = "ExtraLargePepperoni";
             this.ExtraLargePepperoni.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargePepperoni.TabIndex = 19;
@@ -780,7 +780,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.ExtraLargeCheese.Location = new System.Drawing.Point(0, 15);
-            this.ExtraLargeCheese.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargeCheese.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargeCheese.Name = "ExtraLargeCheese";
             this.ExtraLargeCheese.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeCheese.TabIndex = 17;
@@ -793,7 +793,7 @@ namespace MomAndPops.Resources
             this.panel20.Controls.Add(this.ExtraLargeRegularCrust);
             this.panel20.Controls.Add(this.ExtraLargeThinCrust);
             this.panel20.Location = new System.Drawing.Point(4, 15);
-            this.panel20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel20.Margin = new System.Windows.Forms.Padding(4);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(435, 41);
             this.panel20.TabIndex = 14;
@@ -803,7 +803,7 @@ namespace MomAndPops.Resources
             this.ExtraLargePanCrust.AutoSize = true;
             this.ExtraLargePanCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.ExtraLargePanCrust.Location = new System.Drawing.Point(312, 7);
-            this.ExtraLargePanCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargePanCrust.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargePanCrust.Name = "ExtraLargePanCrust";
             this.ExtraLargePanCrust.Size = new System.Drawing.Size(105, 24);
             this.ExtraLargePanCrust.TabIndex = 2;
@@ -816,7 +816,7 @@ namespace MomAndPops.Resources
             this.ExtraLargeRegularCrust.AutoSize = true;
             this.ExtraLargeRegularCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.ExtraLargeRegularCrust.Location = new System.Drawing.Point(141, 7);
-            this.ExtraLargeRegularCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargeRegularCrust.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargeRegularCrust.Name = "ExtraLargeRegularCrust";
             this.ExtraLargeRegularCrust.Size = new System.Drawing.Size(134, 24);
             this.ExtraLargeRegularCrust.TabIndex = 1;
@@ -829,7 +829,7 @@ namespace MomAndPops.Resources
             this.ExtraLargeThinCrust.AutoSize = true;
             this.ExtraLargeThinCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.ExtraLargeThinCrust.Location = new System.Drawing.Point(17, 7);
-            this.ExtraLargeThinCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargeThinCrust.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargeThinCrust.Name = "ExtraLargeThinCrust";
             this.ExtraLargeThinCrust.Size = new System.Drawing.Size(108, 24);
             this.ExtraLargeThinCrust.TabIndex = 0;
@@ -842,7 +842,7 @@ namespace MomAndPops.Resources
             this.MediumCustimization.Controls.Add(this.panel1);
             this.MediumCustimization.Controls.Add(this.panel17);
             this.MediumCustimization.Location = new System.Drawing.Point(0, 272);
-            this.MediumCustimization.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumCustimization.Margin = new System.Windows.Forms.Padding(4);
             this.MediumCustimization.Name = "MediumCustimization";
             this.MediumCustimization.Size = new System.Drawing.Size(496, 180);
             this.MediumCustimization.TabIndex = 16;
@@ -868,7 +868,7 @@ namespace MomAndPops.Resources
             this.panel1.Controls.Add(this.MediumCheeseLabel);
             this.panel1.Controls.Add(this.MediumCheese);
             this.panel1.Location = new System.Drawing.Point(4, 57);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(488, 121);
             this.panel1.TabIndex = 16;
@@ -894,7 +894,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.MediumPineapple.Location = new System.Drawing.Point(311, 87);
-            this.MediumPineapple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumPineapple.Margin = new System.Windows.Forms.Padding(4);
             this.MediumPineapple.Name = "MediumPineapple";
             this.MediumPineapple.Size = new System.Drawing.Size(63, 24);
             this.MediumPineapple.TabIndex = 33;
@@ -922,7 +922,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.MediumMushroom.Location = new System.Drawing.Point(145, 89);
-            this.MediumMushroom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumMushroom.Margin = new System.Windows.Forms.Padding(4);
             this.MediumMushroom.Name = "MediumMushroom";
             this.MediumMushroom.Size = new System.Drawing.Size(63, 24);
             this.MediumMushroom.TabIndex = 31;
@@ -950,7 +950,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.MediumTomato.Location = new System.Drawing.Point(0, 89);
-            this.MediumTomato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumTomato.Margin = new System.Windows.Forms.Padding(4);
             this.MediumTomato.Name = "MediumTomato";
             this.MediumTomato.Size = new System.Drawing.Size(63, 24);
             this.MediumTomato.TabIndex = 29;
@@ -978,7 +978,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.MediumGreenPepper.Location = new System.Drawing.Point(285, 52);
-            this.MediumGreenPepper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumGreenPepper.Margin = new System.Windows.Forms.Padding(4);
             this.MediumGreenPepper.Name = "MediumGreenPepper";
             this.MediumGreenPepper.Size = new System.Drawing.Size(63, 24);
             this.MediumGreenPepper.TabIndex = 27;
@@ -1006,7 +1006,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.MediumOnion.Location = new System.Drawing.Point(145, 52);
-            this.MediumOnion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumOnion.Margin = new System.Windows.Forms.Padding(4);
             this.MediumOnion.Name = "MediumOnion";
             this.MediumOnion.Size = new System.Drawing.Size(63, 24);
             this.MediumOnion.TabIndex = 25;
@@ -1034,7 +1034,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.MediumHam.Location = new System.Drawing.Point(0, 53);
-            this.MediumHam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumHam.Margin = new System.Windows.Forms.Padding(4);
             this.MediumHam.Name = "MediumHam";
             this.MediumHam.Size = new System.Drawing.Size(63, 24);
             this.MediumHam.TabIndex = 23;
@@ -1062,7 +1062,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.MediumSausage.Location = new System.Drawing.Point(320, 14);
-            this.MediumSausage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumSausage.Margin = new System.Windows.Forms.Padding(4);
             this.MediumSausage.Name = "MediumSausage";
             this.MediumSausage.Size = new System.Drawing.Size(63, 24);
             this.MediumSausage.TabIndex = 21;
@@ -1090,7 +1090,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.MediumPepperoni.Location = new System.Drawing.Point(145, 15);
-            this.MediumPepperoni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumPepperoni.Margin = new System.Windows.Forms.Padding(4);
             this.MediumPepperoni.Name = "MediumPepperoni";
             this.MediumPepperoni.Size = new System.Drawing.Size(63, 24);
             this.MediumPepperoni.TabIndex = 19;
@@ -1118,7 +1118,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.MediumCheese.Location = new System.Drawing.Point(0, 15);
-            this.MediumCheese.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumCheese.Margin = new System.Windows.Forms.Padding(4);
             this.MediumCheese.Name = "MediumCheese";
             this.MediumCheese.Size = new System.Drawing.Size(63, 24);
             this.MediumCheese.TabIndex = 17;
@@ -1131,7 +1131,7 @@ namespace MomAndPops.Resources
             this.panel17.Controls.Add(this.MediumRegularCrust);
             this.panel17.Controls.Add(this.MediumThinCrust);
             this.panel17.Location = new System.Drawing.Point(4, 15);
-            this.panel17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(435, 41);
             this.panel17.TabIndex = 14;
@@ -1141,7 +1141,7 @@ namespace MomAndPops.Resources
             this.MediumPanCrust.AutoSize = true;
             this.MediumPanCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.MediumPanCrust.Location = new System.Drawing.Point(312, 7);
-            this.MediumPanCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumPanCrust.Margin = new System.Windows.Forms.Padding(4);
             this.MediumPanCrust.Name = "MediumPanCrust";
             this.MediumPanCrust.Size = new System.Drawing.Size(105, 24);
             this.MediumPanCrust.TabIndex = 2;
@@ -1154,7 +1154,7 @@ namespace MomAndPops.Resources
             this.MediumRegularCrust.AutoSize = true;
             this.MediumRegularCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.MediumRegularCrust.Location = new System.Drawing.Point(141, 7);
-            this.MediumRegularCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumRegularCrust.Margin = new System.Windows.Forms.Padding(4);
             this.MediumRegularCrust.Name = "MediumRegularCrust";
             this.MediumRegularCrust.Size = new System.Drawing.Size(134, 24);
             this.MediumRegularCrust.TabIndex = 1;
@@ -1167,7 +1167,7 @@ namespace MomAndPops.Resources
             this.MediumThinCrust.AutoSize = true;
             this.MediumThinCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.MediumThinCrust.Location = new System.Drawing.Point(17, 7);
-            this.MediumThinCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumThinCrust.Margin = new System.Windows.Forms.Padding(4);
             this.MediumThinCrust.Name = "MediumThinCrust";
             this.MediumThinCrust.Size = new System.Drawing.Size(108, 24);
             this.MediumThinCrust.TabIndex = 0;
@@ -1180,7 +1180,7 @@ namespace MomAndPops.Resources
             this.SmallCustimization.Controls.Add(this.panel14);
             this.SmallCustimization.Controls.Add(this.panel13);
             this.SmallCustimization.Location = new System.Drawing.Point(4, 44);
-            this.SmallCustimization.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallCustimization.Margin = new System.Windows.Forms.Padding(4);
             this.SmallCustimization.Name = "SmallCustimization";
             this.SmallCustimization.Size = new System.Drawing.Size(492, 191);
             this.SmallCustimization.TabIndex = 14;
@@ -1206,7 +1206,7 @@ namespace MomAndPops.Resources
             this.panel14.Controls.Add(this.SmallCheeseLabel);
             this.panel14.Controls.Add(this.SmallCheese);
             this.panel14.Location = new System.Drawing.Point(4, 63);
-            this.panel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(488, 121);
             this.panel14.TabIndex = 15;
@@ -1232,7 +1232,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.SmallPineapple.Location = new System.Drawing.Point(311, 87);
-            this.SmallPineapple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallPineapple.Margin = new System.Windows.Forms.Padding(4);
             this.SmallPineapple.Name = "SmallPineapple";
             this.SmallPineapple.Size = new System.Drawing.Size(67, 24);
             this.SmallPineapple.TabIndex = 33;
@@ -1260,7 +1260,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.SmallMushroom.Location = new System.Drawing.Point(145, 89);
-            this.SmallMushroom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallMushroom.Margin = new System.Windows.Forms.Padding(4);
             this.SmallMushroom.Name = "SmallMushroom";
             this.SmallMushroom.Size = new System.Drawing.Size(67, 24);
             this.SmallMushroom.TabIndex = 31;
@@ -1288,7 +1288,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.SmallTomato.Location = new System.Drawing.Point(0, 89);
-            this.SmallTomato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallTomato.Margin = new System.Windows.Forms.Padding(4);
             this.SmallTomato.Name = "SmallTomato";
             this.SmallTomato.Size = new System.Drawing.Size(67, 24);
             this.SmallTomato.TabIndex = 29;
@@ -1316,7 +1316,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.SmallGreenPepper.Location = new System.Drawing.Point(285, 52);
-            this.SmallGreenPepper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallGreenPepper.Margin = new System.Windows.Forms.Padding(4);
             this.SmallGreenPepper.Name = "SmallGreenPepper";
             this.SmallGreenPepper.Size = new System.Drawing.Size(64, 24);
             this.SmallGreenPepper.TabIndex = 27;
@@ -1344,7 +1344,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.SmallOnion.Location = new System.Drawing.Point(145, 52);
-            this.SmallOnion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallOnion.Margin = new System.Windows.Forms.Padding(4);
             this.SmallOnion.Name = "SmallOnion";
             this.SmallOnion.Size = new System.Drawing.Size(67, 24);
             this.SmallOnion.TabIndex = 25;
@@ -1372,7 +1372,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.SmallHam.Location = new System.Drawing.Point(0, 53);
-            this.SmallHam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallHam.Margin = new System.Windows.Forms.Padding(4);
             this.SmallHam.Name = "SmallHam";
             this.SmallHam.Size = new System.Drawing.Size(67, 24);
             this.SmallHam.TabIndex = 23;
@@ -1400,7 +1400,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.SmallSausage.Location = new System.Drawing.Point(320, 14);
-            this.SmallSausage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallSausage.Margin = new System.Windows.Forms.Padding(4);
             this.SmallSausage.Name = "SmallSausage";
             this.SmallSausage.Size = new System.Drawing.Size(67, 24);
             this.SmallSausage.TabIndex = 21;
@@ -1428,7 +1428,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.SmallPepperoni.Location = new System.Drawing.Point(145, 15);
-            this.SmallPepperoni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallPepperoni.Margin = new System.Windows.Forms.Padding(4);
             this.SmallPepperoni.Name = "SmallPepperoni";
             this.SmallPepperoni.Size = new System.Drawing.Size(67, 24);
             this.SmallPepperoni.TabIndex = 19;
@@ -1456,7 +1456,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.SmallCheese.Location = new System.Drawing.Point(0, 15);
-            this.SmallCheese.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallCheese.Margin = new System.Windows.Forms.Padding(4);
             this.SmallCheese.Name = "SmallCheese";
             this.SmallCheese.Size = new System.Drawing.Size(67, 24);
             this.SmallCheese.TabIndex = 17;
@@ -1469,7 +1469,7 @@ namespace MomAndPops.Resources
             this.panel13.Controls.Add(this.SmallRegularCrust);
             this.panel13.Controls.Add(this.SmallThinCrust);
             this.panel13.Location = new System.Drawing.Point(4, 15);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(435, 41);
             this.panel13.TabIndex = 14;
@@ -1479,7 +1479,7 @@ namespace MomAndPops.Resources
             this.SmallPanCrust.AutoSize = true;
             this.SmallPanCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.SmallPanCrust.Location = new System.Drawing.Point(312, 7);
-            this.SmallPanCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallPanCrust.Margin = new System.Windows.Forms.Padding(4);
             this.SmallPanCrust.Name = "SmallPanCrust";
             this.SmallPanCrust.Size = new System.Drawing.Size(105, 24);
             this.SmallPanCrust.TabIndex = 2;
@@ -1492,7 +1492,7 @@ namespace MomAndPops.Resources
             this.SmallRegularCrust.AutoSize = true;
             this.SmallRegularCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.SmallRegularCrust.Location = new System.Drawing.Point(141, 7);
-            this.SmallRegularCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallRegularCrust.Margin = new System.Windows.Forms.Padding(4);
             this.SmallRegularCrust.Name = "SmallRegularCrust";
             this.SmallRegularCrust.Size = new System.Drawing.Size(134, 24);
             this.SmallRegularCrust.TabIndex = 1;
@@ -1505,7 +1505,7 @@ namespace MomAndPops.Resources
             this.SmallThinCrust.AutoSize = true;
             this.SmallThinCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.SmallThinCrust.Location = new System.Drawing.Point(17, 7);
-            this.SmallThinCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallThinCrust.Margin = new System.Windows.Forms.Padding(4);
             this.SmallThinCrust.Name = "SmallThinCrust";
             this.SmallThinCrust.Size = new System.Drawing.Size(108, 24);
             this.SmallThinCrust.TabIndex = 0;
@@ -1518,7 +1518,7 @@ namespace MomAndPops.Resources
             this.LargeCustomization.Controls.Add(this.panel12);
             this.LargeCustomization.Controls.Add(this.panel18);
             this.LargeCustomization.Location = new System.Drawing.Point(0, 498);
-            this.LargeCustomization.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargeCustomization.Margin = new System.Windows.Forms.Padding(4);
             this.LargeCustomization.Name = "LargeCustomization";
             this.LargeCustomization.Size = new System.Drawing.Size(496, 180);
             this.LargeCustomization.TabIndex = 17;
@@ -1544,7 +1544,7 @@ namespace MomAndPops.Resources
             this.panel12.Controls.Add(this.LargeCheeseLabel);
             this.panel12.Controls.Add(this.LargeCheese);
             this.panel12.Location = new System.Drawing.Point(4, 57);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(488, 121);
             this.panel12.TabIndex = 16;
@@ -1570,7 +1570,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.LargePineapple.Location = new System.Drawing.Point(311, 87);
-            this.LargePineapple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargePineapple.Margin = new System.Windows.Forms.Padding(4);
             this.LargePineapple.Name = "LargePineapple";
             this.LargePineapple.Size = new System.Drawing.Size(63, 24);
             this.LargePineapple.TabIndex = 33;
@@ -1598,7 +1598,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.LargeMushroom.Location = new System.Drawing.Point(145, 89);
-            this.LargeMushroom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargeMushroom.Margin = new System.Windows.Forms.Padding(4);
             this.LargeMushroom.Name = "LargeMushroom";
             this.LargeMushroom.Size = new System.Drawing.Size(63, 24);
             this.LargeMushroom.TabIndex = 31;
@@ -1626,7 +1626,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.LargeTomato.Location = new System.Drawing.Point(0, 89);
-            this.LargeTomato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargeTomato.Margin = new System.Windows.Forms.Padding(4);
             this.LargeTomato.Name = "LargeTomato";
             this.LargeTomato.Size = new System.Drawing.Size(63, 24);
             this.LargeTomato.TabIndex = 29;
@@ -1654,7 +1654,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.LargeGreenPepper.Location = new System.Drawing.Point(285, 52);
-            this.LargeGreenPepper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargeGreenPepper.Margin = new System.Windows.Forms.Padding(4);
             this.LargeGreenPepper.Name = "LargeGreenPepper";
             this.LargeGreenPepper.Size = new System.Drawing.Size(63, 24);
             this.LargeGreenPepper.TabIndex = 27;
@@ -1682,7 +1682,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.LargeOnion.Location = new System.Drawing.Point(145, 52);
-            this.LargeOnion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargeOnion.Margin = new System.Windows.Forms.Padding(4);
             this.LargeOnion.Name = "LargeOnion";
             this.LargeOnion.Size = new System.Drawing.Size(63, 24);
             this.LargeOnion.TabIndex = 25;
@@ -1710,7 +1710,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.LargeHam.Location = new System.Drawing.Point(0, 53);
-            this.LargeHam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargeHam.Margin = new System.Windows.Forms.Padding(4);
             this.LargeHam.Name = "LargeHam";
             this.LargeHam.Size = new System.Drawing.Size(63, 24);
             this.LargeHam.TabIndex = 23;
@@ -1738,7 +1738,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.LargeSausage.Location = new System.Drawing.Point(320, 14);
-            this.LargeSausage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargeSausage.Margin = new System.Windows.Forms.Padding(4);
             this.LargeSausage.Name = "LargeSausage";
             this.LargeSausage.Size = new System.Drawing.Size(63, 24);
             this.LargeSausage.TabIndex = 21;
@@ -1766,7 +1766,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.LargePepperoni.Location = new System.Drawing.Point(145, 15);
-            this.LargePepperoni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargePepperoni.Margin = new System.Windows.Forms.Padding(4);
             this.LargePepperoni.Name = "LargePepperoni";
             this.LargePepperoni.Size = new System.Drawing.Size(63, 24);
             this.LargePepperoni.TabIndex = 19;
@@ -1794,7 +1794,7 @@ namespace MomAndPops.Resources
             "Normal",
             "Extra"});
             this.LargeCheese.Location = new System.Drawing.Point(0, 15);
-            this.LargeCheese.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargeCheese.Margin = new System.Windows.Forms.Padding(4);
             this.LargeCheese.Name = "LargeCheese";
             this.LargeCheese.Size = new System.Drawing.Size(63, 24);
             this.LargeCheese.TabIndex = 17;
@@ -1807,7 +1807,7 @@ namespace MomAndPops.Resources
             this.panel18.Controls.Add(this.LargeRegularCrust);
             this.panel18.Controls.Add(this.LargeThinCrust);
             this.panel18.Location = new System.Drawing.Point(4, 15);
-            this.panel18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel18.Margin = new System.Windows.Forms.Padding(4);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(435, 41);
             this.panel18.TabIndex = 14;
@@ -1817,7 +1817,7 @@ namespace MomAndPops.Resources
             this.LargePanCrust.AutoSize = true;
             this.LargePanCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.LargePanCrust.Location = new System.Drawing.Point(312, 7);
-            this.LargePanCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargePanCrust.Margin = new System.Windows.Forms.Padding(4);
             this.LargePanCrust.Name = "LargePanCrust";
             this.LargePanCrust.Size = new System.Drawing.Size(105, 24);
             this.LargePanCrust.TabIndex = 2;
@@ -1830,7 +1830,7 @@ namespace MomAndPops.Resources
             this.LargeRegularCrust.AutoSize = true;
             this.LargeRegularCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.LargeRegularCrust.Location = new System.Drawing.Point(141, 7);
-            this.LargeRegularCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargeRegularCrust.Margin = new System.Windows.Forms.Padding(4);
             this.LargeRegularCrust.Name = "LargeRegularCrust";
             this.LargeRegularCrust.Size = new System.Drawing.Size(134, 24);
             this.LargeRegularCrust.TabIndex = 1;
@@ -1843,7 +1843,7 @@ namespace MomAndPops.Resources
             this.LargeThinCrust.AutoSize = true;
             this.LargeThinCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.LargeThinCrust.Location = new System.Drawing.Point(17, 7);
-            this.LargeThinCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargeThinCrust.Margin = new System.Windows.Forms.Padding(4);
             this.LargeThinCrust.Name = "LargeThinCrust";
             this.LargeThinCrust.Size = new System.Drawing.Size(108, 24);
             this.LargeThinCrust.TabIndex = 0;
@@ -1888,7 +1888,7 @@ namespace MomAndPops.Resources
             // 
             this.ExtraLargePizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.ExtraLargePizzaQuantity.Location = new System.Drawing.Point(4, 692);
-            this.ExtraLargePizzaQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ExtraLargePizzaQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.ExtraLargePizzaQuantity.Name = "ExtraLargePizzaQuantity";
             this.ExtraLargePizzaQuantity.Size = new System.Drawing.Size(47, 26);
             this.ExtraLargePizzaQuantity.TabIndex = 11;
@@ -1897,7 +1897,7 @@ namespace MomAndPops.Resources
             // 
             this.MediumPizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.MediumPizzaQuantity.Location = new System.Drawing.Point(4, 246);
-            this.MediumPizzaQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MediumPizzaQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.MediumPizzaQuantity.Name = "MediumPizzaQuantity";
             this.MediumPizzaQuantity.Size = new System.Drawing.Size(47, 26);
             this.MediumPizzaQuantity.TabIndex = 5;
@@ -1961,7 +1961,7 @@ namespace MomAndPops.Resources
             // 
             this.SmallPizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.SmallPizzaQuantity.Location = new System.Drawing.Point(4, 9);
-            this.SmallPizzaQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SmallPizzaQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.SmallPizzaQuantity.Name = "SmallPizzaQuantity";
             this.SmallPizzaQuantity.Size = new System.Drawing.Size(47, 26);
             this.SmallPizzaQuantity.TabIndex = 3;
@@ -1970,7 +1970,7 @@ namespace MomAndPops.Resources
             // 
             this.LargePizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.LargePizzaQuantity.Location = new System.Drawing.Point(4, 470);
-            this.LargePizzaQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LargePizzaQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.LargePizzaQuantity.Name = "LargePizzaQuantity";
             this.LargePizzaQuantity.Size = new System.Drawing.Size(47, 26);
             this.LargePizzaQuantity.TabIndex = 8;
@@ -2001,9 +2001,9 @@ namespace MomAndPops.Resources
             this.DrinksGroupBox.Controls.Add(this.DrinksSectionLabel);
             this.DrinksGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
             this.DrinksGroupBox.Location = new System.Drawing.Point(1151, 119);
-            this.DrinksGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DrinksGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.DrinksGroupBox.Name = "DrinksGroupBox";
-            this.DrinksGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DrinksGroupBox.Padding = new System.Windows.Forms.Padding(4);
             this.DrinksGroupBox.Size = new System.Drawing.Size(485, 535);
             this.DrinksGroupBox.TabIndex = 1;
             this.DrinksGroupBox.TabStop = false;
@@ -2028,7 +2028,7 @@ namespace MomAndPops.Resources
             this.LemonadePanel.Controls.Add(this.LemonadeLabel);
             this.LemonadePanel.Controls.Add(this.LemonadeQuantity);
             this.LemonadePanel.Location = new System.Drawing.Point(69, 441);
-            this.LemonadePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LemonadePanel.Margin = new System.Windows.Forms.Padding(4);
             this.LemonadePanel.Name = "LemonadePanel";
             this.LemonadePanel.Size = new System.Drawing.Size(357, 34);
             this.LemonadePanel.TabIndex = 11;
@@ -2038,7 +2038,7 @@ namespace MomAndPops.Resources
             this.LemonadeLarge.AutoSize = true;
             this.LemonadeLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.LemonadeLarge.Location = new System.Drawing.Point(308, 6);
-            this.LemonadeLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LemonadeLarge.Margin = new System.Windows.Forms.Padding(4);
             this.LemonadeLarge.Name = "LemonadeLarge";
             this.LemonadeLarge.Size = new System.Drawing.Size(40, 24);
             this.LemonadeLarge.TabIndex = 4;
@@ -2051,7 +2051,7 @@ namespace MomAndPops.Resources
             this.LemonadeMedium.AutoSize = true;
             this.LemonadeMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.LemonadeMedium.Location = new System.Drawing.Point(251, 6);
-            this.LemonadeMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LemonadeMedium.Margin = new System.Windows.Forms.Padding(4);
             this.LemonadeMedium.Name = "LemonadeMedium";
             this.LemonadeMedium.Size = new System.Drawing.Size(44, 24);
             this.LemonadeMedium.TabIndex = 3;
@@ -2064,7 +2064,7 @@ namespace MomAndPops.Resources
             this.LemonadeSmall.AutoSize = true;
             this.LemonadeSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.LemonadeSmall.Location = new System.Drawing.Point(196, 5);
-            this.LemonadeSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LemonadeSmall.Margin = new System.Windows.Forms.Padding(4);
             this.LemonadeSmall.Name = "LemonadeSmall";
             this.LemonadeSmall.Size = new System.Drawing.Size(41, 24);
             this.LemonadeSmall.TabIndex = 2;
@@ -2087,7 +2087,7 @@ namespace MomAndPops.Resources
             // 
             this.LemonadeQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.LemonadeQuantity.Location = new System.Drawing.Point(4, 2);
-            this.LemonadeQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.LemonadeQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.LemonadeQuantity.Name = "LemonadeQuantity";
             this.LemonadeQuantity.Size = new System.Drawing.Size(47, 26);
             this.LemonadeQuantity.TabIndex = 0;
@@ -2101,7 +2101,7 @@ namespace MomAndPops.Resources
             this.SierraMistPanel.Controls.Add(this.SierraMistLabel);
             this.SierraMistPanel.Controls.Add(this.SierraMistQuantity);
             this.SierraMistPanel.Location = new System.Drawing.Point(69, 401);
-            this.SierraMistPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SierraMistPanel.Margin = new System.Windows.Forms.Padding(4);
             this.SierraMistPanel.Name = "SierraMistPanel";
             this.SierraMistPanel.Size = new System.Drawing.Size(357, 34);
             this.SierraMistPanel.TabIndex = 10;
@@ -2111,7 +2111,7 @@ namespace MomAndPops.Resources
             this.SierraMistLarge.AutoSize = true;
             this.SierraMistLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.SierraMistLarge.Location = new System.Drawing.Point(308, 6);
-            this.SierraMistLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SierraMistLarge.Margin = new System.Windows.Forms.Padding(4);
             this.SierraMistLarge.Name = "SierraMistLarge";
             this.SierraMistLarge.Size = new System.Drawing.Size(40, 24);
             this.SierraMistLarge.TabIndex = 4;
@@ -2124,7 +2124,7 @@ namespace MomAndPops.Resources
             this.SierraMistMedium.AutoSize = true;
             this.SierraMistMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.SierraMistMedium.Location = new System.Drawing.Point(251, 6);
-            this.SierraMistMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SierraMistMedium.Margin = new System.Windows.Forms.Padding(4);
             this.SierraMistMedium.Name = "SierraMistMedium";
             this.SierraMistMedium.Size = new System.Drawing.Size(44, 24);
             this.SierraMistMedium.TabIndex = 3;
@@ -2137,7 +2137,7 @@ namespace MomAndPops.Resources
             this.SierraMistSmall.AutoSize = true;
             this.SierraMistSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.SierraMistSmall.Location = new System.Drawing.Point(196, 5);
-            this.SierraMistSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SierraMistSmall.Margin = new System.Windows.Forms.Padding(4);
             this.SierraMistSmall.Name = "SierraMistSmall";
             this.SierraMistSmall.Size = new System.Drawing.Size(41, 24);
             this.SierraMistSmall.TabIndex = 2;
@@ -2160,7 +2160,7 @@ namespace MomAndPops.Resources
             // 
             this.SierraMistQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.SierraMistQuantity.Location = new System.Drawing.Point(4, 2);
-            this.SierraMistQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SierraMistQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.SierraMistQuantity.Name = "SierraMistQuantity";
             this.SierraMistQuantity.Size = new System.Drawing.Size(47, 26);
             this.SierraMistQuantity.TabIndex = 0;
@@ -2174,7 +2174,7 @@ namespace MomAndPops.Resources
             this.DietRootBeerPanel.Controls.Add(this.DietRootBeerLabel);
             this.DietRootBeerPanel.Controls.Add(this.DietRootBeerQuantity);
             this.DietRootBeerPanel.Location = new System.Drawing.Point(69, 363);
-            this.DietRootBeerPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietRootBeerPanel.Margin = new System.Windows.Forms.Padding(4);
             this.DietRootBeerPanel.Name = "DietRootBeerPanel";
             this.DietRootBeerPanel.Size = new System.Drawing.Size(357, 34);
             this.DietRootBeerPanel.TabIndex = 9;
@@ -2184,7 +2184,7 @@ namespace MomAndPops.Resources
             this.DietRootBeerLarge.AutoSize = true;
             this.DietRootBeerLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.DietRootBeerLarge.Location = new System.Drawing.Point(308, 6);
-            this.DietRootBeerLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietRootBeerLarge.Margin = new System.Windows.Forms.Padding(4);
             this.DietRootBeerLarge.Name = "DietRootBeerLarge";
             this.DietRootBeerLarge.Size = new System.Drawing.Size(40, 24);
             this.DietRootBeerLarge.TabIndex = 4;
@@ -2197,7 +2197,7 @@ namespace MomAndPops.Resources
             this.DietRootBeerMedium.AutoSize = true;
             this.DietRootBeerMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.DietRootBeerMedium.Location = new System.Drawing.Point(251, 6);
-            this.DietRootBeerMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietRootBeerMedium.Margin = new System.Windows.Forms.Padding(4);
             this.DietRootBeerMedium.Name = "DietRootBeerMedium";
             this.DietRootBeerMedium.Size = new System.Drawing.Size(44, 24);
             this.DietRootBeerMedium.TabIndex = 3;
@@ -2210,7 +2210,7 @@ namespace MomAndPops.Resources
             this.DietRootBeerSmall.AutoSize = true;
             this.DietRootBeerSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.DietRootBeerSmall.Location = new System.Drawing.Point(196, 5);
-            this.DietRootBeerSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietRootBeerSmall.Margin = new System.Windows.Forms.Padding(4);
             this.DietRootBeerSmall.Name = "DietRootBeerSmall";
             this.DietRootBeerSmall.Size = new System.Drawing.Size(41, 24);
             this.DietRootBeerSmall.TabIndex = 2;
@@ -2233,7 +2233,7 @@ namespace MomAndPops.Resources
             // 
             this.DietRootBeerQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.DietRootBeerQuantity.Location = new System.Drawing.Point(4, 2);
-            this.DietRootBeerQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietRootBeerQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.DietRootBeerQuantity.Name = "DietRootBeerQuantity";
             this.DietRootBeerQuantity.Size = new System.Drawing.Size(47, 26);
             this.DietRootBeerQuantity.TabIndex = 0;
@@ -2247,7 +2247,7 @@ namespace MomAndPops.Resources
             this.RootBeerPanel.Controls.Add(this.RootBeerLabel);
             this.RootBeerPanel.Controls.Add(this.RootBeerQuantity);
             this.RootBeerPanel.Location = new System.Drawing.Point(69, 325);
-            this.RootBeerPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RootBeerPanel.Margin = new System.Windows.Forms.Padding(4);
             this.RootBeerPanel.Name = "RootBeerPanel";
             this.RootBeerPanel.Size = new System.Drawing.Size(357, 34);
             this.RootBeerPanel.TabIndex = 8;
@@ -2257,7 +2257,7 @@ namespace MomAndPops.Resources
             this.RootBeerLarge.AutoSize = true;
             this.RootBeerLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.RootBeerLarge.Location = new System.Drawing.Point(308, 6);
-            this.RootBeerLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RootBeerLarge.Margin = new System.Windows.Forms.Padding(4);
             this.RootBeerLarge.Name = "RootBeerLarge";
             this.RootBeerLarge.Size = new System.Drawing.Size(40, 24);
             this.RootBeerLarge.TabIndex = 4;
@@ -2270,7 +2270,7 @@ namespace MomAndPops.Resources
             this.RootBeerMedium.AutoSize = true;
             this.RootBeerMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.RootBeerMedium.Location = new System.Drawing.Point(251, 6);
-            this.RootBeerMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RootBeerMedium.Margin = new System.Windows.Forms.Padding(4);
             this.RootBeerMedium.Name = "RootBeerMedium";
             this.RootBeerMedium.Size = new System.Drawing.Size(44, 24);
             this.RootBeerMedium.TabIndex = 3;
@@ -2283,7 +2283,7 @@ namespace MomAndPops.Resources
             this.RootBeerSmall.AutoSize = true;
             this.RootBeerSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.RootBeerSmall.Location = new System.Drawing.Point(196, 5);
-            this.RootBeerSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RootBeerSmall.Margin = new System.Windows.Forms.Padding(4);
             this.RootBeerSmall.Name = "RootBeerSmall";
             this.RootBeerSmall.Size = new System.Drawing.Size(41, 24);
             this.RootBeerSmall.TabIndex = 2;
@@ -2306,7 +2306,7 @@ namespace MomAndPops.Resources
             // 
             this.RootBeerQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.RootBeerQuantity.Location = new System.Drawing.Point(4, 2);
-            this.RootBeerQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RootBeerQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.RootBeerQuantity.Name = "RootBeerQuantity";
             this.RootBeerQuantity.Size = new System.Drawing.Size(47, 26);
             this.RootBeerQuantity.TabIndex = 0;
@@ -2320,7 +2320,7 @@ namespace MomAndPops.Resources
             this.DietOrangePanel.Controls.Add(this.DietOrangeLabel);
             this.DietOrangePanel.Controls.Add(this.DietOrangeQuantity);
             this.DietOrangePanel.Location = new System.Drawing.Point(69, 283);
-            this.DietOrangePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietOrangePanel.Margin = new System.Windows.Forms.Padding(4);
             this.DietOrangePanel.Name = "DietOrangePanel";
             this.DietOrangePanel.Size = new System.Drawing.Size(357, 34);
             this.DietOrangePanel.TabIndex = 7;
@@ -2330,7 +2330,7 @@ namespace MomAndPops.Resources
             this.DietOrangeLarge.AutoSize = true;
             this.DietOrangeLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.DietOrangeLarge.Location = new System.Drawing.Point(308, 6);
-            this.DietOrangeLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietOrangeLarge.Margin = new System.Windows.Forms.Padding(4);
             this.DietOrangeLarge.Name = "DietOrangeLarge";
             this.DietOrangeLarge.Size = new System.Drawing.Size(40, 24);
             this.DietOrangeLarge.TabIndex = 4;
@@ -2343,7 +2343,7 @@ namespace MomAndPops.Resources
             this.DietOrangeMedium.AutoSize = true;
             this.DietOrangeMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.DietOrangeMedium.Location = new System.Drawing.Point(251, 6);
-            this.DietOrangeMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietOrangeMedium.Margin = new System.Windows.Forms.Padding(4);
             this.DietOrangeMedium.Name = "DietOrangeMedium";
             this.DietOrangeMedium.Size = new System.Drawing.Size(44, 24);
             this.DietOrangeMedium.TabIndex = 3;
@@ -2357,7 +2357,7 @@ namespace MomAndPops.Resources
             this.DietOrangeSmall.AutoSize = true;
             this.DietOrangeSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.DietOrangeSmall.Location = new System.Drawing.Point(196, 5);
-            this.DietOrangeSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietOrangeSmall.Margin = new System.Windows.Forms.Padding(4);
             this.DietOrangeSmall.Name = "DietOrangeSmall";
             this.DietOrangeSmall.Size = new System.Drawing.Size(41, 24);
             this.DietOrangeSmall.TabIndex = 2;
@@ -2380,7 +2380,7 @@ namespace MomAndPops.Resources
             // 
             this.DietOrangeQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.DietOrangeQuantity.Location = new System.Drawing.Point(4, 2);
-            this.DietOrangeQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietOrangeQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.DietOrangeQuantity.Name = "DietOrangeQuantity";
             this.DietOrangeQuantity.Size = new System.Drawing.Size(47, 26);
             this.DietOrangeQuantity.TabIndex = 0;
@@ -2394,7 +2394,7 @@ namespace MomAndPops.Resources
             this.OrangePanel.Controls.Add(this.OrangeLabel);
             this.OrangePanel.Controls.Add(this.OrangeQuantity);
             this.OrangePanel.Location = new System.Drawing.Point(69, 241);
-            this.OrangePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OrangePanel.Margin = new System.Windows.Forms.Padding(4);
             this.OrangePanel.Name = "OrangePanel";
             this.OrangePanel.Size = new System.Drawing.Size(357, 34);
             this.OrangePanel.TabIndex = 6;
@@ -2404,7 +2404,7 @@ namespace MomAndPops.Resources
             this.OrangeLarge.AutoSize = true;
             this.OrangeLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.OrangeLarge.Location = new System.Drawing.Point(308, 6);
-            this.OrangeLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OrangeLarge.Margin = new System.Windows.Forms.Padding(4);
             this.OrangeLarge.Name = "OrangeLarge";
             this.OrangeLarge.Size = new System.Drawing.Size(40, 24);
             this.OrangeLarge.TabIndex = 4;
@@ -2417,7 +2417,7 @@ namespace MomAndPops.Resources
             this.OrangeMedium.AutoSize = true;
             this.OrangeMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.OrangeMedium.Location = new System.Drawing.Point(251, 6);
-            this.OrangeMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OrangeMedium.Margin = new System.Windows.Forms.Padding(4);
             this.OrangeMedium.Name = "OrangeMedium";
             this.OrangeMedium.Size = new System.Drawing.Size(44, 24);
             this.OrangeMedium.TabIndex = 3;
@@ -2430,7 +2430,7 @@ namespace MomAndPops.Resources
             this.OrangeSmall.AutoSize = true;
             this.OrangeSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.OrangeSmall.Location = new System.Drawing.Point(196, 4);
-            this.OrangeSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OrangeSmall.Margin = new System.Windows.Forms.Padding(4);
             this.OrangeSmall.Name = "OrangeSmall";
             this.OrangeSmall.Size = new System.Drawing.Size(41, 24);
             this.OrangeSmall.TabIndex = 2;
@@ -2453,7 +2453,7 @@ namespace MomAndPops.Resources
             // 
             this.OrangeQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.OrangeQuantity.Location = new System.Drawing.Point(4, 2);
-            this.OrangeQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.OrangeQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.OrangeQuantity.Name = "OrangeQuantity";
             this.OrangeQuantity.Size = new System.Drawing.Size(47, 26);
             this.OrangeQuantity.TabIndex = 0;
@@ -2467,7 +2467,7 @@ namespace MomAndPops.Resources
             this.DietPepsiPanel.Controls.Add(this.DietPepsiLabel);
             this.DietPepsiPanel.Controls.Add(this.DietPepsiQuantity);
             this.DietPepsiPanel.Location = new System.Drawing.Point(69, 198);
-            this.DietPepsiPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietPepsiPanel.Margin = new System.Windows.Forms.Padding(4);
             this.DietPepsiPanel.Name = "DietPepsiPanel";
             this.DietPepsiPanel.Size = new System.Drawing.Size(353, 34);
             this.DietPepsiPanel.TabIndex = 5;
@@ -2477,7 +2477,7 @@ namespace MomAndPops.Resources
             this.DietPepsiLarge.AutoSize = true;
             this.DietPepsiLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.DietPepsiLarge.Location = new System.Drawing.Point(304, 6);
-            this.DietPepsiLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietPepsiLarge.Margin = new System.Windows.Forms.Padding(4);
             this.DietPepsiLarge.Name = "DietPepsiLarge";
             this.DietPepsiLarge.Size = new System.Drawing.Size(40, 24);
             this.DietPepsiLarge.TabIndex = 4;
@@ -2490,7 +2490,7 @@ namespace MomAndPops.Resources
             this.DietPepsiMedium.AutoSize = true;
             this.DietPepsiMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.DietPepsiMedium.Location = new System.Drawing.Point(247, 6);
-            this.DietPepsiMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietPepsiMedium.Margin = new System.Windows.Forms.Padding(4);
             this.DietPepsiMedium.Name = "DietPepsiMedium";
             this.DietPepsiMedium.Size = new System.Drawing.Size(44, 24);
             this.DietPepsiMedium.TabIndex = 3;
@@ -2503,7 +2503,7 @@ namespace MomAndPops.Resources
             this.DietPepsiSmall.AutoSize = true;
             this.DietPepsiSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.DietPepsiSmall.Location = new System.Drawing.Point(192, 5);
-            this.DietPepsiSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietPepsiSmall.Margin = new System.Windows.Forms.Padding(4);
             this.DietPepsiSmall.Name = "DietPepsiSmall";
             this.DietPepsiSmall.Size = new System.Drawing.Size(41, 24);
             this.DietPepsiSmall.TabIndex = 2;
@@ -2526,7 +2526,7 @@ namespace MomAndPops.Resources
             // 
             this.DietPepsiQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.DietPepsiQuantity.Location = new System.Drawing.Point(4, 2);
-            this.DietPepsiQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DietPepsiQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.DietPepsiQuantity.Name = "DietPepsiQuantity";
             this.DietPepsiQuantity.Size = new System.Drawing.Size(47, 26);
             this.DietPepsiQuantity.TabIndex = 0;
@@ -2540,7 +2540,7 @@ namespace MomAndPops.Resources
             this.PepsiPanel.Controls.Add(this.PepsiLabel);
             this.PepsiPanel.Controls.Add(this.PepsiQuantity);
             this.PepsiPanel.Location = new System.Drawing.Point(69, 156);
-            this.PepsiPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PepsiPanel.Margin = new System.Windows.Forms.Padding(4);
             this.PepsiPanel.Name = "PepsiPanel";
             this.PepsiPanel.Size = new System.Drawing.Size(349, 34);
             this.PepsiPanel.TabIndex = 3;
@@ -2550,7 +2550,7 @@ namespace MomAndPops.Resources
             this.PepsiLarge.AutoSize = true;
             this.PepsiLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.PepsiLarge.Location = new System.Drawing.Point(300, 5);
-            this.PepsiLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PepsiLarge.Margin = new System.Windows.Forms.Padding(4);
             this.PepsiLarge.Name = "PepsiLarge";
             this.PepsiLarge.Size = new System.Drawing.Size(40, 24);
             this.PepsiLarge.TabIndex = 4;
@@ -2563,7 +2563,7 @@ namespace MomAndPops.Resources
             this.PepsiMedium.AutoSize = true;
             this.PepsiMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.PepsiMedium.Location = new System.Drawing.Point(243, 6);
-            this.PepsiMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PepsiMedium.Margin = new System.Windows.Forms.Padding(4);
             this.PepsiMedium.Name = "PepsiMedium";
             this.PepsiMedium.Size = new System.Drawing.Size(44, 24);
             this.PepsiMedium.TabIndex = 3;
@@ -2576,7 +2576,7 @@ namespace MomAndPops.Resources
             this.PepsiSmall.AutoSize = true;
             this.PepsiSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.PepsiSmall.Location = new System.Drawing.Point(188, 6);
-            this.PepsiSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PepsiSmall.Margin = new System.Windows.Forms.Padding(4);
             this.PepsiSmall.Name = "PepsiSmall";
             this.PepsiSmall.Size = new System.Drawing.Size(41, 24);
             this.PepsiSmall.TabIndex = 2;
@@ -2599,7 +2599,7 @@ namespace MomAndPops.Resources
             // 
             this.PepsiQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.PepsiQuantity.Location = new System.Drawing.Point(4, 2);
-            this.PepsiQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PepsiQuantity.Margin = new System.Windows.Forms.Padding(4);
             this.PepsiQuantity.Name = "PepsiQuantity";
             this.PepsiQuantity.Size = new System.Drawing.Size(47, 26);
             this.PepsiQuantity.TabIndex = 0;
@@ -2630,7 +2630,7 @@ namespace MomAndPops.Resources
             // 
             this.AddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.AddToCart.Location = new System.Drawing.Point(740, 692);
-            this.AddToCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddToCart.Margin = new System.Windows.Forms.Padding(4);
             this.AddToCart.Name = "AddToCart";
             this.AddToCart.Size = new System.Drawing.Size(203, 80);
             this.AddToCart.TabIndex = 3;
@@ -2642,7 +2642,7 @@ namespace MomAndPops.Resources
             // 
             this.Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.Logout.Location = new System.Drawing.Point(167, 711);
-            this.Logout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Logout.Margin = new System.Windows.Forms.Padding(4);
             this.Logout.Name = "Logout";
             this.Logout.Size = new System.Drawing.Size(153, 46);
             this.Logout.TabIndex = 4;
@@ -2654,7 +2654,7 @@ namespace MomAndPops.Resources
             // 
             this.CartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.CartButton.Location = new System.Drawing.Point(1319, 46);
-            this.CartButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CartButton.Margin = new System.Windows.Forms.Padding(4);
             this.CartButton.Name = "CartButton";
             this.CartButton.Size = new System.Drawing.Size(144, 57);
             this.CartButton.TabIndex = 5;
@@ -2666,7 +2666,7 @@ namespace MomAndPops.Resources
             // 
             this.PreviousOrdersButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.PreviousOrdersButton.Location = new System.Drawing.Point(1316, 689);
-            this.PreviousOrdersButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PreviousOrdersButton.Margin = new System.Windows.Forms.Padding(4);
             this.PreviousOrdersButton.Name = "PreviousOrdersButton";
             this.PreviousOrdersButton.Size = new System.Drawing.Size(204, 82);
             this.PreviousOrdersButton.TabIndex = 6;
@@ -2678,7 +2678,7 @@ namespace MomAndPops.Resources
             // 
             this.CartHeaderBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.CartHeaderBackground.Location = new System.Drawing.Point(-1, -1);
-            this.CartHeaderBackground.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CartHeaderBackground.Margin = new System.Windows.Forms.Padding(4);
             this.CartHeaderBackground.Name = "CartHeaderBackground";
             this.CartHeaderBackground.Size = new System.Drawing.Size(477, 79);
             this.CartHeaderBackground.TabIndex = 8;
@@ -2688,7 +2688,7 @@ namespace MomAndPops.Resources
             // 
             this.CartXBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
             this.CartXBackground.Location = new System.Drawing.Point(472, -1);
-            this.CartXBackground.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CartXBackground.Margin = new System.Windows.Forms.Padding(4);
             this.CartXBackground.Name = "CartXBackground";
             this.CartXBackground.Size = new System.Drawing.Size(89, 79);
             this.CartXBackground.TabIndex = 9;
@@ -2733,7 +2733,7 @@ namespace MomAndPops.Resources
             this.CartPanel.Controls.Add(this.CartXBackground);
             this.CartPanel.Enabled = false;
             this.CartPanel.Location = new System.Drawing.Point(1099, 25);
-            this.CartPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CartPanel.Margin = new System.Windows.Forms.Padding(4);
             this.CartPanel.Name = "CartPanel";
             this.CartPanel.Size = new System.Drawing.Size(562, 662);
             this.CartPanel.TabIndex = 12;
@@ -2743,7 +2743,7 @@ namespace MomAndPops.Resources
             // 
             this.ClearCartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.ClearCartButton.Location = new System.Drawing.Point(293, 571);
-            this.ClearCartButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClearCartButton.Margin = new System.Windows.Forms.Padding(4);
             this.ClearCartButton.Name = "ClearCartButton";
             this.ClearCartButton.Size = new System.Drawing.Size(189, 64);
             this.ClearCartButton.TabIndex = 17;
@@ -2757,7 +2757,7 @@ namespace MomAndPops.Resources
             this.CartTextBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.CartTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.CartTextBox.Location = new System.Drawing.Point(-1, 73);
-            this.CartTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CartTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CartTextBox.Multiline = true;
             this.CartTextBox.Name = "CartTextBox";
             this.CartTextBox.ReadOnly = true;
@@ -2780,7 +2780,7 @@ namespace MomAndPops.Resources
             // 
             this.CheckoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.CheckoutButton.Location = new System.Drawing.Point(44, 571);
-            this.CheckoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CheckoutButton.Margin = new System.Windows.Forms.Padding(4);
             this.CheckoutButton.Name = "CheckoutButton";
             this.CheckoutButton.Size = new System.Drawing.Size(189, 64);
             this.CheckoutButton.TabIndex = 13;
@@ -2824,9 +2824,10 @@ namespace MomAndPops.Resources
             // PreviousOrder3Label
             // 
             this.PreviousOrder3Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
+            this.PreviousOrder3Label.Cursor = System.Windows.Forms.Cursors.Default;
             this.PreviousOrder3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PreviousOrder3Label.Location = new System.Drawing.Point(21, 652);
-            this.PreviousOrder3Label.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PreviousOrder3Label.Margin = new System.Windows.Forms.Padding(4);
             this.PreviousOrder3Label.Multiline = true;
             this.PreviousOrder3Label.Name = "PreviousOrder3Label";
             this.PreviousOrder3Label.ReadOnly = true;
@@ -2837,9 +2838,10 @@ namespace MomAndPops.Resources
             // PreviousOrder2Label
             // 
             this.PreviousOrder2Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
+            this.PreviousOrder2Label.Cursor = System.Windows.Forms.Cursors.Default;
             this.PreviousOrder2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PreviousOrder2Label.Location = new System.Drawing.Point(21, 378);
-            this.PreviousOrder2Label.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PreviousOrder2Label.Margin = new System.Windows.Forms.Padding(4);
             this.PreviousOrder2Label.Multiline = true;
             this.PreviousOrder2Label.Name = "PreviousOrder2Label";
             this.PreviousOrder2Label.ReadOnly = true;
@@ -2850,9 +2852,10 @@ namespace MomAndPops.Resources
             // PreviousOrder1Label
             // 
             this.PreviousOrder1Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
+            this.PreviousOrder1Label.Cursor = System.Windows.Forms.Cursors.Default;
             this.PreviousOrder1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PreviousOrder1Label.Location = new System.Drawing.Point(21, 100);
-            this.PreviousOrder1Label.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PreviousOrder1Label.Margin = new System.Windows.Forms.Padding(4);
             this.PreviousOrder1Label.Multiline = true;
             this.PreviousOrder1Label.Name = "PreviousOrder1Label";
             this.PreviousOrder1Label.ReadOnly = true;
@@ -2865,7 +2868,7 @@ namespace MomAndPops.Resources
             // 
             this.PreviousOrdersThreeAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.PreviousOrdersThreeAddToCart.Location = new System.Drawing.Point(167, 854);
-            this.PreviousOrdersThreeAddToCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PreviousOrdersThreeAddToCart.Margin = new System.Windows.Forms.Padding(4);
             this.PreviousOrdersThreeAddToCart.Name = "PreviousOrdersThreeAddToCart";
             this.PreviousOrdersThreeAddToCart.Size = new System.Drawing.Size(167, 46);
             this.PreviousOrdersThreeAddToCart.TabIndex = 13;
@@ -2877,7 +2880,7 @@ namespace MomAndPops.Resources
             // 
             this.PreviousOrderOneAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.PreviousOrderOneAddToCart.Location = new System.Drawing.Point(167, 578);
-            this.PreviousOrderOneAddToCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PreviousOrderOneAddToCart.Margin = new System.Windows.Forms.Padding(4);
             this.PreviousOrderOneAddToCart.Name = "PreviousOrderOneAddToCart";
             this.PreviousOrderOneAddToCart.Size = new System.Drawing.Size(167, 46);
             this.PreviousOrderOneAddToCart.TabIndex = 17;
@@ -2889,7 +2892,7 @@ namespace MomAndPops.Resources
             // 
             this.PreviousOrderTwoAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.PreviousOrderTwoAddToCart.Location = new System.Drawing.Point(167, 304);
-            this.PreviousOrderTwoAddToCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.PreviousOrderTwoAddToCart.Margin = new System.Windows.Forms.Padding(4);
             this.PreviousOrderTwoAddToCart.Name = "PreviousOrderTwoAddToCart";
             this.PreviousOrderTwoAddToCart.Size = new System.Drawing.Size(167, 46);
             this.PreviousOrderTwoAddToCart.TabIndex = 16;
@@ -2913,7 +2916,7 @@ namespace MomAndPops.Resources
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(476, 79);
             this.pictureBox1.TabIndex = 8;
@@ -2936,7 +2939,7 @@ namespace MomAndPops.Resources
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
             this.pictureBox2.Location = new System.Drawing.Point(472, 0);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(104, 79);
             this.pictureBox2.TabIndex = 9;
@@ -2958,7 +2961,7 @@ namespace MomAndPops.Resources
             this.Controls.Add(this.DrinksGroupBox);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MenuLanding";
             this.Text = "MenuLanding";
             this.groupBox1.ResumeLayout(false);

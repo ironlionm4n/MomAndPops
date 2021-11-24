@@ -42,7 +42,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.label1.Location = new System.Drawing.Point(443, 71);
+            this.label1.Location = new System.Drawing.Point(480, 71);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(684, 76);
@@ -53,7 +53,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.pictureBox1.Location = new System.Drawing.Point(365, 196);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(924, 405);
             this.pictureBox1.TabIndex = 1;
@@ -89,7 +89,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Italic);
-            this.label4.Location = new System.Drawing.Point(399, 539);
+            this.label4.Location = new System.Drawing.Point(440, 537);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(783, 39);
@@ -100,7 +100,7 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.button1.Location = new System.Drawing.Point(757, 638);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(161, 68);
             this.button1.TabIndex = 5;
@@ -135,7 +135,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Confirmation";
             this.Text = "Confirmation";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
