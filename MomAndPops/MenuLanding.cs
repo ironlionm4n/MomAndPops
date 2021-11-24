@@ -946,6 +946,9 @@ namespace MomAndPops.Resources
         {
             PreviousOrders.Visible = true;
             PreviousOrders.Enabled = true;
+            PreviousOrder1Label.Text = string.Empty;
+            PreviousOrder2Label.Text = string.Empty;
+            PreviousOrder3Label.Text = string.Empty;
 
             if (customer.GetPreviousOrders.Count == 1)
             {

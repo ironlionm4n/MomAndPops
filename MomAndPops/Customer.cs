@@ -31,7 +31,7 @@ namespace MomAndPops
                 customer.apt, customer.zip, customer.city, customer.password};
             if (!File.Exists(GetName() + " Database Info.txt")) // If file does not exists
             {
-                File.Create(GetName() + " Database Info.txt"); // Create file
+                File.Create(GetName() + " Database Info.txt").Close();// Create file
                 using (StreamWriter sw = File.CreateText(GetName() + " Database Info.txt"))
                 {
                     foreach (string data in customerData)
