@@ -784,7 +784,7 @@ namespace MomAndPops.Resources
             this.ExtraLargeCheese.Name = "ExtraLargeCheese";
             this.ExtraLargeCheese.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeCheese.TabIndex = 17;
-            this.ExtraLargeCheese.Text = "None";
+            this.ExtraLargeCheese.Text = "Normal";
             this.ExtraLargeCheese.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeCheese_SelectedIndexChanged);
             // 
             // panel20
@@ -1122,7 +1122,7 @@ namespace MomAndPops.Resources
             this.MediumCheese.Name = "MediumCheese";
             this.MediumCheese.Size = new System.Drawing.Size(63, 24);
             this.MediumCheese.TabIndex = 17;
-            this.MediumCheese.Text = "None";
+            this.MediumCheese.Text = "Normal";
             this.MediumCheese.SelectedIndexChanged += new System.EventHandler(this.MediumCheese_SelectedIndexChanged);
             // 
             // panel17
@@ -1224,7 +1224,7 @@ namespace MomAndPops.Resources
             // 
             // SmallPineapple
             // 
-            this.SmallPineapple.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.SmallPineapple.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.SmallPineapple.FormattingEnabled = true;
             this.SmallPineapple.Items.AddRange(new object[] {
             "None",
@@ -1252,7 +1252,7 @@ namespace MomAndPops.Resources
             // 
             // SmallMushroom
             // 
-            this.SmallMushroom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.SmallMushroom.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.SmallMushroom.FormattingEnabled = true;
             this.SmallMushroom.Items.AddRange(new object[] {
             "None",
@@ -1280,7 +1280,7 @@ namespace MomAndPops.Resources
             // 
             // SmallTomato
             // 
-            this.SmallTomato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.SmallTomato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.SmallTomato.FormattingEnabled = true;
             this.SmallTomato.Items.AddRange(new object[] {
             "None",
@@ -1308,7 +1308,7 @@ namespace MomAndPops.Resources
             // 
             // SmallGreenPepper
             // 
-            this.SmallGreenPepper.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.SmallGreenPepper.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.SmallGreenPepper.FormattingEnabled = true;
             this.SmallGreenPepper.Items.AddRange(new object[] {
             "None",
@@ -1336,7 +1336,7 @@ namespace MomAndPops.Resources
             // 
             // SmallOnion
             // 
-            this.SmallOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.SmallOnion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.SmallOnion.FormattingEnabled = true;
             this.SmallOnion.Items.AddRange(new object[] {
             "None",
@@ -1364,7 +1364,7 @@ namespace MomAndPops.Resources
             // 
             // SmallHam
             // 
-            this.SmallHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.SmallHam.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.SmallHam.FormattingEnabled = true;
             this.SmallHam.Items.AddRange(new object[] {
             "None",
@@ -1392,7 +1392,7 @@ namespace MomAndPops.Resources
             // 
             // SmallSausage
             // 
-            this.SmallSausage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.SmallSausage.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.SmallSausage.FormattingEnabled = true;
             this.SmallSausage.Items.AddRange(new object[] {
             "None",
@@ -1420,7 +1420,7 @@ namespace MomAndPops.Resources
             // 
             // SmallPepperoni
             // 
-            this.SmallPepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.SmallPepperoni.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.SmallPepperoni.FormattingEnabled = true;
             this.SmallPepperoni.Items.AddRange(new object[] {
             "None",
@@ -1448,7 +1448,7 @@ namespace MomAndPops.Resources
             // 
             // SmallCheese
             // 
-            this.SmallCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Bold);
+            this.SmallCheese.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.SmallCheese.FormattingEnabled = true;
             this.SmallCheese.Items.AddRange(new object[] {
             "None",
@@ -1798,7 +1798,7 @@ namespace MomAndPops.Resources
             this.LargeCheese.Name = "LargeCheese";
             this.LargeCheese.Size = new System.Drawing.Size(63, 24);
             this.LargeCheese.TabIndex = 17;
-            this.LargeCheese.Text = "None";
+            this.LargeCheese.Text = "Normal";
             this.LargeCheese.SelectedIndexChanged += new System.EventHandler(this.LargeCheese_SelectedIndexChanged);
             // 
             // panel18

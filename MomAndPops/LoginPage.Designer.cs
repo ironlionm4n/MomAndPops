@@ -42,27 +42,27 @@ namespace MomAndPops
             this.panel1 = new System.Windows.Forms.Panel();
             this.LoginLabel = new System.Windows.Forms.Label();
             this.CreatePanel = new System.Windows.Forms.Panel();
-            this.CreateFirstNameLabel = new System.Windows.Forms.Label();
-            this.CreateLastNameLabel = new System.Windows.Forms.Label();
-            this.CreateFirstTextBox = new System.Windows.Forms.TextBox();
-            this.CreateAddressLabel = new System.Windows.Forms.Label();
-            this.CreatePhoneTextBox = new System.Windows.Forms.TextBox();
-            this.CreatePhoneLabel = new System.Windows.Forms.Label();
-            this.CreateAddressTextBox = new System.Windows.Forms.TextBox();
-            this.CreateLastTextBox = new System.Windows.Forms.TextBox();
-            this.CreateAptLabel = new System.Windows.Forms.Label();
-            this.CreateAptTextBox = new System.Windows.Forms.TextBox();
-            this.CreateCityLabel = new System.Windows.Forms.Label();
-            this.CreateCityTextBox = new System.Windows.Forms.TextBox();
-            this.CreateSubmitButton = new System.Windows.Forms.Button();
-            this.CreateBackButton = new System.Windows.Forms.Button();
-            this.CreatePasswordLabel = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.CreatePasswordTextBox = new System.Windows.Forms.TextBox();
-            this.CreateConfirmTextBox = new System.Windows.Forms.TextBox();
-            this.CreateConfirmPasswordLabel = new System.Windows.Forms.Label();
-            this.CreateZipLabel = new System.Windows.Forms.Label();
             this.CreateZipTextBox = new System.Windows.Forms.TextBox();
+            this.CreateZipLabel = new System.Windows.Forms.Label();
+            this.CreateConfirmPasswordLabel = new System.Windows.Forms.Label();
+            this.CreateConfirmTextBox = new System.Windows.Forms.TextBox();
+            this.CreatePasswordTextBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CreatePasswordLabel = new System.Windows.Forms.Label();
+            this.CreateBackButton = new System.Windows.Forms.Button();
+            this.CreateSubmitButton = new System.Windows.Forms.Button();
+            this.CreateCityTextBox = new System.Windows.Forms.TextBox();
+            this.CreateCityLabel = new System.Windows.Forms.Label();
+            this.CreateAptTextBox = new System.Windows.Forms.TextBox();
+            this.CreateAptLabel = new System.Windows.Forms.Label();
+            this.CreateLastTextBox = new System.Windows.Forms.TextBox();
+            this.CreateAddressTextBox = new System.Windows.Forms.TextBox();
+            this.CreatePhoneLabel = new System.Windows.Forms.Label();
+            this.CreatePhoneTextBox = new System.Windows.Forms.TextBox();
+            this.CreateAddressLabel = new System.Windows.Forms.Label();
+            this.CreateFirstTextBox = new System.Windows.Forms.TextBox();
+            this.CreateLastNameLabel = new System.Windows.Forms.Label();
+            this.CreateFirstNameLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -219,125 +219,69 @@ namespace MomAndPops
             this.CreatePanel.Size = new System.Drawing.Size(614, 489);
             this.CreatePanel.TabIndex = 12;
             // 
-            // CreateFirstNameLabel
+            // CreateZipTextBox
             // 
-            this.CreateFirstNameLabel.AutoSize = true;
-            this.CreateFirstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateFirstNameLabel.Location = new System.Drawing.Point(9, 33);
-            this.CreateFirstNameLabel.Name = "CreateFirstNameLabel";
-            this.CreateFirstNameLabel.Size = new System.Drawing.Size(106, 25);
-            this.CreateFirstNameLabel.TabIndex = 0;
-            this.CreateFirstNameLabel.Text = "First Name";
+            this.CreateZipTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateZipTextBox.Location = new System.Drawing.Point(229, 329);
+            this.CreateZipTextBox.Name = "CreateZipTextBox";
+            this.CreateZipTextBox.Size = new System.Drawing.Size(122, 38);
+            this.CreateZipTextBox.TabIndex = 21;
             // 
-            // CreateLastNameLabel
+            // CreateZipLabel
             // 
-            this.CreateLastNameLabel.AutoSize = true;
-            this.CreateLastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateLastNameLabel.Location = new System.Drawing.Point(11, 106);
-            this.CreateLastNameLabel.Name = "CreateLastNameLabel";
-            this.CreateLastNameLabel.Size = new System.Drawing.Size(106, 25);
-            this.CreateLastNameLabel.TabIndex = 1;
-            this.CreateLastNameLabel.Text = "Last Name";
+            this.CreateZipLabel.AutoSize = true;
+            this.CreateZipLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateZipLabel.Location = new System.Drawing.Point(175, 336);
+            this.CreateZipLabel.Name = "CreateZipLabel";
+            this.CreateZipLabel.Size = new System.Drawing.Size(47, 29);
+            this.CreateZipLabel.TabIndex = 20;
+            this.CreateZipLabel.Text = "Zip";
             // 
-            // CreateFirstTextBox
+            // CreateConfirmPasswordLabel
             // 
-            this.CreateFirstTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateFirstTextBox.Location = new System.Drawing.Point(118, 24);
-            this.CreateFirstTextBox.Name = "CreateFirstTextBox";
-            this.CreateFirstTextBox.Size = new System.Drawing.Size(182, 38);
-            this.CreateFirstTextBox.TabIndex = 2;
+            this.CreateConfirmPasswordLabel.AutoSize = true;
+            this.CreateConfirmPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateConfirmPasswordLabel.Location = new System.Drawing.Point(312, 111);
+            this.CreateConfirmPasswordLabel.Name = "CreateConfirmPasswordLabel";
+            this.CreateConfirmPasswordLabel.Size = new System.Drawing.Size(98, 25);
+            this.CreateConfirmPasswordLabel.TabIndex = 19;
+            this.CreateConfirmPasswordLabel.Text = "Password";
             // 
-            // CreateAddressLabel
+            // CreateConfirmTextBox
             // 
-            this.CreateAddressLabel.AutoSize = true;
-            this.CreateAddressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateAddressLabel.Location = new System.Drawing.Point(18, 262);
-            this.CreateAddressLabel.Name = "CreateAddressLabel";
-            this.CreateAddressLabel.Size = new System.Drawing.Size(92, 26);
-            this.CreateAddressLabel.TabIndex = 4;
-            this.CreateAddressLabel.Text = "Address";
+            this.CreateConfirmTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateConfirmTextBox.Location = new System.Drawing.Point(419, 98);
+            this.CreateConfirmTextBox.Name = "CreateConfirmTextBox";
+            this.CreateConfirmTextBox.Size = new System.Drawing.Size(182, 38);
+            this.CreateConfirmTextBox.TabIndex = 18;
             // 
-            // CreatePhoneTextBox
+            // CreatePasswordTextBox
             // 
-            this.CreatePhoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreatePhoneTextBox.Location = new System.Drawing.Point(255, 178);
-            this.CreatePhoneTextBox.Name = "CreatePhoneTextBox";
-            this.CreatePhoneTextBox.Size = new System.Drawing.Size(289, 38);
-            this.CreatePhoneTextBox.TabIndex = 5;
+            this.CreatePasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreatePasswordTextBox.Location = new System.Drawing.Point(419, 24);
+            this.CreatePasswordTextBox.Name = "CreatePasswordTextBox";
+            this.CreatePasswordTextBox.Size = new System.Drawing.Size(182, 38);
+            this.CreatePasswordTextBox.TabIndex = 17;
             // 
-            // CreatePhoneLabel
+            // label1
             // 
-            this.CreatePhoneLabel.AutoSize = true;
-            this.CreatePhoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreatePhoneLabel.Location = new System.Drawing.Point(37, 187);
-            this.CreatePhoneLabel.Name = "CreatePhoneLabel";
-            this.CreatePhoneLabel.Size = new System.Drawing.Size(159, 26);
-            this.CreatePhoneLabel.TabIndex = 6;
-            this.CreatePhoneLabel.Text = "Phone Number";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(312, 87);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 25);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Confirm";
             // 
-            // CreateAddressTextBox
+            // CreatePasswordLabel
             // 
-            this.CreateAddressTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateAddressTextBox.Location = new System.Drawing.Point(125, 251);
-            this.CreateAddressTextBox.Name = "CreateAddressTextBox";
-            this.CreateAddressTextBox.Size = new System.Drawing.Size(476, 38);
-            this.CreateAddressTextBox.TabIndex = 7;
-            // 
-            // CreateLastTextBox
-            // 
-            this.CreateLastTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateLastTextBox.Location = new System.Drawing.Point(118, 98);
-            this.CreateLastTextBox.Name = "CreateLastTextBox";
-            this.CreateLastTextBox.Size = new System.Drawing.Size(182, 38);
-            this.CreateLastTextBox.TabIndex = 8;
-            // 
-            // CreateAptLabel
-            // 
-            this.CreateAptLabel.AutoSize = true;
-            this.CreateAptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateAptLabel.Location = new System.Drawing.Point(20, 339);
-            this.CreateAptLabel.Name = "CreateAptLabel";
-            this.CreateAptLabel.Size = new System.Drawing.Size(48, 29);
-            this.CreateAptLabel.TabIndex = 9;
-            this.CreateAptLabel.Text = "Apt";
-            // 
-            // CreateAptTextBox
-            // 
-            this.CreateAptTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateAptTextBox.Location = new System.Drawing.Point(78, 330);
-            this.CreateAptTextBox.Name = "CreateAptTextBox";
-            this.CreateAptTextBox.Size = new System.Drawing.Size(73, 38);
-            this.CreateAptTextBox.TabIndex = 10;
-            // 
-            // CreateCityLabel
-            // 
-            this.CreateCityLabel.AutoSize = true;
-            this.CreateCityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateCityLabel.Location = new System.Drawing.Point(357, 334);
-            this.CreateCityLabel.Name = "CreateCityLabel";
-            this.CreateCityLabel.Size = new System.Drawing.Size(53, 29);
-            this.CreateCityLabel.TabIndex = 11;
-            this.CreateCityLabel.Text = "City";
-            // 
-            // CreateCityTextBox
-            // 
-            this.CreateCityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateCityTextBox.Location = new System.Drawing.Point(419, 328);
-            this.CreateCityTextBox.Name = "CreateCityTextBox";
-            this.CreateCityTextBox.Size = new System.Drawing.Size(182, 38);
-            this.CreateCityTextBox.TabIndex = 12;
-            // 
-            // CreateSubmitButton
-            // 
-            this.CreateSubmitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateSubmitButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.CreateSubmitButton.Location = new System.Drawing.Point(350, 417);
-            this.CreateSubmitButton.Name = "CreateSubmitButton";
-            this.CreateSubmitButton.Size = new System.Drawing.Size(108, 41);
-            this.CreateSubmitButton.TabIndex = 13;
-            this.CreateSubmitButton.Text = "Submit";
-            this.CreateSubmitButton.UseVisualStyleBackColor = true;
-            this.CreateSubmitButton.Click += new System.EventHandler(this.CreateSubmitButton_Click);
+            this.CreatePasswordLabel.AutoSize = true;
+            this.CreatePasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreatePasswordLabel.Location = new System.Drawing.Point(310, 33);
+            this.CreatePasswordLabel.Name = "CreatePasswordLabel";
+            this.CreatePasswordLabel.Size = new System.Drawing.Size(98, 25);
+            this.CreatePasswordLabel.TabIndex = 15;
+            this.CreatePasswordLabel.Text = "Password";
             // 
             // CreateBackButton
             // 
@@ -351,69 +295,125 @@ namespace MomAndPops
             this.CreateBackButton.UseVisualStyleBackColor = true;
             this.CreateBackButton.Click += new System.EventHandler(this.CreateBackButton_Click);
             // 
-            // CreatePasswordLabel
+            // CreateSubmitButton
             // 
-            this.CreatePasswordLabel.AutoSize = true;
-            this.CreatePasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreatePasswordLabel.Location = new System.Drawing.Point(310, 33);
-            this.CreatePasswordLabel.Name = "CreatePasswordLabel";
-            this.CreatePasswordLabel.Size = new System.Drawing.Size(98, 25);
-            this.CreatePasswordLabel.TabIndex = 15;
-            this.CreatePasswordLabel.Text = "Password";
+            this.CreateSubmitButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateSubmitButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.CreateSubmitButton.Location = new System.Drawing.Point(350, 417);
+            this.CreateSubmitButton.Name = "CreateSubmitButton";
+            this.CreateSubmitButton.Size = new System.Drawing.Size(108, 41);
+            this.CreateSubmitButton.TabIndex = 13;
+            this.CreateSubmitButton.Text = "Submit";
+            this.CreateSubmitButton.UseVisualStyleBackColor = true;
+            this.CreateSubmitButton.Click += new System.EventHandler(this.CreateSubmitButton_Click);
             // 
-            // label1
+            // CreateCityTextBox
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(312, 87);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 25);
-            this.label1.TabIndex = 16;
-            this.label1.Text = "Confirm";
+            this.CreateCityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateCityTextBox.Location = new System.Drawing.Point(419, 328);
+            this.CreateCityTextBox.Name = "CreateCityTextBox";
+            this.CreateCityTextBox.Size = new System.Drawing.Size(182, 38);
+            this.CreateCityTextBox.TabIndex = 12;
             // 
-            // CreatePasswordTextBox
+            // CreateCityLabel
             // 
-            this.CreatePasswordTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreatePasswordTextBox.Location = new System.Drawing.Point(419, 24);
-            this.CreatePasswordTextBox.Name = "CreatePasswordTextBox";
-            this.CreatePasswordTextBox.Size = new System.Drawing.Size(182, 38);
-            this.CreatePasswordTextBox.TabIndex = 17;
+            this.CreateCityLabel.AutoSize = true;
+            this.CreateCityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateCityLabel.Location = new System.Drawing.Point(357, 334);
+            this.CreateCityLabel.Name = "CreateCityLabel";
+            this.CreateCityLabel.Size = new System.Drawing.Size(53, 29);
+            this.CreateCityLabel.TabIndex = 11;
+            this.CreateCityLabel.Text = "City";
             // 
-            // CreateConfirmTextBox
+            // CreateAptTextBox
             // 
-            this.CreateConfirmTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateConfirmTextBox.Location = new System.Drawing.Point(419, 98);
-            this.CreateConfirmTextBox.Name = "CreateConfirmTextBox";
-            this.CreateConfirmTextBox.Size = new System.Drawing.Size(182, 38);
-            this.CreateConfirmTextBox.TabIndex = 18;
+            this.CreateAptTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateAptTextBox.Location = new System.Drawing.Point(78, 330);
+            this.CreateAptTextBox.Name = "CreateAptTextBox";
+            this.CreateAptTextBox.Size = new System.Drawing.Size(73, 38);
+            this.CreateAptTextBox.TabIndex = 10;
             // 
-            // CreateConfirmPasswordLabel
+            // CreateAptLabel
             // 
-            this.CreateConfirmPasswordLabel.AutoSize = true;
-            this.CreateConfirmPasswordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateConfirmPasswordLabel.Location = new System.Drawing.Point(312, 111);
-            this.CreateConfirmPasswordLabel.Name = "CreateConfirmPasswordLabel";
-            this.CreateConfirmPasswordLabel.Size = new System.Drawing.Size(98, 25);
-            this.CreateConfirmPasswordLabel.TabIndex = 19;
-            this.CreateConfirmPasswordLabel.Text = "Password";
+            this.CreateAptLabel.AutoSize = true;
+            this.CreateAptLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateAptLabel.Location = new System.Drawing.Point(20, 339);
+            this.CreateAptLabel.Name = "CreateAptLabel";
+            this.CreateAptLabel.Size = new System.Drawing.Size(48, 29);
+            this.CreateAptLabel.TabIndex = 9;
+            this.CreateAptLabel.Text = "Apt";
             // 
-            // CreateZipLabel
+            // CreateLastTextBox
             // 
-            this.CreateZipLabel.AutoSize = true;
-            this.CreateZipLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateZipLabel.Location = new System.Drawing.Point(175, 336);
-            this.CreateZipLabel.Name = "CreateZipLabel";
-            this.CreateZipLabel.Size = new System.Drawing.Size(47, 29);
-            this.CreateZipLabel.TabIndex = 20;
-            this.CreateZipLabel.Text = "Zip";
+            this.CreateLastTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateLastTextBox.Location = new System.Drawing.Point(118, 98);
+            this.CreateLastTextBox.Name = "CreateLastTextBox";
+            this.CreateLastTextBox.Size = new System.Drawing.Size(182, 38);
+            this.CreateLastTextBox.TabIndex = 8;
             // 
-            // CreateZipTextBox
+            // CreateAddressTextBox
             // 
-            this.CreateZipTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateZipTextBox.Location = new System.Drawing.Point(229, 329);
-            this.CreateZipTextBox.Name = "CreateZipTextBox";
-            this.CreateZipTextBox.Size = new System.Drawing.Size(122, 38);
-            this.CreateZipTextBox.TabIndex = 21;
+            this.CreateAddressTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateAddressTextBox.Location = new System.Drawing.Point(125, 251);
+            this.CreateAddressTextBox.Name = "CreateAddressTextBox";
+            this.CreateAddressTextBox.Size = new System.Drawing.Size(476, 38);
+            this.CreateAddressTextBox.TabIndex = 7;
+            // 
+            // CreatePhoneLabel
+            // 
+            this.CreatePhoneLabel.AutoSize = true;
+            this.CreatePhoneLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreatePhoneLabel.Location = new System.Drawing.Point(37, 187);
+            this.CreatePhoneLabel.Name = "CreatePhoneLabel";
+            this.CreatePhoneLabel.Size = new System.Drawing.Size(159, 26);
+            this.CreatePhoneLabel.TabIndex = 6;
+            this.CreatePhoneLabel.Text = "Phone Number";
+            // 
+            // CreatePhoneTextBox
+            // 
+            this.CreatePhoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreatePhoneTextBox.Location = new System.Drawing.Point(255, 178);
+            this.CreatePhoneTextBox.Name = "CreatePhoneTextBox";
+            this.CreatePhoneTextBox.Size = new System.Drawing.Size(289, 38);
+            this.CreatePhoneTextBox.TabIndex = 5;
+            // 
+            // CreateAddressLabel
+            // 
+            this.CreateAddressLabel.AutoSize = true;
+            this.CreateAddressLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateAddressLabel.Location = new System.Drawing.Point(18, 262);
+            this.CreateAddressLabel.Name = "CreateAddressLabel";
+            this.CreateAddressLabel.Size = new System.Drawing.Size(92, 26);
+            this.CreateAddressLabel.TabIndex = 4;
+            this.CreateAddressLabel.Text = "Address";
+            // 
+            // CreateFirstTextBox
+            // 
+            this.CreateFirstTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateFirstTextBox.Location = new System.Drawing.Point(118, 24);
+            this.CreateFirstTextBox.Name = "CreateFirstTextBox";
+            this.CreateFirstTextBox.Size = new System.Drawing.Size(182, 38);
+            this.CreateFirstTextBox.TabIndex = 2;
+            // 
+            // CreateLastNameLabel
+            // 
+            this.CreateLastNameLabel.AutoSize = true;
+            this.CreateLastNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateLastNameLabel.Location = new System.Drawing.Point(11, 106);
+            this.CreateLastNameLabel.Name = "CreateLastNameLabel";
+            this.CreateLastNameLabel.Size = new System.Drawing.Size(106, 25);
+            this.CreateLastNameLabel.TabIndex = 1;
+            this.CreateLastNameLabel.Text = "Last Name";
+            // 
+            // CreateFirstNameLabel
+            // 
+            this.CreateFirstNameLabel.AutoSize = true;
+            this.CreateFirstNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CreateFirstNameLabel.Location = new System.Drawing.Point(9, 33);
+            this.CreateFirstNameLabel.Name = "CreateFirstNameLabel";
+            this.CreateFirstNameLabel.Size = new System.Drawing.Size(106, 25);
+            this.CreateFirstNameLabel.TabIndex = 0;
+            this.CreateFirstNameLabel.Text = "First Name";
             // 
             // LoginPage
             // 

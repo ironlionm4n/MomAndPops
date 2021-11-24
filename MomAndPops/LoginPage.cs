@@ -25,13 +25,13 @@ namespace MomAndPops
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            if (/*LoginPhoneNumberBox.Text == "TestUsername" && LoginPasswordBox.Text == "TestPassword"*/true)
+            bool correctPassword = LoginPhoneNumberBox.Text == currentCustomer.GetPassword();
+            if (/*LoginPhoneNumberBox.Text == "TestUsername" && LoginPasswordBox.Text == "TestPassword"*/correctPassword);
             {
                 this.Hide();
                 MenuLanding menu = new MenuLanding();
                 menu.SetCustomer(GetCustomer());
                 menu.ShowDialog();
-
             }
         }
 
