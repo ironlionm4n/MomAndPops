@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MomAndPops
 {
@@ -21,7 +17,7 @@ namespace MomAndPops
         int index = -1;
         public Order()
         {
-           
+
         }
         public object Current => currentOrder[index];
         public void AddToOrder(MenuItem menuItem)

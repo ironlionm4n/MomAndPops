@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.Windows.Forms;
 
 namespace MomAndPops
 {
@@ -17,7 +15,7 @@ namespace MomAndPops
         string password;
         Queue<Order> previousOrders = new Queue<Order>();
 
-        public Customer(string firstName, string lastName, string phoneNumber, string address, string apt = "", string zip = "12345", string city = "undefined", string password = "Admin")
+        public Customer(string firstName = "testFirstName", string lastName = "testLastName", string phoneNumber = "0000000000", string address = "testAddress", string apt = "", string zip = "12345", string city = "undefined", string password = "Admin")
         {
             this.firstName = firstName; this.lastName = lastName; this.phoneNumber = phoneNumber; this.address = address; this.apt = apt;
             this.zip = zip; this.city = city; this.password = password;
@@ -33,15 +31,15 @@ namespace MomAndPops
                 customer.apt, customer.zip, customer.city, customer.password};
             if (!File.Exists(GetName() + " Database Info.txt")) // If file does not exists
             {
-                File.Create(GetName() + " Database Info.txt").Close(); // Create file
+                File.Create(GetName() + " Database Info.txt"); // Create file
                 using (StreamWriter sw = File.CreateText(GetName() + " Database Info.txt"))
                 {
-                    foreach(string data in customerData)
+                    foreach (string data in customerData)
                     {
                         sw.WriteLine(data);
                     }
-                    WriteOrder();
                     sw.Close();
+                    WriteOrder();
                 }
             }
             else // If file already exists
@@ -81,6 +79,7 @@ namespace MomAndPops
             if (previousOrders.Count > 0)
             {
                 Queue<Order> tempQueue = previousOrders;
+                Queue<Order> passingQueue = new Queue<Order>();
                 while (tempQueue.Count > 0)
                 {
                     Order order = tempQueue.Peek();
@@ -111,7 +110,14 @@ namespace MomAndPops
                         }
                         sw.Close();
                     }
+                    passingQueue.Enqueue(tempQueue.Peek());
                     tempQueue.Dequeue();
+                }
+
+                while(passingQueue.Count > 0)
+                {
+                    previousOrders.Enqueue(passingQueue.Peek());
+                    passingQueue.Dequeue();
                 }
 
             }
@@ -120,6 +126,11 @@ namespace MomAndPops
         public string GetName()
         {
             return firstName + " " + lastName;
+        }
+
+        public string GetPhone()
+        {
+            return phoneNumber;
         }
 
     }

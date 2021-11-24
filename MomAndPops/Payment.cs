@@ -1,14 +1,6 @@
 ﻿using MomAndPops.Resources;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace MomAndPops
 {
@@ -26,7 +18,7 @@ namespace MomAndPops
         {
             newOrder = customerOrder;
             float subtotal = 0;
-            foreach(MenuItem m in newOrder.currentOrder)
+            foreach (MenuItem m in newOrder.currentOrder)
             {
                 subtotal += m.ItemPrice * m.ItemQuantity;
             }
@@ -35,7 +27,7 @@ namespace MomAndPops
             Tax.Text = "$" + tax.ToString("0.00");
             Total.Text = "$" + (subtotal + tax).ToString("0.00");
         }
-        
+
         public Order GetOrder()
         {
             return newOrder;
@@ -43,7 +35,7 @@ namespace MomAndPops
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if((radioButton1.Checked || radioButton2.Checked || radioButton3.Checked) && (radioButton4.Checked || radioButton5.Checked))
+            if ((radioButton1.Checked || radioButton2.Checked || radioButton3.Checked) && (radioButton4.Checked || radioButton5.Checked))
             {
                 customer.AddToPreviousOrders(GetOrder());
                 customer.WriteToFile(customer);
@@ -78,7 +70,7 @@ namespace MomAndPops
         {
             customer = cust;
         }
-        
-        
+
+
     }
 }

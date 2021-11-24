@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MomAndPops.Resources
@@ -313,7 +307,7 @@ namespace MomAndPops.Resources
             ///
             /// Diet Root Beer Drink Check
             ///
-            if (DietRootBeerQuantity.Value > 0 && (DietRootBeerSmall.Checked || DietRootBeerMedium.Checked || DietRootBeerLarge.Checked)) 
+            if (DietRootBeerQuantity.Value > 0 && (DietRootBeerSmall.Checked || DietRootBeerMedium.Checked || DietRootBeerLarge.Checked))
             {
                 bool hasDrink = false;
                 string drinkName;
@@ -888,22 +882,22 @@ namespace MomAndPops.Resources
             float totalPrice = 0f;
             TotalLabel.Text = string.Empty;
             CartTextBox.Text = string.Empty;
-            foreach(MenuItem item in currentOrder.currentOrder)
+            foreach (MenuItem item in currentOrder.currentOrder)
             {
                 totalPrice += (item.ItemQuantity * item.ItemPrice);
                 if (item.ItemName != SmallPizzaText.Text && item.ItemName != MediumPizzaText.Text && item.ItemName != LargePizzaText.Text && item.ItemName != ExtraLargePizzaText.Text)
                 {
-                    CartTextBox.Text += item.ItemQuantity + " " + item.ItemName +  " $"
-                        + item.ItemPrice + Environment.NewLine;
+                    CartTextBox.Text += item.ItemQuantity + " " + item.ItemName + " $"
+                        + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
                 }
                 else
                 {
-                    CartTextBox.Text += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice + Environment.NewLine;
+                    CartTextBox.Text += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
                     CartTextBox.Text += "   " + item.CrustOption + Environment.NewLine;
 
-                    foreach(string topping in item.Toppings)
+                    foreach (string topping in item.Toppings)
                     {
-                        CartTextBox.Text += "   " +topping + Environment.NewLine;
+                        CartTextBox.Text += "   " + topping + Environment.NewLine;
                     }
                 }
             }
@@ -914,7 +908,7 @@ namespace MomAndPops.Resources
 
         private void Checkout_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void DietSmallMedium_CheckedChanged(object sender, EventArgs e)
@@ -936,7 +930,7 @@ namespace MomAndPops.Resources
 
         private void CartButton_Click(object sender, EventArgs e)
         {
-           
+
             CartPanel.Visible = true;
             CartPanel.Enabled = true;
             //PrintOrder();
@@ -988,13 +982,13 @@ namespace MomAndPops.Resources
 
         private void SmallCheese_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            if(SmallCheese.FindString("Extra") == SmallCheese.SelectedIndex)
+
+            if (SmallCheese.FindString("Extra") == SmallCheese.SelectedIndex)
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$"+ total;
+                SmallPizzaPrice.Text = "$" + total;
             }
-            else if(!SmallPizzaPrice.Text.Equals("$4")&&lastSmallCheeseSelection == SmallCheese.FindString("Extra"))
+            else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallCheeseSelection == SmallCheese.FindString("Extra"))
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
                 SmallPizzaPrice.Text = "$" + total;
@@ -1009,7 +1003,7 @@ namespace MomAndPops.Resources
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
                 SmallPizzaPrice.Text = "$" + total;
             }
-            else if (!SmallPizzaPrice.Text.Equals("$4")&& (lastSmallPepSelection == SmallPepperoni.FindString("Extra")))
+            else if (!SmallPizzaPrice.Text.Equals("$4") && (lastSmallPepSelection == SmallPepperoni.FindString("Extra")))
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
                 SmallPizzaPrice.Text = "$" + total;
