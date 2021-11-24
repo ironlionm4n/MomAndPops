@@ -1,14 +1,6 @@
 ﻿using MomAndPops.Resources;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 
 namespace MomAndPops
 {
@@ -16,6 +8,8 @@ namespace MomAndPops
     {
         Order newOrder;
         Customer customer;
+        bool delivery = false;
+
 
         public Payment()
         {
@@ -26,7 +20,7 @@ namespace MomAndPops
         {
             newOrder = customerOrder;
             float subtotal = 0;
-            foreach(MenuItem m in newOrder.currentOrder)
+            foreach (MenuItem m in newOrder.currentOrder)
             {
                 subtotal += m.ItemPrice * m.ItemQuantity;
             }
@@ -35,21 +29,36 @@ namespace MomAndPops
             Tax.Text = "$" + tax.ToString("0.00");
             Total.Text = "$" + (subtotal + tax).ToString("0.00");
         }
-        
+
         public Order GetOrder()
         {
             return newOrder;
         }
 
+        public bool GetDelivery()
+        {
+            return delivery;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            if((radioButton1.Checked || radioButton2.Checked || radioButton3.Checked) && (radioButton4.Checked || radioButton5.Checked))
+            if(radioButton4.Checked)
+            {
+                delivery = false;
+            }
+            else if(radioButton5.Checked)
+            {
+                delivery = true;
+            }
+
+            if ((radioButton1.Checked || radioButton2.Checked || radioButton3.Checked) && (radioButton4.Checked || radioButton5.Checked))
             {
                 customer.AddToPreviousOrders(GetOrder());
                 customer.WriteToFile(customer);
 
-                Confirmation confirmation = new Confirmation();
+                Confirmation confirmation = new Confirmation(GetDelivery());
                 confirmation.SetCustomer(GetCustomer());
+                confirmation.SetDelivery(GetDelivery());
                 this.Hide();
                 confirmation.ShowDialog();
             }
@@ -78,7 +87,7 @@ namespace MomAndPops
         {
             customer = cust;
         }
-        
-        
+
+
     }
 }

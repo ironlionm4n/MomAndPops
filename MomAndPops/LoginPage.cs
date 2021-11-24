@@ -1,20 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
+﻿using MomAndPops.Resources;
+using System;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using MomAndPops.Resources;
-using System.IO;
+using System.Collections.Generic;
 
 namespace MomAndPops
 {
     public partial class LoginPage : Form
     {
-        Customer currentCustomer = new Customer("testFirst", "testLast", "0000000000", "testAddress", "73");
+        Customer currentCustomer = new Customer();
+        List<Customer> activeCustomers = new List<Customer>();
         public LoginPage()
         {
             InitializeComponent();
@@ -43,7 +38,7 @@ namespace MomAndPops
         private void CreateSubmitButton_Click(object sender, EventArgs e)
         {
             bool passwordsMatch = CreatePasswordTextBox.Text == CreateConfirmTextBox.Text;
-            if(passwordsMatch == false)
+            if (passwordsMatch == false)
             {
                 Color mismatchColor = Color.FromArgb(255, 113, 113);
                 CreatePasswordTextBox.BackColor = mismatchColor;
@@ -51,7 +46,7 @@ namespace MomAndPops
             }
             if (!CreateFirstTextBox.Text.Equals("") && !CreateLastTextBox.Text.Equals("") && !CreatePhoneTextBox.Text.Equals("")
                 && !CreateAddressTextBox.Text.Equals("") && !CreateAptTextBox.Text.Equals("") && !CreateCityTextBox.Text.Equals("")
-                && !CreateZipTextBox.Text.Equals("") && !CreatePasswordTextBox.Text.Equals("") && passwordsMatch )
+                && !CreateZipTextBox.Text.Equals("") && !CreatePasswordTextBox.Text.Equals("") && passwordsMatch)
             {
                 Customer customer = new Customer(CreateFirstTextBox.Text, CreateLastTextBox.Text, CreatePhoneTextBox.Text, CreateAddressTextBox.Text,
                     CreateAptTextBox.Text, CreateZipTextBox.Text, CreateCityTextBox.Text, CreatePasswordTextBox.Text);
@@ -74,6 +69,23 @@ namespace MomAndPops
         public void SetCustomer(Customer customer)
         {
             currentCustomer = customer;
+        }
+
+        public void AddCustomer()
+        {
+            bool usedPhone = false;
+            foreach(Customer cust in activeCustomers)
+            {
+                if(cust.GetPhone() == currentCustomer.GetPhone()) //Compares currentCustomer number to other customer numbers
+                {
+                    usedPhone = true;
+                }
+            }
+
+            if(!usedPhone)//If the number is not in the list, adds currentCustomer
+            {
+                activeCustomers.Add(currentCustomer);
+            }
         }
     }
 }

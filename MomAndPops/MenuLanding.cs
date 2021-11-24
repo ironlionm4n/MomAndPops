@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace MomAndPops.Resources
@@ -313,7 +307,7 @@ namespace MomAndPops.Resources
             ///
             /// Diet Root Beer Drink Check
             ///
-            if (DietRootBeerQuantity.Value > 0 && (DietRootBeerSmall.Checked || DietRootBeerMedium.Checked || DietRootBeerLarge.Checked)) 
+            if (DietRootBeerQuantity.Value > 0 && (DietRootBeerSmall.Checked || DietRootBeerMedium.Checked || DietRootBeerLarge.Checked))
             {
                 bool hasDrink = false;
                 string drinkName;
@@ -889,22 +883,22 @@ namespace MomAndPops.Resources
             float totalPrice = 0f;
             TotalLabel.Text = string.Empty;
             CartTextBox.Text = string.Empty;
-            foreach(MenuItem item in currentOrder.currentOrder)
+            foreach (MenuItem item in currentOrder.currentOrder)
             {
                 totalPrice += (item.ItemQuantity * item.ItemPrice);
                 if (item.ItemName != SmallPizzaText.Text && item.ItemName != MediumPizzaText.Text && item.ItemName != LargePizzaText.Text && item.ItemName != ExtraLargePizzaText.Text)
                 {
-                    CartTextBox.Text += item.ItemQuantity + " " + item.ItemName +  " $"
-                        + item.ItemPrice + Environment.NewLine;
+                    CartTextBox.Text += item.ItemQuantity + " " + item.ItemName + " $"
+                        + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
                 }
                 else
                 {
-                    CartTextBox.Text += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice + Environment.NewLine;
+                    CartTextBox.Text += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
                     CartTextBox.Text += "   " + item.CrustOption + Environment.NewLine;
 
-                    foreach(string topping in item.Toppings)
+                    foreach (string topping in item.Toppings)
                     {
-                        CartTextBox.Text += "   " +topping + Environment.NewLine;
+                        CartTextBox.Text += "   " + topping + Environment.NewLine;
                     }
                 }
             }
@@ -915,7 +909,7 @@ namespace MomAndPops.Resources
 
         private void Checkout_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void DietSmallMedium_CheckedChanged(object sender, EventArgs e)
@@ -937,10 +931,10 @@ namespace MomAndPops.Resources
 
         private void CartButton_Click(object sender, EventArgs e)
         {
-         
+
             CartPanel.Visible = true;
             CartPanel.Enabled = true;
-            //PrintOrder();
+            PrintOrder();
         }
 
         private void CartXButton_Click(object sender, EventArgs e)
@@ -953,11 +947,173 @@ namespace MomAndPops.Resources
         {
             PreviousOrders.Visible = true;
             PreviousOrders.Enabled = true;
+
+            if (customer.GetPreviousOrders.Count == 1)
+            {
+                Order order = customer.GetPreviousOrders.Peek();
+                foreach (MenuItem item in order.currentOrder)
+                {
+                    if (item.ItemName != SmallPizzaText.Text && item.ItemName != MediumPizzaText.Text && item.ItemName != LargePizzaText.Text && item.ItemName != ExtraLargePizzaText.Text)
+                    {
+                        PreviousOrder1Label.Text += item.ItemQuantity + " " + item.ItemName + " $"
+                            + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
+                    }
+                    else
+                    {
+                        PreviousOrder1Label.Text += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
+                        PreviousOrder1Label.Text += "   " + item.CrustOption + Environment.NewLine;
+
+                        foreach (string topping in item.Toppings)
+                        {
+                            PreviousOrder1Label.Text += "   " + topping + Environment.NewLine;
+                        }
+                    }
+                }
+
+            }
+            else if(customer.GetPreviousOrders.Count == 2)
+            {
+                Queue<Order> tempQueue = new Queue<Order>();
+
+                Order order = customer.GetPreviousOrders.Peek();
+                foreach (MenuItem item in order.currentOrder)
+                {
+                    if (item.ItemName != SmallPizzaText.Text && item.ItemName != MediumPizzaText.Text && item.ItemName != LargePizzaText.Text && item.ItemName != ExtraLargePizzaText.Text)
+                    {
+                        PreviousOrder1Label.Text += item.ItemQuantity + " " + item.ItemName + " $"
+                            + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
+                    }
+                    else
+                    {
+                        PreviousOrder1Label.Text += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
+                        PreviousOrder1Label.Text += "   " + item.CrustOption + Environment.NewLine;
+
+                        foreach (string topping in item.Toppings)
+                        {
+                            PreviousOrder1Label.Text += "   " + topping + Environment.NewLine;
+                        }
+                    }
+                }
+
+                tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+                customer.GetPreviousOrders.Dequeue();
+
+                order = customer.GetPreviousOrders.Peek();
+                foreach (MenuItem item in order.currentOrder)
+                {
+                    if (item.ItemName != SmallPizzaText.Text && item.ItemName != MediumPizzaText.Text && item.ItemName != LargePizzaText.Text && item.ItemName != ExtraLargePizzaText.Text)
+                    {
+                        PreviousOrder2Label.Text += item.ItemQuantity + " " + item.ItemName + " $"
+                            + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
+                    }
+                    else
+                    {
+                        PreviousOrder2Label.Text += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
+                        PreviousOrder2Label.Text += "   " + item.CrustOption + Environment.NewLine;
+
+                        foreach (string topping in item.Toppings)
+                        {
+                            PreviousOrder2Label.Text += "   " + topping + Environment.NewLine;
+                        }
+                    }
+                }
+
+                tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+                customer.GetPreviousOrders.Dequeue();
+
+                while(tempQueue.Count > 0)
+                {
+                    customer.GetPreviousOrders.Enqueue(tempQueue.Peek());
+                    tempQueue.Dequeue();
+                }
+            }
+            else if(customer.GetPreviousOrders.Count == 3)
+            {
+                Queue<Order> tempQueue = new Queue<Order>();
+
+                Order order = customer.GetPreviousOrders.Peek();
+                foreach (MenuItem item in order.currentOrder)
+                {
+                    if (item.ItemName != SmallPizzaText.Text && item.ItemName != MediumPizzaText.Text && item.ItemName != LargePizzaText.Text && item.ItemName != ExtraLargePizzaText.Text)
+                    {
+                        PreviousOrder1Label.Text += item.ItemQuantity + " " + item.ItemName + " $"
+                            + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
+                    }
+                    else
+                    {
+                        PreviousOrder1Label.Text += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
+                        PreviousOrder1Label.Text += "   " + item.CrustOption + Environment.NewLine;
+
+                        foreach (string topping in item.Toppings)
+                        {
+                            PreviousOrder1Label.Text += "   " + topping + Environment.NewLine;
+                        }
+                    }
+                }
+
+                tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+                customer.GetPreviousOrders.Dequeue();
+
+                order = customer.GetPreviousOrders.Peek();
+                foreach (MenuItem item in order.currentOrder)
+                {
+                    if (item.ItemName != SmallPizzaText.Text && item.ItemName != MediumPizzaText.Text && item.ItemName != LargePizzaText.Text && item.ItemName != ExtraLargePizzaText.Text)
+                    {
+                        PreviousOrder2Label.Text += item.ItemQuantity + " " + item.ItemName + " $"
+                            + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
+                    }
+                    else
+                    {
+                        PreviousOrder2Label.Text += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
+                        PreviousOrder2Label.Text += "   " + item.CrustOption + Environment.NewLine;
+
+                        foreach (string topping in item.Toppings)
+                        {
+                            PreviousOrder2Label.Text += "   " + topping + Environment.NewLine;
+                        }
+                    }
+                }
+
+                tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+                customer.GetPreviousOrders.Dequeue();
+
+                order = customer.GetPreviousOrders.Peek();
+                foreach (MenuItem item in order.currentOrder)
+                {
+                    if (item.ItemName != SmallPizzaText.Text && item.ItemName != MediumPizzaText.Text && item.ItemName != LargePizzaText.Text && item.ItemName != ExtraLargePizzaText.Text)
+                    {
+                        PreviousOrder3Label.Text += item.ItemQuantity + " " + item.ItemName + " $"
+                            + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
+                    }
+                    else
+                    {
+                        PreviousOrder3Label.Text += item.ItemQuantity + " " + item.ItemName + " $" + item.ItemPrice * item.ItemQuantity + Environment.NewLine;
+                        PreviousOrder3Label.Text += "   " + item.CrustOption + Environment.NewLine;
+
+                        foreach (string topping in item.Toppings)
+                        {
+                            PreviousOrder3Label.Text += "   " + topping + Environment.NewLine;
+                        }
+                    }
+                }
+
+                tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+                customer.GetPreviousOrders.Dequeue();
+
+                while (tempQueue.Count > 0)
+                {
+                    customer.GetPreviousOrders.Enqueue(tempQueue.Peek());
+                    tempQueue.Dequeue();
+                }
+            }
         }
 
         private void PreviousOrderXButton_Click(object sender, EventArgs e)
         {
             PreviousOrders.Visible = false;
+            PreviousOrder1Label.Text = string.Empty;
+            PreviousOrder2Label.Text = string.Empty;
+            PreviousOrder3Label.Text = string.Empty;
             PreviousOrders.Enabled = false;
         }
 
@@ -990,13 +1146,13 @@ namespace MomAndPops.Resources
 
         private void SmallCheese_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
-            if(SmallCheese.FindString("Extra") == SmallCheese.SelectedIndex)
+
+            if (SmallCheese.FindString("Extra") == SmallCheese.SelectedIndex)
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$"+ total;
+                SmallPizzaPrice.Text = "$" + total;
             }
-            else if(!SmallPizzaPrice.Text.Equals("$4")&&lastSmallCheeseSelection == SmallCheese.FindString("Extra"))
+            else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallCheeseSelection == SmallCheese.FindString("Extra"))
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
                 SmallPizzaPrice.Text = "$" + total;
@@ -1011,7 +1167,7 @@ namespace MomAndPops.Resources
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
                 SmallPizzaPrice.Text = "$" + total;
             }
-            else if (!SmallPizzaPrice.Text.Equals("$4")&& (lastSmallPepSelection == SmallPepperoni.FindString("Extra")))
+            else if (!SmallPizzaPrice.Text.Equals("$4") && (lastSmallPepSelection == SmallPepperoni.FindString("Extra")))
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
                 SmallPizzaPrice.Text = "$" + total;
@@ -1537,6 +1693,68 @@ namespace MomAndPops.Resources
         public void SetCustomer(Customer cust)
         {
             customer = cust;
+        }
+
+        private void PreviousOrder1Label_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PreviousOrderTwoAddToCart_Click(object sender, EventArgs e)
+        {
+            Order order = customer.GetPreviousOrders.Peek();
+            foreach(MenuItem m in order.currentOrder)
+            {
+                currentOrder.AddToOrder(m);
+            }
+        }
+
+        private void PreviousOrderOneAddToCart_Click(object sender, EventArgs e)
+        {
+            Queue<Order> tempQueue = new Queue<Order>();
+            tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+            customer.GetPreviousOrders.Dequeue();
+
+            Order order = customer.GetPreviousOrders.Peek();
+            foreach (MenuItem m in order.currentOrder)
+            {
+                currentOrder.AddToOrder(m);
+            }
+
+            tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+            customer.GetPreviousOrders.Dequeue();
+
+            while (tempQueue.Count > 0)
+            {
+                customer.GetPreviousOrders.Enqueue(tempQueue.Peek());
+                tempQueue.Dequeue();
+            }
+
+        }
+
+        private void PreviousOrdersThreeAddToCart_Click(object sender, EventArgs e)
+        {
+            Queue<Order> tempQueue = new Queue<Order>();
+            tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+            customer.GetPreviousOrders.Dequeue();
+
+            tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+            customer.GetPreviousOrders.Dequeue();
+
+            Order order = customer.GetPreviousOrders.Peek();
+            foreach (MenuItem m in order.currentOrder)
+            {
+                currentOrder.AddToOrder(m);
+            }
+
+            tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+            customer.GetPreviousOrders.Dequeue();
+
+            while (tempQueue.Count > 0)
+            {
+                customer.GetPreviousOrders.Enqueue(tempQueue.Peek());
+                tempQueue.Dequeue();
+            }
         }
     }
 }

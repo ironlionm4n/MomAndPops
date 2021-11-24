@@ -301,9 +301,11 @@ namespace MomAndPops.Resources
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
-            this.groupBox1.Location = new System.Drawing.Point(57, 97);
+            this.groupBox1.Location = new System.Drawing.Point(76, 119);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(364, 435);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(485, 535);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -313,18 +315,20 @@ namespace MomAndPops.Resources
             this.panel3.Controls.Add(this.CookiePrice);
             this.panel3.Controls.Add(this.ChocChipCookie);
             this.panel3.Controls.Add(this.CookieQuantity);
-            this.panel3.Location = new System.Drawing.Point(68, 264);
+            this.panel3.Location = new System.Drawing.Point(91, 325);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(253, 28);
+            this.panel3.Size = new System.Drawing.Size(337, 34);
             this.panel3.TabIndex = 4;
             // 
             // CookiePrice
             // 
             this.CookiePrice.AutoSize = true;
             this.CookiePrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.CookiePrice.Location = new System.Drawing.Point(211, 5);
+            this.CookiePrice.Location = new System.Drawing.Point(281, 6);
+            this.CookiePrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CookiePrice.Name = "CookiePrice";
-            this.CookiePrice.Size = new System.Drawing.Size(27, 20);
+            this.CookiePrice.Size = new System.Drawing.Size(34, 25);
             this.CookiePrice.TabIndex = 2;
             this.CookiePrice.Text = "$4";
             // 
@@ -332,18 +336,20 @@ namespace MomAndPops.Resources
             // 
             this.ChocChipCookie.AutoSize = true;
             this.ChocChipCookie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ChocChipCookie.Location = new System.Drawing.Point(44, 5);
+            this.ChocChipCookie.Location = new System.Drawing.Point(59, 6);
+            this.ChocChipCookie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ChocChipCookie.Name = "ChocChipCookie";
-            this.ChocChipCookie.Size = new System.Drawing.Size(161, 20);
+            this.ChocChipCookie.Size = new System.Drawing.Size(203, 25);
             this.ChocChipCookie.TabIndex = 1;
             this.ChocChipCookie.Text = "Choclate Chip Cookie";
             // 
             // CookieQuantity
             // 
             this.CookieQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.CookieQuantity.Location = new System.Drawing.Point(3, 2);
+            this.CookieQuantity.Location = new System.Drawing.Point(4, 2);
+            this.CookieQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CookieQuantity.Name = "CookieQuantity";
-            this.CookieQuantity.Size = new System.Drawing.Size(35, 23);
+            this.CookieQuantity.Size = new System.Drawing.Size(47, 26);
             this.CookieQuantity.TabIndex = 0;
             // 
             // panel2
@@ -352,18 +358,20 @@ namespace MomAndPops.Resources
             this.panel2.Controls.Add(this.BreadstickBitesPrice);
             this.panel2.Controls.Add(this.BreadstickBites);
             this.panel2.Controls.Add(this.BreadstickBitesQuantity);
-            this.panel2.Location = new System.Drawing.Point(68, 146);
+            this.panel2.Location = new System.Drawing.Point(91, 180);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(212, 28);
+            this.panel2.Size = new System.Drawing.Size(283, 34);
             this.panel2.TabIndex = 3;
             // 
             // BreadstickBitesPrice
             // 
             this.BreadstickBitesPrice.AutoSize = true;
             this.BreadstickBitesPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.BreadstickBitesPrice.Location = new System.Drawing.Point(182, 5);
+            this.BreadstickBitesPrice.Location = new System.Drawing.Point(243, 6);
+            this.BreadstickBitesPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BreadstickBitesPrice.Name = "BreadstickBitesPrice";
-            this.BreadstickBitesPrice.Size = new System.Drawing.Size(27, 20);
+            this.BreadstickBitesPrice.Size = new System.Drawing.Size(34, 25);
             this.BreadstickBitesPrice.TabIndex = 2;
             this.BreadstickBitesPrice.Text = "$2";
             // 
@@ -371,18 +379,20 @@ namespace MomAndPops.Resources
             // 
             this.BreadstickBites.AutoSize = true;
             this.BreadstickBites.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.BreadstickBites.Location = new System.Drawing.Point(44, 5);
+            this.BreadstickBites.Location = new System.Drawing.Point(59, 6);
+            this.BreadstickBites.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BreadstickBites.Name = "BreadstickBites";
-            this.BreadstickBites.Size = new System.Drawing.Size(124, 20);
+            this.BreadstickBites.Size = new System.Drawing.Size(151, 25);
             this.BreadstickBites.TabIndex = 1;
             this.BreadstickBites.Text = "Breadstick Bites";
             // 
             // BreadstickBitesQuantity
             // 
             this.BreadstickBitesQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.BreadstickBitesQuantity.Location = new System.Drawing.Point(3, 2);
+            this.BreadstickBitesQuantity.Location = new System.Drawing.Point(4, 2);
+            this.BreadstickBitesQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BreadstickBitesQuantity.Name = "BreadstickBitesQuantity";
-            this.BreadstickBitesQuantity.Size = new System.Drawing.Size(35, 23);
+            this.BreadstickBitesQuantity.Size = new System.Drawing.Size(47, 26);
             this.BreadstickBitesQuantity.TabIndex = 0;
             // 
             // BreadsticksPanel
@@ -391,18 +401,20 @@ namespace MomAndPops.Resources
             this.BreadsticksPanel.Controls.Add(this.BreadstickPrice);
             this.BreadsticksPanel.Controls.Add(this.Breadsticks);
             this.BreadsticksPanel.Controls.Add(this.BreadsticksQuantity);
-            this.BreadsticksPanel.Location = new System.Drawing.Point(68, 102);
+            this.BreadsticksPanel.Location = new System.Drawing.Point(91, 126);
+            this.BreadsticksPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BreadsticksPanel.Name = "BreadsticksPanel";
-            this.BreadsticksPanel.Size = new System.Drawing.Size(212, 28);
+            this.BreadsticksPanel.Size = new System.Drawing.Size(283, 34);
             this.BreadsticksPanel.TabIndex = 2;
             // 
             // BreadstickPrice
             // 
             this.BreadstickPrice.AutoSize = true;
             this.BreadstickPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.BreadstickPrice.Location = new System.Drawing.Point(182, 5);
+            this.BreadstickPrice.Location = new System.Drawing.Point(243, 6);
+            this.BreadstickPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.BreadstickPrice.Name = "BreadstickPrice";
-            this.BreadstickPrice.Size = new System.Drawing.Size(31, 20);
+            this.BreadstickPrice.Size = new System.Drawing.Size(39, 25);
             this.BreadstickPrice.TabIndex = 2;
             this.BreadstickPrice.Text = "$4.";
             // 
@@ -410,27 +422,30 @@ namespace MomAndPops.Resources
             // 
             this.Breadsticks.AutoSize = true;
             this.Breadsticks.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.Breadsticks.Location = new System.Drawing.Point(44, 5);
+            this.Breadsticks.Location = new System.Drawing.Point(59, 6);
+            this.Breadsticks.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Breadsticks.Name = "Breadsticks";
-            this.Breadsticks.Size = new System.Drawing.Size(92, 20);
+            this.Breadsticks.Size = new System.Drawing.Size(113, 25);
             this.Breadsticks.TabIndex = 1;
             this.Breadsticks.Text = "Breadsticks";
             // 
             // BreadsticksQuantity
             // 
             this.BreadsticksQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.BreadsticksQuantity.Location = new System.Drawing.Point(3, 2);
+            this.BreadsticksQuantity.Location = new System.Drawing.Point(4, 2);
+            this.BreadsticksQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BreadsticksQuantity.Name = "BreadsticksQuantity";
-            this.BreadsticksQuantity.Size = new System.Drawing.Size(35, 23);
+            this.BreadsticksQuantity.Size = new System.Drawing.Size(47, 26);
             this.BreadsticksQuantity.TabIndex = 0;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(96, 219);
+            this.label3.Location = new System.Drawing.Point(128, 270);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 31);
+            this.label3.Size = new System.Drawing.Size(159, 39);
             this.label3.TabIndex = 1;
             this.label3.Text = "Desserts";
             // 
@@ -438,9 +453,10 @@ namespace MomAndPops.Resources
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(96, 48);
+            this.label2.Location = new System.Drawing.Point(128, 59);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 31);
+            this.label2.Size = new System.Drawing.Size(188, 39);
             this.label2.TabIndex = 0;
             this.label2.Text = "Appetizers";
             // 
@@ -450,9 +466,11 @@ namespace MomAndPops.Resources
             this.groupBox2.Controls.Add(this.PizzaPanel);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
-            this.groupBox2.Location = new System.Drawing.Point(452, 97);
+            this.groupBox2.Location = new System.Drawing.Point(603, 119);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(398, 435);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Size = new System.Drawing.Size(531, 535);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             // 
@@ -475,18 +493,20 @@ namespace MomAndPops.Resources
             this.PizzaPanel.Controls.Add(this.LargePizzaText);
             this.PizzaPanel.Controls.Add(this.SmallPizzaQuantity);
             this.PizzaPanel.Controls.Add(this.LargePizzaQuantity);
-            this.PizzaPanel.Location = new System.Drawing.Point(0, 68);
+            this.PizzaPanel.Location = new System.Drawing.Point(0, 84);
+            this.PizzaPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PizzaPanel.Name = "PizzaPanel";
-            this.PizzaPanel.Size = new System.Drawing.Size(392, 363);
+            this.PizzaPanel.Size = new System.Drawing.Size(523, 447);
             this.PizzaPanel.TabIndex = 3;
             // 
             // ExtraLargeCustomization
             // 
             this.ExtraLargeCustomization.Controls.Add(this.panel15);
             this.ExtraLargeCustomization.Controls.Add(this.panel20);
-            this.ExtraLargeCustomization.Location = new System.Drawing.Point(6, 586);
+            this.ExtraLargeCustomization.Location = new System.Drawing.Point(8, 721);
+            this.ExtraLargeCustomization.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargeCustomization.Name = "ExtraLargeCustomization";
-            this.ExtraLargeCustomization.Size = new System.Drawing.Size(363, 146);
+            this.ExtraLargeCustomization.Size = new System.Drawing.Size(484, 180);
             this.ExtraLargeCustomization.TabIndex = 18;
             // 
             // panel15
@@ -509,18 +529,20 @@ namespace MomAndPops.Resources
             this.panel15.Controls.Add(this.ExtraLargePepperoni);
             this.panel15.Controls.Add(this.ExtraLargeCheeseLabel);
             this.panel15.Controls.Add(this.ExtraLargeCheese);
-            this.panel15.Location = new System.Drawing.Point(3, 46);
+            this.panel15.Location = new System.Drawing.Point(4, 57);
+            this.panel15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(366, 98);
+            this.panel15.Size = new System.Drawing.Size(488, 121);
             this.panel15.TabIndex = 16;
             // 
             // ExtraLargePineappleLabel
             // 
             this.ExtraLargePineappleLabel.AutoSize = true;
             this.ExtraLargePineappleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargePineappleLabel.Location = new System.Drawing.Point(284, 73);
+            this.ExtraLargePineappleLabel.Location = new System.Drawing.Point(379, 90);
+            this.ExtraLargePineappleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExtraLargePineappleLabel.Name = "ExtraLargePineappleLabel";
-            this.ExtraLargePineappleLabel.Size = new System.Drawing.Size(71, 17);
+            this.ExtraLargePineappleLabel.Size = new System.Drawing.Size(82, 20);
             this.ExtraLargePineappleLabel.TabIndex = 34;
             this.ExtraLargePineappleLabel.Text = "Pineapple";
             // 
@@ -533,9 +555,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.ExtraLargePineapple.Location = new System.Drawing.Point(233, 71);
+            this.ExtraLargePineapple.Location = new System.Drawing.Point(311, 87);
+            this.ExtraLargePineapple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargePineapple.Name = "ExtraLargePineapple";
-            this.ExtraLargePineapple.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargePineapple.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargePineapple.TabIndex = 33;
             this.ExtraLargePineapple.Text = "None";
             this.ExtraLargePineapple.SelectedIndexChanged += new System.EventHandler(this.ExtraLargePineapple_SelectedIndexChanged);
@@ -544,9 +567,10 @@ namespace MomAndPops.Resources
             // 
             this.ExtraLargeMushroomLabel.AutoSize = true;
             this.ExtraLargeMushroomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeMushroomLabel.Location = new System.Drawing.Point(160, 74);
+            this.ExtraLargeMushroomLabel.Location = new System.Drawing.Point(213, 91);
+            this.ExtraLargeMushroomLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExtraLargeMushroomLabel.Name = "ExtraLargeMushroomLabel";
-            this.ExtraLargeMushroomLabel.Size = new System.Drawing.Size(74, 17);
+            this.ExtraLargeMushroomLabel.Size = new System.Drawing.Size(88, 20);
             this.ExtraLargeMushroomLabel.TabIndex = 32;
             this.ExtraLargeMushroomLabel.Text = "Mushroom";
             // 
@@ -559,9 +583,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.ExtraLargeMushroom.Location = new System.Drawing.Point(109, 72);
+            this.ExtraLargeMushroom.Location = new System.Drawing.Point(145, 89);
+            this.ExtraLargeMushroom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargeMushroom.Name = "ExtraLargeMushroom";
-            this.ExtraLargeMushroom.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeMushroom.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeMushroom.TabIndex = 31;
             this.ExtraLargeMushroom.Text = "None";
             this.ExtraLargeMushroom.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeMushroom_SelectedIndexChanged);
@@ -570,9 +595,10 @@ namespace MomAndPops.Resources
             // 
             this.ExtraLargeTomatoLabel.AutoSize = true;
             this.ExtraLargeTomatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeTomatoLabel.Location = new System.Drawing.Point(51, 74);
+            this.ExtraLargeTomatoLabel.Location = new System.Drawing.Point(68, 91);
+            this.ExtraLargeTomatoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExtraLargeTomatoLabel.Name = "ExtraLargeTomatoLabel";
-            this.ExtraLargeTomatoLabel.Size = new System.Drawing.Size(56, 17);
+            this.ExtraLargeTomatoLabel.Size = new System.Drawing.Size(65, 20);
             this.ExtraLargeTomatoLabel.TabIndex = 30;
             this.ExtraLargeTomatoLabel.Text = "Tomato";
             // 
@@ -585,9 +611,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.ExtraLargeTomato.Location = new System.Drawing.Point(0, 72);
+            this.ExtraLargeTomato.Location = new System.Drawing.Point(0, 89);
+            this.ExtraLargeTomato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargeTomato.Name = "ExtraLargeTomato";
-            this.ExtraLargeTomato.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeTomato.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeTomato.TabIndex = 29;
             this.ExtraLargeTomato.Text = "None";
             this.ExtraLargeTomato.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeTomato_SelectedIndexChanged);
@@ -596,9 +623,10 @@ namespace MomAndPops.Resources
             // 
             this.ExtraLargeGreenPepperLabel.AutoSize = true;
             this.ExtraLargeGreenPepperLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeGreenPepperLabel.Location = new System.Drawing.Point(265, 44);
+            this.ExtraLargeGreenPepperLabel.Location = new System.Drawing.Point(353, 54);
+            this.ExtraLargeGreenPepperLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExtraLargeGreenPepperLabel.Name = "ExtraLargeGreenPepperLabel";
-            this.ExtraLargeGreenPepperLabel.Size = new System.Drawing.Size(98, 17);
+            this.ExtraLargeGreenPepperLabel.Size = new System.Drawing.Size(113, 20);
             this.ExtraLargeGreenPepperLabel.TabIndex = 28;
             this.ExtraLargeGreenPepperLabel.Text = "Green Pepper";
             // 
@@ -611,9 +639,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.ExtraLargeGreenPepper.Location = new System.Drawing.Point(214, 42);
+            this.ExtraLargeGreenPepper.Location = new System.Drawing.Point(285, 52);
+            this.ExtraLargeGreenPepper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargeGreenPepper.Name = "ExtraLargeGreenPepper";
-            this.ExtraLargeGreenPepper.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeGreenPepper.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeGreenPepper.TabIndex = 27;
             this.ExtraLargeGreenPepper.Text = "None";
             this.ExtraLargeGreenPepper.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeGreenPepper_SelectedIndexChanged);
@@ -622,9 +651,10 @@ namespace MomAndPops.Resources
             // 
             this.ExtraLargeOnionLabel.AutoSize = true;
             this.ExtraLargeOnionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeOnionLabel.Location = new System.Drawing.Point(160, 44);
+            this.ExtraLargeOnionLabel.Location = new System.Drawing.Point(213, 54);
+            this.ExtraLargeOnionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExtraLargeOnionLabel.Name = "ExtraLargeOnionLabel";
-            this.ExtraLargeOnionLabel.Size = new System.Drawing.Size(46, 17);
+            this.ExtraLargeOnionLabel.Size = new System.Drawing.Size(53, 20);
             this.ExtraLargeOnionLabel.TabIndex = 26;
             this.ExtraLargeOnionLabel.Text = "Onion";
             // 
@@ -637,9 +667,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.ExtraLargeOnion.Location = new System.Drawing.Point(109, 42);
+            this.ExtraLargeOnion.Location = new System.Drawing.Point(145, 52);
+            this.ExtraLargeOnion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargeOnion.Name = "ExtraLargeOnion";
-            this.ExtraLargeOnion.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeOnion.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeOnion.TabIndex = 25;
             this.ExtraLargeOnion.Text = "None";
             this.ExtraLargeOnion.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeOnion_SelectedIndexChanged);
@@ -648,9 +679,10 @@ namespace MomAndPops.Resources
             // 
             this.ExtraLargeHamLabel.AutoSize = true;
             this.ExtraLargeHamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeHamLabel.Location = new System.Drawing.Point(51, 45);
+            this.ExtraLargeHamLabel.Location = new System.Drawing.Point(68, 55);
+            this.ExtraLargeHamLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExtraLargeHamLabel.Name = "ExtraLargeHamLabel";
-            this.ExtraLargeHamLabel.Size = new System.Drawing.Size(37, 17);
+            this.ExtraLargeHamLabel.Size = new System.Drawing.Size(45, 20);
             this.ExtraLargeHamLabel.TabIndex = 24;
             this.ExtraLargeHamLabel.Text = "Ham";
             // 
@@ -663,9 +695,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.ExtraLargeHam.Location = new System.Drawing.Point(0, 43);
+            this.ExtraLargeHam.Location = new System.Drawing.Point(0, 53);
+            this.ExtraLargeHam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargeHam.Name = "ExtraLargeHam";
-            this.ExtraLargeHam.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeHam.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeHam.TabIndex = 23;
             this.ExtraLargeHam.Text = "None";
             this.ExtraLargeHam.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeHam_SelectedIndexChanged);
@@ -674,9 +707,10 @@ namespace MomAndPops.Resources
             // 
             this.ExtraLargeSausageLabel.AutoSize = true;
             this.ExtraLargeSausageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeSausageLabel.Location = new System.Drawing.Point(291, 13);
+            this.ExtraLargeSausageLabel.Location = new System.Drawing.Point(388, 16);
+            this.ExtraLargeSausageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExtraLargeSausageLabel.Name = "ExtraLargeSausageLabel";
-            this.ExtraLargeSausageLabel.Size = new System.Drawing.Size(64, 17);
+            this.ExtraLargeSausageLabel.Size = new System.Drawing.Size(74, 20);
             this.ExtraLargeSausageLabel.TabIndex = 22;
             this.ExtraLargeSausageLabel.Text = "Sausage";
             // 
@@ -689,9 +723,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.ExtraLargeSausage.Location = new System.Drawing.Point(240, 11);
+            this.ExtraLargeSausage.Location = new System.Drawing.Point(320, 14);
+            this.ExtraLargeSausage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargeSausage.Name = "ExtraLargeSausage";
-            this.ExtraLargeSausage.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeSausage.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeSausage.TabIndex = 21;
             this.ExtraLargeSausage.Text = "None";
             this.ExtraLargeSausage.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeSausage_SelectedIndexChanged);
@@ -700,9 +735,10 @@ namespace MomAndPops.Resources
             // 
             this.ExtraLargePepperoniLabel.AutoSize = true;
             this.ExtraLargePepperoniLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargePepperoniLabel.Location = new System.Drawing.Point(160, 14);
+            this.ExtraLargePepperoniLabel.Location = new System.Drawing.Point(213, 17);
+            this.ExtraLargePepperoniLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExtraLargePepperoniLabel.Name = "ExtraLargePepperoniLabel";
-            this.ExtraLargePepperoniLabel.Size = new System.Drawing.Size(73, 17);
+            this.ExtraLargePepperoniLabel.Size = new System.Drawing.Size(84, 20);
             this.ExtraLargePepperoniLabel.TabIndex = 20;
             this.ExtraLargePepperoniLabel.Text = "Pepperoni";
             // 
@@ -715,9 +751,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.ExtraLargePepperoni.Location = new System.Drawing.Point(109, 12);
+            this.ExtraLargePepperoni.Location = new System.Drawing.Point(145, 15);
+            this.ExtraLargePepperoni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargePepperoni.Name = "ExtraLargePepperoni";
-            this.ExtraLargePepperoni.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargePepperoni.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargePepperoni.TabIndex = 19;
             this.ExtraLargePepperoni.Text = "None";
             this.ExtraLargePepperoni.SelectedIndexChanged += new System.EventHandler(this.ExtraLargePepperoni_SelectedIndexChanged);
@@ -726,9 +763,10 @@ namespace MomAndPops.Resources
             // 
             this.ExtraLargeCheeseLabel.AutoSize = true;
             this.ExtraLargeCheeseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeCheeseLabel.Location = new System.Drawing.Point(51, 14);
+            this.ExtraLargeCheeseLabel.Location = new System.Drawing.Point(68, 17);
+            this.ExtraLargeCheeseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExtraLargeCheeseLabel.Name = "ExtraLargeCheeseLabel";
-            this.ExtraLargeCheeseLabel.Size = new System.Drawing.Size(56, 17);
+            this.ExtraLargeCheeseLabel.Size = new System.Drawing.Size(66, 20);
             this.ExtraLargeCheeseLabel.TabIndex = 18;
             this.ExtraLargeCheeseLabel.Text = "Cheese";
             // 
@@ -741,9 +779,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.ExtraLargeCheese.Location = new System.Drawing.Point(0, 12);
+            this.ExtraLargeCheese.Location = new System.Drawing.Point(0, 15);
+            this.ExtraLargeCheese.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargeCheese.Name = "ExtraLargeCheese";
-            this.ExtraLargeCheese.Size = new System.Drawing.Size(48, 21);
+            this.ExtraLargeCheese.Size = new System.Drawing.Size(63, 24);
             this.ExtraLargeCheese.TabIndex = 17;
             this.ExtraLargeCheese.Text = "Normal";
             this.ExtraLargeCheese.SelectedIndexChanged += new System.EventHandler(this.ExtraLargeCheese_SelectedIndexChanged);
@@ -753,18 +792,20 @@ namespace MomAndPops.Resources
             this.panel20.Controls.Add(this.ExtraLargePanCrust);
             this.panel20.Controls.Add(this.ExtraLargeRegularCrust);
             this.panel20.Controls.Add(this.ExtraLargeThinCrust);
-            this.panel20.Location = new System.Drawing.Point(3, 12);
+            this.panel20.Location = new System.Drawing.Point(4, 15);
+            this.panel20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(326, 33);
+            this.panel20.Size = new System.Drawing.Size(435, 41);
             this.panel20.TabIndex = 14;
             // 
             // ExtraLargePanCrust
             // 
             this.ExtraLargePanCrust.AutoSize = true;
             this.ExtraLargePanCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargePanCrust.Location = new System.Drawing.Point(234, 6);
+            this.ExtraLargePanCrust.Location = new System.Drawing.Point(312, 7);
+            this.ExtraLargePanCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargePanCrust.Name = "ExtraLargePanCrust";
-            this.ExtraLargePanCrust.Size = new System.Drawing.Size(88, 21);
+            this.ExtraLargePanCrust.Size = new System.Drawing.Size(105, 24);
             this.ExtraLargePanCrust.TabIndex = 2;
             this.ExtraLargePanCrust.TabStop = true;
             this.ExtraLargePanCrust.Text = "Pan Crust";
@@ -774,9 +815,10 @@ namespace MomAndPops.Resources
             // 
             this.ExtraLargeRegularCrust.AutoSize = true;
             this.ExtraLargeRegularCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeRegularCrust.Location = new System.Drawing.Point(106, 6);
+            this.ExtraLargeRegularCrust.Location = new System.Drawing.Point(141, 7);
+            this.ExtraLargeRegularCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargeRegularCrust.Name = "ExtraLargeRegularCrust";
-            this.ExtraLargeRegularCrust.Size = new System.Drawing.Size(113, 21);
+            this.ExtraLargeRegularCrust.Size = new System.Drawing.Size(134, 24);
             this.ExtraLargeRegularCrust.TabIndex = 1;
             this.ExtraLargeRegularCrust.TabStop = true;
             this.ExtraLargeRegularCrust.Text = "Regular Crust";
@@ -786,9 +828,10 @@ namespace MomAndPops.Resources
             // 
             this.ExtraLargeThinCrust.AutoSize = true;
             this.ExtraLargeThinCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargeThinCrust.Location = new System.Drawing.Point(13, 6);
+            this.ExtraLargeThinCrust.Location = new System.Drawing.Point(17, 7);
+            this.ExtraLargeThinCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargeThinCrust.Name = "ExtraLargeThinCrust";
-            this.ExtraLargeThinCrust.Size = new System.Drawing.Size(91, 21);
+            this.ExtraLargeThinCrust.Size = new System.Drawing.Size(108, 24);
             this.ExtraLargeThinCrust.TabIndex = 0;
             this.ExtraLargeThinCrust.TabStop = true;
             this.ExtraLargeThinCrust.Text = "Thin Crust";
@@ -798,9 +841,10 @@ namespace MomAndPops.Resources
             // 
             this.MediumCustimization.Controls.Add(this.panel1);
             this.MediumCustimization.Controls.Add(this.panel17);
-            this.MediumCustimization.Location = new System.Drawing.Point(0, 221);
+            this.MediumCustimization.Location = new System.Drawing.Point(0, 272);
+            this.MediumCustimization.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumCustimization.Name = "MediumCustimization";
-            this.MediumCustimization.Size = new System.Drawing.Size(372, 146);
+            this.MediumCustimization.Size = new System.Drawing.Size(496, 180);
             this.MediumCustimization.TabIndex = 16;
             // 
             // panel1
@@ -823,18 +867,20 @@ namespace MomAndPops.Resources
             this.panel1.Controls.Add(this.MediumPepperoni);
             this.panel1.Controls.Add(this.MediumCheeseLabel);
             this.panel1.Controls.Add(this.MediumCheese);
-            this.panel1.Location = new System.Drawing.Point(3, 46);
+            this.panel1.Location = new System.Drawing.Point(4, 57);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(366, 98);
+            this.panel1.Size = new System.Drawing.Size(488, 121);
             this.panel1.TabIndex = 16;
             // 
             // MediumPineappleLabel
             // 
             this.MediumPineappleLabel.AutoSize = true;
             this.MediumPineappleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumPineappleLabel.Location = new System.Drawing.Point(284, 73);
+            this.MediumPineappleLabel.Location = new System.Drawing.Point(379, 90);
+            this.MediumPineappleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MediumPineappleLabel.Name = "MediumPineappleLabel";
-            this.MediumPineappleLabel.Size = new System.Drawing.Size(71, 17);
+            this.MediumPineappleLabel.Size = new System.Drawing.Size(82, 20);
             this.MediumPineappleLabel.TabIndex = 34;
             this.MediumPineappleLabel.Text = "Pineapple";
             // 
@@ -847,9 +893,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.MediumPineapple.Location = new System.Drawing.Point(233, 71);
+            this.MediumPineapple.Location = new System.Drawing.Point(311, 87);
+            this.MediumPineapple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumPineapple.Name = "MediumPineapple";
-            this.MediumPineapple.Size = new System.Drawing.Size(48, 21);
+            this.MediumPineapple.Size = new System.Drawing.Size(63, 24);
             this.MediumPineapple.TabIndex = 33;
             this.MediumPineapple.Text = "None";
             this.MediumPineapple.SelectedIndexChanged += new System.EventHandler(this.MediumPineapple_SelectedIndexChanged);
@@ -858,9 +905,10 @@ namespace MomAndPops.Resources
             // 
             this.MediumMushroomLabel.AutoSize = true;
             this.MediumMushroomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumMushroomLabel.Location = new System.Drawing.Point(160, 74);
+            this.MediumMushroomLabel.Location = new System.Drawing.Point(213, 91);
+            this.MediumMushroomLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MediumMushroomLabel.Name = "MediumMushroomLabel";
-            this.MediumMushroomLabel.Size = new System.Drawing.Size(74, 17);
+            this.MediumMushroomLabel.Size = new System.Drawing.Size(88, 20);
             this.MediumMushroomLabel.TabIndex = 32;
             this.MediumMushroomLabel.Text = "Mushroom";
             // 
@@ -873,9 +921,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.MediumMushroom.Location = new System.Drawing.Point(109, 72);
+            this.MediumMushroom.Location = new System.Drawing.Point(145, 89);
+            this.MediumMushroom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumMushroom.Name = "MediumMushroom";
-            this.MediumMushroom.Size = new System.Drawing.Size(48, 21);
+            this.MediumMushroom.Size = new System.Drawing.Size(63, 24);
             this.MediumMushroom.TabIndex = 31;
             this.MediumMushroom.Text = "None";
             this.MediumMushroom.SelectedIndexChanged += new System.EventHandler(this.MediumMushroom_SelectedIndexChanged);
@@ -884,9 +933,10 @@ namespace MomAndPops.Resources
             // 
             this.MediumTomatoLabel.AutoSize = true;
             this.MediumTomatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumTomatoLabel.Location = new System.Drawing.Point(51, 74);
+            this.MediumTomatoLabel.Location = new System.Drawing.Point(68, 91);
+            this.MediumTomatoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MediumTomatoLabel.Name = "MediumTomatoLabel";
-            this.MediumTomatoLabel.Size = new System.Drawing.Size(56, 17);
+            this.MediumTomatoLabel.Size = new System.Drawing.Size(65, 20);
             this.MediumTomatoLabel.TabIndex = 30;
             this.MediumTomatoLabel.Text = "Tomato";
             // 
@@ -899,9 +949,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.MediumTomato.Location = new System.Drawing.Point(0, 72);
+            this.MediumTomato.Location = new System.Drawing.Point(0, 89);
+            this.MediumTomato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumTomato.Name = "MediumTomato";
-            this.MediumTomato.Size = new System.Drawing.Size(48, 21);
+            this.MediumTomato.Size = new System.Drawing.Size(63, 24);
             this.MediumTomato.TabIndex = 29;
             this.MediumTomato.Text = "None";
             this.MediumTomato.SelectedIndexChanged += new System.EventHandler(this.MediumTomato_SelectedIndexChanged);
@@ -910,9 +961,10 @@ namespace MomAndPops.Resources
             // 
             this.MediumGreenPepperLabel.AutoSize = true;
             this.MediumGreenPepperLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumGreenPepperLabel.Location = new System.Drawing.Point(265, 44);
+            this.MediumGreenPepperLabel.Location = new System.Drawing.Point(353, 54);
+            this.MediumGreenPepperLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MediumGreenPepperLabel.Name = "MediumGreenPepperLabel";
-            this.MediumGreenPepperLabel.Size = new System.Drawing.Size(98, 17);
+            this.MediumGreenPepperLabel.Size = new System.Drawing.Size(113, 20);
             this.MediumGreenPepperLabel.TabIndex = 28;
             this.MediumGreenPepperLabel.Text = "Green Pepper";
             // 
@@ -925,9 +977,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.MediumGreenPepper.Location = new System.Drawing.Point(214, 42);
+            this.MediumGreenPepper.Location = new System.Drawing.Point(285, 52);
+            this.MediumGreenPepper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumGreenPepper.Name = "MediumGreenPepper";
-            this.MediumGreenPepper.Size = new System.Drawing.Size(48, 21);
+            this.MediumGreenPepper.Size = new System.Drawing.Size(63, 24);
             this.MediumGreenPepper.TabIndex = 27;
             this.MediumGreenPepper.Text = "None";
             this.MediumGreenPepper.SelectedIndexChanged += new System.EventHandler(this.MediumGreenPepper_SelectedIndexChanged);
@@ -936,9 +989,10 @@ namespace MomAndPops.Resources
             // 
             this.MediumOnionLabel.AutoSize = true;
             this.MediumOnionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumOnionLabel.Location = new System.Drawing.Point(160, 44);
+            this.MediumOnionLabel.Location = new System.Drawing.Point(213, 54);
+            this.MediumOnionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MediumOnionLabel.Name = "MediumOnionLabel";
-            this.MediumOnionLabel.Size = new System.Drawing.Size(46, 17);
+            this.MediumOnionLabel.Size = new System.Drawing.Size(53, 20);
             this.MediumOnionLabel.TabIndex = 26;
             this.MediumOnionLabel.Text = "Onion";
             // 
@@ -951,9 +1005,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.MediumOnion.Location = new System.Drawing.Point(109, 42);
+            this.MediumOnion.Location = new System.Drawing.Point(145, 52);
+            this.MediumOnion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumOnion.Name = "MediumOnion";
-            this.MediumOnion.Size = new System.Drawing.Size(48, 21);
+            this.MediumOnion.Size = new System.Drawing.Size(63, 24);
             this.MediumOnion.TabIndex = 25;
             this.MediumOnion.Text = "None";
             this.MediumOnion.SelectedIndexChanged += new System.EventHandler(this.MediumOnion_SelectedIndexChanged);
@@ -962,9 +1017,10 @@ namespace MomAndPops.Resources
             // 
             this.MediumHamLabel.AutoSize = true;
             this.MediumHamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumHamLabel.Location = new System.Drawing.Point(51, 45);
+            this.MediumHamLabel.Location = new System.Drawing.Point(68, 55);
+            this.MediumHamLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MediumHamLabel.Name = "MediumHamLabel";
-            this.MediumHamLabel.Size = new System.Drawing.Size(37, 17);
+            this.MediumHamLabel.Size = new System.Drawing.Size(45, 20);
             this.MediumHamLabel.TabIndex = 24;
             this.MediumHamLabel.Text = "Ham";
             // 
@@ -977,9 +1033,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.MediumHam.Location = new System.Drawing.Point(0, 43);
+            this.MediumHam.Location = new System.Drawing.Point(0, 53);
+            this.MediumHam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumHam.Name = "MediumHam";
-            this.MediumHam.Size = new System.Drawing.Size(48, 21);
+            this.MediumHam.Size = new System.Drawing.Size(63, 24);
             this.MediumHam.TabIndex = 23;
             this.MediumHam.Text = "None";
             this.MediumHam.SelectedIndexChanged += new System.EventHandler(this.MediumHam_SelectedIndexChanged);
@@ -988,9 +1045,10 @@ namespace MomAndPops.Resources
             // 
             this.MediumSausageLabel.AutoSize = true;
             this.MediumSausageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumSausageLabel.Location = new System.Drawing.Point(291, 13);
+            this.MediumSausageLabel.Location = new System.Drawing.Point(388, 16);
+            this.MediumSausageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MediumSausageLabel.Name = "MediumSausageLabel";
-            this.MediumSausageLabel.Size = new System.Drawing.Size(64, 17);
+            this.MediumSausageLabel.Size = new System.Drawing.Size(74, 20);
             this.MediumSausageLabel.TabIndex = 22;
             this.MediumSausageLabel.Text = "Sausage";
             // 
@@ -1003,9 +1061,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.MediumSausage.Location = new System.Drawing.Point(240, 11);
+            this.MediumSausage.Location = new System.Drawing.Point(320, 14);
+            this.MediumSausage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumSausage.Name = "MediumSausage";
-            this.MediumSausage.Size = new System.Drawing.Size(48, 21);
+            this.MediumSausage.Size = new System.Drawing.Size(63, 24);
             this.MediumSausage.TabIndex = 21;
             this.MediumSausage.Text = "None";
             this.MediumSausage.SelectedIndexChanged += new System.EventHandler(this.MediumSausage_SelectedIndexChanged);
@@ -1014,9 +1073,10 @@ namespace MomAndPops.Resources
             // 
             this.MediumPepperoniLabel.AutoSize = true;
             this.MediumPepperoniLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumPepperoniLabel.Location = new System.Drawing.Point(160, 14);
+            this.MediumPepperoniLabel.Location = new System.Drawing.Point(213, 17);
+            this.MediumPepperoniLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MediumPepperoniLabel.Name = "MediumPepperoniLabel";
-            this.MediumPepperoniLabel.Size = new System.Drawing.Size(73, 17);
+            this.MediumPepperoniLabel.Size = new System.Drawing.Size(84, 20);
             this.MediumPepperoniLabel.TabIndex = 20;
             this.MediumPepperoniLabel.Text = "Pepperoni";
             // 
@@ -1029,9 +1089,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.MediumPepperoni.Location = new System.Drawing.Point(109, 12);
+            this.MediumPepperoni.Location = new System.Drawing.Point(145, 15);
+            this.MediumPepperoni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumPepperoni.Name = "MediumPepperoni";
-            this.MediumPepperoni.Size = new System.Drawing.Size(48, 21);
+            this.MediumPepperoni.Size = new System.Drawing.Size(63, 24);
             this.MediumPepperoni.TabIndex = 19;
             this.MediumPepperoni.Text = "None";
             this.MediumPepperoni.SelectedIndexChanged += new System.EventHandler(this.MediumPepperoni_SelectedIndexChanged);
@@ -1040,9 +1101,10 @@ namespace MomAndPops.Resources
             // 
             this.MediumCheeseLabel.AutoSize = true;
             this.MediumCheeseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumCheeseLabel.Location = new System.Drawing.Point(51, 14);
+            this.MediumCheeseLabel.Location = new System.Drawing.Point(68, 17);
+            this.MediumCheeseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MediumCheeseLabel.Name = "MediumCheeseLabel";
-            this.MediumCheeseLabel.Size = new System.Drawing.Size(56, 17);
+            this.MediumCheeseLabel.Size = new System.Drawing.Size(66, 20);
             this.MediumCheeseLabel.TabIndex = 18;
             this.MediumCheeseLabel.Text = "Cheese";
             // 
@@ -1055,9 +1117,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.MediumCheese.Location = new System.Drawing.Point(0, 12);
+            this.MediumCheese.Location = new System.Drawing.Point(0, 15);
+            this.MediumCheese.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumCheese.Name = "MediumCheese";
-            this.MediumCheese.Size = new System.Drawing.Size(48, 21);
+            this.MediumCheese.Size = new System.Drawing.Size(63, 24);
             this.MediumCheese.TabIndex = 17;
             this.MediumCheese.Text = "Normal";
             this.MediumCheese.SelectedIndexChanged += new System.EventHandler(this.MediumCheese_SelectedIndexChanged);
@@ -1067,18 +1130,20 @@ namespace MomAndPops.Resources
             this.panel17.Controls.Add(this.MediumPanCrust);
             this.panel17.Controls.Add(this.MediumRegularCrust);
             this.panel17.Controls.Add(this.MediumThinCrust);
-            this.panel17.Location = new System.Drawing.Point(3, 12);
+            this.panel17.Location = new System.Drawing.Point(4, 15);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(326, 33);
+            this.panel17.Size = new System.Drawing.Size(435, 41);
             this.panel17.TabIndex = 14;
             // 
             // MediumPanCrust
             // 
             this.MediumPanCrust.AutoSize = true;
             this.MediumPanCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumPanCrust.Location = new System.Drawing.Point(234, 6);
+            this.MediumPanCrust.Location = new System.Drawing.Point(312, 7);
+            this.MediumPanCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumPanCrust.Name = "MediumPanCrust";
-            this.MediumPanCrust.Size = new System.Drawing.Size(88, 21);
+            this.MediumPanCrust.Size = new System.Drawing.Size(105, 24);
             this.MediumPanCrust.TabIndex = 2;
             this.MediumPanCrust.TabStop = true;
             this.MediumPanCrust.Text = "Pan Crust";
@@ -1088,9 +1153,10 @@ namespace MomAndPops.Resources
             // 
             this.MediumRegularCrust.AutoSize = true;
             this.MediumRegularCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumRegularCrust.Location = new System.Drawing.Point(106, 6);
+            this.MediumRegularCrust.Location = new System.Drawing.Point(141, 7);
+            this.MediumRegularCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumRegularCrust.Name = "MediumRegularCrust";
-            this.MediumRegularCrust.Size = new System.Drawing.Size(113, 21);
+            this.MediumRegularCrust.Size = new System.Drawing.Size(134, 24);
             this.MediumRegularCrust.TabIndex = 1;
             this.MediumRegularCrust.TabStop = true;
             this.MediumRegularCrust.Text = "Regular Crust";
@@ -1100,9 +1166,10 @@ namespace MomAndPops.Resources
             // 
             this.MediumThinCrust.AutoSize = true;
             this.MediumThinCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumThinCrust.Location = new System.Drawing.Point(13, 6);
+            this.MediumThinCrust.Location = new System.Drawing.Point(17, 7);
+            this.MediumThinCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumThinCrust.Name = "MediumThinCrust";
-            this.MediumThinCrust.Size = new System.Drawing.Size(91, 21);
+            this.MediumThinCrust.Size = new System.Drawing.Size(108, 24);
             this.MediumThinCrust.TabIndex = 0;
             this.MediumThinCrust.TabStop = true;
             this.MediumThinCrust.Text = "Thin Crust";
@@ -1112,9 +1179,10 @@ namespace MomAndPops.Resources
             // 
             this.SmallCustimization.Controls.Add(this.panel14);
             this.SmallCustimization.Controls.Add(this.panel13);
-            this.SmallCustimization.Location = new System.Drawing.Point(3, 36);
+            this.SmallCustimization.Location = new System.Drawing.Point(4, 44);
+            this.SmallCustimization.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallCustimization.Name = "SmallCustimization";
-            this.SmallCustimization.Size = new System.Drawing.Size(369, 155);
+            this.SmallCustimization.Size = new System.Drawing.Size(492, 191);
             this.SmallCustimization.TabIndex = 14;
             // 
             // panel14
@@ -1137,18 +1205,20 @@ namespace MomAndPops.Resources
             this.panel14.Controls.Add(this.SmallPepperoni);
             this.panel14.Controls.Add(this.SmallCheeseLabel);
             this.panel14.Controls.Add(this.SmallCheese);
-            this.panel14.Location = new System.Drawing.Point(3, 51);
+            this.panel14.Location = new System.Drawing.Point(4, 63);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(366, 98);
+            this.panel14.Size = new System.Drawing.Size(488, 121);
             this.panel14.TabIndex = 15;
             // 
             // SmallPineappleLabel
             // 
             this.SmallPineappleLabel.AutoSize = true;
             this.SmallPineappleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallPineappleLabel.Location = new System.Drawing.Point(284, 73);
+            this.SmallPineappleLabel.Location = new System.Drawing.Point(379, 90);
+            this.SmallPineappleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SmallPineappleLabel.Name = "SmallPineappleLabel";
-            this.SmallPineappleLabel.Size = new System.Drawing.Size(71, 17);
+            this.SmallPineappleLabel.Size = new System.Drawing.Size(82, 20);
             this.SmallPineappleLabel.TabIndex = 34;
             this.SmallPineappleLabel.Text = "Pineapple";
             // 
@@ -1161,9 +1231,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.SmallPineapple.Location = new System.Drawing.Point(233, 71);
+            this.SmallPineapple.Location = new System.Drawing.Point(311, 87);
+            this.SmallPineapple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallPineapple.Name = "SmallPineapple";
-            this.SmallPineapple.Size = new System.Drawing.Size(51, 21);
+            this.SmallPineapple.Size = new System.Drawing.Size(67, 24);
             this.SmallPineapple.TabIndex = 33;
             this.SmallPineapple.Text = "None";
             this.SmallPineapple.SelectedIndexChanged += new System.EventHandler(this.SmallPineapple_SelectedIndexChanged);
@@ -1172,9 +1243,10 @@ namespace MomAndPops.Resources
             // 
             this.SmallMushroomLabel.AutoSize = true;
             this.SmallMushroomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallMushroomLabel.Location = new System.Drawing.Point(160, 74);
+            this.SmallMushroomLabel.Location = new System.Drawing.Point(213, 91);
+            this.SmallMushroomLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SmallMushroomLabel.Name = "SmallMushroomLabel";
-            this.SmallMushroomLabel.Size = new System.Drawing.Size(74, 17);
+            this.SmallMushroomLabel.Size = new System.Drawing.Size(88, 20);
             this.SmallMushroomLabel.TabIndex = 32;
             this.SmallMushroomLabel.Text = "Mushroom";
             // 
@@ -1187,9 +1259,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.SmallMushroom.Location = new System.Drawing.Point(109, 72);
+            this.SmallMushroom.Location = new System.Drawing.Point(145, 89);
+            this.SmallMushroom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallMushroom.Name = "SmallMushroom";
-            this.SmallMushroom.Size = new System.Drawing.Size(51, 21);
+            this.SmallMushroom.Size = new System.Drawing.Size(67, 24);
             this.SmallMushroom.TabIndex = 31;
             this.SmallMushroom.Text = "None";
             this.SmallMushroom.SelectedIndexChanged += new System.EventHandler(this.SmallMushroom_SelectedIndexChanged);
@@ -1198,9 +1271,10 @@ namespace MomAndPops.Resources
             // 
             this.SmallTomatoLabel.AutoSize = true;
             this.SmallTomatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallTomatoLabel.Location = new System.Drawing.Point(51, 74);
+            this.SmallTomatoLabel.Location = new System.Drawing.Point(68, 91);
+            this.SmallTomatoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SmallTomatoLabel.Name = "SmallTomatoLabel";
-            this.SmallTomatoLabel.Size = new System.Drawing.Size(56, 17);
+            this.SmallTomatoLabel.Size = new System.Drawing.Size(65, 20);
             this.SmallTomatoLabel.TabIndex = 30;
             this.SmallTomatoLabel.Text = "Tomato";
             // 
@@ -1213,9 +1287,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.SmallTomato.Location = new System.Drawing.Point(0, 72);
+            this.SmallTomato.Location = new System.Drawing.Point(0, 89);
+            this.SmallTomato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallTomato.Name = "SmallTomato";
-            this.SmallTomato.Size = new System.Drawing.Size(51, 21);
+            this.SmallTomato.Size = new System.Drawing.Size(67, 24);
             this.SmallTomato.TabIndex = 29;
             this.SmallTomato.Text = "None";
             this.SmallTomato.SelectedIndexChanged += new System.EventHandler(this.SmallTomato_SelectedIndexChanged);
@@ -1224,9 +1299,10 @@ namespace MomAndPops.Resources
             // 
             this.SmallGreenPepperLabel.AutoSize = true;
             this.SmallGreenPepperLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallGreenPepperLabel.Location = new System.Drawing.Point(265, 44);
+            this.SmallGreenPepperLabel.Location = new System.Drawing.Point(353, 54);
+            this.SmallGreenPepperLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SmallGreenPepperLabel.Name = "SmallGreenPepperLabel";
-            this.SmallGreenPepperLabel.Size = new System.Drawing.Size(98, 17);
+            this.SmallGreenPepperLabel.Size = new System.Drawing.Size(113, 20);
             this.SmallGreenPepperLabel.TabIndex = 28;
             this.SmallGreenPepperLabel.Text = "Green Pepper";
             // 
@@ -1239,9 +1315,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.SmallGreenPepper.Location = new System.Drawing.Point(214, 42);
+            this.SmallGreenPepper.Location = new System.Drawing.Point(285, 52);
+            this.SmallGreenPepper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallGreenPepper.Name = "SmallGreenPepper";
-            this.SmallGreenPepper.Size = new System.Drawing.Size(49, 21);
+            this.SmallGreenPepper.Size = new System.Drawing.Size(64, 24);
             this.SmallGreenPepper.TabIndex = 27;
             this.SmallGreenPepper.Text = "None";
             this.SmallGreenPepper.SelectedIndexChanged += new System.EventHandler(this.SmallGreenPepper_SelectedIndexChanged);
@@ -1250,9 +1327,10 @@ namespace MomAndPops.Resources
             // 
             this.SmallOnionLabel.AutoSize = true;
             this.SmallOnionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallOnionLabel.Location = new System.Drawing.Point(160, 44);
+            this.SmallOnionLabel.Location = new System.Drawing.Point(213, 54);
+            this.SmallOnionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SmallOnionLabel.Name = "SmallOnionLabel";
-            this.SmallOnionLabel.Size = new System.Drawing.Size(46, 17);
+            this.SmallOnionLabel.Size = new System.Drawing.Size(53, 20);
             this.SmallOnionLabel.TabIndex = 26;
             this.SmallOnionLabel.Text = "Onion";
             // 
@@ -1265,9 +1343,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.SmallOnion.Location = new System.Drawing.Point(109, 42);
+            this.SmallOnion.Location = new System.Drawing.Point(145, 52);
+            this.SmallOnion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallOnion.Name = "SmallOnion";
-            this.SmallOnion.Size = new System.Drawing.Size(51, 21);
+            this.SmallOnion.Size = new System.Drawing.Size(67, 24);
             this.SmallOnion.TabIndex = 25;
             this.SmallOnion.Text = "None";
             this.SmallOnion.SelectedIndexChanged += new System.EventHandler(this.SmallOnion_SelectedIndexChanged);
@@ -1276,9 +1355,10 @@ namespace MomAndPops.Resources
             // 
             this.SmallHamLabel.AutoSize = true;
             this.SmallHamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallHamLabel.Location = new System.Drawing.Point(51, 45);
+            this.SmallHamLabel.Location = new System.Drawing.Point(68, 55);
+            this.SmallHamLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SmallHamLabel.Name = "SmallHamLabel";
-            this.SmallHamLabel.Size = new System.Drawing.Size(37, 17);
+            this.SmallHamLabel.Size = new System.Drawing.Size(45, 20);
             this.SmallHamLabel.TabIndex = 24;
             this.SmallHamLabel.Text = "Ham";
             // 
@@ -1291,9 +1371,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.SmallHam.Location = new System.Drawing.Point(0, 43);
+            this.SmallHam.Location = new System.Drawing.Point(0, 53);
+            this.SmallHam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallHam.Name = "SmallHam";
-            this.SmallHam.Size = new System.Drawing.Size(51, 21);
+            this.SmallHam.Size = new System.Drawing.Size(67, 24);
             this.SmallHam.TabIndex = 23;
             this.SmallHam.Text = "None";
             this.SmallHam.SelectedIndexChanged += new System.EventHandler(this.SmallHam_SelectedIndexChanged);
@@ -1302,9 +1383,10 @@ namespace MomAndPops.Resources
             // 
             this.SmallSausageLabel.AutoSize = true;
             this.SmallSausageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallSausageLabel.Location = new System.Drawing.Point(291, 13);
+            this.SmallSausageLabel.Location = new System.Drawing.Point(388, 16);
+            this.SmallSausageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SmallSausageLabel.Name = "SmallSausageLabel";
-            this.SmallSausageLabel.Size = new System.Drawing.Size(64, 17);
+            this.SmallSausageLabel.Size = new System.Drawing.Size(74, 20);
             this.SmallSausageLabel.TabIndex = 22;
             this.SmallSausageLabel.Text = "Sausage";
             // 
@@ -1317,9 +1399,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.SmallSausage.Location = new System.Drawing.Point(240, 11);
+            this.SmallSausage.Location = new System.Drawing.Point(320, 14);
+            this.SmallSausage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallSausage.Name = "SmallSausage";
-            this.SmallSausage.Size = new System.Drawing.Size(51, 21);
+            this.SmallSausage.Size = new System.Drawing.Size(67, 24);
             this.SmallSausage.TabIndex = 21;
             this.SmallSausage.Text = "None";
             this.SmallSausage.SelectedIndexChanged += new System.EventHandler(this.SmallSausage_SelectedIndexChanged);
@@ -1328,9 +1411,10 @@ namespace MomAndPops.Resources
             // 
             this.SmallPepperoniLabel.AutoSize = true;
             this.SmallPepperoniLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallPepperoniLabel.Location = new System.Drawing.Point(160, 14);
+            this.SmallPepperoniLabel.Location = new System.Drawing.Point(213, 17);
+            this.SmallPepperoniLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SmallPepperoniLabel.Name = "SmallPepperoniLabel";
-            this.SmallPepperoniLabel.Size = new System.Drawing.Size(73, 17);
+            this.SmallPepperoniLabel.Size = new System.Drawing.Size(84, 20);
             this.SmallPepperoniLabel.TabIndex = 20;
             this.SmallPepperoniLabel.Text = "Pepperoni";
             // 
@@ -1343,9 +1427,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.SmallPepperoni.Location = new System.Drawing.Point(109, 12);
+            this.SmallPepperoni.Location = new System.Drawing.Point(145, 15);
+            this.SmallPepperoni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallPepperoni.Name = "SmallPepperoni";
-            this.SmallPepperoni.Size = new System.Drawing.Size(51, 21);
+            this.SmallPepperoni.Size = new System.Drawing.Size(67, 24);
             this.SmallPepperoni.TabIndex = 19;
             this.SmallPepperoni.Text = "None";
             this.SmallPepperoni.SelectedIndexChanged += new System.EventHandler(this.SmallPepperoni_SelectedIndexChanged);
@@ -1354,9 +1439,10 @@ namespace MomAndPops.Resources
             // 
             this.SmallCheeseLabel.AutoSize = true;
             this.SmallCheeseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallCheeseLabel.Location = new System.Drawing.Point(51, 14);
+            this.SmallCheeseLabel.Location = new System.Drawing.Point(68, 17);
+            this.SmallCheeseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SmallCheeseLabel.Name = "SmallCheeseLabel";
-            this.SmallCheeseLabel.Size = new System.Drawing.Size(56, 17);
+            this.SmallCheeseLabel.Size = new System.Drawing.Size(66, 20);
             this.SmallCheeseLabel.TabIndex = 18;
             this.SmallCheeseLabel.Text = "Cheese";
             // 
@@ -1369,9 +1455,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.SmallCheese.Location = new System.Drawing.Point(0, 12);
+            this.SmallCheese.Location = new System.Drawing.Point(0, 15);
+            this.SmallCheese.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallCheese.Name = "SmallCheese";
-            this.SmallCheese.Size = new System.Drawing.Size(51, 21);
+            this.SmallCheese.Size = new System.Drawing.Size(67, 24);
             this.SmallCheese.TabIndex = 17;
             this.SmallCheese.Text = "Normal";
             this.SmallCheese.SelectedIndexChanged += new System.EventHandler(this.SmallCheese_SelectedIndexChanged);
@@ -1381,18 +1468,20 @@ namespace MomAndPops.Resources
             this.panel13.Controls.Add(this.SmallPanCrust);
             this.panel13.Controls.Add(this.SmallRegularCrust);
             this.panel13.Controls.Add(this.SmallThinCrust);
-            this.panel13.Location = new System.Drawing.Point(3, 12);
+            this.panel13.Location = new System.Drawing.Point(4, 15);
+            this.panel13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(326, 33);
+            this.panel13.Size = new System.Drawing.Size(435, 41);
             this.panel13.TabIndex = 14;
             // 
             // SmallPanCrust
             // 
             this.SmallPanCrust.AutoSize = true;
             this.SmallPanCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallPanCrust.Location = new System.Drawing.Point(234, 6);
+            this.SmallPanCrust.Location = new System.Drawing.Point(312, 7);
+            this.SmallPanCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallPanCrust.Name = "SmallPanCrust";
-            this.SmallPanCrust.Size = new System.Drawing.Size(88, 21);
+            this.SmallPanCrust.Size = new System.Drawing.Size(105, 24);
             this.SmallPanCrust.TabIndex = 2;
             this.SmallPanCrust.TabStop = true;
             this.SmallPanCrust.Text = "Pan Crust";
@@ -1402,9 +1491,10 @@ namespace MomAndPops.Resources
             // 
             this.SmallRegularCrust.AutoSize = true;
             this.SmallRegularCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallRegularCrust.Location = new System.Drawing.Point(106, 6);
+            this.SmallRegularCrust.Location = new System.Drawing.Point(141, 7);
+            this.SmallRegularCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallRegularCrust.Name = "SmallRegularCrust";
-            this.SmallRegularCrust.Size = new System.Drawing.Size(113, 21);
+            this.SmallRegularCrust.Size = new System.Drawing.Size(134, 24);
             this.SmallRegularCrust.TabIndex = 1;
             this.SmallRegularCrust.TabStop = true;
             this.SmallRegularCrust.Text = "Regular Crust";
@@ -1414,9 +1504,10 @@ namespace MomAndPops.Resources
             // 
             this.SmallThinCrust.AutoSize = true;
             this.SmallThinCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallThinCrust.Location = new System.Drawing.Point(13, 6);
+            this.SmallThinCrust.Location = new System.Drawing.Point(17, 7);
+            this.SmallThinCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallThinCrust.Name = "SmallThinCrust";
-            this.SmallThinCrust.Size = new System.Drawing.Size(91, 21);
+            this.SmallThinCrust.Size = new System.Drawing.Size(108, 24);
             this.SmallThinCrust.TabIndex = 0;
             this.SmallThinCrust.TabStop = true;
             this.SmallThinCrust.Text = "Thin Crust";
@@ -1426,9 +1517,10 @@ namespace MomAndPops.Resources
             // 
             this.LargeCustomization.Controls.Add(this.panel12);
             this.LargeCustomization.Controls.Add(this.panel18);
-            this.LargeCustomization.Location = new System.Drawing.Point(0, 405);
+            this.LargeCustomization.Location = new System.Drawing.Point(0, 498);
+            this.LargeCustomization.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargeCustomization.Name = "LargeCustomization";
-            this.LargeCustomization.Size = new System.Drawing.Size(372, 146);
+            this.LargeCustomization.Size = new System.Drawing.Size(496, 180);
             this.LargeCustomization.TabIndex = 17;
             // 
             // panel12
@@ -1451,18 +1543,20 @@ namespace MomAndPops.Resources
             this.panel12.Controls.Add(this.LargePepperoni);
             this.panel12.Controls.Add(this.LargeCheeseLabel);
             this.panel12.Controls.Add(this.LargeCheese);
-            this.panel12.Location = new System.Drawing.Point(3, 46);
+            this.panel12.Location = new System.Drawing.Point(4, 57);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(366, 98);
+            this.panel12.Size = new System.Drawing.Size(488, 121);
             this.panel12.TabIndex = 16;
             // 
             // LargePineappleLabel
             // 
             this.LargePineappleLabel.AutoSize = true;
             this.LargePineappleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargePineappleLabel.Location = new System.Drawing.Point(284, 73);
+            this.LargePineappleLabel.Location = new System.Drawing.Point(379, 90);
+            this.LargePineappleLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LargePineappleLabel.Name = "LargePineappleLabel";
-            this.LargePineappleLabel.Size = new System.Drawing.Size(71, 17);
+            this.LargePineappleLabel.Size = new System.Drawing.Size(82, 20);
             this.LargePineappleLabel.TabIndex = 34;
             this.LargePineappleLabel.Text = "Pineapple";
             // 
@@ -1475,9 +1569,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.LargePineapple.Location = new System.Drawing.Point(233, 71);
+            this.LargePineapple.Location = new System.Drawing.Point(311, 87);
+            this.LargePineapple.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargePineapple.Name = "LargePineapple";
-            this.LargePineapple.Size = new System.Drawing.Size(48, 21);
+            this.LargePineapple.Size = new System.Drawing.Size(63, 24);
             this.LargePineapple.TabIndex = 33;
             this.LargePineapple.Text = "None";
             this.LargePineapple.SelectedIndexChanged += new System.EventHandler(this.LargePineapple_SelectedIndexChanged);
@@ -1486,9 +1581,10 @@ namespace MomAndPops.Resources
             // 
             this.LargeMushroomLabel.AutoSize = true;
             this.LargeMushroomLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeMushroomLabel.Location = new System.Drawing.Point(160, 74);
+            this.LargeMushroomLabel.Location = new System.Drawing.Point(213, 91);
+            this.LargeMushroomLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LargeMushroomLabel.Name = "LargeMushroomLabel";
-            this.LargeMushroomLabel.Size = new System.Drawing.Size(74, 17);
+            this.LargeMushroomLabel.Size = new System.Drawing.Size(88, 20);
             this.LargeMushroomLabel.TabIndex = 32;
             this.LargeMushroomLabel.Text = "Mushroom";
             // 
@@ -1501,9 +1597,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.LargeMushroom.Location = new System.Drawing.Point(109, 72);
+            this.LargeMushroom.Location = new System.Drawing.Point(145, 89);
+            this.LargeMushroom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargeMushroom.Name = "LargeMushroom";
-            this.LargeMushroom.Size = new System.Drawing.Size(48, 21);
+            this.LargeMushroom.Size = new System.Drawing.Size(63, 24);
             this.LargeMushroom.TabIndex = 31;
             this.LargeMushroom.Text = "None";
             this.LargeMushroom.SelectedIndexChanged += new System.EventHandler(this.LargeMushroom_SelectedIndexChanged);
@@ -1512,9 +1609,10 @@ namespace MomAndPops.Resources
             // 
             this.LargeTomatoLabel.AutoSize = true;
             this.LargeTomatoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeTomatoLabel.Location = new System.Drawing.Point(51, 74);
+            this.LargeTomatoLabel.Location = new System.Drawing.Point(68, 91);
+            this.LargeTomatoLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LargeTomatoLabel.Name = "LargeTomatoLabel";
-            this.LargeTomatoLabel.Size = new System.Drawing.Size(56, 17);
+            this.LargeTomatoLabel.Size = new System.Drawing.Size(65, 20);
             this.LargeTomatoLabel.TabIndex = 30;
             this.LargeTomatoLabel.Text = "Tomato";
             // 
@@ -1527,9 +1625,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.LargeTomato.Location = new System.Drawing.Point(0, 72);
+            this.LargeTomato.Location = new System.Drawing.Point(0, 89);
+            this.LargeTomato.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargeTomato.Name = "LargeTomato";
-            this.LargeTomato.Size = new System.Drawing.Size(48, 21);
+            this.LargeTomato.Size = new System.Drawing.Size(63, 24);
             this.LargeTomato.TabIndex = 29;
             this.LargeTomato.Text = "None";
             this.LargeTomato.SelectedIndexChanged += new System.EventHandler(this.LargeTomato_SelectedIndexChanged);
@@ -1538,9 +1637,10 @@ namespace MomAndPops.Resources
             // 
             this.LargeGreenPepperLabel.AutoSize = true;
             this.LargeGreenPepperLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeGreenPepperLabel.Location = new System.Drawing.Point(265, 44);
+            this.LargeGreenPepperLabel.Location = new System.Drawing.Point(353, 54);
+            this.LargeGreenPepperLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LargeGreenPepperLabel.Name = "LargeGreenPepperLabel";
-            this.LargeGreenPepperLabel.Size = new System.Drawing.Size(98, 17);
+            this.LargeGreenPepperLabel.Size = new System.Drawing.Size(113, 20);
             this.LargeGreenPepperLabel.TabIndex = 28;
             this.LargeGreenPepperLabel.Text = "Green Pepper";
             // 
@@ -1553,9 +1653,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.LargeGreenPepper.Location = new System.Drawing.Point(214, 42);
+            this.LargeGreenPepper.Location = new System.Drawing.Point(285, 52);
+            this.LargeGreenPepper.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargeGreenPepper.Name = "LargeGreenPepper";
-            this.LargeGreenPepper.Size = new System.Drawing.Size(48, 21);
+            this.LargeGreenPepper.Size = new System.Drawing.Size(63, 24);
             this.LargeGreenPepper.TabIndex = 27;
             this.LargeGreenPepper.Text = "None";
             this.LargeGreenPepper.SelectedIndexChanged += new System.EventHandler(this.LargeGreenPepper_SelectedIndexChanged);
@@ -1564,9 +1665,10 @@ namespace MomAndPops.Resources
             // 
             this.LargeOnionLabel.AutoSize = true;
             this.LargeOnionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeOnionLabel.Location = new System.Drawing.Point(160, 44);
+            this.LargeOnionLabel.Location = new System.Drawing.Point(213, 54);
+            this.LargeOnionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LargeOnionLabel.Name = "LargeOnionLabel";
-            this.LargeOnionLabel.Size = new System.Drawing.Size(46, 17);
+            this.LargeOnionLabel.Size = new System.Drawing.Size(53, 20);
             this.LargeOnionLabel.TabIndex = 26;
             this.LargeOnionLabel.Text = "Onion";
             // 
@@ -1579,9 +1681,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.LargeOnion.Location = new System.Drawing.Point(109, 42);
+            this.LargeOnion.Location = new System.Drawing.Point(145, 52);
+            this.LargeOnion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargeOnion.Name = "LargeOnion";
-            this.LargeOnion.Size = new System.Drawing.Size(48, 21);
+            this.LargeOnion.Size = new System.Drawing.Size(63, 24);
             this.LargeOnion.TabIndex = 25;
             this.LargeOnion.Text = "None";
             this.LargeOnion.SelectedIndexChanged += new System.EventHandler(this.LargeOnion_SelectedIndexChanged);
@@ -1590,9 +1693,10 @@ namespace MomAndPops.Resources
             // 
             this.LargeHamLabel.AutoSize = true;
             this.LargeHamLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeHamLabel.Location = new System.Drawing.Point(51, 45);
+            this.LargeHamLabel.Location = new System.Drawing.Point(68, 55);
+            this.LargeHamLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LargeHamLabel.Name = "LargeHamLabel";
-            this.LargeHamLabel.Size = new System.Drawing.Size(37, 17);
+            this.LargeHamLabel.Size = new System.Drawing.Size(45, 20);
             this.LargeHamLabel.TabIndex = 24;
             this.LargeHamLabel.Text = "Ham";
             // 
@@ -1605,9 +1709,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.LargeHam.Location = new System.Drawing.Point(0, 43);
+            this.LargeHam.Location = new System.Drawing.Point(0, 53);
+            this.LargeHam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargeHam.Name = "LargeHam";
-            this.LargeHam.Size = new System.Drawing.Size(48, 21);
+            this.LargeHam.Size = new System.Drawing.Size(63, 24);
             this.LargeHam.TabIndex = 23;
             this.LargeHam.Text = "None";
             this.LargeHam.SelectedIndexChanged += new System.EventHandler(this.LargeHam_SelectedIndexChanged);
@@ -1616,9 +1721,10 @@ namespace MomAndPops.Resources
             // 
             this.LargeSausageLabel.AutoSize = true;
             this.LargeSausageLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeSausageLabel.Location = new System.Drawing.Point(291, 13);
+            this.LargeSausageLabel.Location = new System.Drawing.Point(388, 16);
+            this.LargeSausageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LargeSausageLabel.Name = "LargeSausageLabel";
-            this.LargeSausageLabel.Size = new System.Drawing.Size(64, 17);
+            this.LargeSausageLabel.Size = new System.Drawing.Size(74, 20);
             this.LargeSausageLabel.TabIndex = 22;
             this.LargeSausageLabel.Text = "Sausage";
             // 
@@ -1631,9 +1737,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.LargeSausage.Location = new System.Drawing.Point(240, 11);
+            this.LargeSausage.Location = new System.Drawing.Point(320, 14);
+            this.LargeSausage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargeSausage.Name = "LargeSausage";
-            this.LargeSausage.Size = new System.Drawing.Size(48, 21);
+            this.LargeSausage.Size = new System.Drawing.Size(63, 24);
             this.LargeSausage.TabIndex = 21;
             this.LargeSausage.Text = "None";
             this.LargeSausage.SelectedIndexChanged += new System.EventHandler(this.LargeSausage_SelectedIndexChanged);
@@ -1642,9 +1749,10 @@ namespace MomAndPops.Resources
             // 
             this.LargePepperoniLabel.AutoSize = true;
             this.LargePepperoniLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargePepperoniLabel.Location = new System.Drawing.Point(160, 14);
+            this.LargePepperoniLabel.Location = new System.Drawing.Point(213, 17);
+            this.LargePepperoniLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LargePepperoniLabel.Name = "LargePepperoniLabel";
-            this.LargePepperoniLabel.Size = new System.Drawing.Size(73, 17);
+            this.LargePepperoniLabel.Size = new System.Drawing.Size(84, 20);
             this.LargePepperoniLabel.TabIndex = 20;
             this.LargePepperoniLabel.Text = "Pepperoni";
             // 
@@ -1657,9 +1765,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.LargePepperoni.Location = new System.Drawing.Point(109, 12);
+            this.LargePepperoni.Location = new System.Drawing.Point(145, 15);
+            this.LargePepperoni.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargePepperoni.Name = "LargePepperoni";
-            this.LargePepperoni.Size = new System.Drawing.Size(48, 21);
+            this.LargePepperoni.Size = new System.Drawing.Size(63, 24);
             this.LargePepperoni.TabIndex = 19;
             this.LargePepperoni.Text = "None";
             this.LargePepperoni.SelectedIndexChanged += new System.EventHandler(this.LargePepperoni_SelectedIndexChanged);
@@ -1668,9 +1777,10 @@ namespace MomAndPops.Resources
             // 
             this.LargeCheeseLabel.AutoSize = true;
             this.LargeCheeseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeCheeseLabel.Location = new System.Drawing.Point(51, 14);
+            this.LargeCheeseLabel.Location = new System.Drawing.Point(68, 17);
+            this.LargeCheeseLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LargeCheeseLabel.Name = "LargeCheeseLabel";
-            this.LargeCheeseLabel.Size = new System.Drawing.Size(56, 17);
+            this.LargeCheeseLabel.Size = new System.Drawing.Size(66, 20);
             this.LargeCheeseLabel.TabIndex = 18;
             this.LargeCheeseLabel.Text = "Cheese";
             // 
@@ -1683,9 +1793,10 @@ namespace MomAndPops.Resources
             "Light",
             "Normal",
             "Extra"});
-            this.LargeCheese.Location = new System.Drawing.Point(0, 12);
+            this.LargeCheese.Location = new System.Drawing.Point(0, 15);
+            this.LargeCheese.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargeCheese.Name = "LargeCheese";
-            this.LargeCheese.Size = new System.Drawing.Size(48, 21);
+            this.LargeCheese.Size = new System.Drawing.Size(63, 24);
             this.LargeCheese.TabIndex = 17;
             this.LargeCheese.Text = "Normal";
             this.LargeCheese.SelectedIndexChanged += new System.EventHandler(this.LargeCheese_SelectedIndexChanged);
@@ -1695,18 +1806,20 @@ namespace MomAndPops.Resources
             this.panel18.Controls.Add(this.LargePanCrust);
             this.panel18.Controls.Add(this.LargeRegularCrust);
             this.panel18.Controls.Add(this.LargeThinCrust);
-            this.panel18.Location = new System.Drawing.Point(3, 12);
+            this.panel18.Location = new System.Drawing.Point(4, 15);
+            this.panel18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(326, 33);
+            this.panel18.Size = new System.Drawing.Size(435, 41);
             this.panel18.TabIndex = 14;
             // 
             // LargePanCrust
             // 
             this.LargePanCrust.AutoSize = true;
             this.LargePanCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargePanCrust.Location = new System.Drawing.Point(234, 6);
+            this.LargePanCrust.Location = new System.Drawing.Point(312, 7);
+            this.LargePanCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargePanCrust.Name = "LargePanCrust";
-            this.LargePanCrust.Size = new System.Drawing.Size(88, 21);
+            this.LargePanCrust.Size = new System.Drawing.Size(105, 24);
             this.LargePanCrust.TabIndex = 2;
             this.LargePanCrust.TabStop = true;
             this.LargePanCrust.Text = "Pan Crust";
@@ -1716,9 +1829,10 @@ namespace MomAndPops.Resources
             // 
             this.LargeRegularCrust.AutoSize = true;
             this.LargeRegularCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeRegularCrust.Location = new System.Drawing.Point(106, 6);
+            this.LargeRegularCrust.Location = new System.Drawing.Point(141, 7);
+            this.LargeRegularCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargeRegularCrust.Name = "LargeRegularCrust";
-            this.LargeRegularCrust.Size = new System.Drawing.Size(113, 21);
+            this.LargeRegularCrust.Size = new System.Drawing.Size(134, 24);
             this.LargeRegularCrust.TabIndex = 1;
             this.LargeRegularCrust.TabStop = true;
             this.LargeRegularCrust.Text = "Regular Crust";
@@ -1728,9 +1842,10 @@ namespace MomAndPops.Resources
             // 
             this.LargeThinCrust.AutoSize = true;
             this.LargeThinCrust.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargeThinCrust.Location = new System.Drawing.Point(13, 6);
+            this.LargeThinCrust.Location = new System.Drawing.Point(17, 7);
+            this.LargeThinCrust.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargeThinCrust.Name = "LargeThinCrust";
-            this.LargeThinCrust.Size = new System.Drawing.Size(91, 21);
+            this.LargeThinCrust.Size = new System.Drawing.Size(108, 24);
             this.LargeThinCrust.TabIndex = 0;
             this.LargeThinCrust.TabStop = true;
             this.LargeThinCrust.Text = "Thin Crust";
@@ -1740,9 +1855,10 @@ namespace MomAndPops.Resources
             // 
             this.MediumPizzaText.AutoSize = true;
             this.MediumPizzaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumPizzaText.Location = new System.Drawing.Point(44, 203);
+            this.MediumPizzaText.Location = new System.Drawing.Point(59, 250);
+            this.MediumPizzaText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MediumPizzaText.Name = "MediumPizzaText";
-            this.MediumPizzaText.Size = new System.Drawing.Size(95, 17);
+            this.MediumPizzaText.Size = new System.Drawing.Size(115, 20);
             this.MediumPizzaText.TabIndex = 7;
             this.MediumPizzaText.Text = "Medium Pizza";
             // 
@@ -1750,9 +1866,10 @@ namespace MomAndPops.Resources
             // 
             this.LargePizzaPrice.AutoSize = true;
             this.LargePizzaPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LargePizzaPrice.Location = new System.Drawing.Point(233, 384);
+            this.LargePizzaPrice.Location = new System.Drawing.Point(311, 473);
+            this.LargePizzaPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LargePizzaPrice.Name = "LargePizzaPrice";
-            this.LargePizzaPrice.Size = new System.Drawing.Size(27, 20);
+            this.LargePizzaPrice.Size = new System.Drawing.Size(34, 25);
             this.LargePizzaPrice.TabIndex = 10;
             this.LargePizzaPrice.Text = "$8";
             // 
@@ -1760,35 +1877,39 @@ namespace MomAndPops.Resources
             // 
             this.MediumPizzaPrice.AutoSize = true;
             this.MediumPizzaPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.MediumPizzaPrice.Location = new System.Drawing.Point(233, 202);
+            this.MediumPizzaPrice.Location = new System.Drawing.Point(311, 249);
+            this.MediumPizzaPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MediumPizzaPrice.Name = "MediumPizzaPrice";
-            this.MediumPizzaPrice.Size = new System.Drawing.Size(27, 20);
+            this.MediumPizzaPrice.Size = new System.Drawing.Size(34, 25);
             this.MediumPizzaPrice.TabIndex = 6;
             this.MediumPizzaPrice.Text = "$6";
             // 
             // ExtraLargePizzaQuantity
             // 
             this.ExtraLargePizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargePizzaQuantity.Location = new System.Drawing.Point(3, 562);
+            this.ExtraLargePizzaQuantity.Location = new System.Drawing.Point(4, 692);
+            this.ExtraLargePizzaQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ExtraLargePizzaQuantity.Name = "ExtraLargePizzaQuantity";
-            this.ExtraLargePizzaQuantity.Size = new System.Drawing.Size(35, 23);
+            this.ExtraLargePizzaQuantity.Size = new System.Drawing.Size(47, 26);
             this.ExtraLargePizzaQuantity.TabIndex = 11;
             // 
             // MediumPizzaQuantity
             // 
             this.MediumPizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MediumPizzaQuantity.Location = new System.Drawing.Point(3, 200);
+            this.MediumPizzaQuantity.Location = new System.Drawing.Point(4, 246);
+            this.MediumPizzaQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MediumPizzaQuantity.Name = "MediumPizzaQuantity";
-            this.MediumPizzaQuantity.Size = new System.Drawing.Size(35, 23);
+            this.MediumPizzaQuantity.Size = new System.Drawing.Size(47, 26);
             this.MediumPizzaQuantity.TabIndex = 5;
             // 
             // ExtraLargePizzaPrice
             // 
             this.ExtraLargePizzaPrice.AutoSize = true;
             this.ExtraLargePizzaPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.ExtraLargePizzaPrice.Location = new System.Drawing.Point(240, 561);
+            this.ExtraLargePizzaPrice.Location = new System.Drawing.Point(320, 690);
+            this.ExtraLargePizzaPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExtraLargePizzaPrice.Name = "ExtraLargePizzaPrice";
-            this.ExtraLargePizzaPrice.Size = new System.Drawing.Size(36, 20);
+            this.ExtraLargePizzaPrice.Size = new System.Drawing.Size(45, 25);
             this.ExtraLargePizzaPrice.TabIndex = 13;
             this.ExtraLargePizzaPrice.Text = "$10";
             // 
@@ -1796,9 +1917,10 @@ namespace MomAndPops.Resources
             // 
             this.SmallPizzaPrice.AutoSize = true;
             this.SmallPizzaPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.SmallPizzaPrice.Location = new System.Drawing.Point(242, 10);
+            this.SmallPizzaPrice.Location = new System.Drawing.Point(323, 12);
+            this.SmallPizzaPrice.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SmallPizzaPrice.Name = "SmallPizzaPrice";
-            this.SmallPizzaPrice.Size = new System.Drawing.Size(27, 20);
+            this.SmallPizzaPrice.Size = new System.Drawing.Size(34, 25);
             this.SmallPizzaPrice.TabIndex = 3;
             this.SmallPizzaPrice.Text = "$4";
             // 
@@ -1806,9 +1928,10 @@ namespace MomAndPops.Resources
             // 
             this.ExtraLargePizzaText.AutoSize = true;
             this.ExtraLargePizzaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.ExtraLargePizzaText.Location = new System.Drawing.Point(41, 565);
+            this.ExtraLargePizzaText.Location = new System.Drawing.Point(55, 695);
+            this.ExtraLargePizzaText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ExtraLargePizzaText.Name = "ExtraLargePizzaText";
-            this.ExtraLargePizzaText.Size = new System.Drawing.Size(119, 17);
+            this.ExtraLargePizzaText.Size = new System.Drawing.Size(143, 20);
             this.ExtraLargePizzaText.TabIndex = 12;
             this.ExtraLargePizzaText.Text = "Extra Large Pizza";
             // 
@@ -1816,9 +1939,10 @@ namespace MomAndPops.Resources
             // 
             this.SmallPizzaText.AutoSize = true;
             this.SmallPizzaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallPizzaText.Location = new System.Drawing.Point(44, 10);
+            this.SmallPizzaText.Location = new System.Drawing.Point(59, 12);
+            this.SmallPizzaText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SmallPizzaText.Name = "SmallPizzaText";
-            this.SmallPizzaText.Size = new System.Drawing.Size(80, 17);
+            this.SmallPizzaText.Size = new System.Drawing.Size(98, 20);
             this.SmallPizzaText.TabIndex = 4;
             this.SmallPizzaText.Text = "Small Pizza";
             // 
@@ -1826,35 +1950,39 @@ namespace MomAndPops.Resources
             // 
             this.LargePizzaText.AutoSize = true;
             this.LargePizzaText.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargePizzaText.Location = new System.Drawing.Point(44, 384);
+            this.LargePizzaText.Location = new System.Drawing.Point(59, 473);
+            this.LargePizzaText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LargePizzaText.Name = "LargePizzaText";
-            this.LargePizzaText.Size = new System.Drawing.Size(83, 17);
+            this.LargePizzaText.Size = new System.Drawing.Size(99, 20);
             this.LargePizzaText.TabIndex = 9;
             this.LargePizzaText.Text = "Large Pizza";
             // 
             // SmallPizzaQuantity
             // 
             this.SmallPizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SmallPizzaQuantity.Location = new System.Drawing.Point(3, 7);
+            this.SmallPizzaQuantity.Location = new System.Drawing.Point(4, 9);
+            this.SmallPizzaQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SmallPizzaQuantity.Name = "SmallPizzaQuantity";
-            this.SmallPizzaQuantity.Size = new System.Drawing.Size(35, 23);
+            this.SmallPizzaQuantity.Size = new System.Drawing.Size(47, 26);
             this.SmallPizzaQuantity.TabIndex = 3;
             // 
             // LargePizzaQuantity
             // 
             this.LargePizzaQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LargePizzaQuantity.Location = new System.Drawing.Point(3, 382);
+            this.LargePizzaQuantity.Location = new System.Drawing.Point(4, 470);
+            this.LargePizzaQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LargePizzaQuantity.Name = "LargePizzaQuantity";
-            this.LargePizzaQuantity.Size = new System.Drawing.Size(35, 23);
+            this.LargePizzaQuantity.Size = new System.Drawing.Size(47, 26);
             this.LargePizzaQuantity.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(125, 31);
+            this.label4.Location = new System.Drawing.Point(167, 38);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(115, 31);
+            this.label4.Size = new System.Drawing.Size(141, 39);
             this.label4.TabIndex = 2;
             this.label4.Text = "Entrees";
             // 
@@ -1872,9 +2000,11 @@ namespace MomAndPops.Resources
             this.DrinksGroupBox.Controls.Add(this.PepsiPanel);
             this.DrinksGroupBox.Controls.Add(this.DrinksSectionLabel);
             this.DrinksGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F);
-            this.DrinksGroupBox.Location = new System.Drawing.Point(863, 97);
+            this.DrinksGroupBox.Location = new System.Drawing.Point(1151, 119);
+            this.DrinksGroupBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DrinksGroupBox.Name = "DrinksGroupBox";
-            this.DrinksGroupBox.Size = new System.Drawing.Size(364, 435);
+            this.DrinksGroupBox.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DrinksGroupBox.Size = new System.Drawing.Size(485, 535);
             this.DrinksGroupBox.TabIndex = 1;
             this.DrinksGroupBox.TabStop = false;
             // 
@@ -1882,9 +2012,10 @@ namespace MomAndPops.Resources
             // 
             this.DrinksAreOneDollarLabel.AutoSize = true;
             this.DrinksAreOneDollarLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.DrinksAreOneDollarLabel.Location = new System.Drawing.Point(91, 86);
+            this.DrinksAreOneDollarLabel.Location = new System.Drawing.Point(121, 106);
+            this.DrinksAreOneDollarLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DrinksAreOneDollarLabel.Name = "DrinksAreOneDollarLabel";
-            this.DrinksAreOneDollarLabel.Size = new System.Drawing.Size(143, 24);
+            this.DrinksAreOneDollarLabel.Size = new System.Drawing.Size(184, 29);
             this.DrinksAreOneDollarLabel.TabIndex = 12;
             this.DrinksAreOneDollarLabel.Text = "All drinks are $1";
             // 
@@ -1896,18 +2027,20 @@ namespace MomAndPops.Resources
             this.LemonadePanel.Controls.Add(this.LemonadeSmall);
             this.LemonadePanel.Controls.Add(this.LemonadeLabel);
             this.LemonadePanel.Controls.Add(this.LemonadeQuantity);
-            this.LemonadePanel.Location = new System.Drawing.Point(52, 358);
+            this.LemonadePanel.Location = new System.Drawing.Point(69, 441);
+            this.LemonadePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LemonadePanel.Name = "LemonadePanel";
-            this.LemonadePanel.Size = new System.Drawing.Size(268, 28);
+            this.LemonadePanel.Size = new System.Drawing.Size(357, 34);
             this.LemonadePanel.TabIndex = 11;
             // 
             // LemonadeLarge
             // 
             this.LemonadeLarge.AutoSize = true;
             this.LemonadeLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LemonadeLarge.Location = new System.Drawing.Point(231, 5);
+            this.LemonadeLarge.Location = new System.Drawing.Point(308, 6);
+            this.LemonadeLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LemonadeLarge.Name = "LemonadeLarge";
-            this.LemonadeLarge.Size = new System.Drawing.Size(34, 21);
+            this.LemonadeLarge.Size = new System.Drawing.Size(40, 24);
             this.LemonadeLarge.TabIndex = 4;
             this.LemonadeLarge.TabStop = true;
             this.LemonadeLarge.Text = "L";
@@ -1917,9 +2050,10 @@ namespace MomAndPops.Resources
             // 
             this.LemonadeMedium.AutoSize = true;
             this.LemonadeMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LemonadeMedium.Location = new System.Drawing.Point(188, 5);
+            this.LemonadeMedium.Location = new System.Drawing.Point(251, 6);
+            this.LemonadeMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LemonadeMedium.Name = "LemonadeMedium";
-            this.LemonadeMedium.Size = new System.Drawing.Size(37, 21);
+            this.LemonadeMedium.Size = new System.Drawing.Size(44, 24);
             this.LemonadeMedium.TabIndex = 3;
             this.LemonadeMedium.TabStop = true;
             this.LemonadeMedium.Text = "M";
@@ -1929,9 +2063,10 @@ namespace MomAndPops.Resources
             // 
             this.LemonadeSmall.AutoSize = true;
             this.LemonadeSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LemonadeSmall.Location = new System.Drawing.Point(147, 4);
+            this.LemonadeSmall.Location = new System.Drawing.Point(196, 5);
+            this.LemonadeSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LemonadeSmall.Name = "LemonadeSmall";
-            this.LemonadeSmall.Size = new System.Drawing.Size(35, 21);
+            this.LemonadeSmall.Size = new System.Drawing.Size(41, 24);
             this.LemonadeSmall.TabIndex = 2;
             this.LemonadeSmall.TabStop = true;
             this.LemonadeSmall.Text = "S";
@@ -1941,18 +2076,20 @@ namespace MomAndPops.Resources
             // 
             this.LemonadeLabel.AutoSize = true;
             this.LemonadeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.LemonadeLabel.Location = new System.Drawing.Point(36, 3);
+            this.LemonadeLabel.Location = new System.Drawing.Point(48, 4);
+            this.LemonadeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LemonadeLabel.Name = "LemonadeLabel";
-            this.LemonadeLabel.Size = new System.Drawing.Size(85, 20);
+            this.LemonadeLabel.Size = new System.Drawing.Size(105, 25);
             this.LemonadeLabel.TabIndex = 1;
             this.LemonadeLabel.Text = "Lemonade";
             // 
             // LemonadeQuantity
             // 
             this.LemonadeQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.LemonadeQuantity.Location = new System.Drawing.Point(3, 2);
+            this.LemonadeQuantity.Location = new System.Drawing.Point(4, 2);
+            this.LemonadeQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.LemonadeQuantity.Name = "LemonadeQuantity";
-            this.LemonadeQuantity.Size = new System.Drawing.Size(35, 23);
+            this.LemonadeQuantity.Size = new System.Drawing.Size(47, 26);
             this.LemonadeQuantity.TabIndex = 0;
             // 
             // SierraMistPanel
@@ -1963,18 +2100,20 @@ namespace MomAndPops.Resources
             this.SierraMistPanel.Controls.Add(this.SierraMistSmall);
             this.SierraMistPanel.Controls.Add(this.SierraMistLabel);
             this.SierraMistPanel.Controls.Add(this.SierraMistQuantity);
-            this.SierraMistPanel.Location = new System.Drawing.Point(52, 326);
+            this.SierraMistPanel.Location = new System.Drawing.Point(69, 401);
+            this.SierraMistPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SierraMistPanel.Name = "SierraMistPanel";
-            this.SierraMistPanel.Size = new System.Drawing.Size(268, 28);
+            this.SierraMistPanel.Size = new System.Drawing.Size(357, 34);
             this.SierraMistPanel.TabIndex = 10;
             // 
             // SierraMistLarge
             // 
             this.SierraMistLarge.AutoSize = true;
             this.SierraMistLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SierraMistLarge.Location = new System.Drawing.Point(231, 5);
+            this.SierraMistLarge.Location = new System.Drawing.Point(308, 6);
+            this.SierraMistLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SierraMistLarge.Name = "SierraMistLarge";
-            this.SierraMistLarge.Size = new System.Drawing.Size(34, 21);
+            this.SierraMistLarge.Size = new System.Drawing.Size(40, 24);
             this.SierraMistLarge.TabIndex = 4;
             this.SierraMistLarge.TabStop = true;
             this.SierraMistLarge.Text = "L";
@@ -1984,9 +2123,10 @@ namespace MomAndPops.Resources
             // 
             this.SierraMistMedium.AutoSize = true;
             this.SierraMistMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SierraMistMedium.Location = new System.Drawing.Point(188, 5);
+            this.SierraMistMedium.Location = new System.Drawing.Point(251, 6);
+            this.SierraMistMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SierraMistMedium.Name = "SierraMistMedium";
-            this.SierraMistMedium.Size = new System.Drawing.Size(37, 21);
+            this.SierraMistMedium.Size = new System.Drawing.Size(44, 24);
             this.SierraMistMedium.TabIndex = 3;
             this.SierraMistMedium.TabStop = true;
             this.SierraMistMedium.Text = "M";
@@ -1996,9 +2136,10 @@ namespace MomAndPops.Resources
             // 
             this.SierraMistSmall.AutoSize = true;
             this.SierraMistSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SierraMistSmall.Location = new System.Drawing.Point(147, 4);
+            this.SierraMistSmall.Location = new System.Drawing.Point(196, 5);
+            this.SierraMistSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SierraMistSmall.Name = "SierraMistSmall";
-            this.SierraMistSmall.Size = new System.Drawing.Size(35, 21);
+            this.SierraMistSmall.Size = new System.Drawing.Size(41, 24);
             this.SierraMistSmall.TabIndex = 2;
             this.SierraMistSmall.TabStop = true;
             this.SierraMistSmall.Text = "S";
@@ -2008,18 +2149,20 @@ namespace MomAndPops.Resources
             // 
             this.SierraMistLabel.AutoSize = true;
             this.SierraMistLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.SierraMistLabel.Location = new System.Drawing.Point(36, 3);
+            this.SierraMistLabel.Location = new System.Drawing.Point(48, 4);
+            this.SierraMistLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SierraMistLabel.Name = "SierraMistLabel";
-            this.SierraMistLabel.Size = new System.Drawing.Size(84, 20);
+            this.SierraMistLabel.Size = new System.Drawing.Size(105, 25);
             this.SierraMistLabel.TabIndex = 1;
             this.SierraMistLabel.Text = "Sierra Mist";
             // 
             // SierraMistQuantity
             // 
             this.SierraMistQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.SierraMistQuantity.Location = new System.Drawing.Point(3, 2);
+            this.SierraMistQuantity.Location = new System.Drawing.Point(4, 2);
+            this.SierraMistQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SierraMistQuantity.Name = "SierraMistQuantity";
-            this.SierraMistQuantity.Size = new System.Drawing.Size(35, 23);
+            this.SierraMistQuantity.Size = new System.Drawing.Size(47, 26);
             this.SierraMistQuantity.TabIndex = 0;
             // 
             // DietRootBeerPanel
@@ -2030,18 +2173,20 @@ namespace MomAndPops.Resources
             this.DietRootBeerPanel.Controls.Add(this.DietRootBeerSmall);
             this.DietRootBeerPanel.Controls.Add(this.DietRootBeerLabel);
             this.DietRootBeerPanel.Controls.Add(this.DietRootBeerQuantity);
-            this.DietRootBeerPanel.Location = new System.Drawing.Point(52, 295);
+            this.DietRootBeerPanel.Location = new System.Drawing.Point(69, 363);
+            this.DietRootBeerPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietRootBeerPanel.Name = "DietRootBeerPanel";
-            this.DietRootBeerPanel.Size = new System.Drawing.Size(268, 28);
+            this.DietRootBeerPanel.Size = new System.Drawing.Size(357, 34);
             this.DietRootBeerPanel.TabIndex = 9;
             // 
             // DietRootBeerLarge
             // 
             this.DietRootBeerLarge.AutoSize = true;
             this.DietRootBeerLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DietRootBeerLarge.Location = new System.Drawing.Point(231, 5);
+            this.DietRootBeerLarge.Location = new System.Drawing.Point(308, 6);
+            this.DietRootBeerLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietRootBeerLarge.Name = "DietRootBeerLarge";
-            this.DietRootBeerLarge.Size = new System.Drawing.Size(34, 21);
+            this.DietRootBeerLarge.Size = new System.Drawing.Size(40, 24);
             this.DietRootBeerLarge.TabIndex = 4;
             this.DietRootBeerLarge.TabStop = true;
             this.DietRootBeerLarge.Text = "L";
@@ -2051,9 +2196,10 @@ namespace MomAndPops.Resources
             // 
             this.DietRootBeerMedium.AutoSize = true;
             this.DietRootBeerMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DietRootBeerMedium.Location = new System.Drawing.Point(188, 5);
+            this.DietRootBeerMedium.Location = new System.Drawing.Point(251, 6);
+            this.DietRootBeerMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietRootBeerMedium.Name = "DietRootBeerMedium";
-            this.DietRootBeerMedium.Size = new System.Drawing.Size(37, 21);
+            this.DietRootBeerMedium.Size = new System.Drawing.Size(44, 24);
             this.DietRootBeerMedium.TabIndex = 3;
             this.DietRootBeerMedium.TabStop = true;
             this.DietRootBeerMedium.Text = "M";
@@ -2063,9 +2209,10 @@ namespace MomAndPops.Resources
             // 
             this.DietRootBeerSmall.AutoSize = true;
             this.DietRootBeerSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DietRootBeerSmall.Location = new System.Drawing.Point(147, 4);
+            this.DietRootBeerSmall.Location = new System.Drawing.Point(196, 5);
+            this.DietRootBeerSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietRootBeerSmall.Name = "DietRootBeerSmall";
-            this.DietRootBeerSmall.Size = new System.Drawing.Size(35, 21);
+            this.DietRootBeerSmall.Size = new System.Drawing.Size(41, 24);
             this.DietRootBeerSmall.TabIndex = 2;
             this.DietRootBeerSmall.TabStop = true;
             this.DietRootBeerSmall.Text = "S";
@@ -2075,18 +2222,20 @@ namespace MomAndPops.Resources
             // 
             this.DietRootBeerLabel.AutoSize = true;
             this.DietRootBeerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.DietRootBeerLabel.Location = new System.Drawing.Point(36, 3);
+            this.DietRootBeerLabel.Location = new System.Drawing.Point(48, 4);
+            this.DietRootBeerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DietRootBeerLabel.Name = "DietRootBeerLabel";
-            this.DietRootBeerLabel.Size = new System.Drawing.Size(115, 20);
+            this.DietRootBeerLabel.Size = new System.Drawing.Size(137, 25);
             this.DietRootBeerLabel.TabIndex = 1;
             this.DietRootBeerLabel.Text = "Diet Root Beer";
             // 
             // DietRootBeerQuantity
             // 
             this.DietRootBeerQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DietRootBeerQuantity.Location = new System.Drawing.Point(3, 2);
+            this.DietRootBeerQuantity.Location = new System.Drawing.Point(4, 2);
+            this.DietRootBeerQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietRootBeerQuantity.Name = "DietRootBeerQuantity";
-            this.DietRootBeerQuantity.Size = new System.Drawing.Size(35, 23);
+            this.DietRootBeerQuantity.Size = new System.Drawing.Size(47, 26);
             this.DietRootBeerQuantity.TabIndex = 0;
             // 
             // RootBeerPanel
@@ -2097,18 +2246,20 @@ namespace MomAndPops.Resources
             this.RootBeerPanel.Controls.Add(this.RootBeerSmall);
             this.RootBeerPanel.Controls.Add(this.RootBeerLabel);
             this.RootBeerPanel.Controls.Add(this.RootBeerQuantity);
-            this.RootBeerPanel.Location = new System.Drawing.Point(52, 264);
+            this.RootBeerPanel.Location = new System.Drawing.Point(69, 325);
+            this.RootBeerPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RootBeerPanel.Name = "RootBeerPanel";
-            this.RootBeerPanel.Size = new System.Drawing.Size(268, 28);
+            this.RootBeerPanel.Size = new System.Drawing.Size(357, 34);
             this.RootBeerPanel.TabIndex = 8;
             // 
             // RootBeerLarge
             // 
             this.RootBeerLarge.AutoSize = true;
             this.RootBeerLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.RootBeerLarge.Location = new System.Drawing.Point(231, 5);
+            this.RootBeerLarge.Location = new System.Drawing.Point(308, 6);
+            this.RootBeerLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RootBeerLarge.Name = "RootBeerLarge";
-            this.RootBeerLarge.Size = new System.Drawing.Size(34, 21);
+            this.RootBeerLarge.Size = new System.Drawing.Size(40, 24);
             this.RootBeerLarge.TabIndex = 4;
             this.RootBeerLarge.TabStop = true;
             this.RootBeerLarge.Text = "L";
@@ -2118,9 +2269,10 @@ namespace MomAndPops.Resources
             // 
             this.RootBeerMedium.AutoSize = true;
             this.RootBeerMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.RootBeerMedium.Location = new System.Drawing.Point(188, 5);
+            this.RootBeerMedium.Location = new System.Drawing.Point(251, 6);
+            this.RootBeerMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RootBeerMedium.Name = "RootBeerMedium";
-            this.RootBeerMedium.Size = new System.Drawing.Size(37, 21);
+            this.RootBeerMedium.Size = new System.Drawing.Size(44, 24);
             this.RootBeerMedium.TabIndex = 3;
             this.RootBeerMedium.TabStop = true;
             this.RootBeerMedium.Text = "M";
@@ -2130,9 +2282,10 @@ namespace MomAndPops.Resources
             // 
             this.RootBeerSmall.AutoSize = true;
             this.RootBeerSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.RootBeerSmall.Location = new System.Drawing.Point(147, 4);
+            this.RootBeerSmall.Location = new System.Drawing.Point(196, 5);
+            this.RootBeerSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RootBeerSmall.Name = "RootBeerSmall";
-            this.RootBeerSmall.Size = new System.Drawing.Size(35, 21);
+            this.RootBeerSmall.Size = new System.Drawing.Size(41, 24);
             this.RootBeerSmall.TabIndex = 2;
             this.RootBeerSmall.TabStop = true;
             this.RootBeerSmall.Text = "S";
@@ -2142,18 +2295,20 @@ namespace MomAndPops.Resources
             // 
             this.RootBeerLabel.AutoSize = true;
             this.RootBeerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.RootBeerLabel.Location = new System.Drawing.Point(36, 3);
+            this.RootBeerLabel.Location = new System.Drawing.Point(48, 4);
+            this.RootBeerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RootBeerLabel.Name = "RootBeerLabel";
-            this.RootBeerLabel.Size = new System.Drawing.Size(82, 20);
+            this.RootBeerLabel.Size = new System.Drawing.Size(98, 25);
             this.RootBeerLabel.TabIndex = 1;
             this.RootBeerLabel.Text = "Root Beer";
             // 
             // RootBeerQuantity
             // 
             this.RootBeerQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.RootBeerQuantity.Location = new System.Drawing.Point(3, 2);
+            this.RootBeerQuantity.Location = new System.Drawing.Point(4, 2);
+            this.RootBeerQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.RootBeerQuantity.Name = "RootBeerQuantity";
-            this.RootBeerQuantity.Size = new System.Drawing.Size(35, 23);
+            this.RootBeerQuantity.Size = new System.Drawing.Size(47, 26);
             this.RootBeerQuantity.TabIndex = 0;
             // 
             // DietOrangePanel
@@ -2164,18 +2319,20 @@ namespace MomAndPops.Resources
             this.DietOrangePanel.Controls.Add(this.DietOrangeSmall);
             this.DietOrangePanel.Controls.Add(this.DietOrangeLabel);
             this.DietOrangePanel.Controls.Add(this.DietOrangeQuantity);
-            this.DietOrangePanel.Location = new System.Drawing.Point(52, 230);
+            this.DietOrangePanel.Location = new System.Drawing.Point(69, 283);
+            this.DietOrangePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietOrangePanel.Name = "DietOrangePanel";
-            this.DietOrangePanel.Size = new System.Drawing.Size(268, 28);
+            this.DietOrangePanel.Size = new System.Drawing.Size(357, 34);
             this.DietOrangePanel.TabIndex = 7;
             // 
             // DietOrangeLarge
             // 
             this.DietOrangeLarge.AutoSize = true;
             this.DietOrangeLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DietOrangeLarge.Location = new System.Drawing.Point(231, 5);
+            this.DietOrangeLarge.Location = new System.Drawing.Point(308, 6);
+            this.DietOrangeLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietOrangeLarge.Name = "DietOrangeLarge";
-            this.DietOrangeLarge.Size = new System.Drawing.Size(34, 21);
+            this.DietOrangeLarge.Size = new System.Drawing.Size(40, 24);
             this.DietOrangeLarge.TabIndex = 4;
             this.DietOrangeLarge.TabStop = true;
             this.DietOrangeLarge.Text = "L";
@@ -2185,9 +2342,10 @@ namespace MomAndPops.Resources
             // 
             this.DietOrangeMedium.AutoSize = true;
             this.DietOrangeMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DietOrangeMedium.Location = new System.Drawing.Point(188, 5);
+            this.DietOrangeMedium.Location = new System.Drawing.Point(251, 6);
+            this.DietOrangeMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietOrangeMedium.Name = "DietOrangeMedium";
-            this.DietOrangeMedium.Size = new System.Drawing.Size(37, 21);
+            this.DietOrangeMedium.Size = new System.Drawing.Size(44, 24);
             this.DietOrangeMedium.TabIndex = 3;
             this.DietOrangeMedium.TabStop = true;
             this.DietOrangeMedium.Text = "M";
@@ -2198,9 +2356,10 @@ namespace MomAndPops.Resources
             // 
             this.DietOrangeSmall.AutoSize = true;
             this.DietOrangeSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DietOrangeSmall.Location = new System.Drawing.Point(147, 4);
+            this.DietOrangeSmall.Location = new System.Drawing.Point(196, 5);
+            this.DietOrangeSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietOrangeSmall.Name = "DietOrangeSmall";
-            this.DietOrangeSmall.Size = new System.Drawing.Size(35, 21);
+            this.DietOrangeSmall.Size = new System.Drawing.Size(41, 24);
             this.DietOrangeSmall.TabIndex = 2;
             this.DietOrangeSmall.TabStop = true;
             this.DietOrangeSmall.Text = "S";
@@ -2210,18 +2369,20 @@ namespace MomAndPops.Resources
             // 
             this.DietOrangeLabel.AutoSize = true;
             this.DietOrangeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.DietOrangeLabel.Location = new System.Drawing.Point(36, 3);
+            this.DietOrangeLabel.Location = new System.Drawing.Point(48, 4);
+            this.DietOrangeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DietOrangeLabel.Name = "DietOrangeLabel";
-            this.DietOrangeLabel.Size = new System.Drawing.Size(95, 20);
+            this.DietOrangeLabel.Size = new System.Drawing.Size(117, 25);
             this.DietOrangeLabel.TabIndex = 1;
             this.DietOrangeLabel.Text = "Diet Orange";
             // 
             // DietOrangeQuantity
             // 
             this.DietOrangeQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DietOrangeQuantity.Location = new System.Drawing.Point(3, 2);
+            this.DietOrangeQuantity.Location = new System.Drawing.Point(4, 2);
+            this.DietOrangeQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietOrangeQuantity.Name = "DietOrangeQuantity";
-            this.DietOrangeQuantity.Size = new System.Drawing.Size(35, 23);
+            this.DietOrangeQuantity.Size = new System.Drawing.Size(47, 26);
             this.DietOrangeQuantity.TabIndex = 0;
             // 
             // OrangePanel
@@ -2232,18 +2393,20 @@ namespace MomAndPops.Resources
             this.OrangePanel.Controls.Add(this.OrangeSmall);
             this.OrangePanel.Controls.Add(this.OrangeLabel);
             this.OrangePanel.Controls.Add(this.OrangeQuantity);
-            this.OrangePanel.Location = new System.Drawing.Point(52, 196);
+            this.OrangePanel.Location = new System.Drawing.Point(69, 241);
+            this.OrangePanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OrangePanel.Name = "OrangePanel";
-            this.OrangePanel.Size = new System.Drawing.Size(268, 28);
+            this.OrangePanel.Size = new System.Drawing.Size(357, 34);
             this.OrangePanel.TabIndex = 6;
             // 
             // OrangeLarge
             // 
             this.OrangeLarge.AutoSize = true;
             this.OrangeLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.OrangeLarge.Location = new System.Drawing.Point(231, 5);
+            this.OrangeLarge.Location = new System.Drawing.Point(308, 6);
+            this.OrangeLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OrangeLarge.Name = "OrangeLarge";
-            this.OrangeLarge.Size = new System.Drawing.Size(34, 21);
+            this.OrangeLarge.Size = new System.Drawing.Size(40, 24);
             this.OrangeLarge.TabIndex = 4;
             this.OrangeLarge.TabStop = true;
             this.OrangeLarge.Text = "L";
@@ -2253,9 +2416,10 @@ namespace MomAndPops.Resources
             // 
             this.OrangeMedium.AutoSize = true;
             this.OrangeMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.OrangeMedium.Location = new System.Drawing.Point(188, 5);
+            this.OrangeMedium.Location = new System.Drawing.Point(251, 6);
+            this.OrangeMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OrangeMedium.Name = "OrangeMedium";
-            this.OrangeMedium.Size = new System.Drawing.Size(37, 21);
+            this.OrangeMedium.Size = new System.Drawing.Size(44, 24);
             this.OrangeMedium.TabIndex = 3;
             this.OrangeMedium.TabStop = true;
             this.OrangeMedium.Text = "M";
@@ -2265,9 +2429,10 @@ namespace MomAndPops.Resources
             // 
             this.OrangeSmall.AutoSize = true;
             this.OrangeSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.OrangeSmall.Location = new System.Drawing.Point(147, 3);
+            this.OrangeSmall.Location = new System.Drawing.Point(196, 4);
+            this.OrangeSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OrangeSmall.Name = "OrangeSmall";
-            this.OrangeSmall.Size = new System.Drawing.Size(35, 21);
+            this.OrangeSmall.Size = new System.Drawing.Size(41, 24);
             this.OrangeSmall.TabIndex = 2;
             this.OrangeSmall.TabStop = true;
             this.OrangeSmall.Text = "S";
@@ -2277,18 +2442,20 @@ namespace MomAndPops.Resources
             // 
             this.OrangeLabel.AutoSize = true;
             this.OrangeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.OrangeLabel.Location = new System.Drawing.Point(36, 3);
+            this.OrangeLabel.Location = new System.Drawing.Point(48, 4);
+            this.OrangeLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.OrangeLabel.Name = "OrangeLabel";
-            this.OrangeLabel.Size = new System.Drawing.Size(62, 20);
+            this.OrangeLabel.Size = new System.Drawing.Size(78, 25);
             this.OrangeLabel.TabIndex = 1;
             this.OrangeLabel.Text = "Orange";
             // 
             // OrangeQuantity
             // 
             this.OrangeQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.OrangeQuantity.Location = new System.Drawing.Point(3, 2);
+            this.OrangeQuantity.Location = new System.Drawing.Point(4, 2);
+            this.OrangeQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.OrangeQuantity.Name = "OrangeQuantity";
-            this.OrangeQuantity.Size = new System.Drawing.Size(35, 23);
+            this.OrangeQuantity.Size = new System.Drawing.Size(47, 26);
             this.OrangeQuantity.TabIndex = 0;
             // 
             // DietPepsiPanel
@@ -2299,18 +2466,20 @@ namespace MomAndPops.Resources
             this.DietPepsiPanel.Controls.Add(this.DietPepsiSmall);
             this.DietPepsiPanel.Controls.Add(this.DietPepsiLabel);
             this.DietPepsiPanel.Controls.Add(this.DietPepsiQuantity);
-            this.DietPepsiPanel.Location = new System.Drawing.Point(52, 161);
+            this.DietPepsiPanel.Location = new System.Drawing.Point(69, 198);
+            this.DietPepsiPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietPepsiPanel.Name = "DietPepsiPanel";
-            this.DietPepsiPanel.Size = new System.Drawing.Size(265, 28);
+            this.DietPepsiPanel.Size = new System.Drawing.Size(353, 34);
             this.DietPepsiPanel.TabIndex = 5;
             // 
             // DietPepsiLarge
             // 
             this.DietPepsiLarge.AutoSize = true;
             this.DietPepsiLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DietPepsiLarge.Location = new System.Drawing.Point(228, 5);
+            this.DietPepsiLarge.Location = new System.Drawing.Point(304, 6);
+            this.DietPepsiLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietPepsiLarge.Name = "DietPepsiLarge";
-            this.DietPepsiLarge.Size = new System.Drawing.Size(34, 21);
+            this.DietPepsiLarge.Size = new System.Drawing.Size(40, 24);
             this.DietPepsiLarge.TabIndex = 4;
             this.DietPepsiLarge.TabStop = true;
             this.DietPepsiLarge.Text = "L";
@@ -2320,9 +2489,10 @@ namespace MomAndPops.Resources
             // 
             this.DietPepsiMedium.AutoSize = true;
             this.DietPepsiMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DietPepsiMedium.Location = new System.Drawing.Point(185, 5);
+            this.DietPepsiMedium.Location = new System.Drawing.Point(247, 6);
+            this.DietPepsiMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietPepsiMedium.Name = "DietPepsiMedium";
-            this.DietPepsiMedium.Size = new System.Drawing.Size(37, 21);
+            this.DietPepsiMedium.Size = new System.Drawing.Size(44, 24);
             this.DietPepsiMedium.TabIndex = 3;
             this.DietPepsiMedium.TabStop = true;
             this.DietPepsiMedium.Text = "M";
@@ -2332,9 +2502,10 @@ namespace MomAndPops.Resources
             // 
             this.DietPepsiSmall.AutoSize = true;
             this.DietPepsiSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DietPepsiSmall.Location = new System.Drawing.Point(144, 4);
+            this.DietPepsiSmall.Location = new System.Drawing.Point(192, 5);
+            this.DietPepsiSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietPepsiSmall.Name = "DietPepsiSmall";
-            this.DietPepsiSmall.Size = new System.Drawing.Size(35, 21);
+            this.DietPepsiSmall.Size = new System.Drawing.Size(41, 24);
             this.DietPepsiSmall.TabIndex = 2;
             this.DietPepsiSmall.TabStop = true;
             this.DietPepsiSmall.Text = "S";
@@ -2344,18 +2515,20 @@ namespace MomAndPops.Resources
             // 
             this.DietPepsiLabel.AutoSize = true;
             this.DietPepsiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.DietPepsiLabel.Location = new System.Drawing.Point(36, 3);
+            this.DietPepsiLabel.Location = new System.Drawing.Point(48, 4);
+            this.DietPepsiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DietPepsiLabel.Name = "DietPepsiLabel";
-            this.DietPepsiLabel.Size = new System.Drawing.Size(81, 20);
+            this.DietPepsiLabel.Size = new System.Drawing.Size(100, 25);
             this.DietPepsiLabel.TabIndex = 1;
             this.DietPepsiLabel.Text = "Diet Pepsi";
             // 
             // DietPepsiQuantity
             // 
             this.DietPepsiQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.DietPepsiQuantity.Location = new System.Drawing.Point(3, 2);
+            this.DietPepsiQuantity.Location = new System.Drawing.Point(4, 2);
+            this.DietPepsiQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietPepsiQuantity.Name = "DietPepsiQuantity";
-            this.DietPepsiQuantity.Size = new System.Drawing.Size(35, 23);
+            this.DietPepsiQuantity.Size = new System.Drawing.Size(47, 26);
             this.DietPepsiQuantity.TabIndex = 0;
             // 
             // PepsiPanel
@@ -2366,18 +2539,20 @@ namespace MomAndPops.Resources
             this.PepsiPanel.Controls.Add(this.PepsiSmall);
             this.PepsiPanel.Controls.Add(this.PepsiLabel);
             this.PepsiPanel.Controls.Add(this.PepsiQuantity);
-            this.PepsiPanel.Location = new System.Drawing.Point(52, 127);
+            this.PepsiPanel.Location = new System.Drawing.Point(69, 156);
+            this.PepsiPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PepsiPanel.Name = "PepsiPanel";
-            this.PepsiPanel.Size = new System.Drawing.Size(262, 28);
+            this.PepsiPanel.Size = new System.Drawing.Size(349, 34);
             this.PepsiPanel.TabIndex = 3;
             // 
             // PepsiLarge
             // 
             this.PepsiLarge.AutoSize = true;
             this.PepsiLarge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.PepsiLarge.Location = new System.Drawing.Point(225, 4);
+            this.PepsiLarge.Location = new System.Drawing.Point(300, 5);
+            this.PepsiLarge.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PepsiLarge.Name = "PepsiLarge";
-            this.PepsiLarge.Size = new System.Drawing.Size(34, 21);
+            this.PepsiLarge.Size = new System.Drawing.Size(40, 24);
             this.PepsiLarge.TabIndex = 4;
             this.PepsiLarge.TabStop = true;
             this.PepsiLarge.Text = "L";
@@ -2387,9 +2562,10 @@ namespace MomAndPops.Resources
             // 
             this.PepsiMedium.AutoSize = true;
             this.PepsiMedium.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.PepsiMedium.Location = new System.Drawing.Point(182, 5);
+            this.PepsiMedium.Location = new System.Drawing.Point(243, 6);
+            this.PepsiMedium.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PepsiMedium.Name = "PepsiMedium";
-            this.PepsiMedium.Size = new System.Drawing.Size(37, 21);
+            this.PepsiMedium.Size = new System.Drawing.Size(44, 24);
             this.PepsiMedium.TabIndex = 3;
             this.PepsiMedium.TabStop = true;
             this.PepsiMedium.Text = "M";
@@ -2399,9 +2575,10 @@ namespace MomAndPops.Resources
             // 
             this.PepsiSmall.AutoSize = true;
             this.PepsiSmall.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.PepsiSmall.Location = new System.Drawing.Point(141, 5);
+            this.PepsiSmall.Location = new System.Drawing.Point(188, 6);
+            this.PepsiSmall.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PepsiSmall.Name = "PepsiSmall";
-            this.PepsiSmall.Size = new System.Drawing.Size(35, 21);
+            this.PepsiSmall.Size = new System.Drawing.Size(41, 24);
             this.PepsiSmall.TabIndex = 2;
             this.PepsiSmall.TabStop = true;
             this.PepsiSmall.Text = "S";
@@ -2411,27 +2588,30 @@ namespace MomAndPops.Resources
             // 
             this.PepsiLabel.AutoSize = true;
             this.PepsiLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PepsiLabel.Location = new System.Drawing.Point(44, 5);
+            this.PepsiLabel.Location = new System.Drawing.Point(59, 6);
+            this.PepsiLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PepsiLabel.Name = "PepsiLabel";
-            this.PepsiLabel.Size = new System.Drawing.Size(48, 20);
+            this.PepsiLabel.Size = new System.Drawing.Size(61, 25);
             this.PepsiLabel.TabIndex = 1;
             this.PepsiLabel.Text = "Pepsi";
             // 
             // PepsiQuantity
             // 
             this.PepsiQuantity.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.PepsiQuantity.Location = new System.Drawing.Point(3, 2);
+            this.PepsiQuantity.Location = new System.Drawing.Point(4, 2);
+            this.PepsiQuantity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PepsiQuantity.Name = "PepsiQuantity";
-            this.PepsiQuantity.Size = new System.Drawing.Size(35, 23);
+            this.PepsiQuantity.Size = new System.Drawing.Size(47, 26);
             this.PepsiQuantity.TabIndex = 0;
             // 
             // DrinksSectionLabel
             // 
             this.DrinksSectionLabel.AutoSize = true;
             this.DrinksSectionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DrinksSectionLabel.Location = new System.Drawing.Point(116, 48);
+            this.DrinksSectionLabel.Location = new System.Drawing.Point(155, 59);
+            this.DrinksSectionLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.DrinksSectionLabel.Name = "DrinksSectionLabel";
-            this.DrinksSectionLabel.Size = new System.Drawing.Size(98, 31);
+            this.DrinksSectionLabel.Size = new System.Drawing.Size(120, 39);
             this.DrinksSectionLabel.TabIndex = 3;
             this.DrinksSectionLabel.Text = "Drinks";
             // 
@@ -2439,18 +2619,20 @@ namespace MomAndPops.Resources
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.label1.Location = new System.Drawing.Point(357, 20);
+            this.label1.Location = new System.Drawing.Point(476, 25);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(552, 63);
+            this.label1.Size = new System.Drawing.Size(684, 76);
             this.label1.TabIndex = 2;
             this.label1.Text = "Mom && Pop\'s Pizzeria";
             // 
             // AddToCart
             // 
             this.AddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.AddToCart.Location = new System.Drawing.Point(555, 562);
+            this.AddToCart.Location = new System.Drawing.Point(740, 692);
+            this.AddToCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddToCart.Name = "AddToCart";
-            this.AddToCart.Size = new System.Drawing.Size(152, 65);
+            this.AddToCart.Size = new System.Drawing.Size(203, 80);
             this.AddToCart.TabIndex = 3;
             this.AddToCart.Text = "Add To Cart";
             this.AddToCart.UseVisualStyleBackColor = true;
@@ -2459,9 +2641,10 @@ namespace MomAndPops.Resources
             // Logout
             // 
             this.Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.Logout.Location = new System.Drawing.Point(125, 578);
+            this.Logout.Location = new System.Drawing.Point(167, 711);
+            this.Logout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Logout.Name = "Logout";
-            this.Logout.Size = new System.Drawing.Size(115, 37);
+            this.Logout.Size = new System.Drawing.Size(153, 46);
             this.Logout.TabIndex = 4;
             this.Logout.Text = "Logout";
             this.Logout.UseVisualStyleBackColor = true;
@@ -2470,9 +2653,10 @@ namespace MomAndPops.Resources
             // CartButton
             // 
             this.CartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.CartButton.Location = new System.Drawing.Point(989, 37);
+            this.CartButton.Location = new System.Drawing.Point(1319, 46);
+            this.CartButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CartButton.Name = "CartButton";
-            this.CartButton.Size = new System.Drawing.Size(108, 46);
+            this.CartButton.Size = new System.Drawing.Size(144, 57);
             this.CartButton.TabIndex = 5;
             this.CartButton.Text = "Cart";
             this.CartButton.UseVisualStyleBackColor = true;
@@ -2481,9 +2665,10 @@ namespace MomAndPops.Resources
             // PreviousOrdersButton
             // 
             this.PreviousOrdersButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.PreviousOrdersButton.Location = new System.Drawing.Point(987, 560);
+            this.PreviousOrdersButton.Location = new System.Drawing.Point(1316, 689);
+            this.PreviousOrdersButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PreviousOrdersButton.Name = "PreviousOrdersButton";
-            this.PreviousOrdersButton.Size = new System.Drawing.Size(153, 67);
+            this.PreviousOrdersButton.Size = new System.Drawing.Size(204, 82);
             this.PreviousOrdersButton.TabIndex = 6;
             this.PreviousOrdersButton.Text = "Previous Orders";
             this.PreviousOrdersButton.UseVisualStyleBackColor = true;
@@ -2493,17 +2678,19 @@ namespace MomAndPops.Resources
             // 
             this.CartHeaderBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.CartHeaderBackground.Location = new System.Drawing.Point(-1, -1);
+            this.CartHeaderBackground.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CartHeaderBackground.Name = "CartHeaderBackground";
-            this.CartHeaderBackground.Size = new System.Drawing.Size(358, 64);
+            this.CartHeaderBackground.Size = new System.Drawing.Size(477, 79);
             this.CartHeaderBackground.TabIndex = 8;
             this.CartHeaderBackground.TabStop = false;
             // 
             // CartXBackground
             // 
             this.CartXBackground.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
-            this.CartXBackground.Location = new System.Drawing.Point(354, -1);
+            this.CartXBackground.Location = new System.Drawing.Point(472, -1);
+            this.CartXBackground.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CartXBackground.Name = "CartXBackground";
-            this.CartXBackground.Size = new System.Drawing.Size(67, 64);
+            this.CartXBackground.Size = new System.Drawing.Size(89, 79);
             this.CartXBackground.TabIndex = 9;
             this.CartXBackground.TabStop = false;
             // 
@@ -2512,9 +2699,10 @@ namespace MomAndPops.Resources
             this.CartXButton.AutoSize = true;
             this.CartXButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
             this.CartXButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.CartXButton.Location = new System.Drawing.Point(356, 0);
+            this.CartXButton.Location = new System.Drawing.Point(475, 0);
+            this.CartXButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CartXButton.Name = "CartXButton";
-            this.CartXButton.Size = new System.Drawing.Size(63, 63);
+            this.CartXButton.Size = new System.Drawing.Size(78, 76);
             this.CartXButton.TabIndex = 10;
             this.CartXButton.Text = "X";
             this.CartXButton.Click += new System.EventHandler(this.CartXButton_Click);
@@ -2524,9 +2712,10 @@ namespace MomAndPops.Resources
             this.CartHeader.AutoSize = true;
             this.CartHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.CartHeader.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.CartHeader.Location = new System.Drawing.Point(126, 7);
+            this.CartHeader.Location = new System.Drawing.Point(168, 9);
+            this.CartHeader.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.CartHeader.Name = "CartHeader";
-            this.CartHeader.Size = new System.Drawing.Size(106, 46);
+            this.CartHeader.Size = new System.Drawing.Size(133, 58);
             this.CartHeader.TabIndex = 10;
             this.CartHeader.Text = "Cart ";
             // 
@@ -2543,18 +2732,20 @@ namespace MomAndPops.Resources
             this.CartPanel.Controls.Add(this.CartXButton);
             this.CartPanel.Controls.Add(this.CartXBackground);
             this.CartPanel.Enabled = false;
-            this.CartPanel.Location = new System.Drawing.Point(804, 26);
+            this.CartPanel.Location = new System.Drawing.Point(1099, 25);
+            this.CartPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CartPanel.Name = "CartPanel";
-            this.CartPanel.Size = new System.Drawing.Size(423, 538);
+            this.CartPanel.Size = new System.Drawing.Size(562, 662);
             this.CartPanel.TabIndex = 12;
             this.CartPanel.Visible = false;
             // 
             // ClearCartButton
             // 
             this.ClearCartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.ClearCartButton.Location = new System.Drawing.Point(220, 464);
+            this.ClearCartButton.Location = new System.Drawing.Point(293, 571);
+            this.ClearCartButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ClearCartButton.Name = "ClearCartButton";
-            this.ClearCartButton.Size = new System.Drawing.Size(142, 52);
+            this.ClearCartButton.Size = new System.Drawing.Size(189, 64);
             this.ClearCartButton.TabIndex = 17;
             this.ClearCartButton.Text = "Clear Cart";
             this.ClearCartButton.UseVisualStyleBackColor = true;
@@ -2565,30 +2756,33 @@ namespace MomAndPops.Resources
             this.CartTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.CartTextBox.Cursor = System.Windows.Forms.Cursors.Default;
             this.CartTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.CartTextBox.Location = new System.Drawing.Point(-1, 59);
+            this.CartTextBox.Location = new System.Drawing.Point(-1, 73);
+            this.CartTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CartTextBox.Multiline = true;
             this.CartTextBox.Name = "CartTextBox";
             this.CartTextBox.ReadOnly = true;
             this.CartTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.CartTextBox.Size = new System.Drawing.Size(420, 364);
+            this.CartTextBox.Size = new System.Drawing.Size(559, 447);
             this.CartTextBox.TabIndex = 16;
             // 
             // TotalLabel
             // 
             this.TotalLabel.AutoSize = true;
             this.TotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.TotalLabel.Location = new System.Drawing.Point(100, 426);
+            this.TotalLabel.Location = new System.Drawing.Point(133, 524);
+            this.TotalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TotalLabel.Name = "TotalLabel";
-            this.TotalLabel.Size = new System.Drawing.Size(89, 31);
+            this.TotalLabel.Size = new System.Drawing.Size(111, 39);
             this.TotalLabel.TabIndex = 14;
             this.TotalLabel.Text = "$ 0.00";
             // 
             // CheckoutButton
             // 
             this.CheckoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.CheckoutButton.Location = new System.Drawing.Point(33, 464);
+            this.CheckoutButton.Location = new System.Drawing.Point(44, 571);
+            this.CheckoutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CheckoutButton.Name = "CheckoutButton";
-            this.CheckoutButton.Size = new System.Drawing.Size(142, 52);
+            this.CheckoutButton.Size = new System.Drawing.Size(189, 64);
             this.CheckoutButton.TabIndex = 13;
             this.CheckoutButton.Text = "Checkout";
             this.CheckoutButton.UseVisualStyleBackColor = true;
@@ -2598,9 +2792,10 @@ namespace MomAndPops.Resources
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(11, 428);
+            this.label23.Location = new System.Drawing.Point(15, 527);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(87, 29);
+            this.label23.Size = new System.Drawing.Size(104, 36);
             this.label23.TabIndex = 12;
             this.label23.Text = "Total: ";
             // 
@@ -2619,84 +2814,98 @@ namespace MomAndPops.Resources
             this.PreviousOrders.Controls.Add(this.PreviousOrderXButton);
             this.PreviousOrders.Controls.Add(this.pictureBox2);
             this.PreviousOrders.Enabled = false;
-            this.PreviousOrders.Location = new System.Drawing.Point(815, 29);
-            this.PreviousOrders.Margin = new System.Windows.Forms.Padding(10);
+            this.PreviousOrders.Location = new System.Drawing.Point(1097, 34);
+            this.PreviousOrders.Margin = new System.Windows.Forms.Padding(13, 12, 13, 12);
             this.PreviousOrders.Name = "PreviousOrders";
-            this.PreviousOrders.Size = new System.Drawing.Size(447, 528);
+            this.PreviousOrders.Size = new System.Drawing.Size(585, 649);
             this.PreviousOrders.TabIndex = 15;
             this.PreviousOrders.Visible = false;
             // 
             // PreviousOrder3Label
             // 
             this.PreviousOrder3Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
-            this.PreviousOrder3Label.Location = new System.Drawing.Point(16, 530);
+            this.PreviousOrder3Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PreviousOrder3Label.Location = new System.Drawing.Point(21, 652);
+            this.PreviousOrder3Label.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PreviousOrder3Label.Multiline = true;
             this.PreviousOrder3Label.Name = "PreviousOrder3Label";
             this.PreviousOrder3Label.ReadOnly = true;
             this.PreviousOrder3Label.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.PreviousOrder3Label.Size = new System.Drawing.Size(342, 163);
+            this.PreviousOrder3Label.Size = new System.Drawing.Size(455, 200);
             this.PreviousOrder3Label.TabIndex = 19;
             // 
             // PreviousOrder2Label
             // 
             this.PreviousOrder2Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
-            this.PreviousOrder2Label.Location = new System.Drawing.Point(16, 307);
+            this.PreviousOrder2Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PreviousOrder2Label.Location = new System.Drawing.Point(21, 378);
+            this.PreviousOrder2Label.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PreviousOrder2Label.Multiline = true;
             this.PreviousOrder2Label.Name = "PreviousOrder2Label";
             this.PreviousOrder2Label.ReadOnly = true;
             this.PreviousOrder2Label.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.PreviousOrder2Label.Size = new System.Drawing.Size(342, 163);
+            this.PreviousOrder2Label.Size = new System.Drawing.Size(455, 200);
             this.PreviousOrder2Label.TabIndex = 18;
             // 
             // PreviousOrder1Label
             // 
             this.PreviousOrder1Label.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
-            this.PreviousOrder1Label.Location = new System.Drawing.Point(16, 81);
+            this.PreviousOrder1Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PreviousOrder1Label.Location = new System.Drawing.Point(21, 100);
+            this.PreviousOrder1Label.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PreviousOrder1Label.Multiline = true;
             this.PreviousOrder1Label.Name = "PreviousOrder1Label";
             this.PreviousOrder1Label.ReadOnly = true;
             this.PreviousOrder1Label.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.PreviousOrder1Label.Size = new System.Drawing.Size(342, 163);
+            this.PreviousOrder1Label.Size = new System.Drawing.Size(455, 200);
             this.PreviousOrder1Label.TabIndex = 16;
+            this.PreviousOrder1Label.TextChanged += new System.EventHandler(this.PreviousOrder1Label_TextChanged);
             // 
             // PreviousOrdersThreeAddToCart
             // 
             this.PreviousOrdersThreeAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PreviousOrdersThreeAddToCart.Location = new System.Drawing.Point(125, 694);
+            this.PreviousOrdersThreeAddToCart.Location = new System.Drawing.Point(167, 854);
+            this.PreviousOrdersThreeAddToCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PreviousOrdersThreeAddToCart.Name = "PreviousOrdersThreeAddToCart";
-            this.PreviousOrdersThreeAddToCart.Size = new System.Drawing.Size(125, 37);
+            this.PreviousOrdersThreeAddToCart.Size = new System.Drawing.Size(167, 46);
             this.PreviousOrdersThreeAddToCart.TabIndex = 13;
             this.PreviousOrdersThreeAddToCart.Text = "Add to Cart";
             this.PreviousOrdersThreeAddToCart.UseVisualStyleBackColor = true;
+            this.PreviousOrdersThreeAddToCart.Click += new System.EventHandler(this.PreviousOrdersThreeAddToCart_Click);
             // 
             // PreviousOrderOneAddToCart
             // 
             this.PreviousOrderOneAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PreviousOrderOneAddToCart.Location = new System.Drawing.Point(125, 470);
+            this.PreviousOrderOneAddToCart.Location = new System.Drawing.Point(167, 578);
+            this.PreviousOrderOneAddToCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PreviousOrderOneAddToCart.Name = "PreviousOrderOneAddToCart";
-            this.PreviousOrderOneAddToCart.Size = new System.Drawing.Size(125, 37);
+            this.PreviousOrderOneAddToCart.Size = new System.Drawing.Size(167, 46);
             this.PreviousOrderOneAddToCart.TabIndex = 17;
             this.PreviousOrderOneAddToCart.Text = "Add to Cart";
             this.PreviousOrderOneAddToCart.UseVisualStyleBackColor = true;
+            this.PreviousOrderOneAddToCart.Click += new System.EventHandler(this.PreviousOrderOneAddToCart_Click);
             // 
             // PreviousOrderTwoAddToCart
             // 
             this.PreviousOrderTwoAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PreviousOrderTwoAddToCart.Location = new System.Drawing.Point(125, 247);
+            this.PreviousOrderTwoAddToCart.Location = new System.Drawing.Point(167, 304);
+            this.PreviousOrderTwoAddToCart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PreviousOrderTwoAddToCart.Name = "PreviousOrderTwoAddToCart";
-            this.PreviousOrderTwoAddToCart.Size = new System.Drawing.Size(125, 37);
+            this.PreviousOrderTwoAddToCart.Size = new System.Drawing.Size(167, 46);
             this.PreviousOrderTwoAddToCart.TabIndex = 16;
             this.PreviousOrderTwoAddToCart.Text = "Add to Cart";
             this.PreviousOrderTwoAddToCart.UseVisualStyleBackColor = true;
+            this.PreviousOrderTwoAddToCart.Click += new System.EventHandler(this.PreviousOrderTwoAddToCart_Click);
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
-            this.label28.Location = new System.Drawing.Point(45, 17);
+            this.label28.Location = new System.Drawing.Point(60, 21);
+            this.label28.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(245, 36);
+            this.label28.Size = new System.Drawing.Size(303, 42);
             this.label28.TabIndex = 10;
             this.label28.Text = "Previous Orders";
             // 
@@ -2704,8 +2913,9 @@ namespace MomAndPops.Resources
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(357, 64);
+            this.pictureBox1.Size = new System.Drawing.Size(476, 79);
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
@@ -2714,9 +2924,10 @@ namespace MomAndPops.Resources
             this.PreviousOrderXButton.AutoSize = true;
             this.PreviousOrderXButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
             this.PreviousOrderXButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.PreviousOrderXButton.Location = new System.Drawing.Point(354, 1);
+            this.PreviousOrderXButton.Location = new System.Drawing.Point(472, 1);
+            this.PreviousOrderXButton.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.PreviousOrderXButton.Name = "PreviousOrderXButton";
-            this.PreviousOrderXButton.Size = new System.Drawing.Size(63, 63);
+            this.PreviousOrderXButton.Size = new System.Drawing.Size(78, 76);
             this.PreviousOrderXButton.TabIndex = 10;
             this.PreviousOrderXButton.Text = "X";
             this.PreviousOrderXButton.Click += new System.EventHandler(this.PreviousOrderXButton_Click);
@@ -2724,18 +2935,19 @@ namespace MomAndPops.Resources
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
-            this.pictureBox2.Location = new System.Drawing.Point(354, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(472, 0);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 64);
+            this.pictureBox2.Size = new System.Drawing.Size(104, 79);
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
             // MenuLanding
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1685, 838);
             this.Controls.Add(this.PreviousOrders);
             this.Controls.Add(this.CartPanel);
             this.Controls.Add(this.PreviousOrdersButton);
@@ -2746,6 +2958,7 @@ namespace MomAndPops.Resources
             this.Controls.Add(this.DrinksGroupBox);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "MenuLanding";
             this.Text = "MenuLanding";
             this.groupBox1.ResumeLayout(false);
