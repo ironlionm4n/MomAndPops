@@ -873,6 +873,7 @@ namespace MomAndPops.Resources
                 }
                 ExtraLargePizzaQuantity.Value = 0;
             }
+          
 
             PrintOrder();
         }
@@ -936,7 +937,7 @@ namespace MomAndPops.Resources
 
         private void CartButton_Click(object sender, EventArgs e)
         {
-           
+         
             CartPanel.Visible = true;
             CartPanel.Enabled = true;
             //PrintOrder();
@@ -973,6 +974,7 @@ namespace MomAndPops.Resources
 
         private void CheckoutButton_Click(object sender, EventArgs e)
         {
+            if (currentOrder.currentOrder.Count <= 0) return;
             this.Hide();
             Payment payment = new Payment();
             payment.SetOrder(GetOrder());

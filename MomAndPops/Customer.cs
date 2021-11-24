@@ -26,7 +26,10 @@ namespace MomAndPops
         {
             get { return previousOrders; }
         }
-
+        public string GetPassword()
+        {
+            return password;
+        }
         public void WriteToFile(Customer customer)
         {
             string[] customerData = {customer.firstName, customer.lastName, customer.phoneNumber, customer.address,
