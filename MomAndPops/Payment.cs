@@ -8,6 +8,8 @@ namespace MomAndPops
     {
         Order newOrder;
         Customer customer;
+        bool delivery = false;
+
 
         public Payment()
         {
@@ -33,15 +35,30 @@ namespace MomAndPops
             return newOrder;
         }
 
+        public bool GetDelivery()
+        {
+            return delivery;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
+            if(radioButton4.Checked)
+            {
+                delivery = false;
+            }
+            else if(radioButton5.Checked)
+            {
+                delivery = true;
+            }
+
             if ((radioButton1.Checked || radioButton2.Checked || radioButton3.Checked) && (radioButton4.Checked || radioButton5.Checked))
             {
                 customer.AddToPreviousOrders(GetOrder());
                 customer.WriteToFile(customer);
 
-                Confirmation confirmation = new Confirmation();
+                Confirmation confirmation = new Confirmation(GetDelivery());
                 confirmation.SetCustomer(GetCustomer());
+                confirmation.SetDelivery(GetDelivery());
                 this.Hide();
                 confirmation.ShowDialog();
             }

@@ -6,9 +6,18 @@ namespace MomAndPops
     public partial class Confirmation : Form
     {
         Customer customer;
-        public Confirmation()
+        bool delivery = false;
+        public Confirmation(bool del)
         {
             InitializeComponent();
+            if(del)
+            {
+                DeliveryText.Visible = true;
+            }
+            else
+            {
+                PickUpText.Visible = true;
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -27,6 +36,16 @@ namespace MomAndPops
         public void SetCustomer(Customer cust)
         {
             customer = cust;
+        }
+
+        private void PickUpText_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public void SetDelivery(bool del)
+        {
+            delivery = del;
         }
     }
 }
