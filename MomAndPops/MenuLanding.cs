@@ -913,18 +913,6 @@ namespace MomAndPops.Resources
             TotalLabel.Text = "$ " + totalPrice.ToString("0.00");
         }
 
-
-
-        private void Checkout_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DietSmallMedium_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void Logout_Click(object sender, EventArgs e)
         {
             Form login = new LoginPage();
@@ -1155,6 +1143,13 @@ namespace MomAndPops.Resources
             PrintOrder();
         }
 
+        /// <summary>
+        /// SmallCheese_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SmallCheese_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(SmallCheese, lastSmallCheeseSelection, activeSmallComboBoxes);
@@ -1173,6 +1168,13 @@ namespace MomAndPops.Resources
             lastSmallCheeseSelection = SmallCheese.SelectedIndex;
         }
 
+        /// <summary>
+        /// SmallPepperoni_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SmallPepperoni_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(SmallPepperoni, lastSmallPepSelection, activeSmallComboBoxes);
@@ -1191,6 +1193,13 @@ namespace MomAndPops.Resources
             lastSmallPepSelection = SmallPepperoni.SelectedIndex;
         }
 
+        /// <summary>
+        /// SmallSausage_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SmallSausage_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(SmallSausage, lastSmallSausageSelection, activeSmallComboBoxes);
@@ -1208,6 +1217,13 @@ namespace MomAndPops.Resources
             lastSmallSausageSelection = SmallSausage.SelectedIndex;
         }
 
+        /// <summary>
+        /// SmallHam_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SmallHam_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(SmallHam, lastSmallHamSelection, activeSmallComboBoxes);
@@ -1225,6 +1241,13 @@ namespace MomAndPops.Resources
             lastSmallHamSelection = SmallHam.SelectedIndex;
         }
 
+        /// <summary>
+        /// SmallOnion_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SmallOnion_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(SmallOnion, lastSmallOnionSelection, activeSmallComboBoxes);
@@ -1242,6 +1265,13 @@ namespace MomAndPops.Resources
             lastSmallOnionSelection = SmallOnion.SelectedIndex;
         }
 
+        /// <summary>
+        /// SmallGreenPepper_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SmallGreenPepper_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(SmallGreenPepper, lastSmallGPSelection, activeSmallComboBoxes);
@@ -1259,6 +1289,13 @@ namespace MomAndPops.Resources
             lastSmallGPSelection = SmallGreenPepper.SelectedIndex;
         }
 
+        /// <summary>
+        /// SmallTomato_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SmallTomato_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(SmallTomato, lastSmallTomatoSelection, activeSmallComboBoxes);
@@ -1276,6 +1313,13 @@ namespace MomAndPops.Resources
             lastSmallTomatoSelection = SmallTomato.SelectedIndex;
         }
 
+        /// <summary>
+        /// SmallMushroom_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SmallMushroom_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(SmallMushroom, lastSmallMushroomSelection, activeSmallComboBoxes);
@@ -1294,6 +1338,13 @@ namespace MomAndPops.Resources
             lastSmallMushroomSelection = SmallMushroom.SelectedIndex;
         }
 
+        /// <summary>
+        /// SmallPineapple_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void SmallPineapple_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(SmallPineapple, lastSmallPineappleSelection, activeSmallComboBoxes);
@@ -1311,6 +1362,13 @@ namespace MomAndPops.Resources
             lastSmallPineappleSelection = SmallPineapple.SelectedIndex;
         }
 
+        /// <summary>
+        /// MediumCheese_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MediumCheese_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(MediumCheese, lastMedCheeseSelection, activeMediumComboBoxes);
@@ -1328,6 +1386,13 @@ namespace MomAndPops.Resources
             lastMedCheeseSelection = MediumCheese.SelectedIndex;
         }
 
+        /// <summary>
+        /// MediumPepperoni_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MediumPepperoni_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(MediumPepperoni, lastMedPepSelection, activeMediumComboBoxes);
@@ -1345,6 +1410,13 @@ namespace MomAndPops.Resources
             lastMedPepSelection = MediumPepperoni.SelectedIndex;
         }
 
+        /// <summary>
+        /// MediumSausage_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MediumSausage_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(MediumSausage, lastMedSausageSelection, activeMediumComboBoxes);
@@ -1362,6 +1434,13 @@ namespace MomAndPops.Resources
             lastMedSausageSelection = MediumSausage.SelectedIndex;
         }
 
+        /// <summary>
+        /// MediumHam_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MediumHam_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(MediumHam, lastMedHamSelection, activeMediumComboBoxes);
@@ -1379,6 +1458,13 @@ namespace MomAndPops.Resources
             lastMedHamSelection = MediumHam.SelectedIndex;
         }
 
+        /// <summary>
+        /// MediumOnion_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MediumOnion_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(MediumOnion, lastMedOnionSelection, activeMediumComboBoxes);
@@ -1396,6 +1482,13 @@ namespace MomAndPops.Resources
             lastMedOnionSelection = MediumOnion.SelectedIndex;
         }
 
+        /// <summary>
+        /// MediumGreenPepper_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MediumGreenPepper_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(MediumGreenPepper, lastMedPepSelection, activeMediumComboBoxes);
@@ -1413,6 +1506,13 @@ namespace MomAndPops.Resources
             lastMedGPSelection = MediumGreenPepper.SelectedIndex;
         }
 
+        /// <summary>
+        /// MediumTomato_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MediumTomato_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(MediumTomato, lastMedTomatoSelection, activeMediumComboBoxes);
@@ -1430,6 +1530,13 @@ namespace MomAndPops.Resources
             lastMedTomatoSelection = MediumTomato.SelectedIndex;
         }
 
+        /// <summary>
+        /// MediumMushroom_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MediumMushroom_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(MediumMushroom, lastMedMushroomSelection, activeMediumComboBoxes);
@@ -1447,6 +1554,13 @@ namespace MomAndPops.Resources
             lastMedMushroomSelection = MediumMushroom.SelectedIndex;
         }
 
+        /// <summary>
+        /// MediumPineapple_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MediumPineapple_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(MediumPineapple, lastMedPineappleSelection, activeMediumComboBoxes);
@@ -1464,6 +1578,13 @@ namespace MomAndPops.Resources
             lastMedPineappleSelection = MediumPineapple.SelectedIndex;
         }
 
+        /// <summary>
+        /// LargeCheese_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LargeCheese_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(LargeCheese, lastLargeCheeseSelection, activeLargeComboBoxes);
@@ -1481,6 +1602,13 @@ namespace MomAndPops.Resources
             lastLargeCheeseSelection = LargeCheese.SelectedIndex;
         }
 
+        /// <summary>
+        /// LargePepperoni_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LargePepperoni_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(LargePepperoni, lastLargePepSelection, activeLargeComboBoxes);
@@ -1498,6 +1626,13 @@ namespace MomAndPops.Resources
             lastLargePepSelection = LargePepperoni.SelectedIndex;
         }
 
+        /// <summary>
+        /// LargeSausage_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LargeSausage_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(LargeSausage, lastLargeSausageSelection, activeLargeComboBoxes);
@@ -1515,6 +1650,13 @@ namespace MomAndPops.Resources
             lastLargeSausageSelection = LargeSausage.SelectedIndex;
         }
 
+        /// <summary>
+        /// LargeHam_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LargeHam_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(LargeHam, lastLargeHamSelection, activeLargeComboBoxes);
@@ -1532,6 +1674,13 @@ namespace MomAndPops.Resources
             lastLargeHamSelection = LargeHam.SelectedIndex;
         }
 
+        /// <summary>
+        /// LargeOnion_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LargeOnion_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(LargeOnion, lastLargeOnionSelection, activeLargeComboBoxes);
@@ -1549,6 +1698,13 @@ namespace MomAndPops.Resources
             lastLargeOnionSelection = LargeOnion.SelectedIndex;
         }
 
+        /// <summary>
+        /// LargeGreenPepper_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LargeGreenPepper_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(LargeGreenPepper, lastLargeGPSelection, activeLargeComboBoxes);
@@ -1566,6 +1722,13 @@ namespace MomAndPops.Resources
             lastLargeGPSelection = LargeGreenPepper.SelectedIndex;
         }
 
+        /// <summary>
+        /// LargeTomato_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LargeTomato_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(LargeTomato, lastLargeTomatoSelection, activeLargeComboBoxes);
@@ -1583,6 +1746,13 @@ namespace MomAndPops.Resources
             lastLargeTomatoSelection = LargeTomato.SelectedIndex;
         }
 
+        /// <summary>
+        /// LargeMushroom_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LargeMushroom_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(LargeMushroom, lastLargeMushroomSelection, activeLargeComboBoxes);
@@ -1600,6 +1770,13 @@ namespace MomAndPops.Resources
             lastLargeMushroomSelection = LargeMushroom.SelectedIndex;
         }
 
+        /// <summary>
+        /// LargePineapple_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LargePineapple_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(LargePineapple, lastLargePineappleSelection, activeLargeComboBoxes);
@@ -1617,69 +1794,97 @@ namespace MomAndPops.Resources
             lastLargePineappleSelection = LargePineapple.SelectedIndex;
         }
 
+        /// <summary>
+        /// ExtraLargeCheese_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ExtraLargeCheese_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(ExtraLargeCheese, lastXLCheeseSelection, activeExtraLargeComboBoxes);
 
             if (ExtraLargeCheese.FindString("Extra") == ExtraLargeCheese.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + .75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLCheeseSelection == ExtraLargeCheese.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 0.75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             lastXLCheeseSelection = ExtraLargeCheese.SelectedIndex;
         }
 
+        /// <summary>
+        /// ExtraLargePepperoni_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ExtraLargePepperoni_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(ExtraLargePepperoni, lastXLPepSelection, activeExtraLargeComboBoxes);
 
             if (ExtraLargePepperoni.FindString("Extra") == ExtraLargePepperoni.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + .75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLPepSelection == ExtraLargePepperoni.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 0.75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             lastXLPepSelection = ExtraLargePepperoni.SelectedIndex;
         }
 
+        /// <summary>
+        /// ExtraLargeHam_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ExtraLargeSausage_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(ExtraLargeSausage, lastXLSausageSelection, activeExtraLargeComboBoxes);
 
             if (ExtraLargeSausage.FindString("Extra") == ExtraLargeSausage.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + .75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLSausageSelection == ExtraLargeSausage.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 0.75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             lastXLSausageSelection = ExtraLargeSausage.SelectedIndex;
         }
 
+        /// <summary>
+        /// ExtraLargeHam_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ExtraLargeHam_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(ExtraLargeHam, lastXLHamSelection, activeExtraLargeComboBoxes);
 
             if (ExtraLargeHam.FindString("Extra") == ExtraLargeHam.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + .75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLHamSelection == ExtraLargeHam.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 0.75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             lastXLHamSelection = ExtraLargeHam.SelectedIndex;
@@ -1702,69 +1907,97 @@ namespace MomAndPops.Resources
             lastXLOnionSelection = ExtraLargeOnion.SelectedIndex;
         }
 
+        /// <summary>
+        /// ExtraLargeGreenPepper_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ExtraLargeGreenPepper_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(ExtraLargeGreenPepper, lastXLGPSelection, activeExtraLargeComboBoxes);
 
             if (ExtraLargeGreenPepper.FindString("Extra") == ExtraLargeGreenPepper.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + .75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLGPSelection == ExtraLargeGreenPepper.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 0.75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             lastXLGPSelection = ExtraLargeGreenPepper.SelectedIndex;
         }
 
+        /// <summary>
+        /// ExtraLargeTomato_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ExtraLargeTomato_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(ExtraLargeTomato, lastXLTomatoSelection, activeExtraLargeComboBoxes);
 
             if (ExtraLargeTomato.FindString("Extra") == ExtraLargeTomato.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + .75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLTomatoSelection == ExtraLargeTomato.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 0.75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             lastXLTomatoSelection = ExtraLargeTomato.SelectedIndex;
         }
 
+        /// <summary>
+        /// ExtraLargeMushroom_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ExtraLargeMushroom_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(ExtraLargeMushroom, lastXLMushroomSelection, activeExtraLargeComboBoxes);
 
             if (ExtraLargeMushroom.FindString("Extra") == ExtraLargeMushroom.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + .75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLMushroomSelection == ExtraLargeMushroom.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 0.75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             lastXLMushroomSelection = ExtraLargeMushroom.SelectedIndex;
         }
 
+        /// <summary>
+        /// ExtraLargePineapple_SelectedIndexChanges is called wheenver the combo boxes selected index is changed. It calls CheckComboBoxes and then checks the following:
+        /// If the customers orders "Extra" it adds the corresponding amount based on pizza size to the total.
+        /// If the customer had it selected as "Extra" before but changes it, it subtracts the added amount from the total.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ExtraLargePineapple_SelectedIndexChanged(object sender, EventArgs e)
         {
             CheckComboBoxes(ExtraLargePineapple, lastXLPineappleSelection, activeExtraLargeComboBoxes);
 
             if (ExtraLargePineapple.FindString("Extra") == ExtraLargePineapple.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + .75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLPineappleSelection == ExtraLargePineapple.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 0.75f;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
                 ExtraLargePizzaPrice.Text = "$" + total;
             }
             lastXLPineappleSelection = ExtraLargePineapple.SelectedIndex;
@@ -1780,11 +2013,12 @@ namespace MomAndPops.Resources
             customer = cust;
         }
 
-        private void PreviousOrder1Label_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        /// <summary>
+        /// PreviousOrderTwoAddToCart_Click adds the first previous order to the current order. It goes through and assigns each menu item from the previous order to the 
+        /// current order.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PreviousOrderTwoAddToCart_Click(object sender, EventArgs e)
         {
             Order order = customer.GetPreviousOrders.Peek();
@@ -1794,6 +2028,13 @@ namespace MomAndPops.Resources
             }
         }
 
+        /// <summary>
+        /// PreviousOrderOneAddToCart_Click is adds the second previous order to the current order. It creates a temp queue which holds the values of the previous order
+        /// queue so the third value can be accessed. Then it goes through and adds each menu item in the order to the list and reassigns all the values of previous order to
+        /// previousOrder.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PreviousOrderOneAddToCart_Click(object sender, EventArgs e)
         {
             Queue<Order> tempQueue = new Queue<Order>();
@@ -1817,6 +2058,13 @@ namespace MomAndPops.Resources
 
         }
 
+        /// <summary>
+        /// PreviousOrderaThreeAddToCart_Click is adds the third previous order to the current order. It creates a temp queue which holds the values of the previous order
+        /// queue so the third value can be accessed. Then it goes through and adds each menu item in the order to the list and reassigns all the values of previous order to
+        /// previousOrder.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PreviousOrdersThreeAddToCart_Click(object sender, EventArgs e)
         {
             Queue<Order> tempQueue = new Queue<Order>();
@@ -1841,6 +2089,17 @@ namespace MomAndPops.Resources
                 tempQueue.Dequeue();
             }
         }
+
+        /// <summary>
+        /// CheckComboBoxes is called whenver a combo box value is changed. The method takes in the target ComboBox, the int for its last selection, and the list 
+        /// of active combo boxes based on the boxes size. It will then go in and check multiple things, if the boxes last selection was not none and the current selection is 
+        /// none, then it will check and make sure the box is in the current list and will remove it. If the current selection is not none, the current list has less than 4 boxes
+        /// in it, and the box is not currently in the list then it will add the box to the list. This makes sure only 4 different combo boxes can be selected at once. Then, if the
+        /// following is not true, it checks if the box is not currently in the list and if it is not it changes the index back to its base value which is none.
+        /// </summary>
+        /// <param name="currentBox"></param>
+        /// <param name="lastSelection"></param>
+        /// <param name="comboBoxSize"></param>
         private void CheckComboBoxes(ComboBox currentBox, int lastSelection, List<ComboBox> comboBoxSize)
         {
             if (lastSelection != 0 && currentBox.SelectedIndex == 0)//Makes sure the lastSelection was not none and current selection is none before removing box

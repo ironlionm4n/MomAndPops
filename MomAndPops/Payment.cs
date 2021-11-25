@@ -16,6 +16,10 @@ namespace MomAndPops
             InitializeComponent();
         }
 
+        /// <summary>
+        /// SetOrder takes in the customers order created at the menu screen and transfers it to the payment screen where it calculates the subtotal, tax, and total
+        /// </summary>
+        /// <param name="customerOrder"></param>
         public void SetOrder(Order customerOrder)
         {
             newOrder = customerOrder;
@@ -40,18 +44,24 @@ namespace MomAndPops
             return delivery;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        /// <summary>
+        /// SubmitPayment_Click runs when the SubmitPayment button is clicked and checks if deliviry or pickup is selected and changes the bool Delivery to reflect.
+        /// Then it makes sure the customer has chosen a payment method and a delivery option before being allowed to progress to the confirmation screen.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void SubmitPayment_Click(object sender, EventArgs e)
         {
-            if(radioButton4.Checked)
+            if(PickupButton.Checked)
             {
                 delivery = false;
             }
-            else if(radioButton5.Checked)
+            else if(DeliveryButton.Checked)
             {
                 delivery = true;
             }
 
-            if ((radioButton1.Checked || radioButton2.Checked || radioButton3.Checked) && (radioButton4.Checked || radioButton5.Checked))
+            if ((CashButton.Checked || CheckButton.Checked || CardButton.Checked) && (PickupButton.Checked || DeliveryButton.Checked))
             {
                 customer.AddToPreviousOrders(GetOrder());
                 customer.WriteToFile(customer);
@@ -64,12 +74,13 @@ namespace MomAndPops
             }
         }
 
-        private void Total_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
+        /// <summary>
+        /// BackButton_Click runs wheenver the customer clicks Back. It creates a new MenuLanding screen and passes the customer and their order to the page so the user
+        /// can pick up where they left off.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void BackButton_Click(object sender, EventArgs e)
         {
             MenuLanding menu = new MenuLanding();
             menu.SetOrder(GetOrder());

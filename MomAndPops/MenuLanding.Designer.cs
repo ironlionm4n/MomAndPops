@@ -2350,7 +2350,6 @@ namespace MomAndPops.Resources
             this.DietOrangeMedium.TabStop = true;
             this.DietOrangeMedium.Text = "M";
             this.DietOrangeMedium.UseVisualStyleBackColor = true;
-            this.DietOrangeMedium.CheckedChanged += new System.EventHandler(this.DietSmallMedium_CheckedChanged);
             // 
             // DietOrangeSmall
             // 
