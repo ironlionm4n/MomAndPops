@@ -25,13 +25,34 @@ namespace MomAndPops
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            bool correctPassword = LoginPhoneNumberBox.Text == currentCustomer.GetPassword();
-            if (/*LoginPhoneNumberBox.Text == "TestUsername" && LoginPasswordBox.Text == "TestPassword"*/correctPassword);
+            bool correctPassword = false; 
+
+            foreach(Customer customer in activeCustomers)
+            {
+                if(customer.GetPhone() == LoginPhoneNumberBox.Text.Trim())
+                {
+                    Console.WriteLine("Correct number");
+                    if (customer.GetPassword() == LoginPasswordBox.Text.Trim())
+                    {
+                        Console.WriteLine("Correct password");
+                        correctPassword = true;
+                        currentCustomer = customer;
+                    }
+                }
+            }
+
+            if (correctPassword)
             {
                 this.Hide();
                 MenuLanding menu = new MenuLanding();
                 menu.SetCustomer(GetCustomer());
                 menu.ShowDialog();
+            }
+            else
+            {
+                LoginPhoneNumberBox.Text = string.Empty;
+                LoginPasswordBox.Text = string.Empty;
+                IncorrectPass.Visible = true;
             }
         }
 
@@ -51,14 +72,33 @@ namespace MomAndPops
                 Customer customer = new Customer(CreateFirstTextBox.Text, CreateLastTextBox.Text, CreatePhoneTextBox.Text, CreateAddressTextBox.Text,
                     CreateAptTextBox.Text, CreateZipTextBox.Text, CreateCityTextBox.Text, CreatePasswordTextBox.Text);
                 customer.WriteToFile(customer);
+                activeCustomers.Add(customer);
                 currentCustomer = customer;
                 CreatePanel.Hide();
+                CreateFirstTextBox.Text = string.Empty;
+                CreateLastTextBox.Text = string.Empty;
+                CreatePhoneTextBox.Text = string.Empty;
+                CreateAddressTextBox.Text = string.Empty;
+                CreateAptTextBox.Text = string.Empty;
+                CreateCityTextBox.Text = string.Empty;
+                CreateZipTextBox.Text = string.Empty;
+                CreatePasswordTextBox.Text = string.Empty;
+                CreateConfirmTextBox.Text = string.Empty;
             }
         }
 
         private void CreateBackButton_Click(object sender, EventArgs e)
         {
             CreatePanel.Hide();
+            CreateFirstTextBox.Text = string.Empty;
+            CreateLastTextBox.Text = string.Empty;
+            CreatePhoneTextBox.Text = string.Empty;
+            CreateAddressTextBox.Text = string.Empty;
+            CreateAptTextBox.Text = string.Empty;
+            CreateCityTextBox.Text = string.Empty;
+            CreateZipTextBox.Text = string.Empty;
+            CreatePasswordTextBox.Text = string.Empty;
+            CreateConfirmTextBox.Text = string.Empty;
         }
 
         public Customer GetCustomer()

@@ -2861,7 +2861,6 @@ namespace MomAndPops.Resources
             this.PreviousOrder1Label.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.PreviousOrder1Label.Size = new System.Drawing.Size(455, 200);
             this.PreviousOrder1Label.TabIndex = 16;
-            this.PreviousOrder1Label.TextChanged += new System.EventHandler(this.PreviousOrder1Label_TextChanged);
             // 
             // PreviousOrdersThreeAddToCart
             // 

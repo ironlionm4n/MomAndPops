@@ -26,7 +26,7 @@ namespace MomAndPops
         }
         public string GetPassword()
         {
-            return password;
+            return password.Trim();
         }
         public void WriteToFile(Customer customer)
         {
@@ -136,7 +136,7 @@ namespace MomAndPops
 
         public string GetPhone()
         {
-            return phoneNumber;
+            return phoneNumber.Trim();
         }
 
     }
