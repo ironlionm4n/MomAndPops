@@ -33,7 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.DeliveryText = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.LogoutButton = new System.Windows.Forms.Button();
             this.PickUpText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -96,17 +96,17 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Thank you for ordering from Mom && Pop\'s Pizzeria!";
             // 
-            // button1
+            // LogoutButton
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.button1.Location = new System.Drawing.Point(757, 638);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 68);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Logout";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.LogoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.LogoutButton.Location = new System.Drawing.Point(757, 638);
+            this.LogoutButton.Margin = new System.Windows.Forms.Padding(4);
+            this.LogoutButton.Name = "LogoutButton";
+            this.LogoutButton.Size = new System.Drawing.Size(161, 68);
+            this.LogoutButton.TabIndex = 5;
+            this.LogoutButton.Text = "Logout";
+            this.LogoutButton.UseVisualStyleBackColor = true;
+            this.LogoutButton.Click += new System.EventHandler(this.LogoutButton_Click);
             // 
             // PickUpText
             // 
@@ -120,7 +120,6 @@
             this.PickUpText.TabIndex = 6;
             this.PickUpText.Text = "Your order will be ready for pickup soon!";
             this.PickUpText.Visible = false;
-            this.PickUpText.Click += new System.EventHandler(this.PickUpText_Click);
             // 
             // Confirmation
             // 
@@ -129,7 +128,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(1685, 838);
             this.Controls.Add(this.PickUpText);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.LogoutButton);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.DeliveryText);
             this.Controls.Add(this.label2);
@@ -151,7 +150,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label DeliveryText;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button LogoutButton;
         private System.Windows.Forms.Label PickUpText;
     }
 }

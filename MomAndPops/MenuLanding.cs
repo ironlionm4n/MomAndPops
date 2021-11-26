@@ -62,6 +62,19 @@ namespace MomAndPops.Resources
 
         }
 
+        /// <summary>
+        /// AddToCart_Click is called whenever the user clicks AddToCart to add their selection to their cart. It then goes through and checks each menu item to see which
+        /// ones have had their order amounts updated. Once it finds one that has its order quantity above 0, it gathers the necesary information for it to add it to the cart
+        /// based on the item.
+        /// For appetizers and deserts it gathers the item name, quantity, and price
+        /// For entrees it gathers the item name, quantity, price, and all the toppings
+        /// For drinks it gathers the item name, quanity, size, and price
+        /// After it collects all the necesary data it attempts to add the item to the cart list but checks if there is already an identical item added
+        /// If there is, the program updates the quantity of that item ordered
+        /// If not, the item is added to the list and is displayed for the customer on their cart tab
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void AddToCart_Click(object sender, EventArgs e)
         {
             float totalPrice = 0f;
@@ -885,7 +898,9 @@ namespace MomAndPops.Resources
             radioButton.Checked = false;
         }
 
-
+        /// <summary>
+        /// PrintOrder takes all the menu items from the cart list and displays them on the cart tab along with the total for the meal
+        /// </summary>
         void PrintOrder()
         {
             float totalPrice = 0f;
@@ -910,7 +925,7 @@ namespace MomAndPops.Resources
                     }
                 }
             }
-            TotalLabel.Text = "$ " + totalPrice.ToString("0.00");
+            TotalLabel.Text = "$ " + (totalPrice + totalPrice * .06f).ToString("0.00");
         }
 
         private void Logout_Click(object sender, EventArgs e)
@@ -939,6 +954,12 @@ namespace MomAndPops.Resources
             CartPanel.Enabled = false;
         }
 
+        /// <summary>
+        /// PreviousOrdersButton_Click is called when the customer clicks PreviousOrders to acces their previous orders tab. This method checks how many orders are stored
+        /// and displays them in their correct sections of the tab.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void PreviousOrdersButton_Click(object sender, EventArgs e)
         {
             PreviousOrders.Visible = true;
@@ -1127,6 +1148,11 @@ namespace MomAndPops.Resources
             PrintOrder();
         }
 
+        /// <summary>
+        /// CheckoutButton_Click makes sure the user has added at least one order to the cart before allowing them to continue to pay.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CheckoutButton_Click(object sender, EventArgs e)
         {
             if (currentOrder.currentOrder.Count <= 0) return;

@@ -25,7 +25,13 @@ namespace MomAndPops
         }
 
 
-
+        /// <summary>
+        /// LoginButton_Click makes sure that the Phone number is from an active customer added to the system and then checks if the password enters matches the password
+        /// stored in the customer with that phone number before taking the user to the menu page and passing their information along.
+        /// Failing to enter a number in the system or a matching password displays an error message.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void LoginButton_Click(object sender, EventArgs e)
         {
             bool correctPassword = false; 
@@ -59,6 +65,13 @@ namespace MomAndPops
             }
         }
 
+        /// <summary>
+        /// CreateSubmitButton_Click is called when the user attempts to create an account after entering all their information. The method makes sure each field has something
+        /// entered for it and also checks that the password and confirm password fields match, a 10 digit phone number is enetered, and a number is entered for the zip code.
+        /// If any of these conditions are not met the fields will be marked red and the customer can not continue.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CreateSubmitButton_Click(object sender, EventArgs e)
         {
             bool passwordsMatch = CreatePasswordTextBox.Text == CreateConfirmTextBox.Text;
@@ -109,6 +122,7 @@ namespace MomAndPops
                 AddCustomer();
 
                 CreatePanel.Hide();
+
                 CreateFirstTextBox.Text = string.Empty;
                 CreateLastTextBox.Text = string.Empty;
                 CreatePhoneTextBox.Text = string.Empty;
@@ -118,12 +132,14 @@ namespace MomAndPops
                 CreateZipTextBox.Text = string.Empty;
                 CreatePasswordTextBox.Text = string.Empty;
                 CreateConfirmTextBox.Text = string.Empty;
+                //Resets all text fields to blank after use
             }
         }
 
         private void CreateBackButton_Click(object sender, EventArgs e)
         {
             CreatePanel.Hide();
+
             CreateFirstTextBox.Text = string.Empty;
             CreateLastTextBox.Text = string.Empty;
             CreatePhoneTextBox.Text = string.Empty;
@@ -133,6 +149,7 @@ namespace MomAndPops
             CreateZipTextBox.Text = string.Empty;
             CreatePasswordTextBox.Text = string.Empty;
             CreateConfirmTextBox.Text = string.Empty;
+            //Resets all text fields to blank after use
         }
 
         public Customer GetCustomer()
@@ -145,6 +162,9 @@ namespace MomAndPops
             currentCustomer = customer;
         }
 
+        /// <summary>
+        /// AddCustomer checks to make sure the phone number provided is not already in use by anothe customer in the system.
+        /// </summary>
         public void AddCustomer()
         {
             bool usedPhone = false;
@@ -162,6 +182,12 @@ namespace MomAndPops
             }
         }
 
+        /// <summary>
+        /// CreatePhoneTextBox_TextChanged is called anytime the user enters a value into the Phone Text box. If checks if the users number is a number and not words
+        /// and then checks if it is ten digits.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CreatePhoneTextBox_TextChanged(object sender, EventArgs e)
         {
             correctNumberFormat = false;
@@ -169,9 +195,9 @@ namespace MomAndPops
 
             try
             {
-                phoneNumber = Int32.Parse(CreatePhoneTextBox.Text);
+                phoneNumber = Int32.Parse(CreatePhoneTextBox.Text.Trim());
 
-                if (phoneNumber > 999999999 && phoneNumber < 10000000000)
+                if (CreatePhoneTextBox.Text.Trim().Length == 10)
                 {
                     correctNumberFormat = true;
                 }
@@ -182,6 +208,12 @@ namespace MomAndPops
             }
         }
 
+        /// <summary>
+        /// CreateZipTextBox_Changed is called whenever the customers enters a value into the Zip text box. It checks to make sure what the customers enters is a number and
+        /// not words or letters.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void CreateZipTextBox_TextChanged(object sender, EventArgs e)
         {
             correctZipFormat = false;

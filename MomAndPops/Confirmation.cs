@@ -20,7 +20,12 @@ namespace MomAndPops
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        /// <summary>
+        /// LogoutButton_Click occurs when the user clicks logout. It creates a new login page and passes it the current customer.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void LogoutButton_Click(object sender, EventArgs e)
         {
             LoginPage login = new LoginPage();
             login.SetCustomer(GetCustomer());
@@ -37,12 +42,6 @@ namespace MomAndPops
         {
             customer = cust;
         }
-
-        private void PickUpText_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public void SetDelivery(bool del)
         {
             delivery = del;
