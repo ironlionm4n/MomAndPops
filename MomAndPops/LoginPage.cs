@@ -10,6 +10,9 @@ namespace MomAndPops
     {
         Customer currentCustomer = new Customer();
         List<Customer> activeCustomers = new List<Customer>();
+
+        bool correctNumberFormat = false;
+        bool correctZipFormat = false;
         public LoginPage()
         {
             InitializeComponent();
@@ -65,15 +68,46 @@ namespace MomAndPops
                 CreatePasswordTextBox.BackColor = mismatchColor;
                 CreateConfirmTextBox.BackColor = mismatchColor;
             }
+            else
+            {
+                Color matchColor = Color.FromArgb(255, 255, 255);
+                CreatePasswordTextBox.BackColor = matchColor;
+                CreateConfirmTextBox.BackColor = matchColor;
+            }
+
+            if (!correctNumberFormat)
+            {
+                Color incorrectColor = Color.FromArgb(255, 113, 113);
+                CreatePhoneTextBox.BackColor = incorrectColor;
+            }
+            else
+            {
+                Color correctColor = Color.FromArgb(255, 255, 255);
+                CreatePhoneTextBox.BackColor = correctColor;
+            }
+
+            if(!correctZipFormat)
+            {
+                Color incorrectColor = Color.FromArgb(255, 113, 113);
+                CreateZipTextBox.BackColor = incorrectColor;
+            }
+            else
+            {
+                Color correctColor = Color.FromArgb(255, 255, 255);
+                CreateZipTextBox.BackColor = correctColor;
+            }
+
             if (!CreateFirstTextBox.Text.Equals("") && !CreateLastTextBox.Text.Equals("") && !CreatePhoneTextBox.Text.Equals("")
                 && !CreateAddressTextBox.Text.Equals("") && !CreateAptTextBox.Text.Equals("") && !CreateCityTextBox.Text.Equals("")
-                && !CreateZipTextBox.Text.Equals("") && !CreatePasswordTextBox.Text.Equals("") && passwordsMatch)
+                && !CreateZipTextBox.Text.Equals("") && !CreatePasswordTextBox.Text.Equals("") && passwordsMatch && correctNumberFormat
+                &&  correctZipFormat)
             {
                 Customer customer = new Customer(CreateFirstTextBox.Text, CreateLastTextBox.Text, CreatePhoneTextBox.Text, CreateAddressTextBox.Text,
                     CreateAptTextBox.Text, CreateZipTextBox.Text, CreateCityTextBox.Text, CreatePasswordTextBox.Text);
                 customer.WriteToFile(customer);
-                activeCustomers.Add(customer);
                 currentCustomer = customer;
+                AddCustomer();
+
                 CreatePanel.Hide();
                 CreateFirstTextBox.Text = string.Empty;
                 CreateLastTextBox.Text = string.Empty;
@@ -125,6 +159,41 @@ namespace MomAndPops
             if(!usedPhone)//If the number is not in the list, adds currentCustomer
             {
                 activeCustomers.Add(currentCustomer);
+            }
+        }
+
+        private void CreatePhoneTextBox_TextChanged(object sender, EventArgs e)
+        {
+            correctNumberFormat = false;
+            int phoneNumber = 0;
+
+            try
+            {
+                phoneNumber = Int32.Parse(CreatePhoneTextBox.Text);
+
+                if (phoneNumber > 999999999 && phoneNumber < 10000000000)
+                {
+                    correctNumberFormat = true;
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void CreateZipTextBox_TextChanged(object sender, EventArgs e)
+        {
+            correctZipFormat = false;
+            int zipCode = 0;
+            try
+            {
+                zipCode = Int32.Parse(CreateZipTextBox.Text);
+                correctZipFormat = true;
+            }
+            catch (Exception)
+            {
+
             }
         }
     }

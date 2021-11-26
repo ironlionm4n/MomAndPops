@@ -241,6 +241,7 @@ namespace MomAndPops
             this.CreateZipTextBox.Name = "CreateZipTextBox";
             this.CreateZipTextBox.Size = new System.Drawing.Size(161, 45);
             this.CreateZipTextBox.TabIndex = 21;
+            this.CreateZipTextBox.TextChanged += new System.EventHandler(this.CreateZipTextBox_TextChanged);
             // 
             // CreateZipLabel
             // 
@@ -407,6 +408,7 @@ namespace MomAndPops
             this.CreatePhoneTextBox.Name = "CreatePhoneTextBox";
             this.CreatePhoneTextBox.Size = new System.Drawing.Size(384, 45);
             this.CreatePhoneTextBox.TabIndex = 5;
+            this.CreatePhoneTextBox.TextChanged += new System.EventHandler(this.CreatePhoneTextBox_TextChanged);
             // 
             // CreateAddressLabel
             // 
