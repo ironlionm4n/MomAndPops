@@ -1260,12 +1260,12 @@ namespace MomAndPops.Resources
             if (SmallCheese.FindString("Extra") == SmallCheese.SelectedIndex)
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallCheeseSelection == SmallCheese.FindString("Extra"))
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
 
             lastSmallCheeseSelection = SmallCheese.SelectedIndex;
@@ -1285,12 +1285,12 @@ namespace MomAndPops.Resources
             if (SmallPepperoni.FindString("Extra") == SmallPepperoni.SelectedIndex)
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!SmallPizzaPrice.Text.Equals("$4") && (lastSmallPepSelection == SmallPepperoni.FindString("Extra")))
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
 
             lastSmallPepSelection = SmallPepperoni.SelectedIndex;
@@ -1310,12 +1310,12 @@ namespace MomAndPops.Resources
             if (SmallSausage.FindString("Extra") == SmallSausage.SelectedIndex)
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallSausageSelection == SmallSausage.FindString("Extra"))
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastSmallSausageSelection = SmallSausage.SelectedIndex;
         }
@@ -1334,12 +1334,12 @@ namespace MomAndPops.Resources
             if (SmallHam.FindString("Extra") == SmallHam.SelectedIndex)
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallHamSelection == SmallHam.FindString("Extra"))
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastSmallHamSelection = SmallHam.SelectedIndex;
         }
@@ -1358,12 +1358,12 @@ namespace MomAndPops.Resources
             if (SmallOnion.FindString("Extra") == SmallOnion.SelectedIndex)
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallOnionSelection == SmallOnion.FindString("Extra"))
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastSmallOnionSelection = SmallOnion.SelectedIndex;
         }
@@ -1382,12 +1382,12 @@ namespace MomAndPops.Resources
             if (SmallGreenPepper.FindString("Extra") == SmallGreenPepper.SelectedIndex)
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallGPSelection == SmallGreenPepper.FindString("Extra"))
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastSmallGPSelection = SmallGreenPepper.SelectedIndex;
         }
@@ -1406,12 +1406,12 @@ namespace MomAndPops.Resources
             if (SmallTomato.FindString("Extra") == SmallTomato.SelectedIndex)
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallTomatoSelection == SmallTomato.FindString("Extra"))
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastSmallTomatoSelection = SmallTomato.SelectedIndex;
         }
@@ -1431,12 +1431,12 @@ namespace MomAndPops.Resources
             if (SmallMushroom.FindString("Extra") == SmallMushroom.SelectedIndex)
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallMushroomSelection == SmallMushroom.FindString("Extra"))
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastSmallMushroomSelection = SmallMushroom.SelectedIndex;
         }
@@ -1455,12 +1455,12 @@ namespace MomAndPops.Resources
             if (SmallPineapple.FindString("Extra") == SmallPineapple.SelectedIndex)
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallPineappleSelection == SmallPineapple.FindString("Extra"))
             {
                 float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total;
+                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastSmallPineappleSelection = SmallPineapple.SelectedIndex;
         }
@@ -1479,12 +1479,12 @@ namespace MomAndPops.Resources
             if (MediumCheese.FindString("Extra") == MediumCheese.SelectedIndex)
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedCheeseSelection == MediumCheese.FindString("Extra"))
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastMedCheeseSelection = MediumCheese.SelectedIndex;
         }
@@ -1503,12 +1503,12 @@ namespace MomAndPops.Resources
             if (MediumPepperoni.FindString("Extra") == MediumPepperoni.SelectedIndex)
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedPepSelection == MediumPepperoni.FindString("Extra"))
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastMedPepSelection = MediumPepperoni.SelectedIndex;
         }
@@ -1527,12 +1527,12 @@ namespace MomAndPops.Resources
             if (MediumSausage.FindString("Extra") == MediumSausage.SelectedIndex)
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedSausageSelection == MediumSausage.FindString("Extra"))
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastMedSausageSelection = MediumSausage.SelectedIndex;
         }
@@ -1551,12 +1551,12 @@ namespace MomAndPops.Resources
             if (MediumHam.FindString("Extra") == MediumHam.SelectedIndex)
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedHamSelection == MediumHam.FindString("Extra"))
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastMedHamSelection = MediumHam.SelectedIndex;
         }
@@ -1575,12 +1575,12 @@ namespace MomAndPops.Resources
             if (MediumOnion.FindString("Extra") == MediumOnion.SelectedIndex)
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedOnionSelection == MediumOnion.FindString("Extra"))
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastMedOnionSelection = MediumOnion.SelectedIndex;
         }
@@ -1599,12 +1599,12 @@ namespace MomAndPops.Resources
             if (MediumGreenPepper.FindString("Extra") == MediumGreenPepper.SelectedIndex)
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedGPSelection == MediumGreenPepper.FindString("Extra"))
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastMedGPSelection = MediumGreenPepper.SelectedIndex;
         }
@@ -1623,12 +1623,12 @@ namespace MomAndPops.Resources
             if (MediumTomato.FindString("Extra") == MediumTomato.SelectedIndex)
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedTomatoSelection == MediumTomato.FindString("Extra"))
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastMedTomatoSelection = MediumTomato.SelectedIndex;
         }
@@ -1647,12 +1647,12 @@ namespace MomAndPops.Resources
             if (MediumMushroom.FindString("Extra") == MediumMushroom.SelectedIndex)
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedMushroomSelection == MediumMushroom.FindString("Extra"))
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastMedMushroomSelection = MediumMushroom.SelectedIndex;
         }
@@ -1671,12 +1671,12 @@ namespace MomAndPops.Resources
             if (MediumPineapple.FindString("Extra") == MediumPineapple.SelectedIndex)
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedPineappleSelection == MediumPineapple.FindString("Extra"))
             {
                 float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total;
+                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastMedPineappleSelection = MediumPineapple.SelectedIndex;
         }
@@ -1695,12 +1695,12 @@ namespace MomAndPops.Resources
             if (LargeCheese.FindString("Extra") == LargeCheese.SelectedIndex)
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeCheeseSelection == LargeCheese.FindString("Extra"))
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastLargeCheeseSelection = LargeCheese.SelectedIndex;
         }
@@ -1719,12 +1719,12 @@ namespace MomAndPops.Resources
             if (LargePepperoni.FindString("Extra") == LargePepperoni.SelectedIndex)
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!LargePizzaPrice.Text.Equals("$8") && lastLargePepSelection == LargePepperoni.FindString("Extra"))
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastLargePepSelection = LargePepperoni.SelectedIndex;
         }
@@ -1743,12 +1743,12 @@ namespace MomAndPops.Resources
             if (LargeSausage.FindString("Extra") == LargeSausage.SelectedIndex)
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeSausageSelection == LargeSausage.FindString("Extra"))
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastLargeSausageSelection = LargeSausage.SelectedIndex;
         }
@@ -1767,12 +1767,12 @@ namespace MomAndPops.Resources
             if (LargeHam.FindString("Extra") == LargeHam.SelectedIndex)
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeHamSelection == LargeHam.FindString("Extra"))
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastLargeHamSelection = LargeHam.SelectedIndex;
         }
@@ -1791,12 +1791,12 @@ namespace MomAndPops.Resources
             if (LargeOnion.FindString("Extra") == LargeOnion.SelectedIndex)
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeOnionSelection == LargeOnion.FindString("Extra"))
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastLargeOnionSelection = LargeOnion.SelectedIndex;
         }
@@ -1815,12 +1815,12 @@ namespace MomAndPops.Resources
             if (LargeGreenPepper.FindString("Extra") == LargeGreenPepper.SelectedIndex)
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeGPSelection == LargeGreenPepper.FindString("Extra"))
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastLargeGPSelection = LargeGreenPepper.SelectedIndex;
         }
@@ -1839,12 +1839,12 @@ namespace MomAndPops.Resources
             if (LargeTomato.FindString("Extra") == LargeTomato.SelectedIndex)
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeTomatoSelection == LargeTomato.FindString("Extra"))
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastLargeTomatoSelection = LargeTomato.SelectedIndex;
         }
@@ -1863,12 +1863,12 @@ namespace MomAndPops.Resources
             if (LargeMushroom.FindString("Extra") == LargeMushroom.SelectedIndex)
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeMushroomSelection == LargeMushroom.FindString("Extra"))
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastLargeMushroomSelection = LargeMushroom.SelectedIndex;
         }
@@ -1887,12 +1887,12 @@ namespace MomAndPops.Resources
             if (LargePineapple.FindString("Extra") == LargePineapple.SelectedIndex)
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             else if (!LargePizzaPrice.Text.Equals("$8") && lastLargePineappleSelection == LargePineapple.FindString("Extra"))
             {
                 float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total;
+                LargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastLargePineappleSelection = LargePineapple.SelectedIndex;
         }
@@ -1910,13 +1910,13 @@ namespace MomAndPops.Resources
 
             if (ExtraLargeCheese.FindString("Extra") == ExtraLargeCheese.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLCheeseSelection == ExtraLargeCheese.FindString("Extra"))
+            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLCheeseSelection == ExtraLargeCheese.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastXLCheeseSelection = ExtraLargeCheese.SelectedIndex;
         }
@@ -1934,13 +1934,13 @@ namespace MomAndPops.Resources
 
             if (ExtraLargePepperoni.FindString("Extra") == ExtraLargePepperoni.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLPepSelection == ExtraLargePepperoni.FindString("Extra"))
+            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLPepSelection == ExtraLargePepperoni.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastXLPepSelection = ExtraLargePepperoni.SelectedIndex;
         }
@@ -1958,13 +1958,13 @@ namespace MomAndPops.Resources
 
             if (ExtraLargeSausage.FindString("Extra") == ExtraLargeSausage.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLSausageSelection == ExtraLargeSausage.FindString("Extra"))
+            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLSausageSelection == ExtraLargeSausage.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastXLSausageSelection = ExtraLargeSausage.SelectedIndex;
         }
@@ -1982,13 +1982,13 @@ namespace MomAndPops.Resources
 
             if (ExtraLargeHam.FindString("Extra") == ExtraLargeHam.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLHamSelection == ExtraLargeHam.FindString("Extra"))
+            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLHamSelection == ExtraLargeHam.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastXLHamSelection = ExtraLargeHam.SelectedIndex;
         }
@@ -1999,13 +1999,13 @@ namespace MomAndPops.Resources
 
             if (ExtraLargeOnion.FindString("Extra") == ExtraLargeOnion.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + .75f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLOnionSelection == ExtraLargeOnion.FindString("Extra"))
+            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLOnionSelection == ExtraLargeOnion.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 0.75f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastXLOnionSelection = ExtraLargeOnion.SelectedIndex;
         }
@@ -2023,13 +2023,13 @@ namespace MomAndPops.Resources
 
             if (ExtraLargeGreenPepper.FindString("Extra") == ExtraLargeGreenPepper.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLGPSelection == ExtraLargeGreenPepper.FindString("Extra"))
+            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLGPSelection == ExtraLargeGreenPepper.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastXLGPSelection = ExtraLargeGreenPepper.SelectedIndex;
         }
@@ -2047,13 +2047,13 @@ namespace MomAndPops.Resources
 
             if (ExtraLargeTomato.FindString("Extra") == ExtraLargeTomato.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLTomatoSelection == ExtraLargeTomato.FindString("Extra"))
+            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLTomatoSelection == ExtraLargeTomato.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastXLTomatoSelection = ExtraLargeTomato.SelectedIndex;
         }
@@ -2071,13 +2071,13 @@ namespace MomAndPops.Resources
 
             if (ExtraLargeMushroom.FindString("Extra") == ExtraLargeMushroom.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLMushroomSelection == ExtraLargeMushroom.FindString("Extra"))
+            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLMushroomSelection == ExtraLargeMushroom.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastXLMushroomSelection = ExtraLargeMushroom.SelectedIndex;
         }
@@ -2095,13 +2095,13 @@ namespace MomAndPops.Resources
 
             if (ExtraLargePineapple.FindString("Extra") == ExtraLargePineapple.SelectedIndex)
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$8") && lastXLPineappleSelection == ExtraLargePineapple.FindString("Extra"))
+            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLPineappleSelection == ExtraLargePineapple.FindString("Extra"))
             {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1f;
-                ExtraLargePizzaPrice.Text = "$" + total;
+                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
+                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
             }
             lastXLPineappleSelection = ExtraLargePineapple.SelectedIndex;
         }

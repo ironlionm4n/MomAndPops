@@ -402,9 +402,9 @@ namespace MomAndPops.Resources
             this.BreadstickPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.BreadstickPrice.Location = new System.Drawing.Point(182, 5);
             this.BreadstickPrice.Name = "BreadstickPrice";
-            this.BreadstickPrice.Size = new System.Drawing.Size(31, 20);
+            this.BreadstickPrice.Size = new System.Drawing.Size(27, 20);
             this.BreadstickPrice.TabIndex = 2;
-            this.BreadstickPrice.Text = "$4.";
+            this.BreadstickPrice.Text = "$4";
             // 
             // Breadsticks
             // 
