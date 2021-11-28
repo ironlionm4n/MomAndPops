@@ -82,99 +82,22 @@ namespace MomAndPops.Resources
             CartTextBox.Text = string.Empty;
             if (BreadsticksQuantity.Value > 0)
             {
-                bool hasBreadsticks = false;
-                float price = float.Parse(BreadstickPrice.Text.Substring(1));
-                MenuItem breadsticks = new MenuItem(Breadsticks.Text, price, int.Parse(BreadsticksQuantity.Value.ToString()));
-
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    if (m.ItemName.Equals(Breadsticks.Text))
-                    {
-                        m.ItemQuantity += breadsticks.ItemQuantity;
-                        hasBreadsticks = true;
-                    }
-                }
-                if (hasBreadsticks == false)
-                {
-                    currentOrder.AddToOrder(breadsticks);
-                }
-                BreadsticksQuantity.Value = 0;
+                BreadsticksItem();
             }
             if (BreadstickBitesQuantity.Value > 0)
             {
-                bool hasBreadstickBites = false;
-                float price = float.Parse(BreadstickBitesPrice.Text.Substring(1));
-                MenuItem breadstickBites = new MenuItem(BreadstickBites.Text, price, int.Parse(BreadstickBitesQuantity.Value.ToString()));
-
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    if (m.ItemName.Equals(BreadstickBites.Text))
-                    {
-                        m.ItemQuantity += breadstickBites.ItemQuantity;
-                        hasBreadstickBites = true;
-                    }
-                }
-                if (hasBreadstickBites == false)
-                {
-                    currentOrder.AddToOrder(breadstickBites);
-                }
-                BreadstickBitesQuantity.Value = 0;
+                BreadstickBitesItem();
             }
             if (CookieQuantity.Value > 0)
             {
-                bool hasCookie = false;
-                float price = float.Parse(CookiePrice.Text.Substring(1));
-                MenuItem cookie = new MenuItem(ChocChipCookie.Text, price, int.Parse(CookieQuantity.Value.ToString()));
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    if (m.ItemName.Equals(ChocChipCookie.Text))
-                    {
-                        m.ItemQuantity += cookie.ItemQuantity;
-                        hasCookie = true;
-                    }
-                }
-                if (hasCookie == false)
-                {
-                    currentOrder.AddToOrder(cookie);
-                }
-                CookieQuantity.Value = 0;
+                Cookie();
             }
             ///
             /// Pepsi Drink Check
             ///
             if (PepsiQuantity.Value > 0 && (PepsiSmall.Checked || PepsiMedium.Checked || PepsiLarge.Checked))
             {
-                bool hasDrink = false;
-                string drinkName;
-                if (PepsiSmall.Checked)
-                {
-                    drinkName = "Small " + PepsiLabel.Text;
-                    UncheckDrinkSelections(PepsiSmall);
-                }
-                else if (PepsiMedium.Checked)
-                {
-                    drinkName = "Medium " + PepsiLabel.Text;
-                    UncheckDrinkSelections(PepsiMedium);
-                }
-                else
-                {
-                    drinkName = "Large " + PepsiLabel.Text;
-                    UncheckDrinkSelections(PepsiLarge);
-                }
-                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(PepsiQuantity.Value.ToString()));
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    if (m.ItemName.Contains(PepsiLabel.Text))
-                    {
-                        m.ItemQuantity += drink.ItemQuantity;
-                        hasDrink = true;
-                    }
-                }
-                if (hasDrink == false)
-                {
-                    currentOrder.AddToOrder(drink);
-                }
-                PepsiQuantity.Value = 0;
+                Pepsi();
 
             }
             ///
@@ -182,260 +105,49 @@ namespace MomAndPops.Resources
             ///
             if (DietPepsiQuantity.Value > 0 && (DietPepsiSmall.Checked || DietPepsiMedium.Checked || DietPepsiLarge.Checked))
             {
-                string drinkName;
-                bool hasDrink = false;
-                if (DietPepsiSmall.Checked)
-                {
-                    drinkName = "Small " + DietPepsiLabel.Text;
-                    UncheckDrinkSelections(DietPepsiSmall);
-                }
-                else if (DietPepsiMedium.Checked)
-                {
-                    drinkName = "Medium " + DietPepsiLabel.Text;
-                    UncheckDrinkSelections(DietPepsiMedium);
-                }
-                else
-                {
-                    drinkName = "Large " + DietPepsiLabel.Text;
-                    UncheckDrinkSelections(DietPepsiLarge);
-                }
-                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(DietPepsiQuantity.Value.ToString()));
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    if (m.ItemName.Contains(DietPepsiLabel.Text))
-                    {
-                        m.ItemQuantity += drink.ItemQuantity;
-                        hasDrink = true;
-                    }
-                }
-                if (hasDrink == false)
-                {
-                    currentOrder.AddToOrder(drink);
-                }
-                DietPepsiQuantity.Value = 0;
+                DietPepsi();
             }
             ///
             /// Orange Drink Check
             ///
             if (OrangeQuantity.Value > 0 && (OrangeSmall.Checked || OrangeMedium.Checked || OrangeLarge.Checked))
             {
-                bool hasDrink = false;
-                string drinkName;
-                if (OrangeSmall.Checked)
-                {
-                    drinkName = "Small " + OrangeLabel.Text;
-                    UncheckDrinkSelections(OrangeSmall);
-                }
-                else if (OrangeMedium.Checked)
-                {
-                    drinkName = "Medium " + OrangeLabel.Text;
-                    UncheckDrinkSelections(OrangeMedium);
-                }
-                else
-                {
-                    drinkName = "Large " + OrangeLabel.Text;
-                    UncheckDrinkSelections(OrangeLarge);
-                }
-                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(OrangeQuantity.Value.ToString()));
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    if (m.ItemName.Contains(OrangeLabel.Text))
-                    {
-                        m.ItemQuantity += drink.ItemQuantity;
-                        hasDrink = true;
-                    }
-                }
-                if (hasDrink == false)
-                {
-                    currentOrder.AddToOrder(drink);
-                }
-                OrangeQuantity.Value = 0;
+                Orange();
             }
             ///
             /// Diet Orange Drink Check
             ///
             if (DietOrangeQuantity.Value > 0 && (DietOrangeSmall.Checked || DietOrangeMedium.Checked || DietOrangeLarge.Checked))
             {
-                bool hasDrink = false;
-                string drinkName;
-                if (DietOrangeSmall.Checked)
-                {
-                    drinkName = "Small " + DietOrangeLabel.Text;
-                    UncheckDrinkSelections(DietOrangeSmall);
-                }
-                else if (DietOrangeMedium.Checked)
-                {
-                    drinkName = "Medium " + DietOrangeLabel.Text;
-                    UncheckDrinkSelections(DietOrangeMedium);
-                }
-                else
-                {
-                    drinkName = "Large " + DietOrangeLabel.Text;
-                    UncheckDrinkSelections(DietOrangeLarge);
-                }
-                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(DietOrangeQuantity.Value.ToString()));
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    if (m.ItemName.Contains(DietOrangeLabel.Text))
-                    {
-                        m.ItemQuantity += drink.ItemQuantity;
-                        hasDrink = true;
-                    }
-                }
-                if (hasDrink == false)
-                {
-                    currentOrder.AddToOrder(drink);
-                }
-                DietOrangeQuantity.Value = 0;
+                DietOrange();
             }
             ///
             /// Root Beer Drink Check
             ///
             if (RootBeerQuantity.Value > 0 && (RootBeerSmall.Checked || RootBeerMedium.Checked || RootBeerLarge.Checked))
             {
-                bool hasDrink = false;
-                string drinkName;
-                if (RootBeerSmall.Checked)
-                {
-                    drinkName = "Small " + RootBeerLabel.Text;
-                    UncheckDrinkSelections(RootBeerSmall);
-                }
-                else if (RootBeerMedium.Checked)
-                {
-                    drinkName = "Medium " + RootBeerLabel.Text;
-                    UncheckDrinkSelections(RootBeerMedium);
-                }
-                else
-                {
-                    drinkName = "Large " + RootBeerLabel.Text;
-                    UncheckDrinkSelections(RootBeerLarge);
-                }
-                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(RootBeerQuantity.Value.ToString()));
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    if (m.ItemName.Contains(RootBeerLabel.Text))
-                    {
-                        m.ItemQuantity += drink.ItemQuantity;
-                        hasDrink = true;
-                    }
-                }
-                if (hasDrink == false)
-                {
-                    currentOrder.AddToOrder(drink);
-                }
-                RootBeerQuantity.Value = 0;
+                RootBeer();
             }
             ///
             /// Diet Root Beer Drink Check
             ///
             if (DietRootBeerQuantity.Value > 0 && (DietRootBeerSmall.Checked || DietRootBeerMedium.Checked || DietRootBeerLarge.Checked))
             {
-                bool hasDrink = false;
-                string drinkName;
-                if (DietRootBeerSmall.Checked)
-                {
-                    drinkName = "Small " + DietRootBeerLabel.Text;
-                    UncheckDrinkSelections(DietRootBeerSmall);
-                }
-                else if (DietRootBeerMedium.Checked)
-                {
-                    drinkName = "Medium " + DietRootBeerLabel.Text;
-                    UncheckDrinkSelections(DietRootBeerMedium);
-                }
-                else
-                {
-                    drinkName = "Large " + DietRootBeerLabel.Text;
-                    UncheckDrinkSelections(DietRootBeerLarge);
-                }
-                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(DietRootBeerQuantity.Value.ToString()));
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    if (m.ItemName.Contains(DietRootBeerLabel.Text))
-                    {
-                        m.ItemQuantity += drink.ItemQuantity;
-                        hasDrink = true;
-                    }
-                }
-                if (hasDrink == false)
-                {
-                    currentOrder.AddToOrder(drink);
-                }
-                DietRootBeerQuantity.Value = 0;
+                DietRootBeer();
             }
             ///
             /// Sierra Mist Drink Check
             ///
             if (SierraMistQuantity.Value > 0 && (SierraMistSmall.Checked || SierraMistMedium.Checked || SierraMistLarge.Checked))
             {
-                bool hasDrink = false;
-                string drinkName;
-                if (SierraMistSmall.Checked)
-                {
-                    drinkName = "Small " + SierraMistLabel.Text;
-                    UncheckDrinkSelections(SierraMistSmall);
-                }
-                else if (SierraMistMedium.Checked)
-                {
-                    drinkName = "Medium " + SierraMistLabel.Text;
-                    UncheckDrinkSelections(SierraMistMedium);
-                }
-                else
-                {
-                    drinkName = "Large " + SierraMistLabel.Text;
-                    UncheckDrinkSelections(SierraMistLarge);
-                }
-                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(SierraMistQuantity.Value.ToString()));
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    if (m.ItemName.Contains(SierraMistLabel.Text))
-                    {
-                        m.ItemQuantity += drink.ItemQuantity;
-                        hasDrink = true;
-                    }
-                }
-                if (hasDrink == false)
-                {
-                    currentOrder.AddToOrder(drink);
-                }
-                SierraMistQuantity.Value = 0;
+                SierraMist();
             }
             ///
             /// Lemonade Drink Check
             ///
             if (LemonadeQuantity.Value > 0 && (LemonadeSmall.Checked || LemonadeMedium.Checked || LemonadeLarge.Checked))
             {
-                bool hasDrink = false;
-                string drinkName;
-                if (LemonadeSmall.Checked)
-                {
-                    drinkName = "Small " + LemonadeLabel.Text;
-                    UncheckDrinkSelections(LemonadeSmall);
-
-                }
-                else if (SierraMistMedium.Checked)
-                {
-                    drinkName = "Medium " + LemonadeLabel.Text;
-                    UncheckDrinkSelections(LemonadeMedium);
-                }
-                else
-                {
-                    drinkName = "Large " + LemonadeLabel.Text;
-                    UncheckDrinkSelections(LemonadeLarge);
-                }
-                MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(LemonadeQuantity.Value.ToString()));
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    if (m.ItemName.Contains(LemonadeLabel.Text))
-                    {
-                        m.ItemQuantity += drink.ItemQuantity;
-                        hasDrink = true;
-                    }
-                }
-                if (hasDrink == false)
-                {
-                    currentOrder.AddToOrder(drink);
-                }
-                LemonadeQuantity.Value = 0;
+                Lemonade();
             }
 
             foreach (MenuItem item in currentOrder.currentOrder)
@@ -449,448 +161,811 @@ namespace MomAndPops.Resources
             ///
             if (SmallPizzaQuantity.Value > 0 && (SmallThinCrust.Checked || SmallRegularCrust.Checked || SmallPanCrust.Checked))
             {
-                bool hasThisPizza = false;
-                List<string> topping = new List<string>();
-                string crust = "";
-                float price = float.Parse(SmallPizzaPrice.Text.Substring(1));
-
-                if (SmallThinCrust.Checked)
-                {
-                    crust = "Thin Crust";
-                    SmallThinCrust.Checked = false;
-                }
-                else if (SmallPanCrust.Checked)
-                {
-                    crust = "Pan Crust";
-                    SmallPanCrust.Checked = false;
-                }
-                else if (SmallRegularCrust.Checked)
-                {
-                    crust = "Regular Crust";
-                    SmallRegularCrust.Checked = false;
-                }
-
-                if (SmallCheese.SelectedIndex != SmallCheese.FindString("None"))
-                {
-                    topping.Add(SmallCheese.Text + " " + SmallCheeseLabel.Text);
-                    SmallCheese.SelectedIndex = 0;
-                }
-
-                if (SmallPepperoni.SelectedIndex != SmallPepperoni.FindString("None"))
-                {
-                    topping.Add(SmallPepperoni.Text + " " + SmallPepperoniLabel.Text);
-                    SmallPepperoni.SelectedIndex = 0;
-                }
-
-                if (SmallSausage.SelectedIndex != SmallSausage.FindString("None"))
-                {
-                    topping.Add(SmallSausage.Text + " " + SmallSausageLabel.Text);
-                    SmallSausage.SelectedIndex = 0;
-                }
-
-                if (SmallHam.SelectedIndex != SmallHam.FindString("None"))
-                {
-                    topping.Add(SmallHam.Text + " " + SmallHamLabel.Text);
-                    SmallHam.SelectedIndex = 0;
-                }
-
-                if (SmallOnion.SelectedIndex != SmallOnion.FindString("None"))
-                {
-                    topping.Add(SmallOnion.Text + " " + SmallOnionLabel.Text);
-                    SmallOnion.SelectedIndex = 0;
-                }
-
-                if (SmallGreenPepper.SelectedIndex != SmallGreenPepper.FindString("None"))
-                {
-                    topping.Add(SmallGreenPepper.Text + " " + SmallGreenPepperLabel.Text);
-                    SmallGreenPepper.SelectedIndex = 0;
-                }
-
-                if (SmallTomato.SelectedIndex != SmallTomato.FindString("None"))
-                {
-                    topping.Add(SmallTomato.Text + " " + SmallTomatoLabel.Text);
-                    SmallTomato.SelectedIndex = 0;
-                }
-
-                if (SmallMushroom.SelectedIndex != SmallMushroom.FindString("None"))
-                {
-                    topping.Add(SmallMushroom.Text + " " + SmallMushroomLabel.Text);
-                    SmallMushroom.SelectedIndex = 0;
-                }
-
-                if (SmallPineapple.SelectedIndex != SmallPineapple.FindString("None"))
-                {
-                    topping.Add(SmallPineapple.Text + " " + SmallPineappleLabel.Text);
-                    SmallPineapple.SelectedIndex = 0;
-                }
-
-                MenuItem pizza = new MenuItem(SmallPizzaText.Text, price, int.Parse(SmallPizzaQuantity.Value.ToString()), "Small", topping, crust);
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    int numberSameToppings = 0;
-                    if (m.ItemName.Equals(SmallPizzaText.Text) && m.Toppings.Count == pizza.Toppings.Count && m.CrustOption == pizza.CrustOption)
-                    {
-
-                        for (int i = 0; i < pizza.Toppings.Count; i++)
-                        {
-                            if (m.Toppings[i] == pizza.Toppings[i])
-                            {
-                                numberSameToppings++;
-                            }
-                        }
-                        if (numberSameToppings == pizza.Toppings.Count)
-                        {
-                            m.ItemQuantity += pizza.ItemQuantity;
-                            hasThisPizza = true;
-                        }
-                        else
-                        {
-                            currentOrder.AddToOrder(pizza);
-                        }
-                    }
-                }
-                if (hasThisPizza == false)
-                {
-                    currentOrder.AddToOrder(pizza);
-                }
-                SmallPizzaQuantity.Value = 0;
+                SmallPizza();
             }
             ///
             ///Medium Pizza Check
             ///
             if (MediumPizzaQuantity.Value > 0 && (MediumThinCrust.Checked || MediumRegularCrust.Checked || MediumPanCrust.Checked))
             {
-                bool hasThisPizza = false;
-                List<string> topping = new List<string>();
-                string crust = "";
-                float price = float.Parse(MediumPizzaPrice.Text.Substring(1));
-
-                if (MediumThinCrust.Checked)
-                {
-                    crust = "Thin Crust";
-                    MediumThinCrust.Checked = false;
-                }
-                else if (MediumPanCrust.Checked)
-                {
-                    crust = "Pan Crust";
-                    MediumPanCrust.Checked = false;
-                }
-                else if (MediumRegularCrust.Checked)
-                {
-                    crust = "Regular Crust";
-                    MediumRegularCrust.Checked = false;
-                }
-
-                if (MediumCheese.SelectedIndex != MediumCheese.FindString("None"))
-                {
-                    topping.Add(MediumCheese.Text + " " + MediumCheeseLabel.Text);
-                    MediumCheese.SelectedIndex = 0;
-                }
-
-                if (MediumPepperoni.SelectedIndex != MediumPepperoni.FindString("None"))
-                {
-                    topping.Add(MediumPepperoni.Text + " " + MediumPepperoniLabel.Text);
-                    MediumPepperoni.SelectedIndex = 0;
-                }
-
-                if (MediumSausage.SelectedIndex != MediumSausage.FindString("None"))
-                {
-                    topping.Add(MediumSausage.Text + " " + MediumSausageLabel.Text);
-                    MediumSausage.SelectedIndex = 0;
-                }
-
-                if (MediumHam.SelectedIndex != MediumHam.FindString("None"))
-                {
-                    topping.Add(MediumHam.Text + " " + MediumHamLabel.Text);
-                    MediumHam.SelectedIndex = 0;
-                }
-
-                if (MediumOnion.SelectedIndex != MediumOnion.FindString("None"))
-                {
-                    topping.Add(MediumOnion.Text + " " + MediumOnionLabel.Text);
-                    MediumOnion.SelectedIndex = 0;
-                }
-
-                if (MediumGreenPepper.SelectedIndex != MediumGreenPepper.FindString("None"))
-                {
-                    topping.Add(MediumGreenPepper.Text + " " + MediumGreenPepperLabel.Text);
-                    MediumGreenPepper.SelectedIndex = 0;
-                }
-
-                if (MediumTomato.SelectedIndex != MediumTomato.FindString("None"))
-                {
-                    topping.Add(MediumTomato.Text + " " + MediumTomatoLabel.Text);
-                    MediumTomato.SelectedIndex = 0;
-                }
-
-                if (MediumMushroom.SelectedIndex != MediumMushroom.FindString("None"))
-                {
-                    topping.Add(MediumMushroom.Text + " " + MediumMushroomLabel.Text);
-                    MediumMushroom.SelectedIndex = 0;
-                }
-
-                if (MediumPineapple.SelectedIndex != MediumPineapple.FindString("None"))
-                {
-                    topping.Add(MediumPineapple.Text + " " + MediumPineappleLabel.Text);
-                    MediumPineapple.SelectedIndex = 0;
-                }
-
-                MenuItem pizza = new MenuItem(MediumPizzaText.Text, price, int.Parse(MediumPizzaQuantity.Value.ToString()), "Medium", topping, crust);
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    int numberSameToppings = 0;
-                    if (m.ItemName.Equals(MediumPizzaText.Text) && m.Toppings.Count == pizza.Toppings.Count && m.CrustOption == pizza.CrustOption)
-                    {
-
-                        for (int i = 0; i < pizza.Toppings.Count; i++)
-                        {
-                            if (m.Toppings[i] == pizza.Toppings[i])
-                            {
-                                numberSameToppings++;
-                            }
-                        }
-                        if (numberSameToppings == pizza.Toppings.Count)
-                        {
-                            m.ItemQuantity += pizza.ItemQuantity;
-                            hasThisPizza = true;
-                        }
-                        else
-                        {
-                            currentOrder.AddToOrder(pizza);
-                        }
-                    }
-                }
-                if (hasThisPizza == false)
-                {
-                    currentOrder.AddToOrder(pizza);
-                }
-                MediumPizzaQuantity.Value = 0;
+                MediumPizza();
             }
             ///
             ///Large Pizza Check
             ///
             if (LargePizzaQuantity.Value > 0 && (LargeThinCrust.Checked || LargeRegularCrust.Checked || LargePanCrust.Checked))
             {
-                bool hasThisPizza = false;
-                List<string> topping = new List<string>();
-                string crust = "";
-                float price = float.Parse(LargePizzaPrice.Text.Substring(1));
-
-                if (LargeThinCrust.Checked)
-                {
-                    crust = "Thin Crust";
-                    LargeThinCrust.Checked = false;
-                }
-                else if (LargePanCrust.Checked)
-                {
-                    crust = "Pan Crust";
-                    LargePanCrust.Checked = false;
-                }
-                else if (LargeRegularCrust.Checked)
-                {
-                    crust = "Regular Crust";
-                    LargeRegularCrust.Checked = false;
-                }
-
-                if (LargeCheese.SelectedIndex != LargeCheese.FindString("None"))
-                {
-                    topping.Add(LargeCheese.Text + " " + LargeCheeseLabel.Text);
-                    LargeCheese.SelectedIndex = 0;
-                }
-
-                if (LargePepperoni.SelectedIndex != LargePepperoni.FindString("None"))
-                {
-                    topping.Add(LargePepperoni.Text + " " + LargePepperoniLabel.Text);
-                    LargePepperoni.SelectedIndex = 0;
-                }
-
-                if (LargeSausage.SelectedIndex != LargeSausage.FindString("None"))
-                {
-                    topping.Add(LargeSausage.Text + " " + LargeSausageLabel.Text);
-                    LargeSausage.SelectedIndex = 0;
-                }
-
-                if (LargeHam.SelectedIndex != LargeHam.FindString("None"))
-                {
-                    topping.Add(LargeHam.Text + " " + LargeHamLabel.Text);
-                    LargeHam.SelectedIndex = 0;
-                }
-
-                if (LargeOnion.SelectedIndex != LargeOnion.FindString("None"))
-                {
-                    topping.Add(LargeOnion.Text + " " + LargeOnionLabel.Text);
-                    LargeOnion.SelectedIndex = 0;
-                }
-
-                if (LargeGreenPepper.SelectedIndex != LargeGreenPepper.FindString("None"))
-                {
-                    topping.Add(LargeGreenPepper.Text + " " + LargeGreenPepperLabel.Text);
-                    LargeGreenPepper.SelectedIndex = 0;
-                }
-
-                if (LargeTomato.SelectedIndex != LargeTomato.FindString("None"))
-                {
-                    topping.Add(LargeTomato.Text + " " + LargeTomatoLabel.Text);
-                    LargeTomato.SelectedIndex = 0;
-                }
-
-                if (LargeMushroom.SelectedIndex != LargeMushroom.FindString("None"))
-                {
-                    topping.Add(LargeMushroom.Text + " " + LargeMushroomLabel.Text);
-                    LargeMushroom.SelectedIndex = 0;
-                }
-
-                if (LargePineapple.SelectedIndex != LargePineapple.FindString("None"))
-                {
-                    topping.Add(LargePineapple.Text + " " + LargePineappleLabel.Text);
-                    LargePineapple.SelectedIndex = 0;
-                }
-
-                MenuItem pizza = new MenuItem(LargePizzaText.Text, price, int.Parse(LargePizzaQuantity.Value.ToString()), "Large", topping, crust);
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    int numberSameToppings = 0;
-                    if (m.ItemName.Equals(LargePizzaText.Text) && m.Toppings.Count == pizza.Toppings.Count && m.CrustOption == pizza.CrustOption)
-                    {
-
-                        for (int i = 0; i < pizza.Toppings.Count; i++)
-                        {
-                            if (m.Toppings[i] == pizza.Toppings[i])
-                            {
-                                numberSameToppings++;
-                            }
-                        }
-                        if (numberSameToppings == pizza.Toppings.Count)
-                        {
-                            m.ItemQuantity += pizza.ItemQuantity;
-                            hasThisPizza = true;
-                        }
-                        else
-                        {
-                            currentOrder.AddToOrder(pizza);
-                        }
-                    }
-                }
-                if (hasThisPizza == false)
-                {
-                    currentOrder.AddToOrder(pizza);
-                }
-                LargePizzaQuantity.Value = 0;
+                LargePizza();
             }
             ///
             ///Extra Large Pizza Check
             ///
             if (ExtraLargePizzaQuantity.Value > 0 && (ExtraLargeThinCrust.Checked || ExtraLargeRegularCrust.Checked || ExtraLargePanCrust.Checked))
             {
-                bool hasThisPizza = false;
-                List<string> topping = new List<string>();
-                string crust = "";
-                float price = float.Parse(ExtraLargePizzaPrice.Text.Substring(1));
-
-                if (ExtraLargeThinCrust.Checked)
-                {
-                    crust = "Thin Crust";
-                    ExtraLargeThinCrust.Checked = false;
-                }
-                else if (ExtraLargePanCrust.Checked)
-                {
-                    crust = "Pan Crust";
-                    ExtraLargePanCrust.Checked = false;
-                }
-                else if (ExtraLargeRegularCrust.Checked)
-                {
-                    crust = "Regular Crust";
-                    ExtraLargeRegularCrust.Checked = false;
-                }
-
-                if (ExtraLargeCheese.SelectedIndex != ExtraLargeCheese.FindString("None"))
-                {
-                    topping.Add(ExtraLargeCheese.Text + " " + ExtraLargeCheeseLabel.Text);
-                    ExtraLargeCheese.SelectedIndex = 0;
-                }
-
-                if (ExtraLargePepperoni.SelectedIndex != ExtraLargePepperoni.FindString("None"))
-                {
-                    topping.Add(ExtraLargePepperoni.Text + " " + ExtraLargePepperoniLabel.Text);
-                    ExtraLargePepperoni.SelectedIndex = 0;
-                }
-
-                if (ExtraLargeSausage.SelectedIndex != ExtraLargeSausage.FindString("None"))
-                {
-                    topping.Add(ExtraLargeSausage.Text + " " + ExtraLargeSausageLabel.Text);
-                    ExtraLargeSausage.SelectedIndex = 0;
-                }
-
-                if (ExtraLargeHam.SelectedIndex != ExtraLargeHam.FindString("None"))
-                {
-                    topping.Add(ExtraLargeHam.Text + " " + ExtraLargeHamLabel.Text);
-                    ExtraLargeHam.SelectedIndex = 0;
-                }
-
-                if (ExtraLargeOnion.SelectedIndex != ExtraLargeOnion.FindString("None"))
-                {
-                    topping.Add(ExtraLargeOnion.Text + " " + ExtraLargeOnionLabel.Text);
-                    ExtraLargeOnion.SelectedIndex = 0;
-                }
-
-                if (ExtraLargeGreenPepper.SelectedIndex != ExtraLargeGreenPepper.FindString("None"))
-                {
-                    topping.Add(ExtraLargeGreenPepper.Text + " " + ExtraLargeGreenPepperLabel.Text);
-                    ExtraLargeGreenPepper.SelectedIndex = 0;
-                }
-
-                if (ExtraLargeTomato.SelectedIndex != ExtraLargeTomato.FindString("None"))
-                {
-                    topping.Add(ExtraLargeTomato.Text + " " + ExtraLargeTomatoLabel.Text);
-                    ExtraLargeTomato.SelectedIndex = 0;
-                }
-
-                if (ExtraLargeMushroom.SelectedIndex != ExtraLargeMushroom.FindString("None"))
-                {
-                    topping.Add(ExtraLargeMushroom.Text + " " + ExtraLargeMushroomLabel.Text);
-                    ExtraLargeMushroom.SelectedIndex = 0;
-                }
-
-                if (ExtraLargePineapple.SelectedIndex != ExtraLargePineapple.FindString("None"))
-                {
-                    topping.Add(ExtraLargePineapple.Text + " " + ExtraLargePineappleLabel.Text);
-                    ExtraLargePineapple.SelectedIndex = 0;
-                }
-
-                MenuItem pizza = new MenuItem(ExtraLargePizzaText.Text, price, int.Parse(ExtraLargePizzaQuantity.Value.ToString()), "ExtraLarge", topping, crust);
-                foreach (MenuItem m in currentOrder.currentOrder)
-                {
-                    int numberSameToppings = 0;
-                    if (m.ItemName.Equals(ExtraLargePizzaText.Text) && m.Toppings.Count == pizza.Toppings.Count && m.CrustOption == pizza.CrustOption)
-                    {
-
-                        for (int i = 0; i < pizza.Toppings.Count; i++)
-                        {
-                            if (m.Toppings[i] == pizza.Toppings[i])
-                            {
-                                numberSameToppings++;
-                            }
-                        }
-                        if (numberSameToppings == pizza.Toppings.Count)
-                        {
-                            m.ItemQuantity += pizza.ItemQuantity;
-                            hasThisPizza = true;
-                        }
-                        else
-                        {
-                            currentOrder.AddToOrder(pizza);
-                        }
-                    }
-                }
-                if (hasThisPizza == false)
-                {
-                    currentOrder.AddToOrder(pizza);
-                }
-                ExtraLargePizzaQuantity.Value = 0;
+                ExtraLargePizza();
             }
-          
+
 
             PrintOrder();
+        }
+
+        private void BreadsticksItem()
+        {
+            bool hasBreadsticks = false;
+            float price = float.Parse(BreadstickPrice.Text.Substring(1));
+            MenuItem breadsticks = new MenuItem(Breadsticks.Text, price, int.Parse(BreadsticksQuantity.Value.ToString()));
+
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                if (m.ItemName.Equals(Breadsticks.Text))
+                {
+                    m.ItemQuantity += breadsticks.ItemQuantity;
+                    hasBreadsticks = true;
+                }
+            }
+            if (hasBreadsticks == false)
+            {
+                currentOrder.AddToOrder(breadsticks);
+            }
+            BreadsticksQuantity.Value = 0;
+        }
+
+        private void BreadstickBitesItem()
+        {
+            bool hasBreadstickBites = false;
+            float price = float.Parse(BreadstickBitesPrice.Text.Substring(1));
+            MenuItem breadstickBites = new MenuItem(BreadstickBites.Text, price, int.Parse(BreadstickBitesQuantity.Value.ToString()));
+
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                if (m.ItemName.Equals(BreadstickBites.Text))
+                {
+                    m.ItemQuantity += breadstickBites.ItemQuantity;
+                    hasBreadstickBites = true;
+                }
+            }
+            if (hasBreadstickBites == false)
+            {
+                currentOrder.AddToOrder(breadstickBites);
+            }
+            BreadstickBitesQuantity.Value = 0;
+        }
+
+        private void Cookie()
+        {
+            bool hasCookie = false;
+            float price = float.Parse(CookiePrice.Text.Substring(1));
+            MenuItem cookie = new MenuItem(ChocChipCookie.Text, price, int.Parse(CookieQuantity.Value.ToString()));
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                if (m.ItemName.Equals(ChocChipCookie.Text))
+                {
+                    m.ItemQuantity += cookie.ItemQuantity;
+                    hasCookie = true;
+                }
+            }
+            if (hasCookie == false)
+            {
+                currentOrder.AddToOrder(cookie);
+            }
+            CookieQuantity.Value = 0;
+        }
+
+        private void Pepsi()
+        {
+            bool hasDrink = false;
+            string drinkName;
+            if (PepsiSmall.Checked)
+            {
+                drinkName = "Small " + PepsiLabel.Text;
+                UncheckDrinkSelections(PepsiSmall);
+            }
+            else if (PepsiMedium.Checked)
+            {
+                drinkName = "Medium " + PepsiLabel.Text;
+                UncheckDrinkSelections(PepsiMedium);
+            }
+            else
+            {
+                drinkName = "Large " + PepsiLabel.Text;
+                UncheckDrinkSelections(PepsiLarge);
+            }
+            MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(PepsiQuantity.Value.ToString()));
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                if (m.ItemName.Contains(PepsiLabel.Text))
+                {
+                    m.ItemQuantity += drink.ItemQuantity;
+                    hasDrink = true;
+                }
+            }
+            if (hasDrink == false)
+            {
+                currentOrder.AddToOrder(drink);
+            }
+            PepsiQuantity.Value = 0;
+        }
+
+        private void DietPepsi()
+        {
+            string drinkName;
+            bool hasDrink = false;
+            if (DietPepsiSmall.Checked)
+            {
+                drinkName = "Small " + DietPepsiLabel.Text;
+                UncheckDrinkSelections(DietPepsiSmall);
+            }
+            else if (DietPepsiMedium.Checked)
+            {
+                drinkName = "Medium " + DietPepsiLabel.Text;
+                UncheckDrinkSelections(DietPepsiMedium);
+            }
+            else
+            {
+                drinkName = "Large " + DietPepsiLabel.Text;
+                UncheckDrinkSelections(DietPepsiLarge);
+            }
+            MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(DietPepsiQuantity.Value.ToString()));
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                if (m.ItemName.Contains(DietPepsiLabel.Text))
+                {
+                    m.ItemQuantity += drink.ItemQuantity;
+                    hasDrink = true;
+                }
+            }
+            if (hasDrink == false)
+            {
+                currentOrder.AddToOrder(drink);
+            }
+            DietPepsiQuantity.Value = 0;
+        }
+
+        private void Orange()
+        {
+            bool hasDrink = false;
+            string drinkName;
+            if (OrangeSmall.Checked)
+            {
+                drinkName = "Small " + OrangeLabel.Text;
+                UncheckDrinkSelections(OrangeSmall);
+            }
+            else if (OrangeMedium.Checked)
+            {
+                drinkName = "Medium " + OrangeLabel.Text;
+                UncheckDrinkSelections(OrangeMedium);
+            }
+            else
+            {
+                drinkName = "Large " + OrangeLabel.Text;
+                UncheckDrinkSelections(OrangeLarge);
+            }
+            MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(OrangeQuantity.Value.ToString()));
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                if (m.ItemName.Contains(OrangeLabel.Text))
+                {
+                    m.ItemQuantity += drink.ItemQuantity;
+                    hasDrink = true;
+                }
+            }
+            if (hasDrink == false)
+            {
+                currentOrder.AddToOrder(drink);
+            }
+            OrangeQuantity.Value = 0;
+        }
+
+        private void DietOrange()
+        {
+            bool hasDrink = false;
+            string drinkName;
+            if (DietOrangeSmall.Checked)
+            {
+                drinkName = "Small " + DietOrangeLabel.Text;
+                UncheckDrinkSelections(DietOrangeSmall);
+            }
+            else if (DietOrangeMedium.Checked)
+            {
+                drinkName = "Medium " + DietOrangeLabel.Text;
+                UncheckDrinkSelections(DietOrangeMedium);
+            }
+            else
+            {
+                drinkName = "Large " + DietOrangeLabel.Text;
+                UncheckDrinkSelections(DietOrangeLarge);
+            }
+            MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(DietOrangeQuantity.Value.ToString()));
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                if (m.ItemName.Contains(DietOrangeLabel.Text))
+                {
+                    m.ItemQuantity += drink.ItemQuantity;
+                    hasDrink = true;
+                }
+            }
+            if (hasDrink == false)
+            {
+                currentOrder.AddToOrder(drink);
+            }
+            DietOrangeQuantity.Value = 0;
+        }
+
+        private void RootBeer()
+        {
+            bool hasDrink = false;
+            string drinkName;
+            if (RootBeerSmall.Checked)
+            {
+                drinkName = "Small " + RootBeerLabel.Text;
+                UncheckDrinkSelections(RootBeerSmall);
+            }
+            else if (RootBeerMedium.Checked)
+            {
+                drinkName = "Medium " + RootBeerLabel.Text;
+                UncheckDrinkSelections(RootBeerMedium);
+            }
+            else
+            {
+                drinkName = "Large " + RootBeerLabel.Text;
+                UncheckDrinkSelections(RootBeerLarge);
+            }
+            MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(RootBeerQuantity.Value.ToString()));
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                if (m.ItemName.Contains(RootBeerLabel.Text))
+                {
+                    m.ItemQuantity += drink.ItemQuantity;
+                    hasDrink = true;
+                }
+            }
+            if (hasDrink == false)
+            {
+                currentOrder.AddToOrder(drink);
+            }
+            RootBeerQuantity.Value = 0;
+        }
+
+        private void DietRootBeer()
+        {
+            bool hasDrink = false;
+            string drinkName;
+            if (DietRootBeerSmall.Checked)
+            {
+                drinkName = "Small " + DietRootBeerLabel.Text;
+                UncheckDrinkSelections(DietRootBeerSmall);
+            }
+            else if (DietRootBeerMedium.Checked)
+            {
+                drinkName = "Medium " + DietRootBeerLabel.Text;
+                UncheckDrinkSelections(DietRootBeerMedium);
+            }
+            else
+            {
+                drinkName = "Large " + DietRootBeerLabel.Text;
+                UncheckDrinkSelections(DietRootBeerLarge);
+            }
+            MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(DietRootBeerQuantity.Value.ToString()));
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                if (m.ItemName.Contains(DietRootBeerLabel.Text))
+                {
+                    m.ItemQuantity += drink.ItemQuantity;
+                    hasDrink = true;
+                }
+            }
+            if (hasDrink == false)
+            {
+                currentOrder.AddToOrder(drink);
+            }
+            DietRootBeerQuantity.Value = 0;
+        }
+
+        private void SierraMist()
+        {
+            bool hasDrink = false;
+            string drinkName;
+            if (SierraMistSmall.Checked)
+            {
+                drinkName = "Small " + SierraMistLabel.Text;
+                UncheckDrinkSelections(SierraMistSmall);
+            }
+            else if (SierraMistMedium.Checked)
+            {
+                drinkName = "Medium " + SierraMistLabel.Text;
+                UncheckDrinkSelections(SierraMistMedium);
+            }
+            else
+            {
+                drinkName = "Large " + SierraMistLabel.Text;
+                UncheckDrinkSelections(SierraMistLarge);
+            }
+            MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(SierraMistQuantity.Value.ToString()));
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                if (m.ItemName.Contains(SierraMistLabel.Text))
+                {
+                    m.ItemQuantity += drink.ItemQuantity;
+                    hasDrink = true;
+                }
+            }
+            if (hasDrink == false)
+            {
+                currentOrder.AddToOrder(drink);
+            }
+            SierraMistQuantity.Value = 0;
+        }
+
+        private void Lemonade()
+        {
+            bool hasDrink = false;
+            string drinkName;
+            if (LemonadeSmall.Checked)
+            {
+                drinkName = "Small " + LemonadeLabel.Text;
+                UncheckDrinkSelections(LemonadeSmall);
+
+            }
+            else if (SierraMistMedium.Checked)
+            {
+                drinkName = "Medium " + LemonadeLabel.Text;
+                UncheckDrinkSelections(LemonadeMedium);
+            }
+            else
+            {
+                drinkName = "Large " + LemonadeLabel.Text;
+                UncheckDrinkSelections(LemonadeLarge);
+            }
+            MenuItem drink = new MenuItem(drinkName, MenuItem.drinkPrice, int.Parse(LemonadeQuantity.Value.ToString()));
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                if (m.ItemName.Contains(LemonadeLabel.Text))
+                {
+                    m.ItemQuantity += drink.ItemQuantity;
+                    hasDrink = true;
+                }
+            }
+            if (hasDrink == false)
+            {
+                currentOrder.AddToOrder(drink);
+            }
+            LemonadeQuantity.Value = 0;
+        }
+
+        private void SmallPizza()
+        {
+            bool hasThisPizza = false;
+            List<string> topping = new List<string>();
+            string crust = "";
+            float price = float.Parse(SmallPizzaPrice.Text.Substring(1));
+
+            if (SmallThinCrust.Checked)
+            {
+                crust = "Thin Crust";
+                SmallThinCrust.Checked = false;
+            }
+            else if (SmallPanCrust.Checked)
+            {
+                crust = "Pan Crust";
+                SmallPanCrust.Checked = false;
+            }
+            else if (SmallRegularCrust.Checked)
+            {
+                crust = "Regular Crust";
+                SmallRegularCrust.Checked = false;
+            }
+
+            if (SmallCheese.SelectedIndex != SmallCheese.FindString("None"))
+            {
+                topping.Add(SmallCheese.Text + " " + SmallCheeseLabel.Text);
+                SmallCheese.SelectedIndex = 0;
+            }
+
+            if (SmallPepperoni.SelectedIndex != SmallPepperoni.FindString("None"))
+            {
+                topping.Add(SmallPepperoni.Text + " " + SmallPepperoniLabel.Text);
+                SmallPepperoni.SelectedIndex = 0;
+            }
+
+            if (SmallSausage.SelectedIndex != SmallSausage.FindString("None"))
+            {
+                topping.Add(SmallSausage.Text + " " + SmallSausageLabel.Text);
+                SmallSausage.SelectedIndex = 0;
+            }
+
+            if (SmallHam.SelectedIndex != SmallHam.FindString("None"))
+            {
+                topping.Add(SmallHam.Text + " " + SmallHamLabel.Text);
+                SmallHam.SelectedIndex = 0;
+            }
+
+            if (SmallOnion.SelectedIndex != SmallOnion.FindString("None"))
+            {
+                topping.Add(SmallOnion.Text + " " + SmallOnionLabel.Text);
+                SmallOnion.SelectedIndex = 0;
+            }
+
+            if (SmallGreenPepper.SelectedIndex != SmallGreenPepper.FindString("None"))
+            {
+                topping.Add(SmallGreenPepper.Text + " " + SmallGreenPepperLabel.Text);
+                SmallGreenPepper.SelectedIndex = 0;
+            }
+
+            if (SmallTomato.SelectedIndex != SmallTomato.FindString("None"))
+            {
+                topping.Add(SmallTomato.Text + " " + SmallTomatoLabel.Text);
+                SmallTomato.SelectedIndex = 0;
+            }
+
+            if (SmallMushroom.SelectedIndex != SmallMushroom.FindString("None"))
+            {
+                topping.Add(SmallMushroom.Text + " " + SmallMushroomLabel.Text);
+                SmallMushroom.SelectedIndex = 0;
+            }
+
+            if (SmallPineapple.SelectedIndex != SmallPineapple.FindString("None"))
+            {
+                topping.Add(SmallPineapple.Text + " " + SmallPineappleLabel.Text);
+                SmallPineapple.SelectedIndex = 0;
+            }
+
+            MenuItem pizza = new MenuItem(SmallPizzaText.Text, price, int.Parse(SmallPizzaQuantity.Value.ToString()), "Small", topping, crust);
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                int numberSameToppings = 0;
+                if (m.ItemName.Equals(SmallPizzaText.Text) && m.Toppings.Count == pizza.Toppings.Count && m.CrustOption == pizza.CrustOption)
+                {
+
+                    for (int i = 0; i < pizza.Toppings.Count; i++)
+                    {
+                        if (m.Toppings[i] == pizza.Toppings[i])
+                        {
+                            numberSameToppings++;
+                        }
+                    }
+                    if (numberSameToppings == pizza.Toppings.Count)
+                    {
+                        m.ItemQuantity += pizza.ItemQuantity;
+                        hasThisPizza = true;
+                    }
+                    else
+                    {
+                        currentOrder.AddToOrder(pizza);
+                    }
+                }
+            }
+            if (hasThisPizza == false)
+            {
+                currentOrder.AddToOrder(pizza);
+            }
+            SmallPizzaQuantity.Value = 0;
+        }
+
+        private void MediumPizza()
+        {
+            bool hasThisPizza = false;
+            List<string> topping = new List<string>();
+            string crust = "";
+            float price = float.Parse(MediumPizzaPrice.Text.Substring(1));
+
+            if (MediumThinCrust.Checked)
+            {
+                crust = "Thin Crust";
+                MediumThinCrust.Checked = false;
+            }
+            else if (MediumPanCrust.Checked)
+            {
+                crust = "Pan Crust";
+                MediumPanCrust.Checked = false;
+            }
+            else if (MediumRegularCrust.Checked)
+            {
+                crust = "Regular Crust";
+                MediumRegularCrust.Checked = false;
+            }
+
+            if (MediumCheese.SelectedIndex != MediumCheese.FindString("None"))
+            {
+                topping.Add(MediumCheese.Text + " " + MediumCheeseLabel.Text);
+                MediumCheese.SelectedIndex = 0;
+            }
+
+            if (MediumPepperoni.SelectedIndex != MediumPepperoni.FindString("None"))
+            {
+                topping.Add(MediumPepperoni.Text + " " + MediumPepperoniLabel.Text);
+                MediumPepperoni.SelectedIndex = 0;
+            }
+
+            if (MediumSausage.SelectedIndex != MediumSausage.FindString("None"))
+            {
+                topping.Add(MediumSausage.Text + " " + MediumSausageLabel.Text);
+                MediumSausage.SelectedIndex = 0;
+            }
+
+            if (MediumHam.SelectedIndex != MediumHam.FindString("None"))
+            {
+                topping.Add(MediumHam.Text + " " + MediumHamLabel.Text);
+                MediumHam.SelectedIndex = 0;
+            }
+
+            if (MediumOnion.SelectedIndex != MediumOnion.FindString("None"))
+            {
+                topping.Add(MediumOnion.Text + " " + MediumOnionLabel.Text);
+                MediumOnion.SelectedIndex = 0;
+            }
+
+            if (MediumGreenPepper.SelectedIndex != MediumGreenPepper.FindString("None"))
+            {
+                topping.Add(MediumGreenPepper.Text + " " + MediumGreenPepperLabel.Text);
+                MediumGreenPepper.SelectedIndex = 0;
+            }
+
+            if (MediumTomato.SelectedIndex != MediumTomato.FindString("None"))
+            {
+                topping.Add(MediumTomato.Text + " " + MediumTomatoLabel.Text);
+                MediumTomato.SelectedIndex = 0;
+            }
+
+            if (MediumMushroom.SelectedIndex != MediumMushroom.FindString("None"))
+            {
+                topping.Add(MediumMushroom.Text + " " + MediumMushroomLabel.Text);
+                MediumMushroom.SelectedIndex = 0;
+            }
+
+            if (MediumPineapple.SelectedIndex != MediumPineapple.FindString("None"))
+            {
+                topping.Add(MediumPineapple.Text + " " + MediumPineappleLabel.Text);
+                MediumPineapple.SelectedIndex = 0;
+            }
+
+            MenuItem pizza = new MenuItem(MediumPizzaText.Text, price, int.Parse(MediumPizzaQuantity.Value.ToString()), "Medium", topping, crust);
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                int numberSameToppings = 0;
+                if (m.ItemName.Equals(MediumPizzaText.Text) && m.Toppings.Count == pizza.Toppings.Count && m.CrustOption == pizza.CrustOption)
+                {
+
+                    for (int i = 0; i < pizza.Toppings.Count; i++)
+                    {
+                        if (m.Toppings[i] == pizza.Toppings[i])
+                        {
+                            numberSameToppings++;
+                        }
+                    }
+                    if (numberSameToppings == pizza.Toppings.Count)
+                    {
+                        m.ItemQuantity += pizza.ItemQuantity;
+                        hasThisPizza = true;
+                    }
+                    else
+                    {
+                        currentOrder.AddToOrder(pizza);
+                    }
+                }
+            }
+            if (hasThisPizza == false)
+            {
+                currentOrder.AddToOrder(pizza);
+            }
+            MediumPizzaQuantity.Value = 0;
+        }
+
+        private void LargePizza()
+        {
+            bool hasThisPizza = false;
+            List<string> topping = new List<string>();
+            string crust = "";
+            float price = float.Parse(LargePizzaPrice.Text.Substring(1));
+
+            if (LargeThinCrust.Checked)
+            {
+                crust = "Thin Crust";
+                LargeThinCrust.Checked = false;
+            }
+            else if (LargePanCrust.Checked)
+            {
+                crust = "Pan Crust";
+                LargePanCrust.Checked = false;
+            }
+            else if (LargeRegularCrust.Checked)
+            {
+                crust = "Regular Crust";
+                LargeRegularCrust.Checked = false;
+            }
+
+            if (LargeCheese.SelectedIndex != LargeCheese.FindString("None"))
+            {
+                topping.Add(LargeCheese.Text + " " + LargeCheeseLabel.Text);
+                LargeCheese.SelectedIndex = 0;
+            }
+
+            if (LargePepperoni.SelectedIndex != LargePepperoni.FindString("None"))
+            {
+                topping.Add(LargePepperoni.Text + " " + LargePepperoniLabel.Text);
+                LargePepperoni.SelectedIndex = 0;
+            }
+
+            if (LargeSausage.SelectedIndex != LargeSausage.FindString("None"))
+            {
+                topping.Add(LargeSausage.Text + " " + LargeSausageLabel.Text);
+                LargeSausage.SelectedIndex = 0;
+            }
+
+            if (LargeHam.SelectedIndex != LargeHam.FindString("None"))
+            {
+                topping.Add(LargeHam.Text + " " + LargeHamLabel.Text);
+                LargeHam.SelectedIndex = 0;
+            }
+
+            if (LargeOnion.SelectedIndex != LargeOnion.FindString("None"))
+            {
+                topping.Add(LargeOnion.Text + " " + LargeOnionLabel.Text);
+                LargeOnion.SelectedIndex = 0;
+            }
+
+            if (LargeGreenPepper.SelectedIndex != LargeGreenPepper.FindString("None"))
+            {
+                topping.Add(LargeGreenPepper.Text + " " + LargeGreenPepperLabel.Text);
+                LargeGreenPepper.SelectedIndex = 0;
+            }
+
+            if (LargeTomato.SelectedIndex != LargeTomato.FindString("None"))
+            {
+                topping.Add(LargeTomato.Text + " " + LargeTomatoLabel.Text);
+                LargeTomato.SelectedIndex = 0;
+            }
+
+            if (LargeMushroom.SelectedIndex != LargeMushroom.FindString("None"))
+            {
+                topping.Add(LargeMushroom.Text + " " + LargeMushroomLabel.Text);
+                LargeMushroom.SelectedIndex = 0;
+            }
+
+            if (LargePineapple.SelectedIndex != LargePineapple.FindString("None"))
+            {
+                topping.Add(LargePineapple.Text + " " + LargePineappleLabel.Text);
+                LargePineapple.SelectedIndex = 0;
+            }
+
+            MenuItem pizza = new MenuItem(LargePizzaText.Text, price, int.Parse(LargePizzaQuantity.Value.ToString()), "Large", topping, crust);
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                int numberSameToppings = 0;
+                if (m.ItemName.Equals(LargePizzaText.Text) && m.Toppings.Count == pizza.Toppings.Count && m.CrustOption == pizza.CrustOption)
+                {
+
+                    for (int i = 0; i < pizza.Toppings.Count; i++)
+                    {
+                        if (m.Toppings[i] == pizza.Toppings[i])
+                        {
+                            numberSameToppings++;
+                        }
+                    }
+                    if (numberSameToppings == pizza.Toppings.Count)
+                    {
+                        m.ItemQuantity += pizza.ItemQuantity;
+                        hasThisPizza = true;
+                    }
+                    else
+                    {
+                        currentOrder.AddToOrder(pizza);
+                    }
+                }
+            }
+            if (hasThisPizza == false)
+            {
+                currentOrder.AddToOrder(pizza);
+            }
+            LargePizzaQuantity.Value = 0;
+        }
+
+        private void ExtraLargePizza()
+        {
+            bool hasThisPizza = false;
+            List<string> topping = new List<string>();
+            string crust = "";
+            float price = float.Parse(ExtraLargePizzaPrice.Text.Substring(1));
+
+            if (ExtraLargeThinCrust.Checked)
+            {
+                crust = "Thin Crust";
+                ExtraLargeThinCrust.Checked = false;
+            }
+            else if (ExtraLargePanCrust.Checked)
+            {
+                crust = "Pan Crust";
+                ExtraLargePanCrust.Checked = false;
+            }
+            else if (ExtraLargeRegularCrust.Checked)
+            {
+                crust = "Regular Crust";
+                ExtraLargeRegularCrust.Checked = false;
+            }
+
+            if (ExtraLargeCheese.SelectedIndex != ExtraLargeCheese.FindString("None"))
+            {
+                topping.Add(ExtraLargeCheese.Text + " " + ExtraLargeCheeseLabel.Text);
+                ExtraLargeCheese.SelectedIndex = 0;
+            }
+
+            if (ExtraLargePepperoni.SelectedIndex != ExtraLargePepperoni.FindString("None"))
+            {
+                topping.Add(ExtraLargePepperoni.Text + " " + ExtraLargePepperoniLabel.Text);
+                ExtraLargePepperoni.SelectedIndex = 0;
+            }
+
+            if (ExtraLargeSausage.SelectedIndex != ExtraLargeSausage.FindString("None"))
+            {
+                topping.Add(ExtraLargeSausage.Text + " " + ExtraLargeSausageLabel.Text);
+                ExtraLargeSausage.SelectedIndex = 0;
+            }
+
+            if (ExtraLargeHam.SelectedIndex != ExtraLargeHam.FindString("None"))
+            {
+                topping.Add(ExtraLargeHam.Text + " " + ExtraLargeHamLabel.Text);
+                ExtraLargeHam.SelectedIndex = 0;
+            }
+
+            if (ExtraLargeOnion.SelectedIndex != ExtraLargeOnion.FindString("None"))
+            {
+                topping.Add(ExtraLargeOnion.Text + " " + ExtraLargeOnionLabel.Text);
+                ExtraLargeOnion.SelectedIndex = 0;
+            }
+
+            if (ExtraLargeGreenPepper.SelectedIndex != ExtraLargeGreenPepper.FindString("None"))
+            {
+                topping.Add(ExtraLargeGreenPepper.Text + " " + ExtraLargeGreenPepperLabel.Text);
+                ExtraLargeGreenPepper.SelectedIndex = 0;
+            }
+
+            if (ExtraLargeTomato.SelectedIndex != ExtraLargeTomato.FindString("None"))
+            {
+                topping.Add(ExtraLargeTomato.Text + " " + ExtraLargeTomatoLabel.Text);
+                ExtraLargeTomato.SelectedIndex = 0;
+            }
+
+            if (ExtraLargeMushroom.SelectedIndex != ExtraLargeMushroom.FindString("None"))
+            {
+                topping.Add(ExtraLargeMushroom.Text + " " + ExtraLargeMushroomLabel.Text);
+                ExtraLargeMushroom.SelectedIndex = 0;
+            }
+
+            if (ExtraLargePineapple.SelectedIndex != ExtraLargePineapple.FindString("None"))
+            {
+                topping.Add(ExtraLargePineapple.Text + " " + ExtraLargePineappleLabel.Text);
+                ExtraLargePineapple.SelectedIndex = 0;
+            }
+
+            MenuItem pizza = new MenuItem(ExtraLargePizzaText.Text, price, int.Parse(ExtraLargePizzaQuantity.Value.ToString()), "ExtraLarge", topping, crust);
+            foreach (MenuItem m in currentOrder.currentOrder)
+            {
+                int numberSameToppings = 0;
+                if (m.ItemName.Equals(ExtraLargePizzaText.Text) && m.Toppings.Count == pizza.Toppings.Count && m.CrustOption == pizza.CrustOption)
+                {
+
+                    for (int i = 0; i < pizza.Toppings.Count; i++)
+                    {
+                        if (m.Toppings[i] == pizza.Toppings[i])
+                        {
+                            numberSameToppings++;
+                        }
+                    }
+                    if (numberSameToppings == pizza.Toppings.Count)
+                    {
+                        m.ItemQuantity += pizza.ItemQuantity;
+                        hasThisPizza = true;
+                    }
+                    else
+                    {
+                        currentOrder.AddToOrder(pizza);
+                    }
+                }
+            }
+            if (hasThisPizza == false)
+            {
+                currentOrder.AddToOrder(pizza);
+            }
+            ExtraLargePizzaQuantity.Value = 0;
         }
 
         void UncheckDrinkSelections(RadioButton radioButton)
