@@ -2754,6 +2754,7 @@ namespace MomAndPops.Resources
             this.Controls.Add(this.DrinksGroupBox);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.MaximizeBox = false;
             this.Name = "MenuLanding";
             this.Text = "MenuLanding";
             this.groupBox1.ResumeLayout(false);
