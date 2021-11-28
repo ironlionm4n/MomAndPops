@@ -2115,21 +2115,6 @@ namespace MomAndPops.Resources
         }
 
         /// <summary>
-        /// PreviousOrderTwoAddToCart_Click adds the first previous order to the current order. It goes through and assigns each menu item from the previous order to the 
-        /// current order.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void PreviousOrderTwoAddToCart_Click(object sender, EventArgs e)
-        {
-            Order order = customer.GetPreviousOrders.Peek();
-            foreach(MenuItem m in order.currentOrder)
-            {
-                currentOrder.AddToOrder(m);
-            }
-        }
-
-        /// <summary>
         /// PreviousOrderOneAddToCart_Click is adds the second previous order to the current order. It creates a temp queue which holds the values of the previous order
         /// queue so the third value can be accessed. Then it goes through and adds each menu item in the order to the list and reassigns all the values of previous order to
         /// previousOrder.
@@ -2137,6 +2122,21 @@ namespace MomAndPops.Resources
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void PreviousOrderOneAddToCart_Click(object sender, EventArgs e)
+        {
+            Order order = customer.GetPreviousOrders.Peek();
+            foreach (MenuItem m in order.currentOrder)
+            {
+                currentOrder.AddToOrder(m);
+            }
+        }
+
+        /// <summary>
+        /// PreviousOrderTwoAddToCart_Click adds the first previous order to the current order. It goes through and assigns each menu item from the previous order to the 
+        /// current order.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PreviousOrderTwoAddToCart_Click(object sender, EventArgs e)
         {
             Queue<Order> tempQueue = new Queue<Order>();
             tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
@@ -2156,7 +2156,6 @@ namespace MomAndPops.Resources
                 customer.GetPreviousOrders.Enqueue(tempQueue.Peek());
                 tempQueue.Dequeue();
             }
-
         }
 
         /// <summary>
