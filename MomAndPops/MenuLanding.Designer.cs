@@ -2678,7 +2678,7 @@ namespace MomAndPops.Resources
             // PreviousOrderOneAddToCart
             // 
             this.PreviousOrderOneAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PreviousOrderOneAddToCart.Location = new System.Drawing.Point(125, 470);
+            this.PreviousOrderOneAddToCart.Location = new System.Drawing.Point(135, 251);
             this.PreviousOrderOneAddToCart.Name = "PreviousOrderOneAddToCart";
             this.PreviousOrderOneAddToCart.Size = new System.Drawing.Size(125, 37);
             this.PreviousOrderOneAddToCart.TabIndex = 17;
@@ -2689,7 +2689,7 @@ namespace MomAndPops.Resources
             // PreviousOrderTwoAddToCart
             // 
             this.PreviousOrderTwoAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.PreviousOrderTwoAddToCart.Location = new System.Drawing.Point(125, 247);
+            this.PreviousOrderTwoAddToCart.Location = new System.Drawing.Point(131, 475);
             this.PreviousOrderTwoAddToCart.Name = "PreviousOrderTwoAddToCart";
             this.PreviousOrderTwoAddToCart.Size = new System.Drawing.Size(125, 37);
             this.PreviousOrderTwoAddToCart.TabIndex = 16;

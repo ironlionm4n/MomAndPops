@@ -1051,6 +1051,8 @@ namespace MomAndPops.Resources
         {
             PreviousOrders.Visible = true;
             PreviousOrders.Enabled = true;
+            CartPanel.Visible = false;
+            CartPanel.Visible = false;
             PreviousOrder1Label.Text = string.Empty;
             PreviousOrder2Label.Text = string.Empty;
             PreviousOrder3Label.Text = string.Empty;
@@ -2127,21 +2129,6 @@ namespace MomAndPops.Resources
         }
 
         /// <summary>
-        /// PreviousOrderTwoAddToCart_Click adds the first previous order to the current order. It goes through and assigns each menu item from the previous order to the 
-        /// current order.
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void PreviousOrderTwoAddToCart_Click(object sender, EventArgs e)
-        {
-            Order order = customer.GetPreviousOrders.Peek();
-            foreach(MenuItem m in order.currentOrder)
-            {
-                currentOrder.AddToOrder(m);
-            }
-        }
-
-        /// <summary>
         /// PreviousOrderOneAddToCart_Click is adds the second previous order to the current order. It creates a temp queue which holds the values of the previous order
         /// queue so the third value can be accessed. Then it goes through and adds each menu item in the order to the list and reassigns all the values of previous order to
         /// previousOrder.
@@ -2150,25 +2137,45 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void PreviousOrderOneAddToCart_Click(object sender, EventArgs e)
         {
-            Queue<Order> tempQueue = new Queue<Order>();
-            tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
-            customer.GetPreviousOrders.Dequeue();
-
-            Order order = customer.GetPreviousOrders.Peek();
-            foreach (MenuItem m in order.currentOrder)
+            if (customer.GetPreviousOrders.Count > 0)
             {
-                currentOrder.AddToOrder(m);
+                Order order = customer.GetPreviousOrders.Peek();
+                foreach (MenuItem m in order.currentOrder)
+                {
+                    currentOrder.AddToOrder(m);
+                }
             }
+        }
 
-            tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
-            customer.GetPreviousOrders.Dequeue();
+        /// <summary>
+        /// PreviousOrderTwoAddToCart_Click adds the first previous order to the current order. It goes through and assigns each menu item from the previous order to the 
+        /// current order.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void PreviousOrderTwoAddToCart_Click(object sender, EventArgs e)
+        {
+            if (customer.GetPreviousOrders.Count >=2)
+                {
+                Queue<Order> tempQueue = new Queue<Order>();
+                tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+                customer.GetPreviousOrders.Dequeue();
 
-            while (tempQueue.Count > 0)
-            {
-                customer.GetPreviousOrders.Enqueue(tempQueue.Peek());
-                tempQueue.Dequeue();
+                Order order = customer.GetPreviousOrders.Peek();
+                foreach (MenuItem m in order.currentOrder)
+                {
+                    currentOrder.AddToOrder(m);
+                }
+
+                tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+                customer.GetPreviousOrders.Dequeue();
+
+                while (tempQueue.Count > 0)
+                {
+                    customer.GetPreviousOrders.Enqueue(tempQueue.Peek());
+                    tempQueue.Dequeue();
+                }
             }
-
         }
 
         /// <summary>
@@ -2180,26 +2187,29 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void PreviousOrdersThreeAddToCart_Click(object sender, EventArgs e)
         {
-            Queue<Order> tempQueue = new Queue<Order>();
-            tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
-            customer.GetPreviousOrders.Dequeue();
-
-            tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
-            customer.GetPreviousOrders.Dequeue();
-
-            Order order = customer.GetPreviousOrders.Peek();
-            foreach (MenuItem m in order.currentOrder)
+            if (customer.GetPreviousOrders.Count == 3)
             {
-                currentOrder.AddToOrder(m);
-            }
+                Queue<Order> tempQueue = new Queue<Order>();
+                tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+                customer.GetPreviousOrders.Dequeue();
 
-            tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
-            customer.GetPreviousOrders.Dequeue();
+                tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+                customer.GetPreviousOrders.Dequeue();
 
-            while (tempQueue.Count > 0)
-            {
-                customer.GetPreviousOrders.Enqueue(tempQueue.Peek());
-                tempQueue.Dequeue();
+                Order order = customer.GetPreviousOrders.Peek();
+                foreach (MenuItem m in order.currentOrder)
+                {
+                    currentOrder.AddToOrder(m);
+                }
+
+                tempQueue.Enqueue(customer.GetPreviousOrders.Peek());
+                customer.GetPreviousOrders.Dequeue();
+
+                while (tempQueue.Count > 0)
+                {
+                    customer.GetPreviousOrders.Enqueue(tempQueue.Peek());
+                    tempQueue.Dequeue();
+                }
             }
         }
 

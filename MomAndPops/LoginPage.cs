@@ -9,7 +9,7 @@ namespace MomAndPops
     public partial class LoginPage : Form
     {
         Customer currentCustomer = new Customer();
-        List<Customer> activeCustomers = new List<Customer>();
+        static List<Customer> activeCustomers = new List<Customer>();
 
         bool correctNumberFormat = false;
         bool correctZipFormat = false;
@@ -34,18 +34,17 @@ namespace MomAndPops
         /// <param name="e"></param>
         private void LoginButton_Click(object sender, EventArgs e)
         {
-            bool correctPassword = false; 
+            bool correctPassword = false;
 
-            foreach(Customer customer in activeCustomers)
+            foreach (Customer customer in activeCustomers)
             {
-                if(customer.GetPhone() == LoginPhoneNumberBox.Text.Trim())
+                if (customer.GetPhone() == LoginPhoneNumberBox.Text)
                 {
-                    Console.WriteLine("Correct number");
-                    if (customer.GetPassword() == LoginPasswordBox.Text.Trim())
+                    if (customer.GetPassword() == LoginPasswordBox.Text)
                     {
-                        Console.WriteLine("Correct password");
                         correctPassword = true;
                         currentCustomer = customer;
+
                     }
                 }
             }
@@ -99,7 +98,7 @@ namespace MomAndPops
                 CreatePhoneTextBox.BackColor = correctColor;
             }
 
-            if(!correctZipFormat)
+            if (!correctZipFormat)
             {
                 Color incorrectColor = Color.FromArgb(255, 113, 113);
                 CreateZipTextBox.BackColor = incorrectColor;
@@ -113,7 +112,7 @@ namespace MomAndPops
             if (!CreateFirstTextBox.Text.Equals("") && !CreateLastTextBox.Text.Equals("") && !CreatePhoneTextBox.Text.Equals("")
                 && !CreateAddressTextBox.Text.Equals("") && !CreateAptTextBox.Text.Equals("") && !CreateCityTextBox.Text.Equals("")
                 && !CreateZipTextBox.Text.Equals("") && !CreatePasswordTextBox.Text.Equals("") && passwordsMatch && correctNumberFormat
-                &&  correctZipFormat)
+                && correctZipFormat)
             {
                 Customer customer = new Customer(CreateFirstTextBox.Text, CreateLastTextBox.Text, CreatePhoneTextBox.Text, CreateAddressTextBox.Text,
                     CreateAptTextBox.Text, CreateZipTextBox.Text, CreateCityTextBox.Text, CreatePasswordTextBox.Text);

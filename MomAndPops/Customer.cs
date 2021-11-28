@@ -97,7 +97,7 @@ namespace MomAndPops
         public void WriteOrder()
         {
             Queue<Order> tempQueue = new Queue<Order>();
-            if (previousOrders.Count > 0)
+            while (previousOrders.Count > 0)
             {
                 int counter = 1;
                 Order order = previousOrders.Peek();
@@ -131,13 +131,10 @@ namespace MomAndPops
                    sw.Close();
                 }
                 tempQueue.Enqueue(previousOrders.Peek());
+                previousOrders.Dequeue();
             }
 
-            while (tempQueue.Count > 0)
-            {
-                previousOrders.Enqueue(tempQueue.Peek());
-                tempQueue.Dequeue();
-            }
+            previousOrders = tempQueue;
         }
 
         public string GetName()
