@@ -191,11 +191,11 @@ namespace MomAndPops
         private void CreatePhoneTextBox_TextChanged(object sender, EventArgs e)
         {
             correctNumberFormat = false;
-            int phoneNumber = 0;
+            long phoneNumber = 0;
 
             try
             {
-                phoneNumber = Int32.Parse(CreatePhoneTextBox.Text.Trim());
+                phoneNumber = long.Parse(CreatePhoneTextBox.Text.Trim());
 
                 if (CreatePhoneTextBox.Text.Trim().Length == 10)
                 {
