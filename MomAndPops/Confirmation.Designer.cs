@@ -42,20 +42,18 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.label1.Location = new System.Drawing.Point(480, 71);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(360, 58);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(684, 76);
+            this.label1.Size = new System.Drawing.Size(552, 63);
             this.label1.TabIndex = 0;
             this.label1.Text = "Mom && Pop\'s Pizzeria";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
-            this.pictureBox1.Location = new System.Drawing.Point(365, 196);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(274, 159);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(924, 405);
+            this.pictureBox1.Size = new System.Drawing.Size(693, 329);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -64,10 +62,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.label2.Location = new System.Drawing.Point(483, 219);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(362, 178);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(667, 58);
+            this.label2.Size = new System.Drawing.Size(530, 46);
             this.label2.TabIndex = 2;
             this.label2.Text = "You order has been received";
             // 
@@ -76,10 +73,9 @@
             this.DeliveryText.AutoSize = true;
             this.DeliveryText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.DeliveryText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.DeliveryText.Location = new System.Drawing.Point(519, 388);
-            this.DeliveryText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.DeliveryText.Location = new System.Drawing.Point(389, 315);
             this.DeliveryText.Name = "DeliveryText";
-            this.DeliveryText.Size = new System.Drawing.Size(562, 39);
+            this.DeliveryText.Size = new System.Drawing.Size(448, 31);
             this.DeliveryText.TabIndex = 3;
             this.DeliveryText.Text = "Your order will be at your door soon!";
             this.DeliveryText.Visible = false;
@@ -89,20 +85,18 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Italic);
-            this.label4.Location = new System.Drawing.Point(440, 537);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(330, 436);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(783, 39);
+            this.label4.Size = new System.Drawing.Size(624, 31);
             this.label4.TabIndex = 4;
             this.label4.Text = "Thank you for ordering from Mom && Pop\'s Pizzeria!";
             // 
             // LogoutButton
             // 
             this.LogoutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.LogoutButton.Location = new System.Drawing.Point(757, 638);
-            this.LogoutButton.Margin = new System.Windows.Forms.Padding(4);
+            this.LogoutButton.Location = new System.Drawing.Point(568, 518);
             this.LogoutButton.Name = "LogoutButton";
-            this.LogoutButton.Size = new System.Drawing.Size(161, 68);
+            this.LogoutButton.Size = new System.Drawing.Size(121, 55);
             this.LogoutButton.TabIndex = 5;
             this.LogoutButton.Text = "Logout";
             this.LogoutButton.UseVisualStyleBackColor = true;
@@ -113,20 +107,19 @@
             this.PickUpText.AutoSize = true;
             this.PickUpText.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.PickUpText.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
-            this.PickUpText.Location = new System.Drawing.Point(519, 388);
-            this.PickUpText.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.PickUpText.Location = new System.Drawing.Point(389, 315);
             this.PickUpText.Name = "PickUpText";
-            this.PickUpText.Size = new System.Drawing.Size(623, 39);
+            this.PickUpText.Size = new System.Drawing.Size(497, 31);
             this.PickUpText.TabIndex = 6;
             this.PickUpText.Text = "Your order will be ready for pickup soon!";
             this.PickUpText.Visible = false;
             // 
             // Confirmation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(1685, 838);
+            this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.PickUpText);
             this.Controls.Add(this.LogoutButton);
             this.Controls.Add(this.label4);
@@ -134,7 +127,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "Confirmation";
             this.Text = "Confirmation";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

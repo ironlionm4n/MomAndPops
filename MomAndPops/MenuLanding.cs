@@ -80,6 +80,20 @@ namespace MomAndPops.Resources
             float totalPrice = 0f;
             TotalLabel.Text = string.Empty;
             CartTextBox.Text = string.Empty;
+            AppetizerCheck();
+            DrinkCheck();
+            foreach (MenuItem item in currentOrder.currentOrder)
+            {
+                totalPrice += (item.ItemQuantity * item.ItemPrice);
+                CartTextBox.Text += item.ItemQuantity + " " + item.ItemName + " $"
+                    + item.ItemPrice + Environment.NewLine;
+            }
+            PizzaCheck();
+            PrintOrder();
+        }
+
+        private void AppetizerCheck()
+        {
             if (BreadsticksQuantity.Value > 0)
             {
                 BreadsticksItem();
@@ -92,6 +106,42 @@ namespace MomAndPops.Resources
             {
                 Cookie();
             }
+        }
+
+        private void PizzaCheck()
+        {
+            ///
+            ///Small Pizza Check
+            ///
+            if (SmallPizzaQuantity.Value > 0 && (SmallThinCrust.Checked || SmallRegularCrust.Checked || SmallPanCrust.Checked))
+            {
+                SmallPizza();
+            }
+            ///
+            ///Medium Pizza Check
+            ///
+            if (MediumPizzaQuantity.Value > 0 && (MediumThinCrust.Checked || MediumRegularCrust.Checked || MediumPanCrust.Checked))
+            {
+                MediumPizza();
+            }
+            ///
+            ///Large Pizza Check
+            ///
+            if (LargePizzaQuantity.Value > 0 && (LargeThinCrust.Checked || LargeRegularCrust.Checked || LargePanCrust.Checked))
+            {
+                LargePizza();
+            }
+            ///
+            ///Extra Large Pizza Check
+            ///
+            if (ExtraLargePizzaQuantity.Value > 0 && (ExtraLargeThinCrust.Checked || ExtraLargeRegularCrust.Checked || ExtraLargePanCrust.Checked))
+            {
+                ExtraLargePizza();
+            }
+        }
+
+        private void DrinkCheck()
+        {
             ///
             /// Pepsi Drink Check
             ///
@@ -149,44 +199,6 @@ namespace MomAndPops.Resources
             {
                 Lemonade();
             }
-
-            foreach (MenuItem item in currentOrder.currentOrder)
-            {
-                totalPrice += (item.ItemQuantity * item.ItemPrice);
-                CartTextBox.Text += item.ItemQuantity + " " + item.ItemName + " $"
-                    + item.ItemPrice + Environment.NewLine;
-            }
-            ///
-            ///Small Pizza Check
-            ///
-            if (SmallPizzaQuantity.Value > 0 && (SmallThinCrust.Checked || SmallRegularCrust.Checked || SmallPanCrust.Checked))
-            {
-                SmallPizza();
-            }
-            ///
-            ///Medium Pizza Check
-            ///
-            if (MediumPizzaQuantity.Value > 0 && (MediumThinCrust.Checked || MediumRegularCrust.Checked || MediumPanCrust.Checked))
-            {
-                MediumPizza();
-            }
-            ///
-            ///Large Pizza Check
-            ///
-            if (LargePizzaQuantity.Value > 0 && (LargeThinCrust.Checked || LargeRegularCrust.Checked || LargePanCrust.Checked))
-            {
-                LargePizza();
-            }
-            ///
-            ///Extra Large Pizza Check
-            ///
-            if (ExtraLargePizzaQuantity.Value > 0 && (ExtraLargeThinCrust.Checked || ExtraLargeRegularCrust.Checked || ExtraLargePanCrust.Checked))
-            {
-                ExtraLargePizza();
-            }
-
-
-            PrintOrder();
         }
 
         private void BreadsticksItem()
