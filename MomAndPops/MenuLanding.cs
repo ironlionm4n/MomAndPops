@@ -2216,9 +2216,14 @@ namespace MomAndPops.Resources
             {
                 comboBoxSize.Add(currentBox);
             }
-            else if (!comboBoxSize.Contains(currentBox)) //If the box is not apart of the active list, resets value to a default state
+            else if (!comboBoxSize.Contains(currentBox) && (currentBox != SmallCheese && currentBox != MediumCheese && 
+                currentBox != LargeCheese && currentBox != ExtraLargeCheese)) //If the box is not apart of the active list, resets value to a default state
             {
                 currentBox.SelectedIndex = 0;
+            }
+            else
+            {
+                currentBox.SelectedIndex = 2;
             }
         }
     }
