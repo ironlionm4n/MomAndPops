@@ -73,7 +73,7 @@ namespace MomAndPops
             // pictureBox1
             // 
             this.pictureBox1.Image = global::MomAndPops.Properties.Resources.cheezePizza;
-            this.pictureBox1.Location = new System.Drawing.Point(896, 16);
+            this.pictureBox1.Location = new System.Drawing.Point(903, 16);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(230, 212);
             this.pictureBox1.TabIndex = 0;
@@ -83,9 +83,9 @@ namespace MomAndPops
             // 
             this.MomPops.BackColor = System.Drawing.Color.Transparent;
             this.MomPops.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.MomPops.Location = new System.Drawing.Point(375, 77);
+            this.MomPops.Location = new System.Drawing.Point(347, 76);
             this.MomPops.Name = "MomPops";
-            this.MomPops.Size = new System.Drawing.Size(515, 102);
+            this.MomPops.Size = new System.Drawing.Size(557, 102);
             this.MomPops.TabIndex = 1;
             this.MomPops.Text = "Mom && Pop\'s Pizzeria";
             // 
@@ -128,7 +128,7 @@ namespace MomAndPops
             // 
             this.AboutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AboutButton.Location = new System.Drawing.Point(560, 495);
-            this.AboutButton.Margin = new System.Windows.Forms.Padding(30, 30, 30, 30);
+            this.AboutButton.Margin = new System.Windows.Forms.Padding(30);
             this.AboutButton.Name = "AboutButton";
             this.AboutButton.Size = new System.Drawing.Size(150, 55);
             this.AboutButton.TabIndex = 6;
@@ -207,6 +207,7 @@ namespace MomAndPops
             // 
             // CreatePanel
             // 
+            this.CreatePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
             this.CreatePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.CreatePanel.Controls.Add(this.CreateZipTextBox);
             this.CreatePanel.Controls.Add(this.CreateZipLabel);
@@ -229,7 +230,7 @@ namespace MomAndPops
             this.CreatePanel.Controls.Add(this.CreateFirstTextBox);
             this.CreatePanel.Controls.Add(this.CreateLastNameLabel);
             this.CreatePanel.Controls.Add(this.CreateFirstNameLabel);
-            this.CreatePanel.Location = new System.Drawing.Point(315, 176);
+            this.CreatePanel.Location = new System.Drawing.Point(315, 130);
             this.CreatePanel.Name = "CreatePanel";
             this.CreatePanel.Size = new System.Drawing.Size(614, 489);
             this.CreatePanel.TabIndex = 12;
