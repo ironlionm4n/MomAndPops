@@ -35,7 +35,6 @@ namespace MomAndPops
             this.LoginPasswordLabel = new System.Windows.Forms.Label();
             this.LoginPhoneNumberBox = new System.Windows.Forms.TextBox();
             this.LoginPasswordBox = new System.Windows.Forms.TextBox();
-            this.AboutButton = new System.Windows.Forms.Button();
             this.CreateAccountButton = new System.Windows.Forms.Button();
             this.LoginButton = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -123,17 +122,6 @@ namespace MomAndPops
             this.LoginPasswordBox.PasswordChar = '*';
             this.LoginPasswordBox.Size = new System.Drawing.Size(200, 35);
             this.LoginPasswordBox.TabIndex = 5;
-            // 
-            // AboutButton
-            // 
-            this.AboutButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AboutButton.Location = new System.Drawing.Point(560, 495);
-            this.AboutButton.Margin = new System.Windows.Forms.Padding(30);
-            this.AboutButton.Name = "AboutButton";
-            this.AboutButton.Size = new System.Drawing.Size(150, 55);
-            this.AboutButton.TabIndex = 6;
-            this.AboutButton.Text = "About";
-            this.AboutButton.UseVisualStyleBackColor = true;
             // 
             // CreateAccountButton
             // 
@@ -230,7 +218,7 @@ namespace MomAndPops
             this.CreatePanel.Controls.Add(this.CreateFirstTextBox);
             this.CreatePanel.Controls.Add(this.CreateLastNameLabel);
             this.CreatePanel.Controls.Add(this.CreateFirstNameLabel);
-            this.CreatePanel.Location = new System.Drawing.Point(315, 130);
+            this.CreatePanel.Location = new System.Drawing.Point(320, 124);
             this.CreatePanel.Name = "CreatePanel";
             this.CreatePanel.Size = new System.Drawing.Size(614, 489);
             this.CreatePanel.TabIndex = 12;
@@ -445,7 +433,6 @@ namespace MomAndPops
             this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.AboutButton);
             this.Controls.Add(this.MomPops);
             this.Controls.Add(this.pictureBox1);
             this.MaximizeBox = false;
@@ -471,7 +458,6 @@ namespace MomAndPops
         private System.Windows.Forms.Label LoginPasswordLabel;
         private System.Windows.Forms.TextBox LoginPhoneNumberBox;
         private System.Windows.Forms.TextBox LoginPasswordBox;
-        private System.Windows.Forms.Button AboutButton;
         private System.Windows.Forms.Button CreateAccountButton;
         private System.Windows.Forms.Button LoginButton;
         private System.Windows.Forms.PictureBox pictureBox2;
