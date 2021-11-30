@@ -1894,6 +1894,7 @@ namespace MomAndPops.Resources
         /// none, then it will check and make sure the box is in the current list and will remove it. If the current selection is not none, the current list has less than 4 boxes
         /// in it, and the box is not currently in the list then it will add the box to the list. This makes sure only 4 different combo boxes can be selected at once. Then, if the
         /// following is not true, it checks if the box is not currently in the list and if it is not it changes the index back to its base value which is none.
+        /// It also checks the topping box to see if the price needs to be updated.
         /// </summary>
         /// <param name="currentBox"></param>
         /// <param name="lastSelection"></param>
