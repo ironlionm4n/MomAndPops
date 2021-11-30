@@ -110,7 +110,7 @@ namespace MomAndPops
             }
 
             if (!CreateFirstTextBox.Text.Trim().Equals("") && !CreateLastTextBox.Text.Trim().Equals("") && !CreatePhoneTextBox.Text.Trim().Equals("")
-                && !CreateAddressTextBox.Text.Trim().Equals("") && !CreateAptTextBox.Text.Trim().Equals("") && !CreateCityTextBox.Text.Trim().Equals("")
+                && !CreateAddressTextBox.Text.Trim().Equals("") && !CreateCityTextBox.Text.Trim().Equals("")
                 && !CreateZipTextBox.Text.Trim().Equals("") && !CreatePasswordTextBox.Text.Trim().Equals("") && passwordsMatch && correctNumberFormat
                 && correctZipFormat)
             {

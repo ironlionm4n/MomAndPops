@@ -180,7 +180,7 @@ namespace MomAndPops
             {
                 int year = Int32.Parse(Year.Text);
 
-                if (year > 0 && year <= 12)
+                if (year >= 0)
                 {
                     yearIsNum = true;
                 }
@@ -238,7 +238,7 @@ namespace MomAndPops
                 Month.BackColor = mismatchColor;
             }
 
-            if (Year.Text.Trim().Length == 2 && yearIsNum)
+            if (yearIsNum)
             {
                 correctYear = true;
                 Color matchColor = Color.FromArgb(255, 255, 255);

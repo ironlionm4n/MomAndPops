@@ -67,8 +67,8 @@ namespace MomAndPops
             this.About = new System.Windows.Forms.Button();
             this.AboutPanel = new System.Windows.Forms.Panel();
             this.Hours = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.AboutClose = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -117,6 +117,7 @@ namespace MomAndPops
             // 
             this.LoginPhoneNumberBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
             this.LoginPhoneNumberBox.Location = new System.Drawing.Point(245, 30);
+            this.LoginPhoneNumberBox.MaxLength = 10;
             this.LoginPhoneNumberBox.Name = "LoginPhoneNumberBox";
             this.LoginPhoneNumberBox.Size = new System.Drawing.Size(200, 35);
             this.LoginPhoneNumberBox.TabIndex = 4;
@@ -234,6 +235,7 @@ namespace MomAndPops
             // 
             this.CreateZipTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreateZipTextBox.Location = new System.Drawing.Point(229, 329);
+            this.CreateZipTextBox.MaxLength = 5;
             this.CreateZipTextBox.Name = "CreateZipTextBox";
             this.CreateZipTextBox.Size = new System.Drawing.Size(122, 38);
             this.CreateZipTextBox.TabIndex = 21;
@@ -385,6 +387,7 @@ namespace MomAndPops
             // 
             this.CreatePhoneTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CreatePhoneTextBox.Location = new System.Drawing.Point(255, 178);
+            this.CreatePhoneTextBox.MaxLength = 10;
             this.CreatePhoneTextBox.Name = "CreatePhoneTextBox";
             this.CreatePhoneTextBox.Size = new System.Drawing.Size(289, 38);
             this.CreatePhoneTextBox.TabIndex = 5;
@@ -462,16 +465,6 @@ namespace MomAndPops
             this.Hours.TabIndex = 1;
             this.Hours.Text = "Hours";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(92, 51);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(523, 290);
-            this.label3.TabIndex = 2;
-            this.label3.Text = resources.GetString("label3.Text");
-            // 
             // AboutClose
             // 
             this.AboutClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
@@ -482,6 +475,16 @@ namespace MomAndPops
             this.AboutClose.Text = "Close";
             this.AboutClose.UseVisualStyleBackColor = true;
             this.AboutClose.Click += new System.EventHandler(this.AboutClose_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(92, 51);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(523, 290);
+            this.label3.TabIndex = 2;
+            this.label3.Text = resources.GetString("label3.Text");
             // 
             // LoginPage
             // 

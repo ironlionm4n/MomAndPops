@@ -26,6 +26,15 @@ namespace MomAndPops.Resources
         int lastSmallTomatoSelection = 0;
         int lastSmallMushroomSelection = 0;
         int lastSmallPineappleSelection = 0;
+        bool SmallCheesePriceUpdated = false;
+        bool SmallPepperoniPriceUpdated = false;
+        bool SmallSausagePriceUpdated = false;
+        bool SmallHamPriceUpdated = false;
+        bool SmallOnionPriceUpdated = false;
+        bool SmallGreenPepperPriceUpdated = false;
+        bool SmallTomatoPriceUpdated = false;
+        bool SmallMushroomPriceUpdated = false;
+        bool SmallPineapplePriceUpdated = false;
 
         int lastMedCheeseSelection = 0;
         int lastMedPepSelection = 0;
@@ -36,6 +45,15 @@ namespace MomAndPops.Resources
         int lastMedTomatoSelection = 0;
         int lastMedMushroomSelection = 0;
         int lastMedPineappleSelection = 0;
+        bool MediumCheesePriceUpdated = false;
+        bool MediumPepperoniPriceUpdated = false;
+        bool MediumSausagePriceUpdated = false;
+        bool MediumHamPriceUpdated = false;
+        bool MediumOnionPriceUpdated = false;
+        bool MediumGreenPepperPriceUpdated = false;
+        bool MediumTomatoPriceUpdated = false;
+        bool MediumMushroomPriceUpdated = false;
+        bool MediumPineapplePriceUpdated = false;
 
         int lastLargeCheeseSelection = 0;
         int lastLargePepSelection = 0;
@@ -46,6 +64,15 @@ namespace MomAndPops.Resources
         int lastLargeTomatoSelection = 0;
         int lastLargeMushroomSelection = 0;
         int lastLargePineappleSelection = 0;
+        bool LargeCheesePriceUpdated = false;
+        bool LargePepperoniPriceUpdated = false;
+        bool LargeSausagePriceUpdated = false;
+        bool LargeHamPriceUpdated = false;
+        bool LargeOnionPriceUpdated = false;
+        bool LargeGreenPepperPriceUpdated = false;
+        bool LargeTomatoPriceUpdated = false;
+        bool LargeMushroomPriceUpdated = false;
+        bool LargePineapplePriceUpdated = false;
 
         int lastXLCheeseSelection = 0;
         int lastXLPepSelection = 0;
@@ -56,6 +83,15 @@ namespace MomAndPops.Resources
         int lastXLTomatoSelection = 0;
         int lastXLMushroomSelection = 0;
         int lastXLPineappleSelection = 0;
+        bool XLCheesePriceUpdated = false;
+        bool XLPepperoniPriceUpdated = false;
+        bool XLSausagePriceUpdated = false;
+        bool XLHamPriceUpdated = false;
+        bool XLOnionPriceUpdated = false;
+        bool XLGreenPepperPriceUpdated = false;
+        bool XLTomatoPriceUpdated = false;
+        bool XLMushroomPriceUpdated = false;
+        bool XLPineapplePriceUpdated = false;
 
         public MenuLanding()
         {
@@ -1268,18 +1304,7 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void SmallCheese_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(SmallCheese, lastSmallCheeseSelection, activeSmallComboBoxes);
-
-            if (SmallCheese.FindString("Extra") == SmallCheese.SelectedIndex)
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallCheeseSelection == SmallCheese.FindString("Extra"))
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
+            CheckComboBoxes(SmallCheese, lastSmallCheeseSelection, activeSmallComboBoxes, "Small", ref SmallCheesePriceUpdated, SmallPizzaPrice);
 
             lastSmallCheeseSelection = SmallCheese.SelectedIndex;
         }
@@ -1293,18 +1318,7 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void SmallPepperoni_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(SmallPepperoni, lastSmallPepSelection, activeSmallComboBoxes);
-
-            if (SmallPepperoni.FindString("Extra") == SmallPepperoni.SelectedIndex)
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!SmallPizzaPrice.Text.Equals("$4") && (lastSmallPepSelection == SmallPepperoni.FindString("Extra")))
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
+            CheckComboBoxes(SmallPepperoni, lastSmallPepSelection, activeSmallComboBoxes, "Small", ref SmallPepperoniPriceUpdated, SmallPizzaPrice);
 
             lastSmallPepSelection = SmallPepperoni.SelectedIndex;
         }
@@ -1318,18 +1332,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void SmallSausage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(SmallSausage, lastSmallSausageSelection, activeSmallComboBoxes);
+            CheckComboBoxes(SmallSausage, lastSmallSausageSelection, activeSmallComboBoxes, "Small", ref SmallSausagePriceUpdated, SmallPizzaPrice);
 
-            if (SmallSausage.FindString("Extra") == SmallSausage.SelectedIndex)
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallSausageSelection == SmallSausage.FindString("Extra"))
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastSmallSausageSelection = SmallSausage.SelectedIndex;
         }
 
@@ -1342,18 +1346,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void SmallHam_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(SmallHam, lastSmallHamSelection, activeSmallComboBoxes);
+            CheckComboBoxes(SmallHam, lastSmallHamSelection, activeSmallComboBoxes, "Small", ref SmallHamPriceUpdated, SmallPizzaPrice);
 
-            if (SmallHam.FindString("Extra") == SmallHam.SelectedIndex)
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallHamSelection == SmallHam.FindString("Extra"))
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastSmallHamSelection = SmallHam.SelectedIndex;
         }
 
@@ -1366,18 +1360,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void SmallOnion_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(SmallOnion, lastSmallOnionSelection, activeSmallComboBoxes);
+            CheckComboBoxes(SmallOnion, lastSmallOnionSelection, activeSmallComboBoxes, "Small", ref SmallOnionPriceUpdated, SmallPizzaPrice);
 
-            if (SmallOnion.FindString("Extra") == SmallOnion.SelectedIndex)
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallOnionSelection == SmallOnion.FindString("Extra"))
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastSmallOnionSelection = SmallOnion.SelectedIndex;
         }
 
@@ -1390,18 +1374,9 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void SmallGreenPepper_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(SmallGreenPepper, lastSmallGPSelection, activeSmallComboBoxes);
+            CheckComboBoxes(SmallGreenPepper, lastSmallGPSelection, activeSmallComboBoxes, "Small", ref SmallGreenPepperPriceUpdated, SmallPizzaPrice);
 
-            if (SmallGreenPepper.FindString("Extra") == SmallGreenPepper.SelectedIndex)
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallGPSelection == SmallGreenPepper.FindString("Extra"))
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
+           
             lastSmallGPSelection = SmallGreenPepper.SelectedIndex;
         }
 
@@ -1414,18 +1389,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void SmallTomato_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(SmallTomato, lastSmallTomatoSelection, activeSmallComboBoxes);
+            CheckComboBoxes(SmallTomato, lastSmallTomatoSelection, activeSmallComboBoxes, "Small", ref SmallTomatoPriceUpdated, SmallPizzaPrice);
 
-            if (SmallTomato.FindString("Extra") == SmallTomato.SelectedIndex)
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallTomatoSelection == SmallTomato.FindString("Extra"))
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastSmallTomatoSelection = SmallTomato.SelectedIndex;
         }
 
@@ -1438,19 +1403,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void SmallMushroom_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(SmallMushroom, lastSmallMushroomSelection, activeSmallComboBoxes);
+            CheckComboBoxes(SmallMushroom, lastSmallMushroomSelection, activeSmallComboBoxes, "Small", ref SmallMushroomPriceUpdated, SmallPizzaPrice);
 
-
-            if (SmallMushroom.FindString("Extra") == SmallMushroom.SelectedIndex)
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallMushroomSelection == SmallMushroom.FindString("Extra"))
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastSmallMushroomSelection = SmallMushroom.SelectedIndex;
         }
 
@@ -1463,18 +1417,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void SmallPineapple_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(SmallPineapple, lastSmallPineappleSelection, activeSmallComboBoxes);
+            CheckComboBoxes(SmallPineapple, lastSmallPineappleSelection, activeSmallComboBoxes, "Small", ref SmallPineapplePriceUpdated, SmallPizzaPrice);
 
-            if (SmallPineapple.FindString("Extra") == SmallPineapple.SelectedIndex)
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) + .50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!SmallPizzaPrice.Text.Equals("$4") && lastSmallPineappleSelection == SmallPineapple.FindString("Extra"))
-            {
-                float total = float.Parse(SmallPizzaPrice.Text.Substring(1)) - 0.50f;
-                SmallPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastSmallPineappleSelection = SmallPineapple.SelectedIndex;
         }
 
@@ -1487,18 +1431,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void MediumCheese_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(MediumCheese, lastMedCheeseSelection, activeMediumComboBoxes);
+            CheckComboBoxes(MediumCheese, lastMedCheeseSelection, activeMediumComboBoxes, "Medium", ref MediumCheesePriceUpdated, MediumPizzaPrice);
 
-            if (MediumCheese.FindString("Extra") == MediumCheese.SelectedIndex)
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedCheeseSelection == MediumCheese.FindString("Extra"))
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastMedCheeseSelection = MediumCheese.SelectedIndex;
         }
 
@@ -1511,18 +1445,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void MediumPepperoni_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(MediumPepperoni, lastMedPepSelection, activeMediumComboBoxes);
+            CheckComboBoxes(MediumPepperoni, lastMedPepSelection, activeMediumComboBoxes, "Medium", ref MediumPepperoniPriceUpdated, MediumPizzaPrice);
 
-            if (MediumPepperoni.FindString("Extra") == MediumPepperoni.SelectedIndex)
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedPepSelection == MediumPepperoni.FindString("Extra"))
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastMedPepSelection = MediumPepperoni.SelectedIndex;
         }
 
@@ -1535,18 +1459,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void MediumSausage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(MediumSausage, lastMedSausageSelection, activeMediumComboBoxes);
+            CheckComboBoxes(MediumSausage, lastMedSausageSelection, activeMediumComboBoxes, "Medium", ref MediumSausagePriceUpdated, MediumPizzaPrice);
 
-            if (MediumSausage.FindString("Extra") == MediumSausage.SelectedIndex)
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedSausageSelection == MediumSausage.FindString("Extra"))
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastMedSausageSelection = MediumSausage.SelectedIndex;
         }
 
@@ -1559,18 +1473,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void MediumHam_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(MediumHam, lastMedHamSelection, activeMediumComboBoxes);
+            CheckComboBoxes(MediumHam, lastMedHamSelection, activeMediumComboBoxes, "Medium", ref MediumHamPriceUpdated, MediumPizzaPrice);
 
-            if (MediumHam.FindString("Extra") == MediumHam.SelectedIndex)
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedHamSelection == MediumHam.FindString("Extra"))
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastMedHamSelection = MediumHam.SelectedIndex;
         }
 
@@ -1583,18 +1487,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void MediumOnion_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(MediumOnion, lastMedOnionSelection, activeMediumComboBoxes);
+            CheckComboBoxes(MediumOnion, lastMedOnionSelection, activeMediumComboBoxes, "Medium", ref MediumOnionPriceUpdated, MediumPizzaPrice);
 
-            if (MediumOnion.FindString("Extra") == MediumOnion.SelectedIndex)
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedOnionSelection == MediumOnion.FindString("Extra"))
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastMedOnionSelection = MediumOnion.SelectedIndex;
         }
 
@@ -1607,18 +1501,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void MediumGreenPepper_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(MediumGreenPepper, lastMedPepSelection, activeMediumComboBoxes);
+            CheckComboBoxes(MediumGreenPepper, lastMedPepSelection, activeMediumComboBoxes, "Medium", ref MediumGreenPepperPriceUpdated, MediumPizzaPrice);
 
-            if (MediumGreenPepper.FindString("Extra") == MediumGreenPepper.SelectedIndex)
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedGPSelection == MediumGreenPepper.FindString("Extra"))
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastMedGPSelection = MediumGreenPepper.SelectedIndex;
         }
 
@@ -1631,18 +1515,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void MediumTomato_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(MediumTomato, lastMedTomatoSelection, activeMediumComboBoxes);
+            CheckComboBoxes(MediumTomato, lastMedTomatoSelection, activeMediumComboBoxes, "Medium", ref MediumTomatoPriceUpdated, MediumPizzaPrice);
 
-            if (MediumTomato.FindString("Extra") == MediumTomato.SelectedIndex)
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedTomatoSelection == MediumTomato.FindString("Extra"))
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastMedTomatoSelection = MediumTomato.SelectedIndex;
         }
 
@@ -1655,18 +1529,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void MediumMushroom_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(MediumMushroom, lastMedMushroomSelection, activeMediumComboBoxes);
+            CheckComboBoxes(MediumMushroom, lastMedMushroomSelection, activeMediumComboBoxes, "Medium", ref MediumMushroomPriceUpdated, MediumPizzaPrice);
 
-            if (MediumMushroom.FindString("Extra") == MediumMushroom.SelectedIndex)
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedMushroomSelection == MediumMushroom.FindString("Extra"))
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastMedMushroomSelection = MediumMushroom.SelectedIndex;
         }
 
@@ -1679,18 +1543,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void MediumPineapple_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(MediumPineapple, lastMedPineappleSelection, activeMediumComboBoxes);
+            CheckComboBoxes(MediumPineapple, lastMedPineappleSelection, activeMediumComboBoxes, "Medium", ref MediumPineapplePriceUpdated, MediumPizzaPrice);
 
-            if (MediumPineapple.FindString("Extra") == MediumPineapple.SelectedIndex)
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) + .75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!MediumPizzaPrice.Text.Equals("$6") && lastMedPineappleSelection == MediumPineapple.FindString("Extra"))
-            {
-                float total = float.Parse(MediumPizzaPrice.Text.Substring(1)) - 0.75f;
-                MediumPizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastMedPineappleSelection = MediumPineapple.SelectedIndex;
         }
 
@@ -1703,18 +1557,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void LargeCheese_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(LargeCheese, lastLargeCheeseSelection, activeLargeComboBoxes);
+           CheckComboBoxes(LargeCheese, lastLargeCheeseSelection, activeLargeComboBoxes, "Large", ref LargeCheesePriceUpdated, LargePizzaPrice);
 
-            if (LargeCheese.FindString("Extra") == LargeCheese.SelectedIndex)
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeCheeseSelection == LargeCheese.FindString("Extra"))
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastLargeCheeseSelection = LargeCheese.SelectedIndex;
         }
 
@@ -1727,18 +1571,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void LargePepperoni_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(LargePepperoni, lastLargePepSelection, activeLargeComboBoxes);
+            CheckComboBoxes(LargePepperoni, lastLargePepSelection, activeLargeComboBoxes, "Large", ref LargePepperoniPriceUpdated, LargePizzaPrice);
 
-            if (LargePepperoni.FindString("Extra") == LargePepperoni.SelectedIndex)
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!LargePizzaPrice.Text.Equals("$8") && lastLargePepSelection == LargePepperoni.FindString("Extra"))
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastLargePepSelection = LargePepperoni.SelectedIndex;
         }
 
@@ -1751,18 +1585,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void LargeSausage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(LargeSausage, lastLargeSausageSelection, activeLargeComboBoxes);
+           CheckComboBoxes(LargeSausage, lastLargeSausageSelection, activeLargeComboBoxes, "Large", ref LargeSausagePriceUpdated, LargePizzaPrice);
 
-            if (LargeSausage.FindString("Extra") == LargeSausage.SelectedIndex)
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeSausageSelection == LargeSausage.FindString("Extra"))
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastLargeSausageSelection = LargeSausage.SelectedIndex;
         }
 
@@ -1775,18 +1599,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void LargeHam_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(LargeHam, lastLargeHamSelection, activeLargeComboBoxes);
+            CheckComboBoxes(LargeHam, lastLargeHamSelection, activeLargeComboBoxes, "Large", ref LargeHamPriceUpdated, LargePizzaPrice);
 
-            if (LargeHam.FindString("Extra") == LargeHam.SelectedIndex)
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeHamSelection == LargeHam.FindString("Extra"))
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastLargeHamSelection = LargeHam.SelectedIndex;
         }
 
@@ -1799,18 +1613,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void LargeOnion_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(LargeOnion, lastLargeOnionSelection, activeLargeComboBoxes);
+            CheckComboBoxes(LargeOnion, lastLargeOnionSelection, activeLargeComboBoxes, "Large", ref LargeOnionPriceUpdated, LargePizzaPrice);
 
-            if (LargeOnion.FindString("Extra") == LargeOnion.SelectedIndex)
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeOnionSelection == LargeOnion.FindString("Extra"))
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastLargeOnionSelection = LargeOnion.SelectedIndex;
         }
 
@@ -1823,18 +1627,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void LargeGreenPepper_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(LargeGreenPepper, lastLargeGPSelection, activeLargeComboBoxes);
+            CheckComboBoxes(LargeGreenPepper, lastLargeGPSelection, activeLargeComboBoxes, "Large", ref LargeGreenPepperPriceUpdated, LargePizzaPrice);
 
-            if (LargeGreenPepper.FindString("Extra") == LargeGreenPepper.SelectedIndex)
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeGPSelection == LargeGreenPepper.FindString("Extra"))
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastLargeGPSelection = LargeGreenPepper.SelectedIndex;
         }
 
@@ -1847,18 +1641,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void LargeTomato_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(LargeTomato, lastLargeTomatoSelection, activeLargeComboBoxes);
+            CheckComboBoxes(LargeTomato, lastLargeTomatoSelection, activeLargeComboBoxes, "Large", ref LargeTomatoPriceUpdated, LargePizzaPrice);
 
-            if (LargeTomato.FindString("Extra") == LargeTomato.SelectedIndex)
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeTomatoSelection == LargeTomato.FindString("Extra"))
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastLargeTomatoSelection = LargeTomato.SelectedIndex;
         }
 
@@ -1871,18 +1655,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void LargeMushroom_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(LargeMushroom, lastLargeMushroomSelection, activeLargeComboBoxes);
+            CheckComboBoxes(LargeMushroom, lastLargeMushroomSelection, activeLargeComboBoxes, "Large", ref LargeMushroomPriceUpdated, LargePizzaPrice);
 
-            if (LargeMushroom.FindString("Extra") == LargeMushroom.SelectedIndex)
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!LargePizzaPrice.Text.Equals("$8") && lastLargeMushroomSelection == LargeMushroom.FindString("Extra"))
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastLargeMushroomSelection = LargeMushroom.SelectedIndex;
         }
 
@@ -1895,18 +1669,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void LargePineapple_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(LargePineapple, lastLargePineappleSelection, activeLargeComboBoxes);
+            CheckComboBoxes(LargePineapple, lastLargePineappleSelection, activeLargeComboBoxes, "Large", ref LargePineapplePriceUpdated, LargePizzaPrice);
 
-            if (LargePineapple.FindString("Extra") == LargePineapple.SelectedIndex)
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) + .75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!LargePizzaPrice.Text.Equals("$8") && lastLargePineappleSelection == LargePineapple.FindString("Extra"))
-            {
-                float total = float.Parse(LargePizzaPrice.Text.Substring(1)) - 0.75f;
-                LargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastLargePineappleSelection = LargePineapple.SelectedIndex;
         }
 
@@ -1919,18 +1683,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void ExtraLargeCheese_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(ExtraLargeCheese, lastXLCheeseSelection, activeExtraLargeComboBoxes);
+            CheckComboBoxes(ExtraLargeCheese, lastXLCheeseSelection, activeExtraLargeComboBoxes, "Extra Large", ref XLCheesePriceUpdated, ExtraLargePizzaPrice);
 
-            if (ExtraLargeCheese.FindString("Extra") == ExtraLargeCheese.SelectedIndex)
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLCheeseSelection == ExtraLargeCheese.FindString("Extra"))
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastXLCheeseSelection = ExtraLargeCheese.SelectedIndex;
         }
 
@@ -1943,18 +1697,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void ExtraLargePepperoni_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(ExtraLargePepperoni, lastXLPepSelection, activeExtraLargeComboBoxes);
+            CheckComboBoxes(ExtraLargePepperoni, lastXLPepSelection, activeExtraLargeComboBoxes, "Extra Large", ref XLPepperoniPriceUpdated, ExtraLargePizzaPrice);
 
-            if (ExtraLargePepperoni.FindString("Extra") == ExtraLargePepperoni.SelectedIndex)
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLPepSelection == ExtraLargePepperoni.FindString("Extra"))
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastXLPepSelection = ExtraLargePepperoni.SelectedIndex;
         }
 
@@ -1967,18 +1711,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void ExtraLargeSausage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(ExtraLargeSausage, lastXLSausageSelection, activeExtraLargeComboBoxes);
+            CheckComboBoxes(ExtraLargeSausage, lastXLSausageSelection, activeExtraLargeComboBoxes, "Extra Large", ref XLSausagePriceUpdated, ExtraLargePizzaPrice);
 
-            if (ExtraLargeSausage.FindString("Extra") == ExtraLargeSausage.SelectedIndex)
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLSausageSelection == ExtraLargeSausage.FindString("Extra"))
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastXLSausageSelection = ExtraLargeSausage.SelectedIndex;
         }
 
@@ -1991,35 +1725,15 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void ExtraLargeHam_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(ExtraLargeHam, lastXLHamSelection, activeExtraLargeComboBoxes);
+            CheckComboBoxes(ExtraLargeHam, lastXLHamSelection, activeExtraLargeComboBoxes, "Extra Large", ref XLHamPriceUpdated, ExtraLargePizzaPrice);
 
-            if (ExtraLargeHam.FindString("Extra") == ExtraLargeHam.SelectedIndex)
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLHamSelection == ExtraLargeHam.FindString("Extra"))
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastXLHamSelection = ExtraLargeHam.SelectedIndex;
         }
 
         private void ExtraLargeOnion_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(ExtraLargeOnion, lastXLOnionSelection, activeExtraLargeComboBoxes);
+            CheckComboBoxes(ExtraLargeOnion, lastXLOnionSelection, activeExtraLargeComboBoxes, "Extra Large", ref XLOnionPriceUpdated, ExtraLargePizzaPrice);
 
-            if (ExtraLargeOnion.FindString("Extra") == ExtraLargeOnion.SelectedIndex)
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLOnionSelection == ExtraLargeOnion.FindString("Extra"))
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastXLOnionSelection = ExtraLargeOnion.SelectedIndex;
         }
 
@@ -2032,18 +1746,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void ExtraLargeGreenPepper_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(ExtraLargeGreenPepper, lastXLGPSelection, activeExtraLargeComboBoxes);
+            CheckComboBoxes(ExtraLargeGreenPepper, lastXLGPSelection, activeExtraLargeComboBoxes, "Extra Large", ref XLGreenPepperPriceUpdated, ExtraLargePizzaPrice);
 
-            if (ExtraLargeGreenPepper.FindString("Extra") == ExtraLargeGreenPepper.SelectedIndex)
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLGPSelection == ExtraLargeGreenPepper.FindString("Extra"))
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastXLGPSelection = ExtraLargeGreenPepper.SelectedIndex;
         }
 
@@ -2056,18 +1760,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void ExtraLargeTomato_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(ExtraLargeTomato, lastXLTomatoSelection, activeExtraLargeComboBoxes);
+            CheckComboBoxes(ExtraLargeTomato, lastXLTomatoSelection, activeExtraLargeComboBoxes, "Extra Large", ref XLTomatoPriceUpdated, ExtraLargePizzaPrice);
 
-            if (ExtraLargeTomato.FindString("Extra") == ExtraLargeTomato.SelectedIndex)
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLTomatoSelection == ExtraLargeTomato.FindString("Extra"))
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastXLTomatoSelection = ExtraLargeTomato.SelectedIndex;
         }
 
@@ -2080,18 +1774,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void ExtraLargeMushroom_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(ExtraLargeMushroom, lastXLMushroomSelection, activeExtraLargeComboBoxes);
+            CheckComboBoxes(ExtraLargeMushroom, lastXLMushroomSelection, activeExtraLargeComboBoxes, "Extra Large", ref XLMushroomPriceUpdated, ExtraLargePizzaPrice);
 
-            if (ExtraLargeMushroom.FindString("Extra") == ExtraLargeMushroom.SelectedIndex)
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLMushroomSelection == ExtraLargeMushroom.FindString("Extra"))
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastXLMushroomSelection = ExtraLargeMushroom.SelectedIndex;
         }
 
@@ -2104,18 +1788,8 @@ namespace MomAndPops.Resources
         /// <param name="e"></param>
         private void ExtraLargePineapple_SelectedIndexChanged(object sender, EventArgs e)
         {
-            CheckComboBoxes(ExtraLargePineapple, lastXLPineappleSelection, activeExtraLargeComboBoxes);
+            CheckComboBoxes(ExtraLargePineapple, lastXLPineappleSelection, activeExtraLargeComboBoxes, "Extra Large", ref XLPineapplePriceUpdated, ExtraLargePizzaPrice);
 
-            if (ExtraLargePineapple.FindString("Extra") == ExtraLargePineapple.SelectedIndex)
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) + 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
-            else if (!ExtraLargePizzaPrice.Text.Equals("$10") && lastXLPineappleSelection == ExtraLargePineapple.FindString("Extra"))
-            {
-                float total = float.Parse(ExtraLargePizzaPrice.Text.Substring(1)) - 1.25f;
-                ExtraLargePizzaPrice.Text = "$" + total.ToString("0.00");
-            }
             lastXLPineappleSelection = ExtraLargePineapple.SelectedIndex;
         }
 
@@ -2224,7 +1898,7 @@ namespace MomAndPops.Resources
         /// <param name="currentBox"></param>
         /// <param name="lastSelection"></param>
         /// <param name="comboBoxSize"></param>
-        private void CheckComboBoxes(ComboBox currentBox, int lastSelection, List<ComboBox> comboBoxSize)
+        private void CheckComboBoxes(ComboBox currentBox, int lastSelection, List<ComboBox> comboBoxSize, string size, ref bool priceUpdated, Label pizzaPrice)
         {
             if (lastSelection != 0 && currentBox.SelectedIndex == 0)//Makes sure the lastSelection was not none and current selection is none before removing box
             {
@@ -2234,6 +1908,7 @@ namespace MomAndPops.Resources
                 }
             }
 
+           
             if (currentBox.SelectedIndex != 0 && comboBoxSize.Count < 4 && !comboBoxSize.Contains(currentBox))
             //Makes sure 4 other combo boxes have been activated and that this box is not in the list already and it is not set to a base value before adding it to list
             {
@@ -2244,9 +1919,119 @@ namespace MomAndPops.Resources
             {
                 currentBox.SelectedIndex = 0;
             }
-            else
+            else if(!comboBoxSize.Contains(currentBox))
             {
                 currentBox.SelectedIndex = 2;
+            }
+
+            if (currentBox.FindString("None") != currentBox.SelectedIndex && !priceUpdated && (currentBox != SmallCheese && currentBox != MediumCheese &&
+                currentBox != LargeCheese && currentBox != ExtraLargeCheese))
+            {
+                if(size == "Small")
+                { 
+                  float total = float.Parse(pizzaPrice.Text.Substring(1)) + 0.5f;
+                  pizzaPrice.Text = "$" + total.ToString("0.00");
+                  priceUpdated = true;  
+                }
+                else if(size == "Medium")
+                {
+                  float total = float.Parse(pizzaPrice.Text.Substring(1)) + 0.75f;
+                  pizzaPrice.Text = "$" + total.ToString("0.00");
+                  priceUpdated = true;
+                }
+                else if(size == "Large")
+                {
+                  float total = float.Parse(pizzaPrice.Text.Substring(1)) + 1f;
+                  pizzaPrice.Text = "$" + total.ToString("0.00");
+                  priceUpdated = true; 
+                }
+                else if (size == "Extra Large")
+                {
+                  float total = float.Parse(pizzaPrice.Text.Substring(1)) + 1.25f;
+                  pizzaPrice.Text = "$" + total.ToString("0.00");
+                  priceUpdated = true;
+                }
+            }
+            else if(!priceUpdated)
+            {
+                if (currentBox == SmallCheese && currentBox.SelectedIndex == currentBox.FindString("Extra"))
+                {
+                    float total = float.Parse(pizzaPrice.Text.Substring(1)) + 0.5f;
+                    pizzaPrice.Text = "$" + total.ToString("0.00");
+                    priceUpdated = true;
+                }
+                else if (currentBox == MediumCheese && currentBox.SelectedIndex == currentBox.FindString("Extra"))
+                {
+                    float total = float.Parse(pizzaPrice.Text.Substring(1)) + 0.75f;
+                    pizzaPrice.Text = "$" + total.ToString("0.00");
+                    priceUpdated = true;
+                }
+                else if (currentBox == LargeCheese && currentBox.SelectedIndex == currentBox.FindString("Extra"))
+                {
+                    float total = float.Parse(pizzaPrice.Text.Substring(1)) + 1f;
+                    pizzaPrice.Text = "$" + total.ToString("0.00");
+                    priceUpdated = true;
+                }
+                else if (currentBox == ExtraLargeCheese && currentBox.SelectedIndex == currentBox.FindString("Extra"))
+                {
+                    float total = float.Parse(pizzaPrice.Text.Substring(1)) + 1.25f;
+                    pizzaPrice.Text = "$" + total.ToString("0.00");
+                    priceUpdated = true;
+                }
+            }
+            else if (currentBox.SelectedIndex == currentBox.FindString("None") && priceUpdated && (currentBox != SmallCheese && currentBox != MediumCheese && currentBox != LargeCheese && currentBox != ExtraLargeCheese))
+            {
+                if (size == "Small" && !pizzaPrice.Text.Equals("$4"))
+                {
+                    float total = float.Parse(pizzaPrice.Text.Substring(1)) - 0.5f;
+                    pizzaPrice.Text = "$" + total.ToString("0.00");
+                    priceUpdated = false;
+                }
+                else if (size == "Medium" && !pizzaPrice.Text.Equals("6"))
+                {
+                    float total = float.Parse(pizzaPrice.Text.Substring(1)) - 0.75f;
+                    pizzaPrice.Text = "$" + total.ToString("0.00");
+                    priceUpdated = false;
+                }
+                else if (size == "Large" && !pizzaPrice.Text.Equals("$8"))
+                {
+                    float total = float.Parse(pizzaPrice.Text.Substring(1)) - 1f;
+                    pizzaPrice.Text = "$" + total.ToString("0.00");
+                    priceUpdated = false;
+                }
+                else if (size == "Extra Large" && !pizzaPrice.Text.Equals("$10"))
+                {
+                    float total = float.Parse(pizzaPrice.Text.Substring(1)) - 1.25f;
+                    pizzaPrice.Text = "$" + total.ToString("0.00");
+                    priceUpdated = false;
+                }
+            }
+            else if(priceUpdated)
+            {
+                if(currentBox == SmallCheese && currentBox.SelectedIndex != currentBox.FindString("Extra") && !pizzaPrice.Text.Equals("$4"))
+                {
+                    float total = float.Parse(pizzaPrice.Text.Substring(1)) - 0.5f;
+                    pizzaPrice.Text = "$" + total.ToString("0.00");
+                    priceUpdated = false;
+                }
+                else if (currentBox == MediumCheese && currentBox.SelectedIndex != currentBox.FindString("Extra") && !pizzaPrice.Text.Equals("$4"))
+                {
+                    float total = float.Parse(pizzaPrice.Text.Substring(1)) - 0.75f;
+                    pizzaPrice.Text = "$" + total.ToString("0.00");
+                    priceUpdated = false;
+                }
+                else if (currentBox == LargeCheese && currentBox.SelectedIndex != currentBox.FindString("Extra") && !pizzaPrice.Text.Equals("$4"))
+                {
+                    float total = float.Parse(pizzaPrice.Text.Substring(1)) - 1f;
+                    pizzaPrice.Text = "$" + total.ToString("0.00");
+                    priceUpdated = false;
+                }
+                else if (currentBox == ExtraLargeCheese && currentBox.SelectedIndex != currentBox.FindString("Extra") && !pizzaPrice.Text.Equals("$4"))
+                {
+                    float total = float.Parse(pizzaPrice.Text.Substring(1)) - 1.25f;
+                    pizzaPrice.Text = "$" + total.ToString("0.00");
+                    priceUpdated = false;
+                }
             }
         }
 
