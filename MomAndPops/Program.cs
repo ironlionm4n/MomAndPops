@@ -13,9 +13,7 @@ namespace MomAndPops
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            // Application.Run(new Payment());
             Application.Run(new LoginPage());
-            // Application.Run(new MenuLanding());
         }
     }
 }

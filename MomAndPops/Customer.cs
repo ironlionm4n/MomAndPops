@@ -147,5 +147,40 @@ namespace MomAndPops
             return phoneNumber.Trim();
         }
 
+        public void setFirstName(string newFirstName)
+        {
+            firstName = newFirstName;
+        }
+
+        public void setLastName(string newLastName)
+        {
+            lastName = newLastName;
+        }
+
+        public void setPhone(string newPhone)
+        {
+            phoneNumber = newPhone;
+        }
+
+        public void setAddress(string newAddress)
+        {
+            address = newAddress;
+        }
+
+        public void setApt(string newApt)
+        {
+            apt = newApt;
+        }
+
+        public void setZip(string newZip)
+        {
+            zip = newZip;
+        }
+
+        public void setCity(string newCity)
+        {
+            city = newCity;
+        }
+
     }
 }

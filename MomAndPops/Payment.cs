@@ -1,5 +1,6 @@
 ﻿using MomAndPops.Resources;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace MomAndPops
@@ -10,10 +11,19 @@ namespace MomAndPops
         Customer customer;
         bool delivery = false;
 
+        bool correctCardNumber= false;
+        bool correctCVV = false;
+        bool correctMonth = false;
+        bool correctYear = false;
+        bool correctZip = false;
+        bool correctCardInformation = false;
+
 
         public Payment()
         {
             InitializeComponent();
+
+           
         }
 
         /// <summary>
@@ -61,8 +71,9 @@ namespace MomAndPops
                 delivery = true;
             }
 
-            if ((CashButton.Checked || CheckButton.Checked || CardButton.Checked) && (PickupButton.Checked || DeliveryButton.Checked))
+            if ((CashButton.Checked || CheckButton.Checked || (CardButton.Checked && correctCardInformation)) && (PickupButton.Checked || DeliveryButton.Checked))
             {
+                
                 customer.AddToPreviousOrders(GetOrder());
                 customer.WriteToFile(customer);
 
@@ -99,6 +110,179 @@ namespace MomAndPops
             customer = cust;
         }
 
+        /// <summary>
+        /// CardXButton_Click is called whenever the customer clicks the X button on the card tab. It closes the card tab and resets all the text box values
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CardXButton_Click(object sender, EventArgs e)
+        {
+            CardPanel.Visible = false;
+            CardPanel.Enabled = false;
+            CardButton.Checked = false;
 
+            CardNumber.Text = string.Empty;
+            CVV.Text = string.Empty;
+            Month.Text = string.Empty;
+            Year.Text = string.Empty;
+            ZipCode.Text = string.Empty;
+        }
+
+        /// <summary>
+        /// CardSubmt_Click is called whenever the user clicks Submit on the card tab. It goes through and checks each text box for any incorrect data entered
+        /// and stops the user from continuing until the errors are fixed.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void CardSubmit_Click(object sender, EventArgs e)
+        {
+            bool cardNumberIsNum = false;
+            try
+            {
+                long cardNumber = long.Parse(CardNumber.Text);
+
+                cardNumberIsNum = true;
+            }
+            catch(Exception)
+            {
+
+            }
+
+            bool cardCVVIsNum = false;
+            try
+            {
+                int cvv = Int32.Parse(CVV.Text);
+
+                cardCVVIsNum = true;
+            }
+            catch(Exception)
+            {
+
+            }
+
+            bool monthIsNum = false;
+            try
+            {
+                int month = Int32.Parse(Month.Text);
+
+                if (month > 0 && month <= 12)
+                {
+                    monthIsNum = true;
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+
+            bool yearIsNum = false;
+            try
+            {
+                int year = Int32.Parse(Year.Text);
+
+                if (year > 0 && year <= 12)
+                {
+                    yearIsNum = true;
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+
+            bool zipIsNum = false;
+            try
+            {
+                int zip = Int32.Parse(ZipCode.Text);
+
+                zipIsNum = true;
+            }
+            catch (Exception)
+            {
+
+            }
+
+            if (CardNumber.Text.Trim().Length == 12 && cardNumberIsNum)
+            {
+                correctCardNumber = true;
+                Color matchColor = Color.FromArgb(255, 255, 255);
+                CardNumber.BackColor = matchColor;
+            }
+            else
+            {
+                Color mismatchColor = Color.FromArgb(255, 113, 113);
+                CardNumber.BackColor = mismatchColor;
+            }
+
+            if(CVV.Text.Trim().Length == 3 && cardCVVIsNum)
+            {
+                correctCVV = true;
+                Color matchColor = Color.FromArgb(255, 255, 255);
+                CVV.BackColor = matchColor;
+            }
+            else
+            {
+                Color mismatchColor = Color.FromArgb(255, 113, 113);
+                CVV.BackColor = mismatchColor;
+            }
+
+            if (Month.Text.Trim().Length == 2 && monthIsNum)
+            {
+                correctMonth = true;
+                Color matchColor = Color.FromArgb(255, 255, 255);
+                Month.BackColor = matchColor;
+            }
+            else
+            {
+                Color mismatchColor = Color.FromArgb(255, 113, 113);
+                Month.BackColor = mismatchColor;
+            }
+
+            if (Year.Text.Trim().Length == 2 && yearIsNum)
+            {
+                correctYear = true;
+                Color matchColor = Color.FromArgb(255, 255, 255);
+                Year.BackColor = matchColor;
+            }
+            else
+            {
+                Color mismatchColor = Color.FromArgb(255, 113, 113);
+                Year.BackColor = mismatchColor;
+            }
+
+            if (ZipCode.Text.Trim().Length == 5 && zipIsNum)
+            {
+                correctZip = true;
+                Color matchColor = Color.FromArgb(255, 255, 255);
+                ZipCode.BackColor = matchColor;
+            }
+            else
+            {
+                Color mismatchColor = Color.FromArgb(255, 113, 113);
+                ZipCode.BackColor = mismatchColor;
+            }
+
+            if (correctCardNumber && correctCVV && correctMonth && correctYear &&  correctZip)
+            {
+                CardPanel.Visible = false;
+                CardPanel.Enabled = false;
+                correctCardInformation = true;
+
+                CardNumber.Text = string.Empty;
+                CVV.Text = string.Empty;
+                Month.Text = string.Empty;
+                Year.Text = string.Empty;
+                ZipCode.Text = string.Empty;
+            }
+        }
+
+        private void CardButton_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CardButton.Checked)
+            {
+                CardPanel.Visible = true;
+                CardPanel.Enabled = true;
+            }
+        }
     }
 }

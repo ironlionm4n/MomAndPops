@@ -117,4 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Sunday                    11:00 AM - 9:00 PM
+Monday                   11:00 AM - 9:00 PM
+Tuesday                  11:00 AM - 9:00 PM
+Wednesday             11:00 AM - 9:00 PM
+Thursday                 11:00 AM - 9:00 PM
+Friday                      11:00 AM - 12:00 am
+Saturday                  11:00 AM - 12:00 am
+
+Address:     680 Arnsten Suite 161, 30060     
+Phone:       (770)-555-1212​</value>
+  </data>
 </root>

@@ -109,9 +109,9 @@ namespace MomAndPops
                 CreateZipTextBox.BackColor = correctColor;
             }
 
-            if (!CreateFirstTextBox.Text.Equals("") && !CreateLastTextBox.Text.Equals("") && !CreatePhoneTextBox.Text.Equals("")
-                && !CreateAddressTextBox.Text.Equals("") && !CreateAptTextBox.Text.Equals("") && !CreateCityTextBox.Text.Equals("")
-                && !CreateZipTextBox.Text.Equals("") && !CreatePasswordTextBox.Text.Equals("") && passwordsMatch && correctNumberFormat
+            if (!CreateFirstTextBox.Text.Trim().Equals("") && !CreateLastTextBox.Text.Trim().Equals("") && !CreatePhoneTextBox.Text.Trim().Equals("")
+                && !CreateAddressTextBox.Text.Trim().Equals("") && !CreateAptTextBox.Text.Trim().Equals("") && !CreateCityTextBox.Text.Trim().Equals("")
+                && !CreateZipTextBox.Text.Trim().Equals("") && !CreatePasswordTextBox.Text.Trim().Equals("") && passwordsMatch && correctNumberFormat
                 && correctZipFormat)
             {
                 Customer customer = new Customer(CreateFirstTextBox.Text, CreateLastTextBox.Text, CreatePhoneTextBox.Text, CreateAddressTextBox.Text,
@@ -226,6 +226,18 @@ namespace MomAndPops
             {
 
             }
+        }
+
+        private void About_Click(object sender, EventArgs e)
+        {
+            AboutPanel.Visible = true;
+            AboutPanel.Enabled = true;
+        }
+
+        private void AboutClose_Click(object sender, EventArgs e)
+        {
+            AboutPanel.Visible = false;
+            AboutPanel.Enabled = false;
         }
     }
 }

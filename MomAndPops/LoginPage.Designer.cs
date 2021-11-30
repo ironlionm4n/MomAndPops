@@ -29,6 +29,7 @@ namespace MomAndPops
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginPage));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MomPops = new System.Windows.Forms.Label();
             this.LoginPhoneNumberLabel = new System.Windows.Forms.Label();
@@ -63,10 +64,16 @@ namespace MomAndPops
             this.CreateFirstTextBox = new System.Windows.Forms.TextBox();
             this.CreateLastNameLabel = new System.Windows.Forms.Label();
             this.CreateFirstNameLabel = new System.Windows.Forms.Label();
+            this.About = new System.Windows.Forms.Button();
+            this.AboutPanel = new System.Windows.Forms.Panel();
+            this.Hours = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.AboutClose = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
             this.CreatePanel.SuspendLayout();
+            this.AboutPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -218,7 +225,7 @@ namespace MomAndPops
             this.CreatePanel.Controls.Add(this.CreateFirstTextBox);
             this.CreatePanel.Controls.Add(this.CreateLastNameLabel);
             this.CreatePanel.Controls.Add(this.CreateFirstNameLabel);
-            this.CreatePanel.Location = new System.Drawing.Point(320, 124);
+            this.CreatePanel.Location = new System.Drawing.Point(323, 139);
             this.CreatePanel.Name = "CreatePanel";
             this.CreatePanel.Size = new System.Drawing.Size(614, 489);
             this.CreatePanel.TabIndex = 12;
@@ -421,6 +428,61 @@ namespace MomAndPops
             this.CreateFirstNameLabel.TabIndex = 0;
             this.CreateFirstNameLabel.Text = "First Name";
             // 
+            // About
+            // 
+            this.About.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.About.Location = new System.Drawing.Point(585, 495);
+            this.About.Name = "About";
+            this.About.Size = new System.Drawing.Size(106, 37);
+            this.About.TabIndex = 13;
+            this.About.Text = "About";
+            this.About.UseVisualStyleBackColor = true;
+            this.About.Click += new System.EventHandler(this.About_Click);
+            // 
+            // AboutPanel
+            // 
+            this.AboutPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.AboutPanel.Controls.Add(this.Hours);
+            this.AboutPanel.Controls.Add(this.AboutClose);
+            this.AboutPanel.Controls.Add(this.label3);
+            this.AboutPanel.Enabled = false;
+            this.AboutPanel.Location = new System.Drawing.Point(305, 196);
+            this.AboutPanel.Name = "AboutPanel";
+            this.AboutPanel.Size = new System.Drawing.Size(652, 402);
+            this.AboutPanel.TabIndex = 14;
+            this.AboutPanel.Visible = false;
+            // 
+            // Hours
+            // 
+            this.Hours.AutoSize = true;
+            this.Hours.Font = new System.Drawing.Font("Microsoft Sans Serif", 28F, System.Drawing.FontStyle.Underline);
+            this.Hours.Location = new System.Drawing.Point(266, 1);
+            this.Hours.Name = "Hours";
+            this.Hours.Size = new System.Drawing.Size(121, 44);
+            this.Hours.TabIndex = 1;
+            this.Hours.Text = "Hours";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(92, 51);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(523, 290);
+            this.label3.TabIndex = 2;
+            this.label3.Text = resources.GetString("label3.Text");
+            // 
+            // AboutClose
+            // 
+            this.AboutClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.AboutClose.Location = new System.Drawing.Point(265, 350);
+            this.AboutClose.Name = "AboutClose";
+            this.AboutClose.Size = new System.Drawing.Size(121, 38);
+            this.AboutClose.TabIndex = 3;
+            this.AboutClose.Text = "Close";
+            this.AboutClose.UseVisualStyleBackColor = true;
+            this.AboutClose.Click += new System.EventHandler(this.AboutClose_Click);
+            // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -430,6 +492,8 @@ namespace MomAndPops
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.CreatePanel);
+            this.Controls.Add(this.AboutPanel);
+            this.Controls.Add(this.About);
             this.Controls.Add(this.LoginLabel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
@@ -445,6 +509,8 @@ namespace MomAndPops
             this.panel1.PerformLayout();
             this.CreatePanel.ResumeLayout(false);
             this.CreatePanel.PerformLayout();
+            this.AboutPanel.ResumeLayout(false);
+            this.AboutPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -486,6 +552,11 @@ namespace MomAndPops
         private System.Windows.Forms.TextBox CreateZipTextBox;
         private System.Windows.Forms.Label CreateZipLabel;
         private System.Windows.Forms.Label IncorrectPass;
+        private System.Windows.Forms.Button About;
+        private System.Windows.Forms.Panel AboutPanel;
+        private System.Windows.Forms.Label Hours;
+        private System.Windows.Forms.Button AboutClose;
+        private System.Windows.Forms.Label label3;
     }
 }
 

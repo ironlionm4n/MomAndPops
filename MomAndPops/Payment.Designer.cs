@@ -48,9 +48,28 @@ namespace MomAndPops
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SubtotalLabel = new System.Windows.Forms.Label();
+            this.CardPanel = new System.Windows.Forms.Panel();
+            this.CardSubmit = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.ZipCode = new System.Windows.Forms.TextBox();
+            this.Year = new System.Windows.Forms.TextBox();
+            this.Month = new System.Windows.Forms.TextBox();
+            this.CVV = new System.Windows.Forms.TextBox();
+            this.CardNumber = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.CardXButton = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.CardPanel.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -98,6 +117,7 @@ namespace MomAndPops
             this.CardButton.TabStop = true;
             this.CardButton.Text = "Card";
             this.CardButton.UseVisualStyleBackColor = true;
+            this.CardButton.CheckedChanged += new System.EventHandler(this.CardButton_CheckedChanged);
             // 
             // PickupButton
             // 
@@ -269,12 +289,183 @@ namespace MomAndPops
             this.SubtotalLabel.TabIndex = 16;
             this.SubtotalLabel.Text = "Subtotal: ";
             // 
+            // CardPanel
+            // 
+            this.CardPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CardPanel.Controls.Add(this.CardSubmit);
+            this.CardPanel.Controls.Add(this.label11);
+            this.CardPanel.Controls.Add(this.label10);
+            this.CardPanel.Controls.Add(this.label9);
+            this.CardPanel.Controls.Add(this.label8);
+            this.CardPanel.Controls.Add(this.label7);
+            this.CardPanel.Controls.Add(this.ZipCode);
+            this.CardPanel.Controls.Add(this.Year);
+            this.CardPanel.Controls.Add(this.Month);
+            this.CardPanel.Controls.Add(this.CVV);
+            this.CardPanel.Controls.Add(this.CardNumber);
+            this.CardPanel.Controls.Add(this.panel6);
+            this.CardPanel.Controls.Add(this.panel5);
+            this.CardPanel.Enabled = false;
+            this.CardPanel.Location = new System.Drawing.Point(281, 165);
+            this.CardPanel.Name = "CardPanel";
+            this.CardPanel.Size = new System.Drawing.Size(719, 421);
+            this.CardPanel.TabIndex = 16;
+            this.CardPanel.Visible = false;
+            // 
+            // CardSubmit
+            // 
+            this.CardSubmit.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.CardSubmit.Location = new System.Drawing.Point(290, 357);
+            this.CardSubmit.Name = "CardSubmit";
+            this.CardSubmit.Size = new System.Drawing.Size(147, 48);
+            this.CardSubmit.TabIndex = 12;
+            this.CardSubmit.Text = "Submit";
+            this.CardSubmit.UseVisualStyleBackColor = true;
+            this.CardSubmit.Click += new System.EventHandler(this.CardSubmit_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label11.Location = new System.Drawing.Point(94, 298);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(124, 31);
+            this.label11.TabIndex = 11;
+            this.label11.Text = "Zip Code";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.label10.Location = new System.Drawing.Point(280, 238);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(26, 37);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "/";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.label9.Location = new System.Drawing.Point(19, 240);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(199, 31);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Expiration Date";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.label8.Location = new System.Drawing.Point(45, 174);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(163, 37);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Card CVV";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F);
+            this.label7.Location = new System.Drawing.Point(7, 105);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(211, 37);
+            this.label7.TabIndex = 7;
+            this.label7.Text = "Card Number";
+            // 
+            // ZipCode
+            // 
+            this.ZipCode.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.ZipCode.Location = new System.Drawing.Point(224, 295);
+            this.ZipCode.MaxLength = 5;
+            this.ZipCode.Name = "ZipCode";
+            this.ZipCode.Size = new System.Drawing.Size(100, 38);
+            this.ZipCode.TabIndex = 6;
+            // 
+            // Year
+            // 
+            this.Year.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.Year.Location = new System.Drawing.Point(306, 238);
+            this.Year.MaxLength = 2;
+            this.Year.Name = "Year";
+            this.Year.Size = new System.Drawing.Size(50, 38);
+            this.Year.TabIndex = 5;
+            // 
+            // Month
+            // 
+            this.Month.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.Month.Location = new System.Drawing.Point(224, 237);
+            this.Month.MaxLength = 2;
+            this.Month.Name = "Month";
+            this.Month.Size = new System.Drawing.Size(50, 38);
+            this.Month.TabIndex = 4;
+            // 
+            // CVV
+            // 
+            this.CVV.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.CVV.Location = new System.Drawing.Point(224, 173);
+            this.CVV.MaxLength = 3;
+            this.CVV.Name = "CVV";
+            this.CVV.Size = new System.Drawing.Size(100, 38);
+            this.CVV.TabIndex = 3;
+            // 
+            // CardNumber
+            // 
+            this.CardNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
+            this.CardNumber.Location = new System.Drawing.Point(224, 104);
+            this.CardNumber.MaxLength = 12;
+            this.CardNumber.Name = "CardNumber";
+            this.CardNumber.Size = new System.Drawing.Size(284, 38);
+            this.CardNumber.TabIndex = 2;
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
+            this.panel6.Controls.Add(this.CardXButton);
+            this.panel6.Location = new System.Drawing.Point(658, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(59, 63);
+            this.panel6.TabIndex = 1;
+            // 
+            // CardXButton
+            // 
+            this.CardXButton.AutoSize = true;
+            this.CardXButton.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CardXButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
+            this.CardXButton.Location = new System.Drawing.Point(-5, 0);
+            this.CardXButton.Name = "CardXButton";
+            this.CardXButton.Size = new System.Drawing.Size(65, 65);
+            this.CardXButton.TabIndex = 0;
+            this.CardXButton.Text = "X";
+            this.CardXButton.Click += new System.EventHandler(this.CardXButton_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(160)))));
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.label6);
+            this.panel5.Location = new System.Drawing.Point(-1, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(663, 63);
+            this.panel5.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(76, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(420, 61);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Card Information";
+            // 
             // Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.CardPanel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
@@ -286,6 +477,12 @@ namespace MomAndPops
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.CardPanel.ResumeLayout(false);
+            this.CardPanel.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -312,5 +509,21 @@ namespace MomAndPops
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label SubtotalLabel;
+        private System.Windows.Forms.Panel CardPanel;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button CardSubmit;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox ZipCode;
+        private System.Windows.Forms.TextBox Year;
+        private System.Windows.Forms.TextBox Month;
+        private System.Windows.Forms.TextBox CVV;
+        private System.Windows.Forms.TextBox CardNumber;
+        private System.Windows.Forms.Label CardXButton;
     }
 }

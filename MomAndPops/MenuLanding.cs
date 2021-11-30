@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace MomAndPops.Resources
 {
@@ -2247,6 +2248,118 @@ namespace MomAndPops.Resources
             {
                 currentBox.SelectedIndex = 2;
             }
+        }
+
+        private void UpdateBack_Click(object sender, EventArgs e)
+        {
+            UpdateInformationPanel.Visible = false;
+            UpdateInformationPanel.Enabled = false;
+
+            CustomerPhone.Text = string.Empty;
+            CustomerFirstName.Text = string.Empty;
+            CustomerLastName.Text = string.Empty;
+            CustomerAddress.Text = string.Empty;
+            CustomerApartment.Text = string.Empty;
+            CustomerZip.Text = string.Empty;
+            CustomerCity.Text = string.Empty;
+        }
+
+        private void UpdateSubmit_Click(object sender, EventArgs e)
+        {
+            bool phone = false;
+            bool zip = false;
+
+           try
+            {
+                long phoneNum = long.Parse(CustomerPhone.Text);
+
+                if(CustomerPhone.Text.Trim().Length == 10)
+                {
+                    phone = true;
+                }
+            }
+            catch(Exception)
+            {
+
+            }
+
+            try
+            {
+                int zipCode = Int32.Parse(CustomerZip.Text.Trim());
+
+                if(CustomerZip.Text.Trim().Length == 5)
+                {
+                    zip = true;
+                }
+            }
+            catch(Exception)
+            {
+
+            }
+
+            if(phone)
+            {
+                Color matchColor = Color.FromArgb(255, 255, 255);
+                CustomerPhone.BackColor = matchColor;
+                customer.setPhone(CustomerPhone.Text);
+            }
+            else if(CustomerPhone.Text.Trim() != "")
+            {
+                Color mismatchColor = Color.FromArgb(255, 113, 113);
+                CustomerPhone.BackColor = mismatchColor;
+            }
+
+            if(zip)
+            {
+                Color matchColor = Color.FromArgb(255, 255, 255);
+                CustomerZip.BackColor = matchColor;
+                customer.setZip(CustomerZip.Text);
+            }
+            else if(CustomerZip.Text.Trim() != "")
+            {
+                Color mismatchColor = Color.FromArgb(255, 113, 113);
+                CustomerZip.BackColor = mismatchColor;
+            }
+
+            if(CustomerFirstName.Text.Trim() != "")
+            {
+                customer.setFirstName(CustomerFirstName.Text);
+            }
+
+            if(CustomerLastName.Text.Trim() != "")
+            {
+                customer.setLastName(CustomerLastName.Text);
+            }
+
+            if(CustomerAddress.Text.Trim() != "")
+            {
+                customer.setAddress(CustomerAddress.Text);
+            }
+
+            if(CustomerApartment.Text.Trim() != "")
+            {
+                customer.setApt(CustomerApartment.Text);
+            }
+
+            if(CustomerCity.Text.Trim() != "")
+            {
+                customer.setCity(CustomerCity.Text);
+            }
+
+            customer.WriteToFile(customer);
+            CustomerPhone.Text = string.Empty;
+            CustomerFirstName.Text = string.Empty;
+            CustomerLastName.Text = string.Empty;
+            CustomerAddress.Text = string.Empty;
+            CustomerApartment.Text = string.Empty;
+            CustomerZip.Text = string.Empty;
+            CustomerCity.Text = string.Empty;
+        }
+
+        private void UpdateInformation_Click(object sender, EventArgs e)
+        {
+            UpdateInformationPanel.Visible = true;
+            UpdateInformationPanel.Enabled = true;
         }
     }
 }
