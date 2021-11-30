@@ -2250,6 +2250,11 @@ namespace MomAndPops.Resources
             }
         }
 
+        /// <summary>
+        /// UpdateBack_Click is called when the user clicks Back on the update information panel. It closes the update panel and resets all the text fields.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UpdateBack_Click(object sender, EventArgs e)
         {
             UpdateInformationPanel.Visible = false;
@@ -2264,24 +2269,30 @@ namespace MomAndPops.Resources
             CustomerCity.Text = string.Empty;
         }
 
+        /// <summary>
+        /// UpdateSubmit_Click is called when the user clicks Submit on the update information panel. It checks to make sure the phone number and zip are numbers
+        /// before going through and checking which fields are not empty and updating their respective fields in the current customer.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void UpdateSubmit_Click(object sender, EventArgs e)
         {
             bool phone = false;
             bool zip = false;
 
            try
-            {
+           {
                 long phoneNum = long.Parse(CustomerPhone.Text);
 
                 if(CustomerPhone.Text.Trim().Length == 10)
                 {
                     phone = true;
                 }
-            }
-            catch(Exception)
-            {
+           }
+           catch(Exception)
+           {
 
-            }
+           }
 
             try
             {

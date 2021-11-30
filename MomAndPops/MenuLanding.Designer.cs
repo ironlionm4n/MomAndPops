@@ -2742,7 +2742,7 @@ namespace MomAndPops.Resources
             this.PreviousOrderXButton.AutoSize = true;
             this.PreviousOrderXButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
             this.PreviousOrderXButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
-            this.PreviousOrderXButton.Location = new System.Drawing.Point(354, 1);
+            this.PreviousOrderXButton.Location = new System.Drawing.Point(354, 0);
             this.PreviousOrderXButton.Name = "PreviousOrderXButton";
             this.PreviousOrderXButton.Size = new System.Drawing.Size(63, 63);
             this.PreviousOrderXButton.TabIndex = 10;
@@ -2752,9 +2752,9 @@ namespace MomAndPops.Resources
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(140)))), ((int)(((byte)(100)))));
-            this.pictureBox2.Location = new System.Drawing.Point(354, 0);
+            this.pictureBox2.Location = new System.Drawing.Point(355, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 64);
+            this.pictureBox2.Size = new System.Drawing.Size(63, 64);
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
             // 
