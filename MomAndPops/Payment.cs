@@ -226,7 +226,7 @@ namespace MomAndPops
                 CVV.BackColor = mismatchColor;
             }
 
-            if (Month.Text.Trim().Length == 2 && monthIsNum)
+            if (Month.Text.Trim().Length >= 1 && monthIsNum)
             {
                 correctMonth = true;
                 Color matchColor = Color.FromArgb(255, 255, 255);
