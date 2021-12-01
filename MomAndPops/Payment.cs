@@ -81,6 +81,7 @@ namespace MomAndPops
                 confirmation.SetCustomer(GetCustomer());
                 confirmation.SetDelivery(GetDelivery());
                 this.Hide();
+                //Form.ActiveForm.Close();
                 confirmation.ShowDialog();
             }
         }
@@ -202,7 +203,7 @@ namespace MomAndPops
 
             }
 
-            if (CardNumber.Text.Trim().Length == 12 && cardNumberIsNum)
+            if (CardNumber.Text.Trim().Length == 16 && cardNumberIsNum)
             {
                 correctCardNumber = true;
                 Color matchColor = Color.FromArgb(255, 255, 255);

@@ -1,4 +1,6 @@
-﻿namespace MomAndPops
+﻿using System.Windows.Forms;
+
+namespace MomAndPops
 {
     partial class Confirmation
     {
@@ -130,10 +132,16 @@
             this.MaximizeBox = false;
             this.Name = "Confirmation";
             this.Text = "Confirmation";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Confirmation_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void Confirmation_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
 
         #endregion

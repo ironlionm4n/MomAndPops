@@ -51,6 +51,7 @@ namespace MomAndPops
 
             if (correctPassword)
             {
+                //Form.ActiveForm.Close();
                 this.Hide();
                 MenuLanding menu = new MenuLanding();
                 menu.SetCustomer(GetCustomer());

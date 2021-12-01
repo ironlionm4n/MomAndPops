@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace MomAndPops.Resources
 {
     partial class MenuLanding
@@ -2962,6 +2964,7 @@ namespace MomAndPops.Resources
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ControlBox = false;
             this.Controls.Add(this.UpdateInformationPanel);
             this.Controls.Add(this.UpdateInformation);
             this.Controls.Add(this.PreviousOrders);

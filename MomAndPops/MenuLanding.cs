@@ -1286,6 +1286,7 @@ namespace MomAndPops.Resources
             Payment payment = new Payment();
             payment.SetOrder(GetOrder());
             payment.SetCustomer(GetCustomer());
+            //Form.ActiveForm.Close();
             payment.Show();
         }
 

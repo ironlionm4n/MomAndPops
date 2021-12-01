@@ -1,4 +1,6 @@
 ﻿
+using System.Windows.Forms;
+
 namespace MomAndPops
 {
     partial class Payment
@@ -413,7 +415,7 @@ namespace MomAndPops
             // 
             this.CardNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F);
             this.CardNumber.Location = new System.Drawing.Point(224, 104);
-            this.CardNumber.MaxLength = 12;
+            this.CardNumber.MaxLength = 16;
             this.CardNumber.Name = "CardNumber";
             this.CardNumber.Size = new System.Drawing.Size(284, 38);
             this.CardNumber.TabIndex = 2;
@@ -465,6 +467,7 @@ namespace MomAndPops
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ControlBox = false;
             this.Controls.Add(this.CardPanel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);

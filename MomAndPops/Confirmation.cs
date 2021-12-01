@@ -29,6 +29,7 @@ namespace MomAndPops
         {
             LoginPage login = new LoginPage();
             login.SetCustomer(GetCustomer());
+            //Form.ActiveForm.Close();
             this.Hide();
             login.ShowDialog();
         }
