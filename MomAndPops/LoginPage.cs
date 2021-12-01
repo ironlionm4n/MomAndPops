@@ -17,6 +17,8 @@ namespace MomAndPops
         {
             InitializeComponent();
             CreatePanel.Hide();
+            Customer testCustomer = new Customer();
+            activeCustomers.Add(testCustomer);
         }
 
         private void CreateAccountButton_Click(object sender, EventArgs e)
