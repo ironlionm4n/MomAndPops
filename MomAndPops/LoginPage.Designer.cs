@@ -23,11 +23,11 @@ namespace MomAndPops
             base.Dispose(disposing);
         }
 
-        private void LoginPage_FormClosing(object sender, FormClosingEventArgs e)
+/*        private void LoginPage_FormClosing(object sender, FormClosingEventArgs e)
         {
             //this.Close();
             Application.Exit();
-        }
+        }*/
 
         #region Windows Form Designer generated code
 
@@ -514,7 +514,7 @@ namespace MomAndPops
             this.Name = "LoginPage";
             this.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
             this.Text = "Login Page";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginPage_FormClosing);
+            //this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginPage_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);

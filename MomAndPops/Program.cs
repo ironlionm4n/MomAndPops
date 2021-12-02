@@ -14,10 +14,10 @@ namespace MomAndPops
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new LoginPage());
-            LoginPage loginForm = new LoginPage();
+            Application.Run(new LoginPage());
+/*          LoginPage loginForm = new LoginPage();
             loginForm.Show();
-            Application.Run();
+            Application.Run();*/
         }
     }
 }
