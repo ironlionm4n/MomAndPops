@@ -9,6 +9,7 @@ namespace MomAndPops
     public partial class LoginPage : Form
     {
         Customer currentCustomer = new Customer();
+        Customer testCustomer = new Customer();
         static List<Customer> activeCustomers = new List<Customer>();
 
         bool correctNumberFormat = false;
@@ -17,9 +18,9 @@ namespace MomAndPops
         {
             InitializeComponent();
             CreatePanel.Hide();
-            Customer testCustomer = new Customer();
-            if(!activeCustomers.Contains(testCustomer))
-                activeCustomers.Add(testCustomer);
+
+            currentCustomer = testCustomer;
+            AddCustomer();
         }
 
         private void CreateAccountButton_Click(object sender, EventArgs e)
