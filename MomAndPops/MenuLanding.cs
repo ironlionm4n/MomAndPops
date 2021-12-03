@@ -1054,9 +1054,10 @@ namespace MomAndPops.Resources
 
         private void Logout_Click(object sender, EventArgs e)
         {
-            Form login = new LoginPage();
-            this.Hide();
-            login.ShowDialog();
+
+            Program.loginPageInstance.Show();
+            Program.loginPageInstance.UserSelectedTOExit = false;
+            this.Close();
         }
 
         private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
@@ -1066,7 +1067,6 @@ namespace MomAndPops.Resources
 
         private void CartButton_Click(object sender, EventArgs e)
         {
-
             CartPanel.Visible = true;
             CartPanel.Enabled = true;
             PrintOrder();
@@ -2158,6 +2158,20 @@ namespace MomAndPops.Resources
         {
             UpdateInformationPanel.Visible = true;
             UpdateInformationPanel.Enabled = true;
+        }
+
+        private void MenuLanding_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MenuLanding_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if(Program.loginPageInstance.UserSelectedTOExit)
+            {
+                Program.loginPageInstance.Close();
+            }
+          //  Program.loginPageInstance.Close();
         }
     }
 }

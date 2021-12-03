@@ -22,8 +22,6 @@ namespace MomAndPops
         public Payment()
         {
             InitializeComponent();
-
-           
         }
 
         /// <summary>
@@ -284,6 +282,21 @@ namespace MomAndPops
                 CardPanel.Visible = true;
                 CardPanel.Enabled = true;
             }
+        }
+
+        private void Payment_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void Payment_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
+        private void Payment_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Program.loginPageInstance.Close();
         }
     }
 }

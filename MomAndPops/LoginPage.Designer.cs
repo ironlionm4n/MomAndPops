@@ -514,7 +514,8 @@ namespace MomAndPops
             this.Name = "LoginPage";
             this.Padding = new System.Windows.Forms.Padding(0, 0, 0, 50);
             this.Text = "Login Page";
-            //this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.LoginPage_FormClosing);
+            this.Load += new System.EventHandler(this.LoginPage_Load);
+            this.Shown += new System.EventHandler(this.LoginPage_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel1.ResumeLayout(false);

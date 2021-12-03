@@ -467,13 +467,15 @@ namespace MomAndPops
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.ControlBox = false;
             this.Controls.Add(this.CardPanel);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.Name = "Payment";
             this.Text = "Payment";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Payment_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Payment_FormClosed);
+            this.Load += new System.EventHandler(this.Payment_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

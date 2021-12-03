@@ -27,11 +27,14 @@ namespace MomAndPops
         /// <param name="e"></param>
         private void LogoutButton_Click(object sender, EventArgs e)
         {
-            LoginPage login = new LoginPage();
-            login.SetCustomer(GetCustomer());
+            // LoginPage login = new LoginPage();
+            Program.loginPageInstance.SetCustomer(GetCustomer());
             //Form.ActiveForm.Close();
-            this.Hide();
-            login.ShowDialog();
+             
+            //  login.ShowDialog();
+            Program.loginPageInstance.Show();
+            Program.loginPageInstance.UserSelectedTOExit = false;
+            this.Close();
         }
 
         public Customer GetCustomer()
@@ -46,6 +49,12 @@ namespace MomAndPops
         public void SetDelivery(bool del)
         {
             delivery = del;
+        }
+
+        private void Confirmation_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(Program.loginPageInstance.UserSelectedTOExit)
+                Program.loginPageInstance.Close();
         }
     }
 }

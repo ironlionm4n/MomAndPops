@@ -12,6 +12,8 @@ namespace MomAndPops
         Customer testCustomer = new Customer();
         static List<Customer> activeCustomers = new List<Customer>();
 
+        public bool UserSelectedTOExit = true;
+
         bool correctNumberFormat = false;
         bool correctZipFormat = false;
         public LoginPage()
@@ -38,6 +40,8 @@ namespace MomAndPops
         /// <param name="e"></param>
         private void LoginButton_Click(object sender, EventArgs e)
         {
+            
+            
             bool correctPassword = false;
 
             foreach (Customer customer in activeCustomers)
@@ -56,9 +60,14 @@ namespace MomAndPops
             if (correctPassword)
             {
                 //Form.ActiveForm.Close();
-                this.Hide();
+                //  this.Hide();
+               
+
+                Program.loginPageInstance.Hide(); // .Hide();
                 MenuLanding menu = new MenuLanding();
                 menu.SetCustomer(GetCustomer());
+                LoginPhoneNumberBox.Text = string.Empty;
+                LoginPasswordBox.Text = string.Empty;
                 menu.ShowDialog();
             }
             else
@@ -243,6 +252,16 @@ namespace MomAndPops
         {
             AboutPanel.Visible = false;
             AboutPanel.Enabled = false;
+        }
+
+        private void LoginPage_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LoginPage_Shown(object sender, EventArgs e)
+        {
+            Program.loginPageInstance.UserSelectedTOExit = true;
         }
     }
 }

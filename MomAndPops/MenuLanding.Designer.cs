@@ -2964,7 +2964,6 @@ namespace MomAndPops.Resources
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(229)))), ((int)(((byte)(204)))));
             this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.ControlBox = false;
             this.Controls.Add(this.UpdateInformationPanel);
             this.Controls.Add(this.UpdateInformation);
             this.Controls.Add(this.PreviousOrders);
@@ -2980,6 +2979,8 @@ namespace MomAndPops.Resources
             this.MaximizeBox = false;
             this.Name = "MenuLanding";
             this.Text = "MenuLanding";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MenuLanding_FormClosed);
+            this.Load += new System.EventHandler(this.MenuLanding_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel3.ResumeLayout(false);

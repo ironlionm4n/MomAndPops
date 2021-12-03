@@ -9,15 +9,23 @@ namespace MomAndPops
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        
+        public static LoginPage loginPageInstance;
+
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginPage());
-/*          LoginPage loginForm = new LoginPage();
-            loginForm.Show();
-            Application.Run();*/
+            try
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                loginPageInstance = new LoginPage();
+                Application.Run(loginPageInstance);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Error Message: " + e.Message + " > "  + e.StackTrace);
+            }
         }
     }
 }

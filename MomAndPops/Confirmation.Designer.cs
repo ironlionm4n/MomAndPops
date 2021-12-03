@@ -132,7 +132,7 @@ namespace MomAndPops
             this.MaximizeBox = false;
             this.Name = "Confirmation";
             this.Text = "Confirmation";
-            //this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Confirmation_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Confirmation_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
